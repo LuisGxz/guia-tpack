@@ -1,0 +1,19 @@
+{
+  "name": "guia-dinamica",
+  "version": "1.0.0",
+  "description": "Guia interactiva para gestion directiva en tecnologias emergentes educativas",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "private": true,
+  "dependencies": {
+    "astro": "^6.1.10"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.2.4",
+    "tailwindcss": "^4.2.4"
+  }
+}

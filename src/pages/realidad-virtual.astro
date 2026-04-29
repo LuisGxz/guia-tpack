@@ -1,0 +1,229 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import ToolCard from '../components/ToolCard.astro';
+import tools from '../data/tools-vr.json';
+---
+
+<MainLayout title="Realidad Virtual — Guía Interactiva">
+  <main class="flex-1">
+    <!-- Hero -->
+    <section class="bg-primary text-white py-16 md:py-20 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+          <span class="text-3xl" aria-hidden="true">🥽</span>
+        </div>
+        <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">
+          Realidad Virtual en la Educación
+        </h1>
+        <p class="text-base md:text-lg text-white/80 max-w-2xl mx-auto">
+          Experiencias inmersivas que transforman la manera en que los estudiantes exploran conceptos, lugares y fenómenos.
+        </p>
+      </div>
+    </section>
+
+    <!-- Tab Navigation -->
+    <div class="sticky top-16 z-30 bg-background border-b border-border">
+      <div class="max-w-4xl mx-auto px-4">
+        <nav class="flex gap-1 -mb-px" role="tablist" aria-label="Secciones de Realidad Virtual">
+          <button role="tab" aria-selected="true" aria-controls="panel-que-es" id="tab-que-es"
+            class="tab-btn px-4 py-3 text-sm font-semibold border-b-2 border-accent text-accent transition-colors">
+            Qué es
+          </button>
+          <button role="tab" aria-selected="false" aria-controls="panel-herramientas" id="tab-herramientas"
+            class="tab-btn px-4 py-3 text-sm font-semibold border-b-2 border-transparent text-text-light hover:text-text transition-colors">
+            Herramientas
+          </button>
+          <button role="tab" aria-selected="false" aria-controls="panel-estrategia" id="tab-estrategia"
+            class="tab-btn px-4 py-3 text-sm font-semibold border-b-2 border-transparent text-text-light hover:text-text transition-colors">
+            Estrategia
+          </button>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Panel: Qué es -->
+    <div role="tabpanel" id="panel-que-es" aria-labelledby="tab-que-es" class="tab-panel">
+      <section class="max-w-4xl mx-auto px-4 py-16">
+        <SectionHeader
+          title="¿Qué es la Realidad Virtual?"
+          subtitle="Tecnología inmersiva que transporta al usuario a entornos digitales tridimensionales."
+        />
+        <div class="space-y-4 text-text-light mt-8">
+          <p>
+            La <strong class="text-text">Realidad Virtual (RV)</strong> es una tecnología que crea entornos
+            digitales tridimensionales en los que el usuario puede sumergirse e interactuar. A diferencia de
+            una pantalla tradicional, la RV genera una sensación de <strong class="text-text">presencia</strong>:
+            el estudiante siente que está «dentro» del contenido.
+          </p>
+          <p>
+            En educación, la RV no requiere necesariamente visores costosos. Muchas experiencias son accesibles
+            desde navegadores web o dispositivos móviles con Google Cardboard, un visor económico de cartón.
+          </p>
+
+          <h3 class="text-lg font-bold text-primary pt-4">¿Por qué importa para la educación?</h3>
+          <ul class="space-y-2 list-none pl-0">
+            <li class="flex items-start gap-2">
+              <span class="text-accent mt-1 shrink-0">→</span>
+              <span><strong class="text-text">Aprendizaje experiencial:</strong> Los estudiantes viven los conceptos en lugar de solo leerlos. Recorren el sistema solar, caminan por Roma antigua o exploran una célula.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-accent mt-1 shrink-0">→</span>
+              <span><strong class="text-text">Motivación:</strong> Las experiencias inmersivas generan mayor engagement y retención del conocimiento.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-accent mt-1 shrink-0">→</span>
+              <span><strong class="text-text">Acceso a lo inaccesible:</strong> Permite visitar lugares, épocas o escalas que serían imposibles en el mundo real.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-accent mt-1 shrink-0">→</span>
+              <span><strong class="text-text">Seguridad:</strong> Simulaciones de laboratorio o situaciones peligrosas sin riesgo real.</span>
+            </li>
+          </ul>
+
+          <h3 class="text-lg font-bold text-primary pt-4">El rol del directivo</h3>
+          <p>
+            La adopción de RV requiere una planificación cuidadosa por parte del equipo directivo:
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div class="p-4 rounded-lg border border-border bg-white">
+              <h4 class="font-bold text-sm mb-1">Evaluar la infraestructura</h4>
+              <p class="text-sm">Verificar conectividad a internet, disponibilidad de dispositivos y espacios físicos adecuados para experiencias inmersivas.</p>
+            </div>
+            <div class="p-4 rounded-lg border border-border bg-white">
+              <h4 class="font-bold text-sm mb-1">Priorizar materias de alto impacto</h4>
+              <p class="text-sm">Identificar qué asignaturas se benefician más de la inmersión: ciencias naturales, historia, geografía, arte.</p>
+            </div>
+            <div class="p-4 rounded-lg border border-border bg-white">
+              <h4 class="font-bold text-sm mb-1">Comenzar con lo accesible</h4>
+              <p class="text-sm">Iniciar con herramientas basadas en navegador (Google Arts & Culture, Mozilla Hubs) antes de invertir en hardware.</p>
+            </div>
+            <div class="p-4 rounded-lg border border-border bg-white">
+              <h4 class="font-bold text-sm mb-1">Gestionar el tiempo de uso</h4>
+              <p class="text-sm">Establecer protocolos de uso responsable: duración de sesiones, descansos, y consideraciones de bienestar digital.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Panel: Herramientas -->
+    <div role="tabpanel" id="panel-herramientas" aria-labelledby="tab-herramientas" class="tab-panel hidden">
+      <section class="max-w-6xl mx-auto px-4 py-16">
+        <SectionHeader
+          title="Herramientas de RV gratuitas"
+          subtitle="Plataformas accesibles para incorporar experiencias de realidad virtual en tu institución educativa."
+        />
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
+          {tools.map((tool) => (
+            <ToolCard {...tool} />
+          ))}
+        </div>
+      </section>
+    </div>
+
+    <!-- Panel: Estrategia -->
+    <div role="tabpanel" id="panel-estrategia" aria-labelledby="tab-estrategia" class="tab-panel hidden">
+      <section class="max-w-4xl mx-auto px-4 py-16">
+        <SectionHeader
+          title="Estrategia de integración"
+          subtitle="Cómo conectar la RV con el marco TPACK para una implementación efectiva."
+        />
+        <!-- TODO: update with thesis content -->
+        <div class="space-y-6 mt-8">
+          <div class="p-5 rounded-xl border border-border bg-white">
+            <h3 class="font-bold text-base mb-2 flex items-center gap-2">
+              <span class="w-8 h-8 rounded-full bg-[#0ea5e9]/15 flex items-center justify-center text-sm font-bold text-[#0ea5e9]">T</span>
+              Conocimiento Tecnológico (TK)
+            </h3>
+            <p class="text-text-light text-sm">
+              Los docentes necesitan familiarizarse con las plataformas de RV: cómo navegar entornos virtuales,
+              cómo crear recorridos y cómo guiar a los estudiantes en experiencias inmersivas. El directivo
+              organiza sesiones de exploración donde los docentes experimentan las herramientas como usuarios.
+            </p>
+          </div>
+          <div class="p-5 rounded-xl border border-border bg-white">
+            <h3 class="font-bold text-base mb-2 flex items-center gap-2">
+              <span class="w-8 h-8 rounded-full bg-[#0ea5e9]/15 flex items-center justify-center text-sm font-bold text-[#0ea5e9]">T</span>
+              <span class="w-8 h-8 rounded-full bg-[#10b981]/15 flex items-center justify-center text-sm font-bold text-[#10b981]">C</span>
+              Intersección TCK
+            </h3>
+            <p class="text-text-light text-sm">
+              La RV brilla cuando se conecta directamente con el contenido curricular. Un recorrido virtual por
+              el Antiguo Egipto no es solo entretenimiento: debe vincularse con los objetivos de aprendizaje
+              de la unidad de historia. El directivo asegura que las experiencias de RV estén alineadas con el currículo.
+            </p>
+          </div>
+          <div class="p-5 rounded-xl border border-border bg-white">
+            <h3 class="font-bold text-base mb-2 flex items-center gap-2">
+              <span class="w-8 h-8 rounded-full bg-[#0ea5e9]/15 flex items-center justify-center text-sm font-bold text-[#0ea5e9]">T</span>
+              <span class="w-8 h-8 rounded-full bg-[#8b5cf6]/15 flex items-center justify-center text-sm font-bold text-[#8b5cf6]">P</span>
+              <span class="w-8 h-8 rounded-full bg-[#10b981]/15 flex items-center justify-center text-sm font-bold text-[#10b981]">C</span>
+              TPACK completo
+            </h3>
+            <p class="text-text-light text-sm">
+              La integración plena sucede cuando el docente diseña una secuencia didáctica donde la RV es el vehículo
+              para alcanzar un objetivo de aprendizaje específico: el estudiante no solo «visita» un lugar, sino que
+              observa, analiza, reflexiona y produce conocimiento a partir de la experiencia. El directivo evalúa si
+              las actividades de RV generan aprendizajes medibles.
+            </p>
+          </div>
+
+          <div class="mt-8 p-5 rounded-xl bg-primary/5 border border-primary/10">
+            <h3 class="font-bold text-base mb-3">Pasos recomendados para el directivo</h3>
+            <ol class="space-y-2 list-decimal list-inside text-sm text-text-light">
+              <li>Auditar la infraestructura tecnológica: conectividad, dispositivos disponibles, espacios.</li>
+              <li>Seleccionar 1-2 herramientas del catálogo que funcionen con los recursos existentes.</li>
+              <li>Identificar 2-3 materias donde la RV tenga mayor impacto potencial.</li>
+              <li>Realizar un piloto con docentes de esas materias durante una unidad didáctica.</li>
+              <li>Recoger retroalimentación de docentes y estudiantes para iterar la estrategia.</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</MainLayout>
+
+<script>
+  function initTabs() {
+    const tabs = document.querySelectorAll('.tab-btn');
+    const panels = document.querySelectorAll('.tab-panel');
+    if (!tabs.length || !panels.length) return;
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        const targetId = tab.getAttribute('aria-controls');
+
+        tabs.forEach((t) => {
+          t.setAttribute('aria-selected', 'false');
+          t.classList.remove('border-accent', 'text-accent');
+          t.classList.add('border-transparent', 'text-text-light');
+        });
+
+        tab.setAttribute('aria-selected', 'true');
+        tab.classList.add('border-accent', 'text-accent');
+        tab.classList.remove('border-transparent', 'text-text-light');
+
+        panels.forEach((p) => {
+          p.classList.toggle('hidden', p.id !== targetId);
+        });
+      });
+
+      tab.addEventListener('keydown', (e) => {
+        const tabsArr = Array.from(tabs);
+        const idx = tabsArr.indexOf(tab);
+        let newIdx = idx;
+        if ((e as KeyboardEvent).key === 'ArrowRight') newIdx = (idx + 1) % tabsArr.length;
+        if ((e as KeyboardEvent).key === 'ArrowLeft') newIdx = (idx - 1 + tabsArr.length) % tabsArr.length;
+        if (newIdx !== idx) {
+          (tabsArr[newIdx] as HTMLElement).focus();
+          (tabsArr[newIdx] as HTMLElement).click();
+        }
+      });
+    });
+  }
+
+  initTabs();
+  document.addEventListener('astro:after-swap', initTabs);
+</script>

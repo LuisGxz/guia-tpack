@@ -1,0 +1,108 @@
+---
+const base = import.meta.env.BASE_URL;
+const currentPath = Astro.url.pathname;
+
+const links = [
+  { href: base, label: 'Inicio' },
+  { href: `${base}tpack/`, label: 'Marco TPACK' },
+  { href: `${base}inteligencia-artificial/`, label: 'Inteligencia Artificial' },
+  { href: `${base}realidad-virtual/`, label: 'Realidad Virtual' },
+  { href: `${base}realidad-aumentada/`, label: 'Realidad Aumentada' },
+  { href: `${base}plan-implementacion/`, label: 'Plan de Implementación' },
+  { href: `${base}referencias/`, label: 'Referencias' },
+];
+---
+
+<!-- Backdrop -->
+<div id="menu-backdrop" class="fixed inset-0 z-40 bg-black/50 hidden" aria-hidden="true"></div>
+
+<!-- Slide-out sidebar -->
+<aside
+  id="mobile-menu"
+  class="fixed top-0 left-0 z-50 h-full w-72 bg-primary transform -translate-x-full transition-transform duration-300 ease-in-out"
+  role="dialog"
+  aria-label="Menú de navegación"
+  aria-hidden="true"
+>
+  <div class="flex items-center justify-between px-4 h-16 border-b border-white/15">
+    <span class="text-white font-bold text-lg" style="font-family: var(--font-heading);">Guía TEE</span>
+    <button
+      id="menu-close"
+      class="flex items-center justify-center w-12 h-12 text-white/80 hover:text-white"
+      aria-label="Cerrar menú"
+    >
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <nav class="px-4 py-6">
+    <ul class="flex flex-col gap-1">
+      {links.map(({ href, label }) => (
+        <li>
+          <a
+            href={href}
+            class:list={[
+              'block px-4 py-3 rounded-lg text-base font-medium transition-colors',
+              currentPath === href
+                ? 'bg-white/15 text-accent-light'
+                : 'text-white/80 hover:bg-white/10 hover:text-white',
+            ]}
+            aria-current={currentPath === href ? 'page' : undefined}
+          >
+            {label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+</aside>
+
+<script>
+  function initMobileMenu() {
+    const toggle = document.getElementById('menu-toggle');
+    const close = document.getElementById('menu-close');
+    const menu = document.getElementById('mobile-menu');
+    const backdrop = document.getElementById('menu-backdrop');
+    const iconOpen = document.getElementById('icon-open');
+    const iconClose = document.getElementById('icon-close');
+
+    if (!toggle || !menu || !backdrop) return;
+
+    function openMenu() {
+      menu!.classList.remove('-translate-x-full');
+      menu!.setAttribute('aria-hidden', 'false');
+      backdrop!.classList.remove('hidden');
+      toggle!.setAttribute('aria-expanded', 'true');
+      iconOpen?.classList.add('hidden');
+      iconClose?.classList.remove('hidden');
+    }
+
+    function closeMenu() {
+      menu!.classList.add('-translate-x-full');
+      menu!.setAttribute('aria-hidden', 'true');
+      backdrop!.classList.add('hidden');
+      toggle!.setAttribute('aria-expanded', 'false');
+      iconOpen?.classList.remove('hidden');
+      iconClose?.classList.add('hidden');
+    }
+
+    toggle.addEventListener('click', () => {
+      const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+      isOpen ? closeMenu() : openMenu();
+    });
+
+    close?.addEventListener('click', closeMenu);
+    backdrop.addEventListener('click', closeMenu);
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+      }
+    });
+  }
+
+  initMobileMenu();
+  document.addEventListener('astro:after-swap', initMobileMenu);
+</script>

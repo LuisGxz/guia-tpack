@@ -1,0 +1,63 @@
+---
+interface Props {
+  phase: number;
+  title: string;
+  description: string;
+  tools: string[];
+  timeline: string;
+  outcomes: string[];
+}
+
+const { phase, title, description, tools, timeline, outcomes } = Astro.props;
+---
+
+<div class="relative pl-12 md:pl-16 pb-10 last:pb-0">
+  <!-- Timeline line -->
+  <div class="absolute left-5 md:left-7 top-0 bottom-0 w-0.5 bg-border last:hidden"></div>
+
+  <!-- Phase number circle -->
+  <div class="absolute left-0 md:left-2 top-0 w-10 h-10 md:w-11 md:h-11 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg shadow-md z-10">
+    {phase}
+  </div>
+
+  <div class="bg-white rounded-xl border border-border p-5 md:p-6 shadow-sm">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
+      <h3 class="text-lg font-bold text-primary">{title}</h3>
+      <span class="inline-flex items-center gap-1.5 text-sm text-text-light shrink-0">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        {timeline}
+      </span>
+    </div>
+
+    <p class="text-text-light text-sm mb-4">{description}</p>
+
+    <!-- Tools -->
+    <div class="mb-4">
+      <h4 class="text-xs font-semibold uppercase tracking-wider text-text-light mb-2">Herramientas sugeridas</h4>
+      <div class="flex flex-wrap gap-2">
+        {tools.map((tool) => (
+          <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-accent/10 text-accent">
+            {tool}
+          </span>
+        ))}
+      </div>
+    </div>
+
+    <!-- Expected outcomes -->
+    <div>
+      <h4 class="text-xs font-semibold uppercase tracking-wider text-text-light mb-2">Resultados esperados</h4>
+      <ul class="space-y-1">
+        {outcomes.map((outcome) => (
+          <li class="flex items-start gap-2 text-sm text-text">
+            <svg class="w-4 h-4 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            {outcome}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</div>

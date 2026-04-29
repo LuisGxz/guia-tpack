@@ -1,0 +1,42 @@
+[
+  {
+    "phase": 1,
+    "title": "Diagnóstico institucional",
+    "description": "Evaluar la situación actual de la institución en cuanto a infraestructura tecnológica, competencias digitales del equipo docente, necesidades pedagógicas y disposición al cambio. Este diagnóstico fundamenta todas las decisiones posteriores.",
+    "tools": ["Google Forms", "Análisis FODA", "Encuestas docentes", "Inventario tecnológico"],
+    "timeline": "Semana 1–2",
+    "outcomes": ["Informe de diagnóstico institucional", "Inventario de recursos tecnológicos disponibles", "Mapa de competencias digitales docentes", "Identificación de brechas y oportunidades"]
+  },
+  {
+    "phase": 2,
+    "title": "Planificación estratégica",
+    "description": "Con base en el diagnóstico, seleccionar las tecnologías prioritarias (IA, RV o RA), definir objetivos claros y medibles, elegir las herramientas del catálogo que mejor se adapten al contexto institucional y diseñar un cronograma de implementación.",
+    "tools": ["Catálogo de herramientas de esta guía", "Google Docs", "Trello o Notion", "Plantilla de plan de acción"],
+    "timeline": "Semana 3–4",
+    "outcomes": ["Plan de implementación documentado", "Selección de 2-3 herramientas por tecnología", "Objetivos de aprendizaje vinculados al currículo", "Cronograma con responsables y plazos"]
+  },
+  {
+    "phase": 3,
+    "title": "Capacitación docente",
+    "description": "Formar al equipo docente en el uso de las herramientas seleccionadas, no solo a nivel técnico (TK) sino también pedagógico (TPK/TPACK). La capacitación debe ser práctica, progresiva y acompañada de materiales de apoyo.",
+    "tools": ["Talleres presenciales", "Google Classroom", "Tutoriales en video", "Comunidades de práctica"],
+    "timeline": "Semana 5–8",
+    "outcomes": ["Docentes capacitados en las herramientas seleccionadas", "Banco de recursos y tutoriales accesibles", "Red de docentes referentes (early adopters)", "Planificaciones de clase con tecnología integrada"]
+  },
+  {
+    "phase": 4,
+    "title": "Implementación piloto",
+    "description": "Ejecutar un piloto controlado con un grupo reducido de docentes y cursos. El objetivo es probar las herramientas en condiciones reales, identificar obstáculos y recoger evidencia antes de escalar a toda la institución.",
+    "tools": ["Herramientas seleccionadas del catálogo", "Rúbricas de observación", "Diario de campo", "Google Forms para retroalimentación"],
+    "timeline": "Semana 9–12",
+    "outcomes": ["Actividades de clase ejecutadas con tecnología emergente", "Registro de observaciones y retroalimentación", "Identificación de obstáculos técnicos y pedagógicos", "Evidencia fotográfica y testimonios"]
+  },
+  {
+    "phase": 5,
+    "title": "Evaluación y escalamiento",
+    "description": "Analizar los resultados del piloto, medir el impacto en los aprendizajes, documentar lecciones aprendidas y diseñar la estrategia de escalamiento para ampliar la implementación a más docentes, materias y niveles.",
+    "tools": ["Análisis de datos", "Informes comparativos", "Reuniones de socialización", "Plan de escalamiento"],
+    "timeline": "Semana 13–16",
+    "outcomes": ["Informe de resultados del piloto", "Lecciones aprendidas documentadas", "Plan de escalamiento institucional", "Propuesta de sostenibilidad a mediano plazo"]
+  }
+]

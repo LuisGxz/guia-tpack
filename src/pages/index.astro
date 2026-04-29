@@ -1,0 +1,164 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+const base = import.meta.env.BASE_URL;
+---
+
+<MainLayout title="Guía Interactiva — Tecnologías Emergentes Educativas">
+  <main class="flex-1">
+    <!-- Hero -->
+    <section class="bg-primary text-white py-20 md:py-28 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="text-accent-light text-sm md:text-base font-semibold uppercase tracking-wider mb-4">
+          Proyecto de tesis de maestría
+        </p>
+        <h1 class="text-3xl md:text-5xl font-bold text-white mb-5 leading-tight">
+          La Gestión Directiva en la Integración de Tecnologías Emergentes Educativas
+        </h1>
+        <p class="text-base md:text-lg text-white/80 max-w-2xl mx-auto mb-10">
+          Una guía práctica para directivos y coordinadores escolares que buscan integrar
+          Inteligencia Artificial, Realidad Virtual y Realidad Aumentada en sus instituciones
+          educativas, fundamentada en el marco pedagógico TPACK.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href="#explorar"
+            class="inline-block bg-accent hover:bg-accent-light text-white font-semibold px-8 py-3 rounded-lg transition-colors"
+          >
+            Comenzar
+          </a>
+          <a
+            href={`${base}tpack/`}
+            class="inline-block border border-white/30 hover:bg-white/10 text-white font-semibold px-8 py-3 rounded-lg transition-colors"
+          >
+            ¿Qué es TPACK?
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Objective -->
+    <section class="max-w-4xl mx-auto px-4 py-16 animate-on-scroll">
+      <SectionHeader
+        title="Objetivo de la guía"
+        subtitle="Proporcionar a los directivos escolares una herramienta práctica y accesible para liderar la integración de tecnologías emergentes en sus instituciones educativas."
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 animate-on-scroll stagger">
+        <div class="text-center p-6">
+          <div class="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl" aria-hidden="true">🎯</span>
+          </div>
+          <h3 class="font-bold text-base mb-2">Orientar</h3>
+          <p class="text-text-light text-sm">Guiar el proceso de toma de decisiones sobre qué tecnologías adoptar y cómo implementarlas.</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl" aria-hidden="true">🔧</span>
+          </div>
+          <h3 class="font-bold text-base mb-2">Equipar</h3>
+          <p class="text-text-light text-sm">Ofrecer un catálogo de herramientas gratuitas y estrategias de integración basadas en el marco TPACK.</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl" aria-hidden="true">📋</span>
+          </div>
+          <h3 class="font-bold text-base mb-2">Planificar</h3>
+          <p class="text-text-light text-sm">Proveer un plan de implementación por fases adaptable a la realidad de cada institución.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Target Audience -->
+    <section class="bg-white py-16 px-4">
+      <div class="max-w-4xl mx-auto">
+        <SectionHeader
+          title="¿A quién está dirigida?"
+          subtitle="Esta guía fue diseñada pensando en los líderes educativos que impulsan el cambio institucional."
+        />
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 animate-on-scroll stagger">
+          <div class="flex items-start gap-4 p-5 rounded-xl border border-border bg-background">
+            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
+              <span class="text-xl" aria-hidden="true">👤</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-base mb-1">Directores escolares</h3>
+              <p class="text-text-light text-sm">Responsables de la visión estratégica y la toma de decisiones institucionales sobre adopción tecnológica.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 p-5 rounded-xl border border-border bg-background">
+            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
+              <span class="text-xl" aria-hidden="true">👥</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-base mb-1">Coordinadores de área</h3>
+              <p class="text-text-light text-sm">Líderes pedagógicos que coordinan la implementación de nuevas herramientas y capacitan a los docentes.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 p-5 rounded-xl border border-border bg-background">
+            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
+              <span class="text-xl" aria-hidden="true">🏫</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-base mb-1">Instituciones educativas</h3>
+              <p class="text-text-light text-sm">Contexto ecuatoriano, nivel K-12. Enfocada en instituciones con recursos tecnológicos moderados.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 p-5 rounded-xl border border-border bg-background">
+            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
+              <span class="text-xl" aria-hidden="true">📚</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-base mb-1">Docentes (beneficiarios indirectos)</h3>
+              <p class="text-text-light text-sm">Los profesores se benefician de las estrategias de capacitación y las herramientas seleccionadas por los directivos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation Cards -->
+    <section id="explorar" class="max-w-6xl mx-auto px-4 py-16">
+      <SectionHeader
+        title="Explora la guía"
+        subtitle="Navega por cada sección para conocer las tecnologías, el marco pedagógico y el plan de acción."
+      />
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 animate-on-scroll stagger">
+        <a href={`${base}tpack/`} class="group block p-6 rounded-xl border border-border bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+          <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+            <span class="text-2xl" aria-hidden="true">🔬</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2 group-hover:text-accent transition-colors">Marco TPACK</h3>
+          <p class="text-text-light text-sm">Conoce el marco pedagógico que fundamenta la integración tecnológica en la educación.</p>
+        </a>
+        <a href={`${base}inteligencia-artificial/`} class="group block p-6 rounded-xl border border-border bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+          <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <span class="text-2xl" aria-hidden="true">🤖</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2 group-hover:text-accent transition-colors">Inteligencia Artificial</h3>
+          <p class="text-text-light text-sm">Herramientas de IA gratuitas y estrategias para transformar la enseñanza y la gestión escolar.</p>
+        </a>
+        <a href={`${base}realidad-virtual/`} class="group block p-6 rounded-xl border border-border bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+          <div class="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center mb-4">
+            <span class="text-2xl" aria-hidden="true">🥽</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2 group-hover:text-accent transition-colors">Realidad Virtual</h3>
+          <p class="text-text-light text-sm">Experiencias inmersivas que permiten explorar lugares y conceptos de forma vivencial.</p>
+        </a>
+        <a href={`${base}realidad-aumentada/`} class="group block p-6 rounded-xl border border-border bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+          <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <span class="text-2xl" aria-hidden="true">📱</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2 group-hover:text-accent transition-colors">Realidad Aumentada</h3>
+          <p class="text-text-light text-sm">Superpone contenido digital al mundo real para enriquecer el aprendizaje presencial.</p>
+        </a>
+        <a href={`${base}plan-implementacion/`} class="group block p-6 rounded-xl border border-border bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+          <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+            <span class="text-2xl" aria-hidden="true">📝</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2 group-hover:text-accent transition-colors">Plan de Implementación</h3>
+          <p class="text-text-light text-sm">Un plan por fases para adoptar estas tecnologías de forma ordenada y sostenible.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+</MainLayout>

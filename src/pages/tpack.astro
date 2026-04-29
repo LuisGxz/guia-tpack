@@ -1,0 +1,207 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import TPACKDiagram from '../components/TPACKDiagram.astro';
+const base = import.meta.env.BASE_URL;
+---
+
+<MainLayout title="Marco TPACK — Guía Interactiva">
+  <main class="flex-1">
+    <!-- Hero -->
+    <section class="bg-primary text-white py-16 md:py-20 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">
+          Marco TPACK
+        </h1>
+        <p class="text-base md:text-lg text-white/80 max-w-2xl mx-auto">
+          Conocimiento Tecnológico, Pedagógico y de Contenido: el marco que guía la integración
+          efectiva de tecnología en la educación.
+        </p>
+      </div>
+    </section>
+
+    <!-- What is TPACK -->
+    <section class="max-w-4xl mx-auto px-4 py-16 animate-on-scroll">
+      <SectionHeader
+        title="¿Qué es el TPACK?"
+        subtitle="Un modelo teórico que describe los conocimientos que necesitan los educadores para integrar tecnología de manera efectiva."
+      />
+      <div class="prose max-w-none mt-8 space-y-4 text-text-light">
+        <p>
+          El modelo <strong class="text-text">TPACK</strong> (Technological Pedagogical Content Knowledge),
+          propuesto por Mishra y Koehler (2006), identifica tres tipos de conocimiento fundamentales
+          que interactúan entre sí para lograr una integración tecnológica significativa en el aula:
+        </p>
+        <ul class="space-y-3 list-none pl-0">
+          <li class="flex items-start gap-3">
+            <span class="shrink-0 w-8 h-8 rounded-full bg-[#0ea5e9]/15 flex items-center justify-center text-sm font-bold text-[#0ea5e9]">T</span>
+            <div>
+              <strong class="text-text">Conocimiento Tecnológico (TK)</strong> — Comprensión de las herramientas
+              digitales, su funcionamiento y sus posibilidades. Incluye tecnologías emergentes como la IA, la Realidad
+              Virtual y la Realidad Aumentada.
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="shrink-0 w-8 h-8 rounded-full bg-[#8b5cf6]/15 flex items-center justify-center text-sm font-bold text-[#8b5cf6]">P</span>
+            <div>
+              <strong class="text-text">Conocimiento Pedagógico (PK)</strong> — Dominio de las estrategias de
+              enseñanza-aprendizaje, métodos de evaluación, gestión del aula y teorías educativas.
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="shrink-0 w-8 h-8 rounded-full bg-[#10b981]/15 flex items-center justify-center text-sm font-bold text-[#10b981]">C</span>
+            <div>
+              <strong class="text-text">Conocimiento de Contenido (CK)</strong> — Conocimiento profundo de la
+              disciplina o materia que se enseña, incluyendo los estándares curriculares y los conceptos clave.
+            </div>
+          </li>
+        </ul>
+        <p>
+          La verdadera innovación educativa ocurre en las <strong class="text-text">intersecciones</strong> de estos
+          tres tipos de conocimiento. No basta con dominar la tecnología; es necesario saber
+          <em>qué herramienta</em> usar, con <em>qué estrategia pedagógica</em>, para enseñar
+          <em>qué contenido específico</em>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Interactive Diagram -->
+    <section class="bg-white py-16 px-4">
+      <div class="max-w-4xl mx-auto animate-on-scroll">
+        <SectionHeader
+          title="Diagrama interactivo"
+          subtitle="Explora cada componente del TPACK y sus intersecciones tocando o pasando el cursor sobre el diagrama."
+        />
+        <div class="mt-8">
+          <TPACKDiagram />
+        </div>
+      </div>
+    </section>
+
+    <!-- Role of the Administrator -->
+    <section class="max-w-4xl mx-auto px-4 py-16 animate-on-scroll">
+      <SectionHeader
+        title="El rol del directivo en el TPACK"
+        subtitle="Los administradores escolares no implementan la tecnología directamente, pero son quienes crean las condiciones para que suceda."
+      />
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+        <div class="p-5 rounded-xl border border-border bg-white">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
+              <span class="text-lg" aria-hidden="true">🔍</span>
+            </div>
+            <h3 class="font-bold text-base">Diagnóstico</h3>
+          </div>
+          <p class="text-text-light text-sm">Evaluar el nivel actual de conocimientos TK, PK y CK en su equipo docente para identificar brechas y fortalezas.</p>
+        </div>
+        <div class="p-5 rounded-xl border border-border bg-white">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
+              <span class="text-lg" aria-hidden="true">📊</span>
+            </div>
+            <h3 class="font-bold text-base">Planificación estratégica</h3>
+          </div>
+          <p class="text-text-light text-sm">Seleccionar las tecnologías más apropiadas según el contexto institucional, los recursos disponibles y los objetivos curriculares.</p>
+        </div>
+        <div class="p-5 rounded-xl border border-border bg-white">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
+              <span class="text-lg" aria-hidden="true">🎓</span>
+            </div>
+            <h3 class="font-bold text-base">Capacitación docente</h3>
+          </div>
+          <p class="text-text-light text-sm">Facilitar programas de formación que desarrollen las intersecciones del TPACK: no solo enseñar a usar la herramienta, sino cómo aplicarla pedagógicamente.</p>
+        </div>
+        <div class="p-5 rounded-xl border border-border bg-white">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
+              <span class="text-lg" aria-hidden="true">📈</span>
+            </div>
+            <h3 class="font-bold text-base">Seguimiento y evaluación</h3>
+          </div>
+          <p class="text-text-light text-sm">Monitorear el impacto de la integración tecnológica en los resultados educativos y ajustar la estrategia según los hallazgos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies and TPACK Connection -->
+    <section class="bg-white py-16 px-4">
+      <div class="max-w-4xl mx-auto animate-on-scroll">
+        <SectionHeader
+          title="Las tecnologías emergentes en el TPACK"
+          subtitle="Cómo se relacionan la IA, la Realidad Virtual y la Realidad Aumentada con el marco TPACK."
+        />
+        <!-- TODO: update with thesis content -->
+        <div class="mt-8 space-y-6">
+          <div class="flex items-start gap-4 p-5 rounded-xl border border-border">
+            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center shrink-0">
+              <span class="text-2xl" aria-hidden="true">🤖</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-base mb-1">
+                <a href={`${base}inteligencia-artificial/`} class="hover:text-accent transition-colors">Inteligencia Artificial</a>
+              </h3>
+              <p class="text-text-light text-sm">
+                La IA transforma el componente <strong class="text-text">TK</strong> al ofrecer herramientas que automatizan tareas
+                administrativas y personalizan el aprendizaje. En la intersección <strong class="text-text">TPK</strong>,
+                permite a los docentes crear contenido adaptativo y evaluaciones inteligentes. El directivo debe
+                evaluar qué procesos institucionales pueden beneficiarse de la automatización.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 p-5 rounded-xl border border-border">
+            <div class="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center shrink-0">
+              <span class="text-2xl" aria-hidden="true">🥽</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-base mb-1">
+                <a href={`${base}realidad-virtual/`} class="hover:text-accent transition-colors">Realidad Virtual</a>
+              </h3>
+              <p class="text-text-light text-sm">
+                La RV enriquece la intersección <strong class="text-text">TCK</strong> al permitir representar contenidos
+                de forma inmersiva: recorrer el cuerpo humano, explorar civilizaciones antiguas o simular
+                experimentos de laboratorio. El directivo debe valorar qué materias se benefician más de la
+                inmersión y gestionar los recursos necesarios.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 p-5 rounded-xl border border-border">
+            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center shrink-0">
+              <span class="text-2xl" aria-hidden="true">📱</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-base mb-1">
+                <a href={`${base}realidad-aumentada/`} class="hover:text-accent transition-colors">Realidad Aumentada</a>
+              </h3>
+              <p class="text-text-light text-sm">
+                La RA opera en la intersección <strong class="text-text">TPACK</strong> al combinar contenido digital
+                con el entorno físico del aula, potenciando estrategias pedagógicas activas. Es la tecnología
+                más accesible para instituciones con recursos moderados, ya que funciona con dispositivos
+                móviles que los estudiantes ya poseen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="max-w-4xl mx-auto px-4 py-16 text-center">
+      <h2 class="text-2xl font-bold mb-4">¿Listo para explorar las tecnologías?</h2>
+      <p class="text-text-light mb-8 max-w-lg mx-auto">
+        Conoce las herramientas gratuitas disponibles y las estrategias de integración para cada tecnología emergente.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href={`${base}inteligencia-artificial/`} class="inline-block bg-accent hover:bg-accent-light text-white font-semibold px-8 py-3 rounded-lg transition-colors">
+          Explorar IA
+        </a>
+        <a href={`${base}realidad-virtual/`} class="inline-block border border-primary/20 hover:bg-primary/5 text-primary font-semibold px-8 py-3 rounded-lg transition-colors">
+          Explorar RV
+        </a>
+        <a href={`${base}realidad-aumentada/`} class="inline-block border border-primary/20 hover:bg-primary/5 text-primary font-semibold px-8 py-3 rounded-lg transition-colors">
+          Explorar RA
+        </a>
+      </div>
+    </section>
+  </main>
+</MainLayout>

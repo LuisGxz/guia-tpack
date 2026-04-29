@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Merge EDU",
+    "description": "Plataforma de RA educativa con modelos 3D interactivos de ciencias, permitiendo a los estudiantes manipular objetos virtuales en el mundo real.",
+    "url": "https://mergeedu.com",
+    "category": "Experiencias inmersivas",
+    "icon": "🔮",
+    "free": true
+  },
+  {
+    "name": "QuiverVision",
+    "description": "Aplicación que da vida a dibujos coloreados por los estudiantes usando RA. Las creaciones se animan en 3D al apuntar con la cámara.",
+    "url": "https://quivervision.com",
+    "category": "Gamificación",
+    "icon": "🖍️",
+    "free": true
+  },
+  {
+    "name": "Google Lens",
+    "description": "Herramienta de reconocimiento visual que identifica objetos, traduce texto y proporciona información contextual al apuntar la cámara del celular.",
+    "url": "https://lens.google.com",
+    "category": "Experiencias inmersivas",
+    "icon": "🔍",
+    "free": true
+  },
+  {
+    "name": "Assemblr EDU",
+    "description": "Plataforma para crear y compartir contenido educativo en RA sin necesidad de programación. Incluye biblioteca de objetos 3D prediseñados.",
+    "url": "https://edu.assemblrworld.com",
+    "category": "Creación de contenido",
+    "icon": "📐",
+    "free": true
+  },
+  {
+    "name": "JigSpace",
+    "description": "Permite visualizar conceptos complejos como modelos 3D interactivos en RA. Incluye presentaciones paso a paso de procesos científicos y mecánicos.",
+    "url": "https://www.jig.space",
+    "category": "Experiencias inmersivas",
+    "icon": "🧬",
+    "free": true
+  },
+  {
+    "name": "Metaverse Studio",
+    "description": "Plataforma para crear experiencias interactivas de RA con narrativas gamificadas. Los docentes diseñan actividades tipo búsqueda del tesoro educativa.",
+    "url": "https://studio.gometa.io",
+    "category": "Gamificación",
+    "icon": "🎯",
+    "free": true
+  },
+  {
+    "name": "Qlone",
+    "description": "Aplicación de escaneo 3D que convierte objetos reales en modelos digitales usando la cámara del celular. Ideal para proyectos de ciencias y arte.",
+    "url": "https://www.qlone.pro",
+    "category": "Modelado 3D",
+    "icon": "📷",
+    "free": true
+  }
+]

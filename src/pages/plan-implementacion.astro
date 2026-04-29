@@ -1,0 +1,134 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import StepCard from '../components/StepCard.astro';
+import steps from '../data/steps.json';
+const base = import.meta.env.BASE_URL;
+---
+
+<MainLayout title="Plan de Implementación — Guía Interactiva">
+  <main class="flex-1">
+    <!-- Hero -->
+    <section class="bg-primary text-white py-16 md:py-20 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+          <span class="text-3xl" aria-hidden="true">📝</span>
+        </div>
+        <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">
+          Plan de Implementación
+        </h1>
+        <p class="text-base md:text-lg text-white/80 max-w-2xl mx-auto">
+          Un proceso estructurado en 5 fases para integrar tecnologías emergentes
+          en tu institución educativa de manera ordenada y sostenible.
+        </p>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="max-w-4xl mx-auto px-4 py-16 animate-on-scroll">
+      <SectionHeader
+        title="Enfoque por fases"
+        subtitle="Cada fase construye sobre la anterior, permitiendo avanzar de forma gradual y con evidencia."
+      />
+      <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mt-8">
+        {steps.map((step) => (
+          <div class="text-center p-3">
+            <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg mx-auto mb-2">
+              {step.phase}
+            </div>
+            <p class="text-xs font-semibold text-text-light">{step.title}</p>
+          </div>
+        ))}
+      </div>
+      <div class="mt-6 text-center">
+        <p class="text-sm text-text-light">
+          Duración estimada total: <strong class="text-text">16 semanas</strong> (adaptable según el contexto institucional)
+        </p>
+      </div>
+    </section>
+
+    <!-- Step Cards -->
+    <section class="bg-white py-16 px-4">
+      <div class="max-w-3xl mx-auto animate-on-scroll">
+        <SectionHeader
+          title="Detalle de cada fase"
+          subtitle="Descripción, herramientas sugeridas, cronograma y resultados esperados para cada etapa del proceso."
+        />
+        <div class="mt-10">
+          {steps.map((step) => (
+            <StepCard {...step} />
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section class="max-w-4xl mx-auto px-4 py-16 animate-on-scroll">
+      <SectionHeader
+        title="Recomendaciones para el éxito"
+        subtitle="Factores clave que los directivos deben considerar durante todo el proceso."
+      />
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+        <div class="p-5 rounded-xl border border-border bg-white">
+          <h3 class="font-bold text-base mb-2 flex items-center gap-2">
+            <span class="text-accent" aria-hidden="true">●</span>
+            Liderazgo visible
+          </h3>
+          <p class="text-text-light text-sm">
+            El directivo debe ser el primer promotor del cambio. Participar en las capacitaciones,
+            usar las herramientas y comunicar la visión institucional genera confianza y compromiso en el equipo.
+          </p>
+        </div>
+        <div class="p-5 rounded-xl border border-border bg-white">
+          <h3 class="font-bold text-base mb-2 flex items-center gap-2">
+            <span class="text-accent" aria-hidden="true">●</span>
+            Comenzar en pequeño
+          </h3>
+          <p class="text-text-light text-sm">
+            No intentar implementar todas las tecnologías a la vez. Seleccionar una (la más accesible para
+            el contexto) y escalar gradualmente. Los early adopters serán los mejores aliados.
+          </p>
+        </div>
+        <div class="p-5 rounded-xl border border-border bg-white">
+          <h3 class="font-bold text-base mb-2 flex items-center gap-2">
+            <span class="text-accent" aria-hidden="true">●</span>
+            Documentar todo
+          </h3>
+          <p class="text-text-light text-sm">
+            Registrar experiencias, desafíos y logros permite aprender de cada iteración. La documentación
+            es esencial para justificar la inversión y para replicar las buenas prácticas.
+          </p>
+        </div>
+        <div class="p-5 rounded-xl border border-border bg-white">
+          <h3 class="font-bold text-base mb-2 flex items-center gap-2">
+            <span class="text-accent" aria-hidden="true">●</span>
+            Celebrar los avances
+          </h3>
+          <p class="text-text-light text-sm">
+            Reconocer los logros de los docentes que participan, compartir los resultados positivos
+            y crear un ambiente donde la innovación sea valorada y no percibida como carga adicional.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-primary/5 py-12 px-4 text-center">
+      <h2 class="text-xl font-bold mb-3">¿Listo para comenzar?</h2>
+      <p class="text-text-light text-sm mb-6 max-w-lg mx-auto">
+        Explora las herramientas disponibles para cada tecnología y selecciona las más adecuadas para tu institución.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+        <a href={`${base}inteligencia-artificial/`} class="inline-block bg-accent hover:bg-accent-light text-white font-semibold px-6 py-2.5 rounded-lg transition-colors text-sm">
+          Herramientas de IA
+        </a>
+        <a href={`${base}realidad-virtual/`} class="inline-block border border-primary/20 hover:bg-primary/5 text-primary font-semibold px-6 py-2.5 rounded-lg transition-colors text-sm">
+          Herramientas de RV
+        </a>
+        <a href={`${base}realidad-aumentada/`} class="inline-block border border-primary/20 hover:bg-primary/5 text-primary font-semibold px-6 py-2.5 rounded-lg transition-colors text-sm">
+          Herramientas de RA
+        </a>
+      </div>
+    </section>
+  </main>
+</MainLayout>

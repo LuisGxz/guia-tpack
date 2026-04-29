@@ -1,0 +1,215 @@
+---
+// Interactive TPACK Venn diagram — 3 overlapping circles (TK, PK, CK)
+// Tap/hover reveals descriptions for each area and intersections
+---
+
+<div class="tpack-wrapper max-w-xl mx-auto">
+  <div class="relative" style="padding-bottom: 90%;">
+    <svg
+      viewBox="0 0 500 450"
+      class="absolute inset-0 w-full h-full"
+      role="img"
+      aria-label="Diagrama TPACK: tres círculos superpuestos representando Conocimiento Tecnológico, Pedagógico y de Contenido"
+    >
+      <!-- TK circle (top left) -->
+      <circle
+        class="tpack-circle"
+        data-area="tk"
+        cx="200" cy="180" r="140"
+        fill="#0ea5e9" fill-opacity="0.15"
+        stroke="#0ea5e9" stroke-width="2.5"
+      />
+
+      <!-- PK circle (top right) -->
+      <circle
+        class="tpack-circle"
+        data-area="pk"
+        cx="300" cy="180" r="140"
+        fill="#8b5cf6" fill-opacity="0.15"
+        stroke="#8b5cf6" stroke-width="2.5"
+      />
+
+      <!-- CK circle (bottom center) -->
+      <circle
+        class="tpack-circle"
+        data-area="ck"
+        cx="250" cy="280" r="140"
+        fill="#10b981" fill-opacity="0.15"
+        stroke="#10b981" stroke-width="2.5"
+      />
+
+      <!-- Labels for main areas -->
+      <text x="135" y="120" text-anchor="middle" class="tpack-label font-bold" fill="#0ea5e9">TK</text>
+      <text x="365" y="120" text-anchor="middle" class="tpack-label font-bold" fill="#8b5cf6">PK</text>
+      <text x="250" y="395" text-anchor="middle" class="tpack-label font-bold" fill="#10b981">CK</text>
+
+      <!-- Intersection labels -->
+      <text x="250" y="145" text-anchor="middle" class="tpack-label-sm" fill="#1e3a5f">TPK</text>
+      <text x="175" y="260" text-anchor="middle" class="tpack-label-sm" fill="#1e3a5f">TCK</text>
+      <text x="325" y="260" text-anchor="middle" class="tpack-label-sm" fill="#1e3a5f">PCK</text>
+
+      <!-- TPACK center label -->
+      <text x="250" y="215" text-anchor="middle" class="tpack-label-center font-bold" fill="#1e3a5f">TPACK</text>
+
+      <!-- Clickable overlay regions -->
+      <circle class="tpack-hit" data-area="tk" cx="135" cy="120" r="50" fill="transparent" tabindex="0" role="button" aria-label="Conocimiento Tecnológico" />
+      <circle class="tpack-hit" data-area="pk" cx="365" cy="120" r="50" fill="transparent" tabindex="0" role="button" aria-label="Conocimiento Pedagógico" />
+      <circle class="tpack-hit" data-area="ck" cx="250" cy="360" r="50" fill="transparent" tabindex="0" role="button" aria-label="Conocimiento de Contenido" />
+      <circle class="tpack-hit" data-area="tpk" cx="250" cy="145" r="35" fill="transparent" tabindex="0" role="button" aria-label="Conocimiento Tecnológico-Pedagógico" />
+      <circle class="tpack-hit" data-area="tck" cx="175" cy="255" r="35" fill="transparent" tabindex="0" role="button" aria-label="Conocimiento Tecnológico del Contenido" />
+      <circle class="tpack-hit" data-area="pck" cx="325" cy="255" r="35" fill="transparent" tabindex="0" role="button" aria-label="Conocimiento Pedagógico del Contenido" />
+      <circle class="tpack-hit" data-area="tpack" cx="250" cy="210" r="30" fill="transparent" tabindex="0" role="button" aria-label="TPACK" />
+    </svg>
+  </div>
+
+  <!-- Description panel -->
+  <div
+    id="tpack-info"
+    class="mt-6 p-5 rounded-xl border border-border bg-white shadow-sm min-h-[100px] transition-all"
+    aria-live="polite"
+  >
+    <p class="text-text-light text-sm text-center">Toca o pasa el cursor sobre cada área del diagrama para ver su descripción.</p>
+  </div>
+</div>
+
+<script>
+  const descriptions: Record<string, { title: string; color: string; text: string }> = {
+    tk: {
+      title: 'Conocimiento Tecnológico (TK)',
+      color: '#0ea5e9',
+      text: 'Comprensión de cómo funcionan las tecnologías digitales, incluyendo hardware, software y herramientas emergentes como la IA, RV y RA. Para los directivos, implica conocer las opciones tecnológicas disponibles y su potencial transformador.'
+    },
+    pk: {
+      title: 'Conocimiento Pedagógico (PK)',
+      color: '#8b5cf6',
+      text: 'Dominio de los métodos de enseñanza-aprendizaje, estrategias didácticas, evaluación y gestión del aula. Los directivos necesitan comprender estos procesos para apoyar eficazmente a sus docentes.'
+    },
+    ck: {
+      title: 'Conocimiento de Contenido (CK)',
+      color: '#10b981',
+      text: 'Conocimiento profundo de la materia o disciplina que se enseña. Para la gestión directiva, implica entender los currículos y estándares educativos de las diferentes áreas.'
+    },
+    tpk: {
+      title: 'Conocimiento Tecnológico-Pedagógico (TPK)',
+      color: '#1e3a5f',
+      text: 'Saber cómo la tecnología puede transformar las prácticas pedagógicas. Los directivos deben identificar qué herramientas potencian cada estrategia de enseñanza.'
+    },
+    tck: {
+      title: 'Conocimiento Tecnológico del Contenido (TCK)',
+      color: '#1e3a5f',
+      text: 'Comprender cómo la tecnología puede representar y facilitar el acceso a contenidos específicos. Por ejemplo, usar RA para visualizar modelos anatómicos o RV para recorridos históricos.'
+    },
+    pck: {
+      title: 'Conocimiento Pedagógico del Contenido (PCK)',
+      color: '#1e3a5f',
+      text: 'Saber cómo enseñar un contenido específico de manera efectiva. Es la base de la expertise docente que los directivos deben reconocer y fomentar.'
+    },
+    tpack: {
+      title: 'TPACK',
+      color: '#1e3a5f',
+      text: 'La intersección de los tres conocimientos: saber qué tecnología usar, con qué estrategia pedagógica, para qué contenido específico. Es el objetivo de la integración tecnológica que los directivos deben facilitar en sus instituciones.'
+    }
+  };
+
+  function initTPACK() {
+    const infoPanel = document.getElementById('tpack-info');
+    const hits = document.querySelectorAll('.tpack-hit');
+    const circles = document.querySelectorAll('.tpack-circle');
+    if (!infoPanel || !hits.length) return;
+
+    let activeArea: string | null = null;
+
+    function showInfo(area: string) {
+      const data = descriptions[area];
+      if (!data) return;
+      activeArea = area;
+
+      infoPanel!.innerHTML = `
+        <h3 class="font-bold text-base mb-2" style="color: ${data.color}">${data.title}</h3>
+        <p class="text-sm text-text-light leading-relaxed">${data.text}</p>
+      `;
+
+      circles.forEach((c) => {
+        const el = c as SVGCircleElement;
+        const circleArea = el.dataset.area;
+        if (circleArea === area || (area === 'tpack') ||
+            (area === 'tpk' && (circleArea === 'tk' || circleArea === 'pk')) ||
+            (area === 'tck' && (circleArea === 'tk' || circleArea === 'ck')) ||
+            (area === 'pck' && (circleArea === 'pk' || circleArea === 'ck'))) {
+          el.setAttribute('fill-opacity', '0.3');
+          el.setAttribute('stroke-width', '3.5');
+        } else {
+          el.setAttribute('fill-opacity', '0.08');
+          el.setAttribute('stroke-width', '1.5');
+        }
+      });
+    }
+
+    function resetInfo() {
+      activeArea = null;
+      infoPanel!.innerHTML = '<p class="text-text-light text-sm text-center">Toca o pasa el cursor sobre cada área del diagrama para ver su descripción.</p>';
+      circles.forEach((c) => {
+        const el = c as SVGCircleElement;
+        el.setAttribute('fill-opacity', '0.15');
+        el.setAttribute('stroke-width', '2.5');
+      });
+    }
+
+    hits.forEach((hit) => {
+      const area = (hit as HTMLElement).dataset.area;
+      if (!area) return;
+
+      // Hover (desktop)
+      hit.addEventListener('mouseenter', () => showInfo(area));
+      hit.addEventListener('mouseleave', () => { if (activeArea === area) resetInfo(); });
+
+      // Tap (mobile) — toggle
+      hit.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (activeArea === area) {
+          resetInfo();
+        } else {
+          showInfo(area);
+        }
+      });
+
+      // Keyboard
+      hit.addEventListener('keydown', (e) => {
+        if ((e as KeyboardEvent).key === 'Enter' || (e as KeyboardEvent).key === ' ') {
+          e.preventDefault();
+          if (activeArea === area) resetInfo(); else showInfo(area);
+        }
+      });
+    });
+  }
+
+  initTPACK();
+  document.addEventListener('astro:after-swap', initTPACK);
+</script>
+
+<style>
+  .tpack-label {
+    font-size: 18px;
+    font-family: var(--font-heading);
+  }
+  .tpack-label-sm {
+    font-size: 13px;
+    font-family: var(--font-body);
+    font-weight: 600;
+  }
+  .tpack-label-center {
+    font-size: 16px;
+    font-family: var(--font-heading);
+  }
+  .tpack-circle {
+    transition: fill-opacity 0.3s ease, stroke-width 0.3s ease;
+  }
+  .tpack-hit {
+    cursor: pointer;
+    outline: none;
+  }
+  .tpack-hit:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+</style>

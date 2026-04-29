@@ -1,0 +1,66 @@
+[
+  {
+    "name": "ChatGPT",
+    "description": "Asistente de IA conversacional para generar contenido educativo, rúbricas, planificaciones de clase y materiales didácticos personalizados.",
+    "url": "https://chat.openai.com",
+    "category": "Creación de contenido",
+    "icon": "💬",
+    "free": true
+  },
+  {
+    "name": "Google Gemini",
+    "description": "Asistente de IA de Google que integra búsqueda web, análisis de imágenes y generación de texto para apoyar la investigación y planificación educativa.",
+    "url": "https://gemini.google.com",
+    "category": "Creación de contenido",
+    "icon": "✨",
+    "free": true
+  },
+  {
+    "name": "Canva con IA",
+    "description": "Plataforma de diseño gráfico con herramientas de IA para crear presentaciones, infografías y materiales visuales educativos sin experiencia en diseño.",
+    "url": "https://www.canva.com",
+    "category": "Creación de contenido",
+    "icon": "🎨",
+    "free": true
+  },
+  {
+    "name": "Quillbot",
+    "description": "Herramienta de parafraseo y corrección gramatical potenciada por IA, útil para docentes que preparan materiales escritos y resúmenes.",
+    "url": "https://quillbot.com",
+    "category": "Creación de contenido",
+    "icon": "✍️",
+    "free": true
+  },
+  {
+    "name": "Kahoot!",
+    "description": "Plataforma de gamificación educativa con generación automática de cuestionarios mediante IA a partir de cualquier tema o documento.",
+    "url": "https://kahoot.com",
+    "category": "Evaluación",
+    "icon": "🎮",
+    "free": true
+  },
+  {
+    "name": "Formative",
+    "description": "Herramienta de evaluación formativa en tiempo real que usa IA para analizar respuestas de estudiantes e identificar brechas de aprendizaje.",
+    "url": "https://www.formative.com",
+    "category": "Evaluación",
+    "icon": "📊",
+    "free": true
+  },
+  {
+    "name": "Diffit",
+    "description": "Genera materiales de lectura diferenciados por nivel usando IA. Permite adaptar textos complejos al nivel de comprensión de cada grupo de estudiantes.",
+    "url": "https://diffit.me",
+    "category": "Capacitación",
+    "icon": "📖",
+    "free": true
+  },
+  {
+    "name": "Curipod",
+    "description": "Generador de presentaciones interactivas con IA que incluye preguntas, encuestas y actividades de reflexión para sesiones de clase dinámicas.",
+    "url": "https://curipod.com",
+    "category": "Capacitación",
+    "icon": "🧩",
+    "free": true
+  }
+]

@@ -1,0 +1,227 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import ToolCard from '../components/ToolCard.astro';
+import tools from '../data/tools-ar.json';
+---
+
+<MainLayout title="Realidad Aumentada — Guía Interactiva">
+  <main class="flex-1">
+    <!-- Hero -->
+    <section class="bg-primary text-white py-16 md:py-20 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+          <span class="text-3xl" aria-hidden="true">📱</span>
+        </div>
+        <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">
+          Realidad Aumentada en la Educación
+        </h1>
+        <p class="text-base md:text-lg text-white/80 max-w-2xl mx-auto">
+          Enriquece el entorno real con contenido digital interactivo usando los dispositivos que ya están en las manos de tus estudiantes.
+        </p>
+      </div>
+    </section>
+
+    <!-- Tab Navigation -->
+    <div class="sticky top-16 z-30 bg-background border-b border-border">
+      <div class="max-w-4xl mx-auto px-4">
+        <nav class="flex gap-1 -mb-px" role="tablist" aria-label="Secciones de Realidad Aumentada">
+          <button role="tab" aria-selected="true" aria-controls="panel-que-es" id="tab-que-es"
+            class="tab-btn px-4 py-3 text-sm font-semibold border-b-2 border-accent text-accent transition-colors">
+            Qué es
+          </button>
+          <button role="tab" aria-selected="false" aria-controls="panel-herramientas" id="tab-herramientas"
+            class="tab-btn px-4 py-3 text-sm font-semibold border-b-2 border-transparent text-text-light hover:text-text transition-colors">
+            Herramientas
+          </button>
+          <button role="tab" aria-selected="false" aria-controls="panel-estrategia" id="tab-estrategia"
+            class="tab-btn px-4 py-3 text-sm font-semibold border-b-2 border-transparent text-text-light hover:text-text transition-colors">
+            Estrategia
+          </button>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Panel: Qué es -->
+    <div role="tabpanel" id="panel-que-es" aria-labelledby="tab-que-es" class="tab-panel">
+      <section class="max-w-4xl mx-auto px-4 py-16">
+        <SectionHeader
+          title="¿Qué es la Realidad Aumentada?"
+          subtitle="Tecnología que superpone información digital sobre el mundo físico en tiempo real."
+        />
+        <div class="space-y-4 text-text-light mt-8">
+          <p>
+            La <strong class="text-text">Realidad Aumentada (RA)</strong> superpone elementos digitales —modelos 3D,
+            textos, animaciones, sonidos— sobre la vista del mundo real, generalmente a través de la cámara
+            de un dispositivo móvil o tablet.
+          </p>
+          <p>
+            A diferencia de la Realidad Virtual, la RA no reemplaza el entorno: lo <strong class="text-text">enriquece</strong>.
+            El estudiante sigue en su aula, pero puede ver un corazón latiendo en 3D sobre su escritorio o
+            un dinosaurio a escala real en el patio de la escuela. Esta característica la convierte en la
+            tecnología emergente más <strong class="text-text">accesible</strong> para instituciones educativas
+            con recursos moderados.
+          </p>
+
+          <h3 class="text-lg font-bold text-primary pt-4">¿Por qué importa para la educación?</h3>
+          <ul class="space-y-2 list-none pl-0">
+            <li class="flex items-start gap-2">
+              <span class="text-accent mt-1 shrink-0">→</span>
+              <span><strong class="text-text">Baja barrera de entrada:</strong> Funciona con celulares y tablets que los estudiantes ya poseen. No requiere hardware especializado.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-accent mt-1 shrink-0">→</span>
+              <span><strong class="text-text">Visualización de lo abstracto:</strong> Conceptos como moléculas, fuerzas físicas o estructuras geológicas se vuelven tangibles y manipulables.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-accent mt-1 shrink-0">→</span>
+              <span><strong class="text-text">Aprendizaje activo:</strong> Los estudiantes interactúan con el contenido en lugar de recibirlo pasivamente.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-accent mt-1 shrink-0">→</span>
+              <span><strong class="text-text">Integración con el aula:</strong> Se usa dentro del espacio escolar sin necesidad de desplazarse a laboratorios especiales.</span>
+            </li>
+          </ul>
+
+          <h3 class="text-lg font-bold text-primary pt-4">El rol del directivo</h3>
+          <p>
+            La RA es la tecnología emergente con menor fricción de adopción, lo que le permite al directivo:
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div class="p-4 rounded-lg border border-border bg-white">
+              <h4 class="font-bold text-sm mb-1">Aprovechar recursos existentes</h4>
+              <p class="text-sm">Implementar RA usando los dispositivos móviles de los estudiantes (BYOD) sin inversión adicional en hardware.</p>
+            </div>
+            <div class="p-4 rounded-lg border border-border bg-white">
+              <h4 class="font-bold text-sm mb-1">Escalar gradualmente</h4>
+              <p class="text-sm">Comenzar con actividades puntuales (una clase con RA al mes) y expandir según la adopción docente.</p>
+            </div>
+            <div class="p-4 rounded-lg border border-border bg-white">
+              <h4 class="font-bold text-sm mb-1">Conectar materias</h4>
+              <p class="text-sm">La RA es transversal: ciencias, matemáticas, historia y arte pueden beneficiarse. Coordinar proyectos interdisciplinarios.</p>
+            </div>
+            <div class="p-4 rounded-lg border border-border bg-white">
+              <h4 class="font-bold text-sm mb-1">Gestionar el uso de dispositivos</h4>
+              <p class="text-sm">Establecer normas claras para el uso de celulares con fines educativos durante las actividades de RA.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Panel: Herramientas -->
+    <div role="tabpanel" id="panel-herramientas" aria-labelledby="tab-herramientas" class="tab-panel hidden">
+      <section class="max-w-6xl mx-auto px-4 py-16">
+        <SectionHeader
+          title="Herramientas de RA gratuitas"
+          subtitle="Aplicaciones y plataformas accesibles para llevar la realidad aumentada al aula."
+        />
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
+          {tools.map((tool) => (
+            <ToolCard {...tool} />
+          ))}
+        </div>
+      </section>
+    </div>
+
+    <!-- Panel: Estrategia -->
+    <div role="tabpanel" id="panel-estrategia" aria-labelledby="tab-estrategia" class="tab-panel hidden">
+      <section class="max-w-4xl mx-auto px-4 py-16">
+        <SectionHeader
+          title="Estrategia de integración"
+          subtitle="Cómo conectar la RA con el marco TPACK para una implementación efectiva."
+        />
+        <!-- TODO: update with thesis content -->
+        <div class="space-y-6 mt-8">
+          <div class="p-5 rounded-xl border border-border bg-white">
+            <h3 class="font-bold text-base mb-2 flex items-center gap-2">
+              <span class="w-8 h-8 rounded-full bg-[#0ea5e9]/15 flex items-center justify-center text-sm font-bold text-[#0ea5e9]">T</span>
+              Conocimiento Tecnológico (TK)
+            </h3>
+            <p class="text-text-light text-sm">
+              Los docentes deben aprender a usar las aplicaciones de RA: instalarlas, activar la cámara,
+              escanear marcadores y navegar los modelos 3D. La curva de aprendizaje es baja comparada con la RV.
+              El directivo facilita sesiones breves de familiarización con 2-3 aplicaciones del catálogo.
+            </p>
+          </div>
+          <div class="p-5 rounded-xl border border-border bg-white">
+            <h3 class="font-bold text-base mb-2 flex items-center gap-2">
+              <span class="w-8 h-8 rounded-full bg-[#0ea5e9]/15 flex items-center justify-center text-sm font-bold text-[#0ea5e9]">T</span>
+              <span class="w-8 h-8 rounded-full bg-[#8b5cf6]/15 flex items-center justify-center text-sm font-bold text-[#8b5cf6]">P</span>
+              <span class="w-8 h-8 rounded-full bg-[#10b981]/15 flex items-center justify-center text-sm font-bold text-[#10b981]">C</span>
+              TPACK completo
+            </h3>
+            <p class="text-text-light text-sm">
+              La RA alcanza su máximo potencial en la intersección TPACK: el docente de biología usa Merge EDU (TK)
+              para que los estudiantes manipulen un modelo 3D del sistema circulatorio (CK) como parte de una actividad
+              de indagación guiada (PK). El directivo verifica que las actividades de RA estén vinculadas a los
+              objetivos de aprendizaje del currículo institucional.
+            </p>
+          </div>
+          <div class="p-5 rounded-xl border border-border bg-white">
+            <h3 class="font-bold text-base mb-2">Ventaja clave: accesibilidad</h3>
+            <p class="text-text-light text-sm">
+              La RA es la tecnología emergente más viable para instituciones con presupuesto limitado. No requiere
+              visores, laboratorios especiales ni computadores de alto rendimiento. Un celular con cámara es suficiente.
+              Esto permite al directivo implementar proyectos piloto con inversión mínima y escalar según los resultados.
+            </p>
+          </div>
+
+          <div class="mt-8 p-5 rounded-xl bg-primary/5 border border-primary/10">
+            <h3 class="font-bold text-base mb-3">Pasos recomendados para el directivo</h3>
+            <ol class="space-y-2 list-decimal list-inside text-sm text-text-light">
+              <li>Verificar que la red Wi-Fi institucional soporte el uso simultáneo de dispositivos móviles.</li>
+              <li>Seleccionar 2 aplicaciones del catálogo compatibles con Android e iOS.</li>
+              <li>Definir normas de uso de dispositivos móviles con fines educativos (política BYOD).</li>
+              <li>Pilotear con una actividad de RA en una materia de ciencias o arte.</li>
+              <li>Documentar la experiencia y compartir resultados con el claustro docente.</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</MainLayout>
+
+<script>
+  function initTabs() {
+    const tabs = document.querySelectorAll('.tab-btn');
+    const panels = document.querySelectorAll('.tab-panel');
+    if (!tabs.length || !panels.length) return;
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        const targetId = tab.getAttribute('aria-controls');
+
+        tabs.forEach((t) => {
+          t.setAttribute('aria-selected', 'false');
+          t.classList.remove('border-accent', 'text-accent');
+          t.classList.add('border-transparent', 'text-text-light');
+        });
+
+        tab.setAttribute('aria-selected', 'true');
+        tab.classList.add('border-accent', 'text-accent');
+        tab.classList.remove('border-transparent', 'text-text-light');
+
+        panels.forEach((p) => {
+          p.classList.toggle('hidden', p.id !== targetId);
+        });
+      });
+
+      tab.addEventListener('keydown', (e) => {
+        const tabsArr = Array.from(tabs);
+        const idx = tabsArr.indexOf(tab);
+        let newIdx = idx;
+        if ((e as KeyboardEvent).key === 'ArrowRight') newIdx = (idx + 1) % tabsArr.length;
+        if ((e as KeyboardEvent).key === 'ArrowLeft') newIdx = (idx - 1 + tabsArr.length) % tabsArr.length;
+        if (newIdx !== idx) {
+          (tabsArr[newIdx] as HTMLElement).focus();
+          (tabsArr[newIdx] as HTMLElement).click();
+        }
+      });
+    });
+  }
+
+  initTabs();
+  document.addEventListener('astro:after-swap', initTabs);
+</script>

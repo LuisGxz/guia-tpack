@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Google Arts & Culture",
+    "description": "Recorridos virtuales por museos, sitios históricos y maravillas naturales del mundo. Ideal para clases de historia, arte y geografía.",
+    "url": "https://artsandculture.google.com",
+    "category": "Experiencias inmersivas",
+    "icon": "🏛️",
+    "free": true
+  },
+  {
+    "name": "Google Earth VR",
+    "description": "Exploración inmersiva del planeta Tierra con imágenes satelitales y modelos 3D de ciudades. Perfecto para geografía y ciencias sociales.",
+    "url": "https://earth.google.com",
+    "category": "Experiencias inmersivas",
+    "icon": "🌍",
+    "free": true
+  },
+  {
+    "name": "Mozilla Hubs",
+    "description": "Espacios virtuales colaborativos accesibles desde el navegador, sin necesidad de instalar software. Permite crear aulas virtuales 3D personalizadas.",
+    "url": "https://hubs.mozilla.com",
+    "category": "Colaboración",
+    "icon": "🌐",
+    "free": true
+  },
+  {
+    "name": "CoSpaces Edu",
+    "description": "Plataforma para que estudiantes y docentes creen sus propios mundos virtuales y experiencias de RV con programación visual por bloques.",
+    "url": "https://cospaces.io",
+    "category": "Creación de contenido",
+    "icon": "🏗️",
+    "free": true
+  },
+  {
+    "name": "Sketchfab",
+    "description": "Biblioteca de modelos 3D gratuitos que pueden visualizarse en RV. Contiene modelos anatómicos, históricos, artísticos y científicos.",
+    "url": "https://sketchfab.com",
+    "category": "Modelado 3D",
+    "icon": "🎭",
+    "free": true
+  },
+  {
+    "name": "ThingLink",
+    "description": "Crea imágenes y videos interactivos en 360° con puntos de información. Los estudiantes exploran escenarios inmersivos con contenido enriquecido.",
+    "url": "https://www.thinglink.com",
+    "category": "Creación de contenido",
+    "icon": "📸",
+    "free": true
+  },
+  {
+    "name": "Tour Creator (Expediciones)",
+    "description": "Herramienta para crear recorridos virtuales con fotos 360° propias o de Street View. Permite a docentes diseñar expediciones personalizadas.",
+    "url": "https://arvr.google.com/tourcreator/",
+    "category": "Experiencias inmersivas",
+    "icon": "🗺️",
+    "free": true
+  }
+]
