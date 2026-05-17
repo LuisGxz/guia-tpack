@@ -7,9 +7,10 @@ import Footer from '../components/Footer.astro';
 interface Props {
   title: string;
   description?: string;
+  activeSection?: string;
 }
 
-const { title, description = 'Guía interactiva para la gestión directiva en la integración de tecnologías emergentes educativas' } = Astro.props;
+const { title, description = 'Guía interactiva para integrar tecnologías emergentes en instituciones educativas', activeSection } = Astro.props;
 ---
 
 <!doctype html>
@@ -37,7 +38,7 @@ const { title, description = 'Guía interactiva para la gestión directiva en la
   </head>
   <body class="min-h-screen flex flex-col">
     <ScrollProgress />
-    <Navbar />
+    <Navbar activeSection={activeSection} />
     <MobileMenu />
 
     <slot />

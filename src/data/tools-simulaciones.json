@@ -1,0 +1,466 @@
+[
+  {
+    "name": "PhET Interactive Simulations",
+    "description": "Simulaciones interactivas gratuitas de física, química, biología y matemáticas desarrolladas por la Universidad de Colorado. Traducidas al español.",
+    "url": "https://phet.colorado.edu/es/",
+    "category": "Laboratorio virtual",
+    "icon": "⚛️",
+    "free": true,
+    "openSource": true,
+    "detail": {
+      "fullDescription": "PhET (Physics Education Technology) es un proyecto de la Universidad de Colorado Boulder que ofrece más de 160 simulaciones interactivas gratuitas y de código abierto para ciencias y matemáticas. Cada simulación permite a los estudiantes experimentar con variables, observar resultados en tiempo real y desarrollar intuición sobre conceptos abstractos. Todas las simulaciones están traducidas al español y funcionan en el navegador sin necesidad de instalación. Son ampliamente usadas y validadas por investigación educativa como herramientas efectivas para mejorar la comprensión conceptual.",
+      "approach": {
+        "areas": ["Ciencias Naturales", "Matemáticas"],
+        "levels": ["Primaria alta", "Secundaria", "Bachillerato"],
+        "type": ["Laboratorio virtual", "Experimentación", "Visualización de conceptos"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Simular circuitos eléctricos conectando baterías, resistencias y focos",
+            "Experimentar con la selección natural observando generaciones de conejos",
+            "Explorar estados de la materia manipulando temperatura y presión",
+            "Construir átomos y aprender sobre estructura atómica interactivamente"
+          ]
+        },
+        {
+          "subject": "Matemáticas",
+          "examples": [
+            "Visualizar fracciones, porcentajes y proporciones con manipulativos virtuales",
+            "Explorar funciones lineales y cuadráticas ajustando parámetros en tiempo real",
+            "Practicar operaciones con vectores en representación gráfica"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/qFGCrghpmTg",
+      "forDirectors": {
+        "implementationTime": "30 minutos de exploración + 1 hora de taller con docentes",
+        "techRequirements": "Navegador web (Chrome, Firefox). Funciona en computadoras, tablets y smartphones",
+        "cost": "Completamente gratis y de código abierto (licencia GPL)",
+        "tips": "LA herramienta de simulación más recomendada para empezar. No requiere instalación, está en español y tiene guías pedagógicas para cada simulación. Priorizar su adopción en áreas de Ciencias y Matemáticas. Dificultad: Básica."
+      }
+    }
+  },
+  {
+    "name": "GeoGebra",
+    "description": "Plataforma de matemáticas dinámicas que integra geometría, álgebra, cálculo, estadística y gráficas en un solo ambiente interactivo.",
+    "url": "https://www.geogebra.org",
+    "category": "Matemáticas interactivas",
+    "icon": "📐",
+    "free": true,
+    "openSource": true,
+    "detail": {
+      "fullDescription": "GeoGebra es una plataforma de código abierto (GPL) para matemáticas dinámicas que permite crear y manipular representaciones geométricas, algebraicas, de cálculo y estadísticas de forma interactiva. Los estudiantes pueden construir figuras geométricas, graficar funciones, explorar transformaciones y resolver problemas manipulando objetos directamente. Incluye una biblioteca con millones de recursos creados por docentes de todo el mundo, aplicaciones para cada área matemática y un editor de actividades interactivas. Es el estándar mundial en software de matemáticas educativas.",
+      "approach": {
+        "areas": ["Matemáticas", "Ciencias Naturales", "Informática"],
+        "levels": ["Primaria alta", "Secundaria", "Bachillerato"],
+        "type": ["Matemáticas interactivas", "Visualización", "Construcción dinámica"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Matemáticas",
+          "examples": [
+            "Construir figuras geométricas y explorar sus propiedades dinámicamente",
+            "Graficar funciones y observar cómo cambian al modificar parámetros",
+            "Resolver sistemas de ecuaciones con representación gráfica simultánea",
+            "Explorar probabilidad y estadística con simulaciones de datos",
+            "Estudiar cálculo diferencial visualizando límites y derivadas"
+          ]
+        },
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Modelar fenómenos físicos con ecuaciones y gráficas interactivas",
+            "Analizar datos experimentales con herramientas estadísticas"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/qHlgqsNJiDQ",
+      "forDirectors": {
+        "implementationTime": "2-3 horas de capacitación inicial",
+        "techRequirements": "Navegador web o app descargable (Windows, Mac, Linux, tablets, smartphones)",
+        "cost": "Completamente gratis y de código abierto (licencia GPL)",
+        "tips": "Indispensable para el área de Matemáticas. La biblioteca de recursos compartidos permite que los docentes empiecen usando materiales existentes antes de crear los propios. Organizar un taller específico para docentes de matemáticas. Dificultad: Básica a Intermedia."
+      }
+    }
+  },
+  {
+    "name": "Scratch",
+    "description": "Plataforma de programación visual por bloques del MIT. Permite crear simulaciones, juegos, animaciones e historias interactivas arrastrando bloques de código.",
+    "url": "https://scratch.mit.edu",
+    "category": "Programación visual",
+    "icon": "🐱",
+    "free": true,
+    "openSource": true,
+    "detail": {
+      "fullDescription": "Scratch es una plataforma de programación visual desarrollada por el MIT Media Lab que permite crear proyectos interactivos — simulaciones, juegos, animaciones, historias y arte — arrastrando bloques de código. Con más de 100 millones de proyectos compartidos, es la plataforma de programación educativa más utilizada del mundo. Los estudiantes aprenden pensamiento computacional mientras crean proyectos sobre cualquier tema. La comunidad hispanohablante es muy activa, con miles de tutoriales y proyectos en español.",
+      "approach": {
+        "areas": ["Informática", "Matemáticas", "Ciencias Naturales", "Educación Artística", "Lengua y Literatura"],
+        "levels": ["Primaria", "Secundaria"],
+        "type": ["Programación visual", "Creación de simulaciones", "Pensamiento computacional"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Informática",
+          "examples": [
+            "Enseñar conceptos de programación (variables, bucles, condicionales) con bloques",
+            "Crear juegos educativos como proyecto integrador",
+            "Desarrollar pensamiento computacional y resolución de problemas"
+          ]
+        },
+        {
+          "subject": "Matemáticas",
+          "examples": [
+            "Programar simulaciones de figuras geométricas con el lápiz de Scratch",
+            "Crear calculadoras y juegos de operaciones básicas",
+            "Visualizar patrones numéricos y secuencias con animaciones"
+          ]
+        },
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Simular el movimiento de planetas en el sistema solar",
+            "Crear simulaciones del ciclo del agua con animaciones",
+            "Programar modelos de ecosistemas con interacciones entre especies"
+          ]
+        },
+        {
+          "subject": "Educación Artística",
+          "examples": [
+            "Crear animaciones artísticas y arte generativo",
+            "Diseñar historias interactivas con narrativa visual"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/u6s1AiYcLs8",
+      "forDirectors": {
+        "implementationTime": "2-3 horas de taller introductorio",
+        "techRequirements": "Navegador web. Funciona también offline con la app de escritorio",
+        "cost": "Completamente gratis y de código abierto (licencia BSD)",
+        "tips": "Herramienta esencial para cualquier programa de informática. Los docentes de otras áreas pueden colaborar con el docente de informática para crear proyectos interdisciplinarios. La comunidad en español ofrece abundantes tutoriales y ejemplos. Dificultad: Básica."
+      }
+    }
+  },
+  {
+    "name": "Tinkercad",
+    "description": "Herramienta web gratuita de Autodesk para diseño 3D y simulación de circuitos electrónicos. Interfaz intuitiva de arrastrar y soltar.",
+    "url": "https://www.tinkercad.com",
+    "category": "Diseño y simulación",
+    "icon": "🔧",
+    "free": true,
+    "openSource": false,
+    "detail": {
+      "fullDescription": "Tinkercad es una aplicación web gratuita de Autodesk que combina diseño 3D, simulación de circuitos electrónicos y programación de Arduino en una interfaz intuitiva de arrastrar y soltar. Para diseño 3D, permite crear modelos combinando formas básicas, ideal para impresión 3D. El simulador de circuitos incluye componentes electrónicos reales (LEDs, resistencias, sensores, Arduino) que se pueden conectar y probar virtualmente antes de construirlos físicamente. Incluye cuentas de aula para gestión de estudiantes.",
+      "approach": {
+        "areas": ["Informática", "Ciencias Naturales", "Matemáticas", "Educación Artística"],
+        "levels": ["Secundaria", "Bachillerato"],
+        "type": ["Diseño 3D", "Simulación de circuitos", "Prototipado", "STEAM"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Simular circuitos eléctricos con medición de voltaje y corriente",
+            "Diseñar modelos 3D de moléculas y estructuras cristalinas",
+            "Programar sensores Arduino para proyectos de medición ambiental"
+          ]
+        },
+        {
+          "subject": "Informática",
+          "examples": [
+            "Introducir programación con Arduino en simulación (sin hardware físico)",
+            "Enseñar diseño 3D y pensamiento espacial",
+            "Proyectos de IoT simulados con sensores y actuadores virtuales"
+          ]
+        },
+        {
+          "subject": "Matemáticas",
+          "examples": [
+            "Crear sólidos geométricos en 3D y calcular volúmenes y áreas",
+            "Diseñar figuras con medidas precisas aplicando conceptos de escala"
+          ]
+        },
+        {
+          "subject": "Educación Artística",
+          "examples": [
+            "Diseñar joyas, figuras y objetos decorativos en 3D",
+            "Crear esculturas digitales como ejercicio de composición espacial"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/l_KxeVfKPHU",
+      "forDirectors": {
+        "implementationTime": "2-3 horas de taller (diseño 3D + circuitos por separado)",
+        "techRequirements": "Navegador web (Chrome recomendado), cuenta de Autodesk gratuita",
+        "cost": "Completamente gratis (propiedad de Autodesk, subsidiado para educación)",
+        "tips": "Herramienta versátil que cubre diseño 3D Y electrónica. Crear cuentas de aula permite al docente gestionar y ver los proyectos de sus estudiantes. Si la institución tiene impresora 3D, los modelos de Tinkercad se pueden imprimir directamente. Dificultad: Básica a Intermedia."
+      }
+    }
+  },
+  {
+    "name": "Algodoo",
+    "description": "Simulador de física 2D donde los estudiantes dibujan objetos y observan cómo interactúan con gravedad, fricción, resortes y fluidos.",
+    "url": "https://www.algodoo.com",
+    "category": "Laboratorio virtual",
+    "icon": "🎨",
+    "free": true,
+    "openSource": false,
+    "detail": {
+      "fullDescription": "Algodoo es un simulador de física 2D único que permite a los estudiantes dibujar objetos con herramientas de dibujo intuitivas y luego observar cómo se comportan bajo las leyes de la física. Los objetos dibujados interactúan con gravedad, fricción, elasticidad, flotabilidad, viento, presión óptica y más. Los estudiantes pueden crear máquinas de Rube Goldberg, puentes, vehículos, sistemas de poleas y cualquier construcción imaginable. La interfaz es tan intuitiva que parece un juego, pero enseña principios físicos fundamentales.",
+      "approach": {
+        "areas": ["Ciencias Naturales", "Matemáticas", "Educación Artística"],
+        "levels": ["Primaria", "Secundaria", "Bachillerato"],
+        "type": ["Simulación de física", "Experimentación libre", "Creatividad"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Explorar gravedad, fricción y elasticidad dibujando escenarios",
+            "Simular óptica con láseres, espejos y lentes",
+            "Construir máquinas simples (palancas, poleas, planos inclinados) y probarlas",
+            "Experimentar con flotabilidad y densidad de fluidos"
+          ]
+        },
+        {
+          "subject": "Matemáticas",
+          "examples": [
+            "Explorar geometría y proporciones construyendo estructuras estables",
+            "Visualizar conceptos de velocidad, aceleración y trayectoria"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/z6_Ds-gubdM",
+      "forDirectors": {
+        "implementationTime": "1 hora de exploración práctica",
+        "techRequirements": "Computadora (Windows o Mac), descarga gratuita (~50MB)",
+        "cost": "Gratis para uso educativo",
+        "tips": "Extremadamente intuitivo — los estudiantes aprenden a usarlo en minutos. Ideal para primaria y secundaria. Se puede usar como 'laboratorio de física virtual' cuando no hay laboratorio físico disponible. Dificultad: Básica."
+      }
+    }
+  },
+  {
+    "name": "NetLogo",
+    "description": "Entorno de modelado de código abierto para simular sistemas complejos con agentes. Ideal para ecología, epidemiología y ciencias sociales.",
+    "url": "https://ccl.northwestern.edu/netlogo/",
+    "category": "Modelado de sistemas",
+    "icon": "🔬",
+    "free": true,
+    "openSource": true,
+    "detail": {
+      "fullDescription": "NetLogo es un entorno de programación y modelado de código abierto (GPL) diseñado para simular sistemas complejos con múltiples agentes. Desarrollado en la Universidad de Northwestern, permite crear y explorar modelos donde cientos o miles de agentes independientes siguen reglas simples que producen comportamientos emergentes complejos. Incluye una biblioteca con más de 200 modelos prediseñados sobre ecología, epidemiología, economía, física, química, matemáticas y ciencias sociales. Tiene versión web que funciona en el navegador.",
+      "approach": {
+        "areas": ["Ciencias Naturales", "Matemáticas", "Estudios Sociales", "Informática"],
+        "levels": ["Bachillerato"],
+        "type": ["Modelado de sistemas", "Simulación de agentes", "Investigación"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Simular propagación de epidemias ajustando tasa de contagio e inmunidad",
+            "Modelar ecosistemas depredador-presa observando ciclos poblacionales",
+            "Explorar selección natural y evolución con simulaciones de generaciones"
+          ]
+        },
+        {
+          "subject": "Estudios Sociales",
+          "examples": [
+            "Simular segregación espacial y dinámica de grupos sociales",
+            "Modelar el efecto de políticas públicas en población simulada"
+          ]
+        },
+        {
+          "subject": "Matemáticas",
+          "examples": [
+            "Explorar probabilidad y estadística con simulaciones de Monte Carlo",
+            "Visualizar fractales y patrones emergentes"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/aHuXrKKR_Qg",
+      "forDirectors": {
+        "implementationTime": "4-6 horas de capacitación (exploración de modelos + creación básica)",
+        "techRequirements": "Navegador web (versión NetLogo Web) o descarga para escritorio (Java requerido)",
+        "cost": "Completamente gratis y de código abierto (licencia GPL)",
+        "tips": "Avanzada pero con modelos prediseñados que pueden usarse sin programar. Empezar con la biblioteca de modelos existentes antes de crear los propios. Ideal para bachillerato y proyectos de investigación estudiantil. Dificultad: Intermedia a Avanzada."
+      }
+    }
+  },
+  {
+    "name": "ChemCollective",
+    "description": "Laboratorio virtual de química de la Universidad Carnegie Mellon. Permite realizar experimentos químicos con reactivos, instrumentos y mediciones reales.",
+    "url": "https://chemcollective.org",
+    "category": "Laboratorio virtual",
+    "icon": "🧪",
+    "free": true,
+    "openSource": true,
+    "detail": {
+      "fullDescription": "ChemCollective es un proyecto de la Universidad Carnegie Mellon que ofrece laboratorios virtuales de química donde los estudiantes pueden mezclar reactivos, medir pH, realizar titulaciones, preparar soluciones y ejecutar experimentos completos de forma virtual. El laboratorio virtual simula con precisión las reacciones químicas y proporciona datos realistas. Incluye actividades guiadas con problemas contextualizados y tutoriales de estequiometría. Es ideal para complementar o sustituir prácticas de laboratorio cuando no se dispone de equipos o reactivos.",
+      "approach": {
+        "areas": ["Ciencias Naturales"],
+        "levels": ["Secundaria", "Bachillerato"],
+        "type": ["Laboratorio virtual", "Experimentación química", "Práctica segura"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Realizar titulaciones ácido-base midiendo pH con precisión",
+            "Preparar soluciones con concentraciones específicas",
+            "Experimentar con reacciones químicas sin riesgo de accidentes",
+            "Practicar estequiometría con problemas contextualizados",
+            "Explorar equilibrio químico manipulando concentraciones y temperatura"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/oCfH_YkyS9s",
+      "forDirectors": {
+        "implementationTime": "1-2 horas de familiarización para el docente de química",
+        "techRequirements": "Navegador web con Java habilitado (algunos módulos) o versión HTML5",
+        "cost": "Completamente gratis y de código abierto",
+        "tips": "Solución perfecta para instituciones sin laboratorio de química equipado o con reactivos limitados. Los estudiantes pueden practicar cuantas veces quieran sin costo de materiales. Complementa pero no reemplaza la experiencia del laboratorio real. Dificultad: Básica."
+      }
+    }
+  },
+  {
+    "name": "Stellarium",
+    "description": "Planetario virtual de código abierto que muestra el cielo nocturno en tiempo real con estrellas, planetas, constelaciones y objetos celestes.",
+    "url": "https://stellarium.org",
+    "category": "Exploración científica",
+    "icon": "🌟",
+    "free": true,
+    "openSource": true,
+    "detail": {
+      "fullDescription": "Stellarium es un planetario virtual de código abierto (GPL) que muestra un cielo 3D realista exactamente como se ve a simple vista, con binoculares o telescopio. Incluye un catálogo de más de 600,000 estrellas, planetas del sistema solar con sus lunas, constelaciones de múltiples culturas, nebulosas, galaxias y la Vía Láctea. Permite viajar en el tiempo para ver el cielo en cualquier fecha pasada o futura, simular eclipses, seguir la trayectoria de satélites y observar desde cualquier punto de la Tierra. También tiene versión web accesible desde el navegador.",
+      "approach": {
+        "areas": ["Ciencias Naturales", "Estudios Sociales", "Matemáticas"],
+        "levels": ["Primaria alta", "Secundaria", "Bachillerato"],
+        "type": ["Exploración científica", "Observación astronómica", "Planetario virtual"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Identificar constelaciones visibles desde Ecuador en cada estación",
+            "Simular eclipses solares y lunares viajando a fechas específicas",
+            "Observar los planetas del sistema solar y sus movimientos",
+            "Estudiar las fases lunares a lo largo del mes"
+          ]
+        },
+        {
+          "subject": "Estudios Sociales",
+          "examples": [
+            "Explorar constelaciones de diferentes culturas (griega, maya, inca)",
+            "Entender cómo las civilizaciones usaban las estrellas para navegación"
+          ]
+        },
+        {
+          "subject": "Matemáticas",
+          "examples": [
+            "Estudiar ángulos y coordenadas usando el sistema de coordenadas celestes",
+            "Calcular distancias astronómicas y escalas del universo"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/IwAUuW0Tupk",
+      "forDirectors": {
+        "implementationTime": "1-2 horas de exploración guiada",
+        "techRequirements": "Computadora (Windows, Mac, Linux) o navegador web (versión web). Proyector para uso en aula",
+        "cost": "Completamente gratis y de código abierto (licencia GPL)",
+        "tips": "Impacto visual extraordinario que capta la atención de los estudiantes. Usar con proyector en un aula oscurecida para simular un planetario real. La versión web es más limitada pero no requiere instalación. Ideal para noches de observación astronómica institucionales. Dificultad: Básica."
+      }
+    }
+  },
+  {
+    "name": "Falstad Circuit Simulator",
+    "description": "Simulador de circuitos eléctricos y electrónicos en el navegador. Visualiza corriente, voltaje y señales en tiempo real con animaciones.",
+    "url": "https://www.falstad.com/circuit/",
+    "category": "Laboratorio virtual",
+    "icon": "⚡",
+    "free": true,
+    "openSource": true,
+    "detail": {
+      "fullDescription": "Falstad Circuit Simulator es un simulador de circuitos eléctricos y electrónicos de código abierto que funciona completamente en el navegador web. Su característica única es la animación en tiempo real del flujo de corriente, lo que permite visualizar cómo se mueve la electricidad a través del circuito. Incluye componentes pasivos (resistencias, capacitores, inductores), semiconductores (diodos, transistores, LEDs), amplificadores operacionales, compuertas lógicas y más. La biblioteca incluye cientos de circuitos de ejemplo desde básicos hasta avanzados.",
+      "approach": {
+        "areas": ["Ciencias Naturales", "Informática"],
+        "levels": ["Secundaria", "Bachillerato"],
+        "type": ["Simulación de circuitos", "Laboratorio virtual", "Electrónica"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Visualizar la ley de Ohm con animación de flujo de corriente",
+            "Construir circuitos serie y paralelo observando distribución de voltaje",
+            "Experimentar con capacitores e inductores observando carga/descarga",
+            "Simular circuitos de corriente alterna y observar ondas senoidales"
+          ]
+        },
+        {
+          "subject": "Informática",
+          "examples": [
+            "Construir compuertas lógicas y circuitos digitales básicos",
+            "Simular sumadores binarios y otros circuitos computacionales"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/AIo0W5xRAns",
+      "forDirectors": {
+        "implementationTime": "1 hora de exploración con los circuitos de ejemplo",
+        "techRequirements": "Navegador web, sin instalación necesaria",
+        "cost": "Completamente gratis y de código abierto",
+        "tips": "La visualización animada del flujo de corriente es excepcionalmente didáctica — hace visible lo invisible. Ideal para complementar clases de física sobre electricidad. Los circuitos de ejemplo permiten empezar sin construir nada desde cero. Dificultad: Básica para circuitos simples, Intermedia para circuitos avanzados."
+      }
+    }
+  },
+  {
+    "name": "GlowScript / VPython",
+    "description": "Entorno de programación en Python para crear simulaciones 3D de física. Funciona en el navegador web con resultados visuales inmediatos.",
+    "url": "https://glowscript.org",
+    "category": "Programación científica",
+    "icon": "🐍",
+    "free": true,
+    "openSource": true,
+    "detail": {
+      "fullDescription": "GlowScript es una plataforma web que permite crear simulaciones 3D interactivas usando Python (VPython) directamente en el navegador, sin instalación. Los estudiantes escriben código Python que genera visualizaciones 3D de fenómenos físicos en tiempo real: trayectorias de proyectiles, colisiones, campos gravitacionales, ondas, oscilaciones y más. Es la forma más accesible de combinar programación y física, ya que los resultados visuales son inmediatos y motivadores. Usado en universidades y bachilleratos de todo el mundo.",
+      "approach": {
+        "areas": ["Ciencias Naturales", "Informática", "Matemáticas"],
+        "levels": ["Bachillerato"],
+        "type": ["Programación científica", "Simulación 3D", "Modelado físico"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Simular el movimiento de proyectiles con resistencia del aire",
+            "Crear modelos 3D de planetas orbitando el Sol",
+            "Visualizar campos eléctricos y magnéticos en el espacio"
+          ]
+        },
+        {
+          "subject": "Informática",
+          "examples": [
+            "Aprender Python creando simulaciones visuales en 3D",
+            "Proyectos de programación con resultados gráficos inmediatos"
+          ]
+        },
+        {
+          "subject": "Matemáticas",
+          "examples": [
+            "Visualizar funciones en 3D y superficies matemáticas",
+            "Modelar ecuaciones diferenciales con animaciones"
+          ]
+        }
+      ],
+      "videoUrl": null,
+      "forDirectors": {
+        "implementationTime": "4-6 horas de capacitación (requiere Python básico)",
+        "techRequirements": "Navegador web, cuenta gratuita en glowscript.org",
+        "cost": "Completamente gratis y de código abierto",
+        "tips": "Ideal para bachillerato con programas avanzados de Informática y Física. Requiere un docente con conocimientos de Python. Los resultados visuales 3D son extraordinariamente motivadores. Dificultad: Avanzada — requiere conocimientos de programación en Python."
+      }
+    }
+  }
+]

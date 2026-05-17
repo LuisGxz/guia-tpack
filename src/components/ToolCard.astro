@@ -6,9 +6,19 @@ interface Props {
   category: string;
   icon: string;
   free: boolean;
+  openSource?: boolean;
+  detail?: any;
 }
 
-const { name, description, url, category, icon, free } = Astro.props;
+const { name, description, category, icon, free, openSource } = Astro.props;
+const base = import.meta.env.BASE_URL;
+
+const slug = name
+  .toLowerCase()
+  .normalize('NFD')
+  .replace(/[\u0300-\u036f]/g, '')
+  .replace(/[^a-z0-9]+/g, '-')
+  .replace(/(^-|-$)/g, '');
 
 const categoryColors: Record<string, string> = {
   'Creación de contenido': 'bg-blue-100 text-blue-800',
@@ -18,31 +28,42 @@ const categoryColors: Record<string, string> = {
   'Modelado 3D': 'bg-rose-100 text-rose-800',
   'Colaboración': 'bg-teal-100 text-teal-800',
   'Gamificación': 'bg-yellow-100 text-yellow-800',
+  'Laboratorio virtual': 'bg-emerald-100 text-emerald-800',
+  'Matemáticas interactivas': 'bg-indigo-100 text-indigo-800',
+  'Programación visual': 'bg-amber-100 text-amber-800',
+  'Diseño y simulación': 'bg-cyan-100 text-cyan-800',
+  'Modelado de sistemas': 'bg-violet-100 text-violet-800',
+  'Exploración científica': 'bg-sky-100 text-sky-800',
+  'Programación científica': 'bg-lime-100 text-lime-800',
 };
 
 const colorClass = categoryColors[category] || 'bg-gray-100 text-gray-800';
 ---
 
 <a
-  href={url}
-  target="_blank"
-  rel="noopener noreferrer"
-  class="group block p-5 rounded-xl border border-border bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all min-h-[120px]"
+  href={`${base}herramienta/${slug}/`}
+  class="tool-card group block rounded-xl border border-border bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all p-5"
+  data-open-source={openSource ? 'true' : 'false'}
 >
   <div class="flex items-start justify-between gap-3 mb-3">
     <div class="flex items-center gap-3 min-w-0">
       <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
         <span class="text-lg" aria-hidden="true">{icon}</span>
       </div>
-      <h3 class="font-bold text-base text-primary group-hover:text-accent transition-colors truncate">
-        {name}
-      </h3>
+      <h3 class="font-bold text-base text-primary truncate group-hover:text-accent transition-colors">{name}</h3>
     </div>
-    {free && (
-      <span class="shrink-0 text-xs font-semibold px-2 py-1 rounded-full bg-green-100 text-green-700">
-        Gratis
-      </span>
-    )}
+    <div class="flex items-center gap-2 shrink-0">
+      {free && (
+        <span class="text-xs font-semibold px-2 py-1 rounded-full bg-green-100 text-green-700">
+          Gratis
+        </span>
+      )}
+      {openSource && (
+        <span class="text-xs font-semibold px-2 py-1 rounded-full bg-violet-100 text-violet-700">
+          Open Source
+        </span>
+      )}
+    </div>
   </div>
 
   <p class="text-sm text-text-light mb-3 line-clamp-2">{description}</p>
@@ -51,15 +72,12 @@ const colorClass = categoryColors[category] || 'bg-gray-100 text-gray-800';
     <span class:list={['text-xs font-medium px-2.5 py-1 rounded-full', colorClass]}>
       {category}
     </span>
-    <svg
-      class="w-4 h-4 text-text-light group-hover:text-accent transition-colors"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-      stroke-width="2"
-    >
-      <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-    </svg>
+    <span class="flex items-center gap-1 text-xs text-accent font-medium group-hover:gap-2 transition-all">
+      Ver detalle
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+      </svg>
+    </span>
   </div>
 </a>
 

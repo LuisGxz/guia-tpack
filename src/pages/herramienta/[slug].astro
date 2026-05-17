@@ -1,0 +1,312 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import toolsIA from '../../data/tools-ia.json';
+import toolsVR from '../../data/tools-vr.json';
+import toolsAR from '../../data/tools-ar.json';
+import toolsSim from '../../data/tools-simulaciones.json';
+
+const base = import.meta.env.BASE_URL;
+
+interface Section {
+  slug: string;
+  label: string;
+  tools: any[];
+}
+
+const sections: Section[] = [
+  { slug: 'inteligencia-artificial', label: 'Inteligencia Artificial', tools: toolsIA },
+  { slug: 'realidad-virtual', label: 'Realidad Virtual', tools: toolsVR },
+  { slug: 'realidad-aumentada', label: 'Realidad Aumentada', tools: toolsAR },
+  { slug: 'simulaciones', label: 'Simulaciones Interactivas', tools: toolsSim },
+];
+
+function slugify(name: string): string {
+  return name
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+}
+
+export function getStaticPaths() {
+  const paths: any[] = [];
+  const secs = [
+    { slug: 'inteligencia-artificial', label: 'Inteligencia Artificial', tools: toolsIA },
+    { slug: 'realidad-virtual', label: 'Realidad Virtual', tools: toolsVR },
+    { slug: 'realidad-aumentada', label: 'Realidad Aumentada', tools: toolsAR },
+    { slug: 'simulaciones', label: 'Simulaciones Interactivas', tools: toolsSim },
+  ];
+
+  for (const sec of secs) {
+    for (const tool of sec.tools) {
+      const toolSlug = tool.name
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/(^-|-$)/g, '');
+
+      paths.push({
+        params: { slug: toolSlug },
+        props: { tool, sectionSlug: sec.slug, sectionLabel: sec.label },
+      });
+    }
+  }
+  return paths;
+}
+
+const { tool, sectionSlug, sectionLabel } = Astro.props;
+const detail = tool.detail;
+
+// Find related tools from the same section
+const currentSection = sections.find((s) => s.slug === sectionSlug);
+const relatedTools = currentSection
+  ? currentSection.tools
+      .filter((t: any) => t.name !== tool.name)
+      .slice(0, 3)
+      .map((t: any) => ({
+        name: t.name,
+        icon: t.icon,
+        category: t.category,
+        slug: slugify(t.name),
+      }))
+  : [];
+
+const categoryColors: Record<string, string> = {
+  'Creación de contenido': 'bg-blue-100 text-blue-800',
+  'Evaluación': 'bg-green-100 text-green-800',
+  'Capacitación': 'bg-purple-100 text-purple-800',
+  'Experiencias inmersivas': 'bg-orange-100 text-orange-800',
+  'Modelado 3D': 'bg-rose-100 text-rose-800',
+  'Colaboración': 'bg-teal-100 text-teal-800',
+  'Gamificación': 'bg-yellow-100 text-yellow-800',
+  'Laboratorio virtual': 'bg-emerald-100 text-emerald-800',
+  'Matemáticas interactivas': 'bg-indigo-100 text-indigo-800',
+  'Programación visual': 'bg-amber-100 text-amber-800',
+  'Diseño y simulación': 'bg-cyan-100 text-cyan-800',
+  'Modelado de sistemas': 'bg-violet-100 text-violet-800',
+  'Exploración científica': 'bg-sky-100 text-sky-800',
+  'Programación científica': 'bg-lime-100 text-lime-800',
+};
+
+const colorClass = categoryColors[tool.category] || 'bg-gray-100 text-gray-800';
+---
+
+<MainLayout title={`${tool.name} — Guía Interactiva`} activeSection={sectionSlug}>
+  <main class="flex-1">
+    <!-- Breadcrumb -->
+    <nav class="bg-stone-50 border-b border-border" aria-label="Ubicación">
+      <div class="max-w-4xl mx-auto px-4 py-3">
+        <ol class="flex items-center gap-1.5 text-sm flex-wrap">
+          <li>
+            <a href={base} class="text-text-light hover:text-accent transition-colors">Inicio</a>
+          </li>
+          <li class="text-text-light/50" aria-hidden="true">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+          </li>
+          <li>
+            <a href={`${base}${sectionSlug}/`} class="text-text-light hover:text-accent transition-colors">{sectionLabel}</a>
+          </li>
+          <li class="text-text-light/50" aria-hidden="true">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+          </li>
+          <li>
+            <span class="text-primary font-medium" aria-current="page">{tool.name}</span>
+          </li>
+        </ol>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="bg-primary text-white py-12 md:py-16 px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center shrink-0">
+            <span class="text-3xl" aria-hidden="true">{tool.icon}</span>
+          </div>
+          <div>
+            <h1 class="text-2xl md:text-3xl font-bold text-white">{tool.name}</h1>
+            <div class="flex flex-wrap items-center gap-2 mt-2">
+              <span class:list={['text-xs font-medium px-2.5 py-1 rounded-full', colorClass]}>{tool.category}</span>
+              {tool.free && (
+                <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-green-100 text-green-700">Gratis</span>
+              )}
+              {tool.openSource && (
+                <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-violet-100 text-violet-700">Open Source</span>
+              )}
+            </div>
+          </div>
+        </div>
+        <p class="text-white/80 text-base md:text-lg max-w-3xl">{tool.description}</p>
+      </div>
+    </section>
+
+    {detail && (
+      <div class="max-w-4xl mx-auto px-4 py-10 space-y-10">
+
+        <!-- Full Description -->
+        <section>
+          <h2 class="text-xl font-bold text-primary mb-3 flex items-center gap-2">
+            <span class="text-xl" aria-hidden="true">📋</span>
+            ¿Para qué sirve?
+          </h2>
+          <p class="text-text-light leading-relaxed">{detail.fullDescription}</p>
+        </section>
+
+        <!-- Approach -->
+        <section>
+          <h2 class="text-xl font-bold text-primary mb-4 flex items-center gap-2">
+            <span class="text-xl" aria-hidden="true">🎯</span>
+            Enfoque pedagógico
+          </h2>
+          <div class="space-y-4">
+            <div>
+              <h3 class="text-sm font-semibold text-text uppercase tracking-wide mb-2">Áreas de aplicación</h3>
+              <div class="flex flex-wrap gap-2">
+                {detail.approach.areas.map((area: string) => (
+                  <span class="text-sm px-3 py-1.5 rounded-full bg-accent/10 text-accent font-medium">{area}</span>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 class="text-sm font-semibold text-text uppercase tracking-wide mb-2">Niveles educativos</h3>
+              <div class="flex flex-wrap gap-2">
+                {detail.approach.levels.map((level: string) => (
+                  <span class="text-sm px-3 py-1.5 rounded-full bg-primary/10 text-primary font-medium">{level}</span>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 class="text-sm font-semibold text-text uppercase tracking-wide mb-2">Tipo de uso</h3>
+              <div class="flex flex-wrap gap-2">
+                {detail.approach.type.map((t: string) => (
+                  <span class="text-sm px-3 py-1.5 rounded-full bg-green-100 text-green-700 font-medium">{t}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Subject Examples -->
+        {detail.subjectExamples && detail.subjectExamples.length > 0 && (
+          <section>
+            <h2 class="text-xl font-bold text-primary mb-4 flex items-center gap-2">
+              <span class="text-xl" aria-hidden="true">📚</span>
+              Ejemplos por materia
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {detail.subjectExamples.map((se: { subject: string; examples: string[] }) => (
+                <div class="p-4 rounded-xl bg-stone-50 border border-stone-200">
+                  <h3 class="font-bold text-base text-primary mb-2">{se.subject}</h3>
+                  <ul class="space-y-1.5">
+                    {se.examples.map((ex: string) => (
+                      <li class="flex items-start gap-2 text-sm text-text-light">
+                        <span class="text-accent mt-0.5 shrink-0">●</span>
+                        <span>{ex}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        <!-- Video Tutorial -->
+        {detail.videoUrl && (
+          <section>
+            <h2 class="text-xl font-bold text-primary mb-4 flex items-center gap-2">
+              <span class="text-xl" aria-hidden="true">🎬</span>
+              Tutorial en video
+            </h2>
+            <div class="relative w-full rounded-xl overflow-hidden bg-stone-100 shadow-sm" style="padding-bottom: 56.25%;">
+              <iframe
+                class="absolute inset-0 w-full h-full"
+                src={detail.videoUrl}
+                title={`Tutorial de ${tool.name}`}
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+          </section>
+        )}
+
+        <!-- For Directors -->
+        <section>
+          <h2 class="text-xl font-bold text-primary mb-4 flex items-center gap-2">
+            <span class="text-xl" aria-hidden="true">👨‍💼</span>
+            Información para el directivo
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="p-4 rounded-xl bg-primary/5 border border-primary/10">
+              <span class="text-xs font-semibold text-primary uppercase tracking-wide block mb-1.5">Tiempo de implementación</span>
+              <p class="text-sm text-text-light">{detail.forDirectors.implementationTime}</p>
+            </div>
+            <div class="p-4 rounded-xl bg-primary/5 border border-primary/10">
+              <span class="text-xs font-semibold text-primary uppercase tracking-wide block mb-1.5">Requisitos técnicos</span>
+              <p class="text-sm text-text-light">{detail.forDirectors.techRequirements}</p>
+            </div>
+            <div class="p-4 rounded-xl bg-primary/5 border border-primary/10">
+              <span class="text-xs font-semibold text-primary uppercase tracking-wide block mb-1.5">Costo</span>
+              <p class="text-sm text-text-light">{detail.forDirectors.cost}</p>
+            </div>
+            <div class="p-4 rounded-xl bg-primary/5 border border-primary/10 sm:col-span-2">
+              <span class="text-xs font-semibold text-primary uppercase tracking-wide block mb-1.5">Consejos de implementación</span>
+              <p class="text-sm text-text-light">{detail.forDirectors.tips}</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <div class="flex flex-col sm:flex-row items-center gap-4 pt-4 pb-6 border-t border-border">
+          <a
+            href={tool.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-accent text-white font-semibold hover:bg-accent-light transition-colors"
+          >
+            Ir a {tool.name}
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+          <a
+            href={`${base}${sectionSlug}/`}
+            class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-primary/20 text-primary font-semibold hover:bg-primary/5 transition-colors"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+            Ver más herramientas
+          </a>
+        </div>
+      </div>
+    )}
+
+    <!-- Related Tools -->
+    {relatedTools.length > 0 && (
+      <section class="max-w-4xl mx-auto px-4 py-10 border-t border-border">
+        <h2 class="text-lg font-bold text-primary mb-4">Otras herramientas de {sectionLabel}</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          {relatedTools.map((rt: any) => (
+            <a
+              href={`${base}herramienta/${rt.slug}/`}
+              class="group flex items-center gap-3 p-4 rounded-xl border border-border bg-white hover:shadow-md hover:-translate-y-0.5 transition-all"
+            >
+              <div class="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                <span class="text-base" aria-hidden="true">{rt.icon}</span>
+              </div>
+              <div class="min-w-0">
+                <h3 class="font-bold text-sm text-primary group-hover:text-accent transition-colors truncate">{rt.name}</h3>
+                <p class="text-xs text-text-light">{rt.category}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+  </main>
+</MainLayout>

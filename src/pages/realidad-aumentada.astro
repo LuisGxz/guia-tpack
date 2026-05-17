@@ -2,11 +2,15 @@
 import MainLayout from '../layouts/MainLayout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import ToolCard from '../components/ToolCard.astro';
+import GuideProgress from '../components/GuideProgress.astro';
+import OtherTechnologies from '../components/OtherTechnologies.astro';
+import SectionNav from '../components/SectionNav.astro';
 import tools from '../data/tools-ar.json';
 ---
 
 <MainLayout title="Realidad Aumentada — Guía Interactiva">
   <main class="flex-1">
+    <GuideProgress currentSlug="realidad-aumentada" />
     <!-- Hero -->
     <section class="bg-primary text-white py-16 md:py-20 px-4">
       <div class="max-w-4xl mx-auto text-center">
@@ -113,10 +117,19 @@ import tools from '../data/tools-ar.json';
     <div role="tabpanel" id="panel-herramientas" aria-labelledby="tab-herramientas" class="tab-panel hidden">
       <section class="max-w-6xl mx-auto px-4 py-16">
         <SectionHeader
-          title="Herramientas de RA gratuitas"
-          subtitle="Aplicaciones y plataformas accesibles para llevar la realidad aumentada al aula."
+          title="Herramientas de RA para educación"
+          subtitle="Aplicaciones y plataformas accesibles para llevar la realidad aumentada al aula. Haz clic en cada herramienta para ver el detalle completo."
         />
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
+        <!-- Filter Pills -->
+        <div class="flex gap-2 mt-6 mb-8" role="radiogroup" aria-label="Filtrar herramientas">
+          <button class="filter-btn active px-4 py-2 rounded-full text-sm font-semibold border-2 border-accent bg-accent text-white transition-colors" data-filter="all">
+            Todas
+          </button>
+          <button class="filter-btn px-4 py-2 rounded-full text-sm font-semibold border-2 border-border text-text-light hover:border-violet-400 hover:text-violet-700 transition-colors" data-filter="open-source">
+            Código Abierto
+          </button>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 tool-grid">
           {tools.map((tool) => (
             <ToolCard {...tool} />
           ))}
@@ -126,60 +139,195 @@ import tools from '../data/tools-ar.json';
 
     <!-- Panel: Estrategia -->
     <div role="tabpanel" id="panel-estrategia" aria-labelledby="tab-estrategia" class="tab-panel hidden">
-      <section class="max-w-4xl mx-auto px-4 py-16">
+      <section class="max-w-5xl mx-auto px-4 py-16">
         <SectionHeader
-          title="Estrategia de integración"
-          subtitle="Cómo conectar la RA con el marco TPACK para una implementación efectiva."
+          title="Estrategia de integración de RA"
+          subtitle="Hoja de ruta práctica para que el directivo lidere la adopción de realidad aumentada en su institución."
         />
-        <!-- TODO: update with thesis content -->
-        <div class="space-y-6 mt-8">
-          <div class="p-5 rounded-xl border border-border bg-white">
-            <h3 class="font-bold text-base mb-2 flex items-center gap-2">
-              <span class="w-8 h-8 rounded-full bg-[#0ea5e9]/15 flex items-center justify-center text-sm font-bold text-[#0ea5e9]">T</span>
-              Conocimiento Tecnológico (TK)
-            </h3>
-            <p class="text-text-light text-sm">
-              Los docentes deben aprender a usar las aplicaciones de RA: instalarlas, activar la cámara,
-              escanear marcadores y navegar los modelos 3D. La curva de aprendizaje es baja comparada con la RV.
-              El directivo facilita sesiones breves de familiarización con 2-3 aplicaciones del catálogo.
-            </p>
-          </div>
-          <div class="p-5 rounded-xl border border-border bg-white">
-            <h3 class="font-bold text-base mb-2 flex items-center gap-2">
-              <span class="w-8 h-8 rounded-full bg-[#0ea5e9]/15 flex items-center justify-center text-sm font-bold text-[#0ea5e9]">T</span>
-              <span class="w-8 h-8 rounded-full bg-[#8b5cf6]/15 flex items-center justify-center text-sm font-bold text-[#8b5cf6]">P</span>
-              <span class="w-8 h-8 rounded-full bg-[#10b981]/15 flex items-center justify-center text-sm font-bold text-[#10b981]">C</span>
-              TPACK completo
-            </h3>
-            <p class="text-text-light text-sm">
-              La RA alcanza su máximo potencial en la intersección TPACK: el docente de biología usa Merge EDU (TK)
-              para que los estudiantes manipulen un modelo 3D del sistema circulatorio (CK) como parte de una actividad
-              de indagación guiada (PK). El directivo verifica que las actividades de RA estén vinculadas a los
-              objetivos de aprendizaje del currículo institucional.
-            </p>
-          </div>
-          <div class="p-5 rounded-xl border border-border bg-white">
-            <h3 class="font-bold text-base mb-2">Ventaja clave: accesibilidad</h3>
-            <p class="text-text-light text-sm">
-              La RA es la tecnología emergente más viable para instituciones con presupuesto limitado. No requiere
-              visores, laboratorios especiales ni computadores de alto rendimiento. Un celular con cámara es suficiente.
-              Esto permite al directivo implementar proyectos piloto con inversión mínima y escalar según los resultados.
-            </p>
-          </div>
 
-          <div class="mt-8 p-5 rounded-xl bg-primary/5 border border-primary/10">
-            <h3 class="font-bold text-base mb-3">Pasos recomendados para el directivo</h3>
-            <ol class="space-y-2 list-decimal list-inside text-sm text-text-light">
-              <li>Verificar que la red Wi-Fi institucional soporte el uso simultáneo de dispositivos móviles.</li>
-              <li>Seleccionar 2 aplicaciones del catálogo compatibles con Android e iOS.</li>
-              <li>Definir normas de uso de dispositivos móviles con fines educativos (política BYOD).</li>
-              <li>Pilotear con una actividad de RA en una materia de ciencias o arte.</li>
-              <li>Documentar la experiencia y compartir resultados con el claustro docente.</li>
-            </ol>
+        <!-- Roadmap -->
+        <div class="mt-10">
+          <h3 class="text-lg font-bold text-primary mb-6">Hoja de ruta por fases</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="relative p-5 rounded-xl border-2 border-accent/30 bg-accent/5">
+              <div class="w-10 h-10 rounded-full bg-accent text-white font-bold flex items-center justify-center text-lg mb-3">1</div>
+              <h4 class="font-bold text-sm text-primary mb-2">Verificar BYOD</h4>
+              <p class="text-xs text-text-light mb-3">Evaluar qué porcentaje de estudiantes tienen celulares con cámara, verificar WiFi y definir política de dispositivos en el aula.</p>
+              <div class="text-xs font-semibold text-accent">Semanas 1-2</div>
+              <ul class="mt-2 space-y-1 text-xs text-text-light">
+                <li class="flex items-start gap-1"><span class="text-accent shrink-0">✓</span> Encuesta de dispositivos disponibles</li>
+                <li class="flex items-start gap-1"><span class="text-accent shrink-0">✓</span> Test de WiFi con múltiples dispositivos simultáneos</li>
+                <li class="flex items-start gap-1"><span class="text-accent shrink-0">✓</span> Borrador de política BYOD educativa</li>
+              </ul>
+            </div>
+            <div class="relative p-5 rounded-xl border-2 border-primary/20 bg-primary/5">
+              <div class="w-10 h-10 rounded-full bg-primary text-white font-bold flex items-center justify-center text-lg mb-3">2</div>
+              <h4 class="font-bold text-sm text-primary mb-2">Seleccionar apps</h4>
+              <p class="text-xs text-text-light mb-3">Elegir aplicaciones compatibles con Android e iOS, gratuitas y que funcionen con la conectividad disponible.</p>
+              <div class="text-xs font-semibold text-primary">Semanas 3-4</div>
+              <ul class="mt-2 space-y-1 text-xs text-text-light">
+                <li class="flex items-start gap-1"><span class="text-primary shrink-0">✓</span> Probar 3-4 apps del catálogo en dispositivos reales</li>
+                <li class="flex items-start gap-1"><span class="text-primary shrink-0">✓</span> Elegir 2 apps multiplataforma (Android + iOS)</li>
+                <li class="flex items-start gap-1"><span class="text-primary shrink-0">✓</span> Preparar guías de instalación para docentes</li>
+              </ul>
+            </div>
+            <div class="relative p-5 rounded-xl border-2 border-green-500/20 bg-green-50">
+              <div class="w-10 h-10 rounded-full bg-green-500 text-white font-bold flex items-center justify-center text-lg mb-3">3</div>
+              <h4 class="font-bold text-sm text-primary mb-2">Piloto en el aula</h4>
+              <p class="text-xs text-text-light mb-3">Implementar actividades de RA en 2-3 materias. Iniciar con actividades cortas (15-20 min) integradas en la clase regular.</p>
+              <div class="text-xs font-semibold text-green-600">Semanas 5-10</div>
+              <ul class="mt-2 space-y-1 text-xs text-text-light">
+                <li class="flex items-start gap-1"><span class="text-green-500 shrink-0">✓</span> 1 actividad de RA quincenal por materia piloto</li>
+                <li class="flex items-start gap-1"><span class="text-green-500 shrink-0">✓</span> Trabajo en parejas (1 dispositivo cada 2 estudiantes)</li>
+                <li class="flex items-start gap-1"><span class="text-green-500 shrink-0">✓</span> Registro de aprendizajes y desafíos técnicos</li>
+              </ul>
+            </div>
+            <div class="relative p-5 rounded-xl border-2 border-violet-500/20 bg-violet-50">
+              <div class="w-10 h-10 rounded-full bg-violet-500 text-white font-bold flex items-center justify-center text-lg mb-3">4</div>
+              <h4 class="font-bold text-sm text-primary mb-2">Evaluar y crecer</h4>
+              <p class="text-xs text-text-light mb-3">Medir resultados, compartir experiencias exitosas con todo el claustro y planificar expansión a más materias y niveles.</p>
+              <div class="text-xs font-semibold text-violet-600">Semanas 11-16</div>
+              <ul class="mt-2 space-y-1 text-xs text-text-light">
+                <li class="flex items-start gap-1"><span class="text-violet-500 shrink-0">✓</span> Presentación de resultados al claustro</li>
+                <li class="flex items-start gap-1"><span class="text-violet-500 shrink-0">✓</span> Docentes piloto como mentores de nuevos adoptantes</li>
+                <li class="flex items-start gap-1"><span class="text-violet-500 shrink-0">✓</span> Banco de recursos de RA por materia</li>
+              </ul>
+            </div>
           </div>
         </div>
+
+        <!-- Decision Matrix -->
+        <div class="mt-12">
+          <h3 class="text-lg font-bold text-primary mb-2">Matriz de decisión: ¿Qué herramienta usar?</h3>
+          <p class="text-sm text-text-light mb-4">Selecciona la herramienta según el área curricular y el dispositivo disponible.</p>
+          <div class="overflow-x-auto rounded-xl border border-border">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="bg-primary text-white">
+                  <th class="p-3 text-left font-semibold text-xs uppercase tracking-wide">Materia</th>
+                  <th class="p-3 text-left font-semibold text-xs uppercase tracking-wide">Celular (básico)</th>
+                  <th class="p-3 text-left font-semibold text-xs uppercase tracking-wide">Tablet / iPad</th>
+                  <th class="p-3 text-left font-semibold text-xs uppercase tracking-wide">PC + Navegador</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-border">
+                <tr class="bg-white">
+                  <td class="p-3 font-semibold text-primary">Ciencias Naturales</td>
+                  <td class="p-3 text-text-light">Google Lens, QuiverVision</td>
+                  <td class="p-3 text-text-light">Merge EDU, JigSpace</td>
+                  <td class="p-3 text-text-light">Assemblr EDU, model-viewer</td>
+                </tr>
+                <tr class="bg-stone-50">
+                  <td class="p-3 font-semibold text-primary">Matemáticas</td>
+                  <td class="p-3 text-text-light">Google Lens (ecuaciones)</td>
+                  <td class="p-3 text-text-light">Merge EDU (geometría)</td>
+                  <td class="p-3 text-text-light">model-viewer, AR.js</td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="p-3 font-semibold text-primary">Estudios Sociales</td>
+                  <td class="p-3 text-text-light">Metaverse Studio</td>
+                  <td class="p-3 text-text-light">Assemblr EDU</td>
+                  <td class="p-3 text-text-light">Assemblr EDU</td>
+                </tr>
+                <tr class="bg-stone-50">
+                  <td class="p-3 font-semibold text-primary">Ed. Artística</td>
+                  <td class="p-3 text-text-light">QuiverVision, Qlone</td>
+                  <td class="p-3 text-text-light">Assemblr EDU, Qlone</td>
+                  <td class="p-3 text-text-light">model-viewer</td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="p-3 font-semibold text-primary">Informática</td>
+                  <td class="p-3 text-text-light">—</td>
+                  <td class="p-3 text-text-light">—</td>
+                  <td class="p-3 text-text-light">AR.js, model-viewer</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-xs text-text-light mt-2 italic">La RA funciona en cualquier celular con cámara. La mayoría de apps son gratuitas y no requieren registro.</p>
+        </div>
+
+        <!-- KPIs -->
+        <div class="mt-12">
+          <h3 class="text-lg font-bold text-primary mb-4">Indicadores de éxito</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="p-4 rounded-xl bg-accent/5 border border-accent/20 text-center">
+              <div class="text-2xl font-bold text-accent mb-1">$0</div>
+              <p class="text-xs text-text-light">Inversión en hardware gracias a BYOD (celulares de estudiantes)</p>
+            </div>
+            <div class="p-4 rounded-xl bg-green-50 border border-green-200 text-center">
+              <div class="text-2xl font-bold text-green-600 mb-1">5+</div>
+              <p class="text-xs text-text-light">Actividades de RA realizadas por materia por semestre</p>
+            </div>
+            <div class="p-4 rounded-xl bg-violet-50 border border-violet-200 text-center">
+              <div class="text-2xl font-bold text-violet-600 mb-1">85%</div>
+              <p class="text-xs text-text-light">Estudiantes que reportan mayor comprensión con RA (encuesta)</p>
+            </div>
+            <div class="p-4 rounded-xl bg-amber-50 border border-amber-200 text-center">
+              <div class="text-2xl font-bold text-amber-600 mb-1">3+</div>
+              <p class="text-xs text-text-light">Materias distintas usando RA al final del periodo piloto</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hypothetical Scenario -->
+        <div class="mt-12">
+          <h3 class="text-lg font-bold text-primary mb-4">Escenario hipotético de implementación</h3>
+          <div class="p-6 rounded-xl bg-white border border-border shadow-sm">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0">
+                <span class="text-xl" aria-hidden="true">💡</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-base text-primary mb-1">Escuela con necesidad de concretar conceptos abstractos y alta disponibilidad de celulares</h4>
+                <p class="text-sm text-text-light mb-3">
+                  Consideremos una institución educativa donde los conceptos abstractos de Ciencias Naturales resultan difíciles de comprender para los estudiantes.
+                  La mayoría de los estudiantes disponen de celular con cámara, lo que abre la posibilidad de aplicar estrategias BYOD (Bring Your Own Device).
+                </p>
+                <div class="space-y-2 text-sm">
+                  <p><strong class="text-text">Paso 1 — Verificación BYOD:</strong> El coordinador pedagógico podría realizar un diagnóstico de los dispositivos disponibles entre los estudiantes, verificar la cobertura WiFi en las aulas y establecer una política de uso educativo de celulares.</p>
+                  <p><strong class="text-text">Paso 2 — Selección:</strong> Herramientas como <span class="font-semibold text-accent">Google Lens</span> (gratuita, ya instalada en Android) y <span class="font-semibold text-accent">QuiverVision</span> (colorear + RA, con páginas gratuitas de ciencias) permitirían experiencias de RA con mínima inversión.</p>
+                  <p><strong class="text-text">Paso 3 — Piloto:</strong> Los docentes de Ciencias podrían usar Google Lens para identificar plantas en el entorno escolar y QuiverVision para animar modelos 3D del sistema solar o volcanes en el aula.</p>
+                  <p><strong class="text-text">Resultado esperado:</strong> La literatura sugiere que la RA puede mejorar la comprensión de conceptos espaciales y abstractos al permitir la manipulación de modelos 3D, con un costo de implementación muy bajo al aprovechar dispositivos que los estudiantes ya poseen.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TPACK Connection -->
+        <div class="mt-12 p-6 rounded-xl bg-primary/5 border border-primary/10">
+          <h3 class="font-bold text-base text-primary mb-3">Conexión con el marco TPACK</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="flex items-start gap-3">
+              <span class="w-8 h-8 rounded-full bg-[#0ea5e9]/15 flex items-center justify-center text-sm font-bold text-[#0ea5e9] shrink-0">T</span>
+              <div>
+                <h4 class="font-semibold text-sm">Tecnológico</h4>
+                <p class="text-xs text-text-light">El docente domina las apps de RA: instala, escanea marcadores, configura experiencias y resuelve problemas básicos de cámara/WiFi.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="w-8 h-8 rounded-full bg-[#8b5cf6]/15 flex items-center justify-center text-sm font-bold text-[#8b5cf6] shrink-0">P</span>
+              <div>
+                <h4 class="font-semibold text-sm">Pedagógico</h4>
+                <p class="text-xs text-text-light">La RA se usa para hacer visible lo abstracto: los estudiantes no solo ven un modelo 3D, sino que observan, formulan hipótesis y discuten lo que descubren.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="w-8 h-8 rounded-full bg-[#10b981]/15 flex items-center justify-center text-sm font-bold text-[#10b981] shrink-0">C</span>
+              <div>
+                <h4 class="font-semibold text-sm">Contenido</h4>
+                <p class="text-xs text-text-light">Cada experiencia de RA está conectada a un objetivo de aprendizaje específico: el modelo 3D del corazón se usa en la unidad de sistema circulatorio, no como novedad aislada.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </section>
     </div>
+
+    <OtherTechnologies currentSlug="realidad-aumentada" />
+    <SectionNav currentSlug="realidad-aumentada" />
   </main>
 </MainLayout>
 
@@ -188,40 +336,32 @@ import tools from '../data/tools-ar.json';
     const tabs = document.querySelectorAll('.tab-btn');
     const panels = document.querySelectorAll('.tab-panel');
     if (!tabs.length || !panels.length) return;
-
     tabs.forEach((tab) => {
       tab.addEventListener('click', () => {
         const targetId = tab.getAttribute('aria-controls');
-
-        tabs.forEach((t) => {
-          t.setAttribute('aria-selected', 'false');
-          t.classList.remove('border-accent', 'text-accent');
-          t.classList.add('border-transparent', 'text-text-light');
-        });
-
-        tab.setAttribute('aria-selected', 'true');
-        tab.classList.add('border-accent', 'text-accent');
-        tab.classList.remove('border-transparent', 'text-text-light');
-
-        panels.forEach((p) => {
-          p.classList.toggle('hidden', p.id !== targetId);
-        });
+        tabs.forEach((t) => { t.setAttribute('aria-selected', 'false'); t.classList.remove('border-accent', 'text-accent'); t.classList.add('border-transparent', 'text-text-light'); });
+        tab.setAttribute('aria-selected', 'true'); tab.classList.add('border-accent', 'text-accent'); tab.classList.remove('border-transparent', 'text-text-light');
+        panels.forEach((p) => { p.classList.toggle('hidden', p.id !== targetId); });
       });
-
       tab.addEventListener('keydown', (e) => {
-        const tabsArr = Array.from(tabs);
-        const idx = tabsArr.indexOf(tab);
-        let newIdx = idx;
+        const tabsArr = Array.from(tabs); const idx = tabsArr.indexOf(tab); let newIdx = idx;
         if ((e as KeyboardEvent).key === 'ArrowRight') newIdx = (idx + 1) % tabsArr.length;
         if ((e as KeyboardEvent).key === 'ArrowLeft') newIdx = (idx - 1 + tabsArr.length) % tabsArr.length;
-        if (newIdx !== idx) {
-          (tabsArr[newIdx] as HTMLElement).focus();
-          (tabsArr[newIdx] as HTMLElement).click();
-        }
+        if (newIdx !== idx) { (tabsArr[newIdx] as HTMLElement).focus(); (tabsArr[newIdx] as HTMLElement).click(); }
       });
     });
   }
-
-  initTabs();
-  document.addEventListener('astro:after-swap', initTabs);
+  function initFilter() {
+    const filterBtns = document.querySelectorAll('.filter-btn'); const cards = document.querySelectorAll('.tool-card');
+    filterBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const filter = (btn as HTMLElement).dataset.filter;
+        filterBtns.forEach((b) => { b.classList.remove('active', 'bg-accent', 'text-white', 'border-accent'); b.classList.add('border-border', 'text-text-light'); });
+        btn.classList.add('active', 'bg-accent', 'text-white', 'border-accent'); btn.classList.remove('border-border', 'text-text-light');
+        cards.forEach((card) => { const isOS = (card as HTMLElement).dataset.openSource === 'true'; (card as HTMLElement).style.display = (filter === 'all' || isOS) ? '' : 'none'; });
+      });
+    });
+  }
+  initTabs(); initFilter();
+  document.addEventListener('astro:after-swap', () => { initTabs(); initFilter(); });
 </script>

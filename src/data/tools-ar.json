@@ -5,7 +5,47 @@
     "url": "https://mergeedu.com",
     "category": "Experiencias inmersivas",
     "icon": "🔮",
-    "free": true
+    "free": true,
+    "openSource": false,
+    "detail": {
+      "fullDescription": "Merge EDU es una plataforma de realidad aumentada diseñada específicamente para educación. Utiliza un cubo físico especial (Merge Cube) que, al ser visto a través de la cámara del celular o tablet, muestra modelos 3D interactivos que los estudiantes pueden sostener, rotar y explorar con sus manos. Incluye simulaciones de ciencias, modelos anatómicos, el sistema solar, moléculas y más de 100 experiencias educativas alineadas a estándares curriculares. Los estudiantes pueden crear sus propios objetos 3D.",
+      "approach": {
+        "areas": ["Ciencias Naturales", "Matemáticas", "Estudios Sociales"],
+        "levels": ["Primaria", "Secundaria", "Bachillerato"],
+        "type": ["Experiencias inmersivas", "Manipulación 3D", "Laboratorio virtual"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Sostener y explorar un modelo 3D del corazón humano con capas desmontables",
+            "Manipular el sistema solar observando órbitas y tamaños relativos",
+            "Examinar estructuras celulares y ADN en 3D a escala manipulable"
+          ]
+        },
+        {
+          "subject": "Matemáticas",
+          "examples": [
+            "Explorar sólidos geométricos (prismas, pirámides, esferas) en las manos",
+            "Visualizar fracciones y proporciones con modelos 3D interactivos"
+          ]
+        },
+        {
+          "subject": "Estudios Sociales",
+          "examples": [
+            "Explorar globos terráqueos interactivos con datos geográficos",
+            "Manipular modelos 3D de artefactos históricos"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/IWkwe33mL1s",
+      "forDirectors": {
+        "implementationTime": "1 hora de capacitación + configuración de dispositivos",
+        "techRequirements": "Tablets o smartphones con cámara, app Merge EDU. Merge Cube imprimible gratis o físico ($5-15)",
+        "cost": "App gratuita con contenido limitado; licencia escolar desde $500/año (acceso completo para toda la institución)",
+        "tips": "El Merge Cube puede imprimirse en papel como alternativa gratuita. Iniciar con el contenido gratuito de ciencias que es suficiente para un piloto. El impacto visual en los estudiantes justifica la inversión."
+      }
+    }
   },
   {
     "name": "QuiverVision",
@@ -13,7 +53,48 @@
     "url": "https://quivervision.com",
     "category": "Gamificación",
     "icon": "🖍️",
-    "free": true
+    "free": true,
+    "openSource": false,
+    "detail": {
+      "fullDescription": "QuiverVision combina actividades de colorear tradicionales con realidad aumentada. Los estudiantes colorean páginas especiales impresas y, al apuntar la cámara del celular o tablet, ven sus dibujos cobrar vida como modelos 3D animados con los colores que eligieron. Incluye páginas educativas de ciencias (volcanes, sistema solar, células), matemáticas (geometría) y arte. Es una de las herramientas de RA más accesibles para niños pequeños, ya que combina una actividad familiar (colorear) con tecnología innovadora.",
+      "approach": {
+        "areas": ["Educación Artística", "Ciencias Naturales", "Matemáticas"],
+        "levels": ["Primaria", "Secundaria"],
+        "type": ["Gamificación", "Creatividad", "Motivación"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Educación Artística",
+          "examples": [
+            "Explorar cómo el color afecta la percepción al ver las creaciones en 3D",
+            "Crear composiciones artísticas que cobran vida en realidad aumentada",
+            "Proyectos de arte digital que combinan técnica manual y tecnología"
+          ]
+        },
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Colorear y animar modelos de volcanes aprendiendo sobre erupciones",
+            "Explorar el sistema solar coloreando planetas y viéndolos orbitar en 3D",
+            "Visualizar células y sus componentes con modelos animados"
+          ]
+        },
+        {
+          "subject": "Matemáticas",
+          "examples": [
+            "Colorear figuras geométricas y verlas como sólidos 3D",
+            "Actividades de simetría con retroalimentación visual en RA"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/2YDBXSNgHvo",
+      "forDirectors": {
+        "implementationTime": "30 minutos de demostración",
+        "techRequirements": "Smartphones o tablets con cámara, impresora para las páginas de colorear, app QuiverVision",
+        "cost": "Gratis (muchas páginas gratuitas); paquetes educativos desde $3-10",
+        "tips": "Perfecta como primera experiencia de RA para la institución — no requiere conocimientos técnicos y genera entusiasmo inmediato. Ideal para primaria y secundaria baja."
+      }
+    }
   },
   {
     "name": "Google Lens",
@@ -21,7 +102,47 @@
     "url": "https://lens.google.com",
     "category": "Experiencias inmersivas",
     "icon": "🔍",
-    "free": true
+    "free": true,
+    "openSource": false,
+    "detail": {
+      "fullDescription": "Google Lens utiliza inteligencia artificial para reconocer y proporcionar información sobre lo que ve la cámara del celular. Puede identificar plantas, animales, monumentos, obras de arte, textos en cualquier idioma, ecuaciones matemáticas, productos y más. En educación, se convierte en una herramienta de investigación instantánea: los estudiantes apuntan su cámara a un objeto y obtienen información contextual inmediata. También traduce texto en tiempo real, resuelve ecuaciones y busca información visual.",
+      "approach": {
+        "areas": ["Ciencias Naturales", "Inglés", "Matemáticas", "Estudios Sociales"],
+        "levels": ["Primaria", "Secundaria", "Bachillerato"],
+        "type": ["Investigación", "Traducción", "Identificación"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Identificar especies de plantas y animales en salidas de campo",
+            "Escanear y obtener información sobre rocas, minerales y fósiles",
+            "Reconocer constelaciones apuntando la cámara al cielo nocturno"
+          ]
+        },
+        {
+          "subject": "Inglés",
+          "examples": [
+            "Traducir textos en inglés en tiempo real con la cámara",
+            "Leer menús, señales y documentos en inglés con traducción instantánea"
+          ]
+        },
+        {
+          "subject": "Matemáticas",
+          "examples": [
+            "Resolver ecuaciones matemáticas fotografiándolas con explicación paso a paso",
+            "Identificar figuras geométricas en el entorno real"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/iRklyBuaDuw",
+      "forDirectors": {
+        "implementationTime": "15 minutos de demostración",
+        "techRequirements": "Smartphone con cámara y app de Google (incluida en la mayoría de dispositivos Android)",
+        "cost": "Completamente gratis",
+        "tips": "Ya está instalada en la mayoría de teléfonos Android. Es la forma más rápida de introducir RA en el aula sin ningún costo ni preparación. Útil para actividades al aire libre y salidas pedagógicas."
+      }
+    }
   },
   {
     "name": "Assemblr EDU",
@@ -29,7 +150,47 @@
     "url": "https://edu.assemblrworld.com",
     "category": "Creación de contenido",
     "icon": "📐",
-    "free": true
+    "free": true,
+    "openSource": false,
+    "detail": {
+      "fullDescription": "Assemblr EDU es una plataforma que permite a docentes y estudiantes crear experiencias de realidad aumentada sin conocimientos de programación. Ofrece un editor visual de arrastrar y soltar con una biblioteca de miles de objetos 3D, animaciones, textos y elementos interactivos. Las creaciones se comparten mediante un enlace o código QR y se visualizan con la cámara del dispositivo. Los docentes pueden crear lecciones de RA y los estudiantes pueden presentar proyectos en formato de realidad aumentada.",
+      "approach": {
+        "areas": ["Ciencias Naturales", "Estudios Sociales", "Educación Artística", "Informática"],
+        "levels": ["Secundaria", "Bachillerato"],
+        "type": ["Creación de contenido", "Presentaciones RA", "Proyectos creativos"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Crear modelos 3D de moléculas que aparezcan sobre el escritorio del estudiante",
+            "Diseñar presentaciones del sistema digestivo con modelos animados en RA",
+            "Proyectos de ciencias con modelos 3D visualizables en RA"
+          ]
+        },
+        {
+          "subject": "Estudios Sociales",
+          "examples": [
+            "Crear maquetas virtuales de sitios históricos visualizables en RA",
+            "Presentar proyectos de cultura ecuatoriana con objetos 3D interactivos"
+          ]
+        },
+        {
+          "subject": "Educación Artística",
+          "examples": [
+            "Diseñar instalaciones artísticas en realidad aumentada",
+            "Crear portafolios 3D de trabajos artísticos"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/4So4lyZ1DLQ",
+      "forDirectors": {
+        "implementationTime": "2 horas de taller práctico",
+        "techRequirements": "Navegador web para crear, smartphone/tablet con cámara para visualizar",
+        "cost": "Gratis (plan educativo básico); Premium desde $4.99/mes",
+        "tips": "Excelente para que los estudiantes presenten proyectos en formato innovador. La creación se hace en PC y la visualización en celular, lo que distribuye la carga tecnológica."
+      }
+    }
   },
   {
     "name": "JigSpace",
@@ -37,7 +198,41 @@
     "url": "https://www.jig.space",
     "category": "Experiencias inmersivas",
     "icon": "🧬",
-    "free": true
+    "free": true,
+    "openSource": false,
+    "detail": {
+      "fullDescription": "JigSpace es una plataforma de presentaciones 3D que permite crear y compartir explicaciones paso a paso de conceptos complejos usando modelos 3D interactivos en realidad aumentada. Cada presentación (llamada 'Jig') descompone un concepto en pasos secuenciales con modelos 3D que se pueden rotar, desarmar y explorar. Incluye una biblioteca con cientos de presentaciones prediseñadas sobre anatomía, mecánica, electrónica, astronomía y más. Los modelos aparecen en RA sobre cualquier superficie plana.",
+      "approach": {
+        "areas": ["Ciencias Naturales", "Matemáticas", "Informática"],
+        "levels": ["Secundaria", "Bachillerato"],
+        "type": ["Visualización 3D", "Explicaciones paso a paso", "Exploración"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Explorar el interior de un motor de combustión paso a paso",
+            "Visualizar la replicación del ADN en 3D interactivo",
+            "Desarmar virtualmente un ojo humano para estudiar su anatomía",
+            "Ver el ciclo del agua como presentación 3D animada"
+          ]
+        },
+        {
+          "subject": "Matemáticas",
+          "examples": [
+            "Visualizar sólidos de revolución y secciones cónicas en 3D",
+            "Explorar el teorema de Pitágoras con demostración visual"
+          ]
+        }
+      ],
+      "videoUrl": null,
+      "forDirectors": {
+        "implementationTime": "30 minutos para explorar la biblioteca existente",
+        "techRequirements": "iPad o iPhone (iOS). App de JigSpace gratuita",
+        "cost": "Gratis (acceso a biblioteca); Creator desde $9.99/mes para crear contenido propio",
+        "tips": "La biblioteca gratuita ya contiene suficiente material para empezar. Ideal si la institución cuenta con iPads. Las presentaciones paso a paso facilitan la explicación de conceptos difíciles."
+      }
+    }
   },
   {
     "name": "Metaverse Studio",
@@ -45,7 +240,46 @@
     "url": "https://studio.gometa.io",
     "category": "Gamificación",
     "icon": "🎯",
-    "free": true
+    "free": true,
+    "openSource": false,
+    "detail": {
+      "fullDescription": "Metaverse Studio permite crear experiencias interactivas de realidad aumentada basadas en narrativas y gamificación. Los docentes diseñan actividades tipo 'búsqueda del tesoro' donde los estudiantes deben encontrar códigos QR, responder preguntas, resolver acertijos y completar desafíos usando la cámara de su dispositivo. Cada experiencia puede incluir personajes, efectos de RA, puntuación y ramificaciones narrativas. Es ideal para actividades al aire libre, recorridos por la escuela y aprendizaje basado en juegos.",
+      "approach": {
+        "areas": ["Estudios Sociales", "Ciencias Naturales", "Lengua y Literatura", "Educación Física"],
+        "levels": ["Primaria alta", "Secundaria"],
+        "type": ["Gamificación", "Aprendizaje basado en juegos", "Actividades al aire libre"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Estudios Sociales",
+          "examples": [
+            "Búsqueda del tesoro histórica por la escuela con pistas sobre eventos del Ecuador",
+            "Recorridos gamificados por el centro histórico con desafíos de conocimiento"
+          ]
+        },
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Rally científico donde los estudiantes resuelven problemas en estaciones del laboratorio",
+            "Exploración gamificada del jardín escolar identificando especies vegetales"
+          ]
+        },
+        {
+          "subject": "Lengua y Literatura",
+          "examples": [
+            "Narrativas interactivas donde las decisiones del estudiante cambian la historia",
+            "Búsquedas literarias con pistas basadas en fragmentos de obras"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/-heyEnsZlD0",
+      "forDirectors": {
+        "implementationTime": "2-3 horas para crear una experiencia completa",
+        "techRequirements": "Navegador web para crear, smartphones para los estudiantes, impresora para códigos QR",
+        "cost": "Gratis (experiencias ilimitadas); Premium con funciones avanzadas",
+        "tips": "Muy motivante para estudiantes. Funciona especialmente bien para eventos institucionales como semanas culturales, ferias de ciencias y actividades de integración."
+      }
+    }
   },
   {
     "name": "Qlone",
@@ -53,6 +287,141 @@
     "url": "https://www.qlone.pro",
     "category": "Modelado 3D",
     "icon": "📷",
-    "free": true
+    "free": true,
+    "openSource": false,
+    "detail": {
+      "fullDescription": "Qlone es una aplicación de escaneo 3D que permite digitalizar objetos reales usando solo la cámara del celular y una alfombrilla impresa. El estudiante coloca un objeto sobre la alfombrilla, lo escanea desde diferentes ángulos con la cámara, y la app genera automáticamente un modelo 3D digital del objeto. Los modelos generados pueden visualizarse en RA, compartirse o exportarse para impresión 3D. Es una herramienta poderosa para conectar el mundo físico con el digital.",
+      "approach": {
+        "areas": ["Ciencias Naturales", "Educación Artística", "Estudios Sociales", "Informática"],
+        "levels": ["Secundaria", "Bachillerato"],
+        "type": ["Modelado 3D", "Digitalización", "Proyectos creativos"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Digitalizar fósiles, rocas o especímenes del laboratorio para crear una colección 3D",
+            "Escanear modelos anatómicos para compartir virtualmente entre aulas"
+          ]
+        },
+        {
+          "subject": "Educación Artística",
+          "examples": [
+            "Digitalizar esculturas y cerámicas de los estudiantes para portafolio digital",
+            "Crear una galería virtual de arte 3D con obras estudiantiles escaneadas"
+          ]
+        },
+        {
+          "subject": "Estudios Sociales",
+          "examples": [
+            "Digitalizar artefactos culturales para crear un museo virtual escolar",
+            "Escanear objetos tradicionales ecuatorianos para preservación digital"
+          ]
+        }
+      ],
+      "videoUrl": null,
+      "forDirectors": {
+        "implementationTime": "1 hora de taller práctico",
+        "techRequirements": "Smartphone o tablet con cámara, alfombrilla impresa (gratuita desde la app)",
+        "cost": "Gratis para escanear; exportación de modelos desde $0.99 por modelo",
+        "tips": "Actividad muy motivante que combina manipulación de objetos reales con tecnología digital. La alfombrilla se imprime gratis. Ideal para crear un museo 3D institucional."
+      }
+    }
+  },
+  {
+    "name": "AR.js",
+    "description": "Biblioteca de código abierto para crear experiencias de realidad aumentada directamente en el navegador web, sin necesidad de instalar aplicaciones.",
+    "url": "https://ar-js-org.github.io/AR.js-Docs/",
+    "category": "Creación de contenido",
+    "icon": "🔷",
+    "free": true,
+    "openSource": true,
+    "detail": {
+      "fullDescription": "AR.js es una biblioteca de código abierto (licencia MIT) que permite crear experiencias de realidad aumentada que funcionan directamente en el navegador web, sin necesidad de instalar ninguna aplicación. Soporta marcadores impresos, reconocimiento de imágenes y geolocalización. Al combinarse con A-Frame, permite crear experiencias de RA escribiendo HTML simple. Los estudiantes apuntan la cámara del celular a un marcador impreso y ven aparecer modelos 3D, textos, videos o animaciones superpuestos al mundo real.",
+      "approach": {
+        "areas": ["Informática", "Ciencias Naturales", "Matemáticas"],
+        "levels": ["Bachillerato"],
+        "type": ["Programación", "Creación de contenido RA", "Proyectos STEAM"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Informática",
+          "examples": [
+            "Enseñar desarrollo web con proyectos de realidad aumentada",
+            "Crear marcadores personalizados que muestren contenido 3D",
+            "Proyectos de programación que integran HTML, CSS y AR.js"
+          ]
+        },
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Crear marcadores para el laboratorio que muestren instrucciones en RA",
+            "Diseñar un libro de texto aumentado donde las imágenes cobran vida en 3D"
+          ]
+        },
+        {
+          "subject": "Matemáticas",
+          "examples": [
+            "Visualizar figuras geométricas en RA apuntando a marcadores",
+            "Crear tarjetas de fórmulas que muestren visualizaciones 3D"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/ZZgcCtrgJsw",
+      "forDirectors": {
+        "implementationTime": "6-8 horas de capacitación (requiere conocimientos de HTML/JS)",
+        "techRequirements": "Editor de texto, navegador web, impresora para marcadores. Servidor web simple o GitHub Pages (gratis)",
+        "cost": "Completamente gratis y de código abierto (licencia MIT)",
+        "tips": "Dirigido a docentes de Informática y proyectos STEAM avanzados. Los resultados son impresionantes y funcionan en cualquier celular con navegador, sin instalar nada. Dificultad: Avanzada — requiere conocimientos de HTML y JavaScript."
+      }
+    }
+  },
+  {
+    "name": "model-viewer",
+    "description": "Componente web de Google de código abierto para mostrar modelos 3D interactivos y en RA directamente en páginas web, sin programación compleja.",
+    "url": "https://modelviewer.dev",
+    "category": "Creación de contenido",
+    "icon": "📦",
+    "free": true,
+    "openSource": true,
+    "detail": {
+      "fullDescription": "model-viewer es un componente web de código abierto (licencia Apache 2.0) desarrollado por Google que permite embeber modelos 3D interactivos en cualquier página web con una sola línea de HTML. Los modelos se pueden rotar, hacer zoom y, en dispositivos compatibles, visualizar en realidad aumentada con un solo clic. Es la forma más sencilla de agregar contenido 3D y RA a materiales educativos web. Compatible con modelos en formato glTF/GLB que se encuentran gratis en bibliotecas como Sketchfab.",
+      "approach": {
+        "areas": ["Informática", "Ciencias Naturales", "Educación Artística"],
+        "levels": ["Secundaria", "Bachillerato"],
+        "type": ["Visualización 3D", "Desarrollo web", "Material educativo"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Informática",
+          "examples": [
+            "Aprender desarrollo web integrando modelos 3D en páginas HTML",
+            "Crear sitios web educativos con contenido 3D interactivo",
+            "Proyectos de portafolio web con modelos 3D embebidos"
+          ]
+        },
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Crear una página web del laboratorio con modelos 3D de equipos",
+            "Embeber modelos anatómicos interactivos en material de estudio"
+          ]
+        },
+        {
+          "subject": "Educación Artística",
+          "examples": [
+            "Crear galerías web de esculturas 3D de estudiantes",
+            "Portafolios digitales con modelos 3D visualizables en RA"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/8uMBmfzgjN0",
+      "forDirectors": {
+        "implementationTime": "2-3 horas de capacitación (HTML básico)",
+        "techRequirements": "Editor de texto, navegador web. Smartphone para visualización RA",
+        "cost": "Completamente gratis y de código abierto (licencia Apache 2.0)",
+        "tips": "El componente más simple para agregar RA a materiales web. Una sola etiqueta HTML muestra un modelo 3D con RA. Ideal como primer proyecto de RA para docentes de Informática. Dificultad: Intermedia — requiere HTML básico."
+      }
+    }
   }
 ]

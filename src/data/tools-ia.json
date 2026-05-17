@@ -5,7 +5,58 @@
     "url": "https://chat.openai.com",
     "category": "Creación de contenido",
     "icon": "💬",
-    "free": true
+    "free": true,
+    "openSource": false,
+    "detail": {
+      "fullDescription": "ChatGPT es un modelo de lenguaje desarrollado por OpenAI que mantiene conversaciones naturales y genera texto de alta calidad. En educación, funciona como un asistente versátil que puede crear planificaciones de clase, rúbricas de evaluación, explicaciones adaptadas al nivel del estudiante, ejercicios diferenciados y retroalimentación personalizada. Su fortaleza radica en la capacidad de adaptar el tono, complejidad y formato del contenido según las instrucciones del docente.",
+      "approach": {
+        "areas": ["Lengua y Literatura", "Matemáticas", "Ciencias Naturales", "Estudios Sociales", "Inglés", "Educación Artística", "Informática"],
+        "levels": ["Primaria alta", "Secundaria", "Bachillerato"],
+        "type": ["Creación de contenido", "Evaluación", "Tutoría personalizada", "Investigación"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Lengua y Literatura",
+          "examples": [
+            "Generar ejercicios de comprensión lectora adaptados por nivel",
+            "Crear prompts de escritura creativa con retroalimentación automática",
+            "Diseñar rúbricas de evaluación para ensayos argumentativos",
+            "Elaborar guías de análisis literario con preguntas de pensamiento crítico"
+          ]
+        },
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Explicar conceptos complejos (fotosíntesis, genética) con analogías simples",
+            "Generar preguntas de indagación para proyectos de laboratorio",
+            "Crear evaluaciones formativas sobre ecosistemas y biodiversidad"
+          ]
+        },
+        {
+          "subject": "Matemáticas",
+          "examples": [
+            "Resolver problemas paso a paso con explicaciones alternativas",
+            "Generar ejercicios diferenciados por nivel de dificultad",
+            "Crear problemas contextualizados a la realidad ecuatoriana"
+          ]
+        },
+        {
+          "subject": "Estudios Sociales",
+          "examples": [
+            "Simular debates históricos donde la IA asume un personaje",
+            "Generar líneas de tiempo interactivas sobre eventos históricos",
+            "Crear actividades de análisis de fuentes primarias"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/XItZECR7wwM",
+      "forDirectors": {
+        "implementationTime": "1-2 horas de capacitación inicial",
+        "techRequirements": "Navegador web, cuenta gratuita con correo electrónico",
+        "cost": "Gratis (GPT-3.5); Plus $20/mes (GPT-4) — la versión gratuita es suficiente para empezar",
+        "tips": "Iniciar con 2-3 docentes piloto. Establecer una política institucional de uso ético antes de la implementación. Crear un documento compartido con prompts efectivos que los docentes puedan reutilizar."
+      }
+    }
   },
   {
     "name": "Google Gemini",
@@ -13,7 +64,49 @@
     "url": "https://gemini.google.com",
     "category": "Creación de contenido",
     "icon": "✨",
-    "free": true
+    "free": true,
+    "openSource": false,
+    "detail": {
+      "fullDescription": "Google Gemini es el asistente de inteligencia artificial de Google que combina generación de texto, análisis de imágenes y acceso a información actualizada de la web. Su integración con el ecosistema Google (Docs, Sheets, Slides) lo hace especialmente útil para docentes que ya usan Google Workspace. Puede analizar imágenes, crear resúmenes de documentos extensos y generar contenido educativo contextualizado con información actualizada.",
+      "approach": {
+        "areas": ["Ciencias Naturales", "Estudios Sociales", "Lengua y Literatura", "Inglés", "Informática"],
+        "levels": ["Secundaria", "Bachillerato"],
+        "type": ["Creación de contenido", "Investigación", "Análisis de datos"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Analizar imágenes de especímenes o fenómenos naturales con la cámara",
+            "Investigar descubrimientos científicos recientes con fuentes verificadas",
+            "Generar resúmenes visuales de procesos biológicos complejos"
+          ]
+        },
+        {
+          "subject": "Estudios Sociales",
+          "examples": [
+            "Investigar eventos actuales con contexto histórico integrado",
+            "Comparar fuentes de información sobre un mismo evento",
+            "Crear presentaciones en Google Slides sobre culturas del Ecuador"
+          ]
+        },
+        {
+          "subject": "Inglés",
+          "examples": [
+            "Practicar conversación en inglés con retroalimentación de pronunciación",
+            "Traducir y explicar expresiones idiomáticas en contexto",
+            "Generar ejercicios de vocabulario temático con imágenes"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/wfiFFs1p0zA",
+      "forDirectors": {
+        "implementationTime": "1 hora de capacitación (si ya usan Google Workspace)",
+        "techRequirements": "Cuenta de Google, navegador web",
+        "cost": "Gratis — versiones avanzadas incluidas en Google Workspace for Education",
+        "tips": "Ideal si la institución ya usa Google Workspace. Capacitar primero a los docentes que ya dominan herramientas Google para que sirvan como multiplicadores."
+      }
+    }
   },
   {
     "name": "Canva con IA",
@@ -21,7 +114,49 @@
     "url": "https://www.canva.com",
     "category": "Creación de contenido",
     "icon": "🎨",
-    "free": true
+    "free": true,
+    "openSource": false,
+    "detail": {
+      "fullDescription": "Canva es una plataforma de diseño gráfico intuitiva que integra herramientas de IA para generar imágenes, presentaciones, infografías, pósters y materiales didácticos visualmente atractivos. Su versión educativa (Canva for Education) es completamente gratuita para docentes e instituciones. La IA de Canva puede generar imágenes desde texto, sugerir diseños automáticos, redimensionar contenido para diferentes formatos y crear presentaciones completas a partir de un tema.",
+      "approach": {
+        "areas": ["Educación Artística", "Lengua y Literatura", "Ciencias Naturales", "Estudios Sociales", "Inglés"],
+        "levels": ["Primaria", "Secundaria", "Bachillerato"],
+        "type": ["Creación de contenido", "Presentaciones", "Material didáctico visual"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Educación Artística",
+          "examples": [
+            "Diseñar composiciones visuales usando generación de imágenes con IA",
+            "Crear portafolios digitales de trabajos estudiantiles",
+            "Explorar principios de diseño gráfico con plantillas profesionales"
+          ]
+        },
+        {
+          "subject": "Lengua y Literatura",
+          "examples": [
+            "Crear infografías sobre géneros literarios o autores ecuatorianos",
+            "Diseñar portadas de libros como proyecto creativo",
+            "Elaborar organizadores gráficos para análisis de textos"
+          ]
+        },
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Crear pósters científicos sobre proyectos de investigación",
+            "Diseñar infografías de procesos biológicos (ciclo del agua, cadena alimenticia)",
+            "Elaborar material visual para ferias de ciencias"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/W93dR61ywlQ",
+      "forDirectors": {
+        "implementationTime": "2 horas de taller práctico",
+        "techRequirements": "Navegador web, cuenta institucional (Canva for Education es gratuita para escuelas)",
+        "cost": "Gratis con Canva for Education — incluye funciones premium para docentes y estudiantes",
+        "tips": "Registrar la institución en Canva for Education para obtener cuentas premium gratuitas para todo el personal. Es una de las herramientas con menor curva de aprendizaje."
+      }
+    }
   },
   {
     "name": "Quillbot",
@@ -29,7 +164,48 @@
     "url": "https://quillbot.com",
     "category": "Creación de contenido",
     "icon": "✍️",
-    "free": true
+    "free": true,
+    "openSource": false,
+    "detail": {
+      "fullDescription": "QuillBot es una herramienta de escritura asistida por IA que ofrece parafraseo inteligente, corrección gramatical, detección de plagio, resumen automático y traducción. Permite reformular textos manteniendo el significado original pero mejorando la claridad y el estilo. Es especialmente útil para docentes que necesitan adaptar textos académicos a un lenguaje más accesible para sus estudiantes, y para estudiantes que están desarrollando sus habilidades de escritura.",
+      "approach": {
+        "areas": ["Lengua y Literatura", "Inglés", "Estudios Sociales"],
+        "levels": ["Secundaria", "Bachillerato"],
+        "type": ["Creación de contenido", "Escritura académica", "Corrección"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Lengua y Literatura",
+          "examples": [
+            "Enseñar técnicas de parafraseo comparando versiones del mismo texto",
+            "Mejorar borradores de ensayos con sugerencias de estilo",
+            "Practicar resumen de textos extensos usando el resumidor automático"
+          ]
+        },
+        {
+          "subject": "Inglés",
+          "examples": [
+            "Verificar gramática en composiciones en inglés",
+            "Aprender sinónimos y estructuras alternativas en contexto",
+            "Traducir textos con explicación de matices lingüísticos"
+          ]
+        },
+        {
+          "subject": "Estudios Sociales",
+          "examples": [
+            "Adaptar textos académicos sobre historia a un nivel comprensible",
+            "Resumir artículos de investigación social para discusión en clase"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/H-vrPPxN1is",
+      "forDirectors": {
+        "implementationTime": "30 minutos de demostración",
+        "techRequirements": "Navegador web, cuenta gratuita",
+        "cost": "Gratis (funciones básicas); Premium desde $4.17/mes — la versión gratuita es funcional",
+        "tips": "Herramienta ideal para introducir gradualmente. Los docentes de Lengua e Inglés son los primeros beneficiarios naturales."
+      }
+    }
   },
   {
     "name": "Kahoot!",
@@ -37,7 +213,49 @@
     "url": "https://kahoot.com",
     "category": "Evaluación",
     "icon": "🎮",
-    "free": true
+    "free": true,
+    "openSource": false,
+    "detail": {
+      "fullDescription": "Kahoot! es una plataforma de aprendizaje basada en juegos que permite crear cuestionarios interactivos, encuestas y presentaciones gamificadas. Su función de IA genera automáticamente preguntas a partir de un tema, documento o URL, ahorrando tiempo al docente. Los estudiantes participan en tiempo real desde sus dispositivos, compitiendo en un ambiente motivador. Proporciona reportes detallados del desempeño individual y grupal para identificar áreas de mejora.",
+      "approach": {
+        "areas": ["Matemáticas", "Ciencias Naturales", "Estudios Sociales", "Lengua y Literatura", "Inglés", "Educación Física"],
+        "levels": ["Primaria", "Secundaria", "Bachillerato"],
+        "type": ["Evaluación", "Gamificación", "Repaso"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Cuestionarios de repaso antes de exámenes sobre tabla periódica",
+            "Competencias por equipos sobre clasificación de seres vivos",
+            "Evaluación diagnóstica al inicio de una unidad de física"
+          ]
+        },
+        {
+          "subject": "Matemáticas",
+          "examples": [
+            "Juegos de cálculo mental con operaciones básicas (primaria)",
+            "Cuestionarios sobre geometría con imágenes de figuras",
+            "Competencia de resolución rápida de ecuaciones"
+          ]
+        },
+        {
+          "subject": "Estudios Sociales",
+          "examples": [
+            "Trivia sobre historia del Ecuador con imágenes",
+            "Repaso de geografía con mapas interactivos",
+            "Cuestionarios sobre civismo y gobierno"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/kz8qc-XMM74",
+      "forDirectors": {
+        "implementationTime": "1 hora de taller práctico",
+        "techRequirements": "Navegador web, proyector en aula, estudiantes con celular o tablet",
+        "cost": "Gratis (hasta 50 participantes); versiones educativas desde $3/mes por docente",
+        "tips": "Excelente herramienta de inicio por su alta aceptación entre docentes y estudiantes. Organizar una demostración en reunión de profesores genera adopción inmediata."
+      }
+    }
   },
   {
     "name": "Formative",
@@ -45,7 +263,48 @@
     "url": "https://www.formative.com",
     "category": "Evaluación",
     "icon": "📊",
-    "free": true
+    "free": true,
+    "openSource": false,
+    "detail": {
+      "fullDescription": "Formative es una plataforma de evaluación en tiempo real que permite a los docentes ver las respuestas de los estudiantes mientras las escriben, proporcionar retroalimentación instantánea y usar IA para identificar patrones de error y brechas de aprendizaje. Soporta múltiples tipos de preguntas incluyendo respuesta abierta, opción múltiple, dibujo y carga de archivos. Su panel de análisis permite al docente intervenir inmediatamente cuando detecta que un estudiante está teniendo dificultades.",
+      "approach": {
+        "areas": ["Matemáticas", "Ciencias Naturales", "Lengua y Literatura", "Inglés"],
+        "levels": ["Secundaria", "Bachillerato"],
+        "type": ["Evaluación", "Diagnóstico", "Seguimiento en tiempo real"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Matemáticas",
+          "examples": [
+            "Evaluaciones en tiempo real donde el docente ve el proceso de resolución",
+            "Identificar errores conceptuales comunes en álgebra mediante análisis de IA",
+            "Asignar ejercicios diferenciados según el nivel detectado"
+          ]
+        },
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Evaluaciones con preguntas de dibujo para diagramas científicos",
+            "Seguimiento del progreso en comprensión de conceptos a lo largo del semestre",
+            "Pre-test y post-test para medir impacto de una unidad"
+          ]
+        },
+        {
+          "subject": "Inglés",
+          "examples": [
+            "Evaluación de escritura en inglés con retroalimentación inmediata",
+            "Quizzes de vocabulario con análisis de errores frecuentes"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/5AeXTov4UBg",
+      "forDirectors": {
+        "implementationTime": "2 horas de capacitación",
+        "techRequirements": "Navegador web, estudiantes con dispositivo (computadora, tablet o celular)",
+        "cost": "Gratis (funciones básicas); Premium desde $12/mes por docente",
+        "tips": "Ideal para instituciones que buscan datos concretos sobre el rendimiento estudiantil. Los reportes de Formative pueden alimentar las reuniones de área curricular."
+      }
+    }
   },
   {
     "name": "Diffit",
@@ -53,7 +312,48 @@
     "url": "https://diffit.me",
     "category": "Capacitación",
     "icon": "📖",
-    "free": true
+    "free": true,
+    "openSource": false,
+    "detail": {
+      "fullDescription": "Diffit utiliza inteligencia artificial para generar materiales de lectura diferenciados por nivel de comprensión. A partir de un tema, URL o texto, Diffit crea versiones adaptadas con vocabulario simplificado, preguntas de comprensión, actividades y vocabulario clave. Esto permite al docente atender la diversidad de niveles dentro de una misma aula sin tener que crear múltiples versiones manualmente. Soporta contenido en español e inglés.",
+      "approach": {
+        "areas": ["Lengua y Literatura", "Ciencias Naturales", "Estudios Sociales", "Inglés"],
+        "levels": ["Primaria alta", "Secundaria", "Bachillerato"],
+        "type": ["Creación de contenido", "Diferenciación", "Inclusión educativa"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Lengua y Literatura",
+          "examples": [
+            "Adaptar cuentos y novelas a diferentes niveles de lectura",
+            "Generar actividades de vocabulario contextualizado por nivel",
+            "Crear guías de lectura diferenciadas para el mismo texto"
+          ]
+        },
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Adaptar artículos científicos a nivel de secundaria",
+            "Crear materiales de lectura sobre cambio climático por niveles",
+            "Generar vocabulario científico con definiciones simplificadas"
+          ]
+        },
+        {
+          "subject": "Estudios Sociales",
+          "examples": [
+            "Adaptar textos históricos a diferentes niveles de comprensión",
+            "Crear materiales sobre la Constitución del Ecuador accesibles para todos los niveles"
+          ]
+        }
+      ],
+      "videoUrl": null,
+      "forDirectors": {
+        "implementationTime": "30-45 minutos de demostración",
+        "techRequirements": "Navegador web, cuenta gratuita",
+        "cost": "Gratis para docentes — sin límites en la versión educativa",
+        "tips": "Herramienta con impacto inmediato en aulas con diversidad de niveles. Priorizar su adopción en escuelas con programas de inclusión educativa."
+      }
+    }
   },
   {
     "name": "Curipod",
@@ -61,6 +361,217 @@
     "url": "https://curipod.com",
     "category": "Capacitación",
     "icon": "🧩",
-    "free": true
+    "free": true,
+    "openSource": false,
+    "detail": {
+      "fullDescription": "Curipod es una plataforma que genera presentaciones interactivas completas usando IA. A partir de un tema, crea automáticamente una lección con slides, preguntas abiertas, encuestas, actividades de reflexión, nubes de palabras y evaluaciones. Los estudiantes participan en tiempo real desde sus dispositivos. La IA también puede generar imágenes y adaptar el contenido al nivel educativo especificado. Es ideal para docentes que quieren sesiones más participativas sin invertir horas en preparación.",
+      "approach": {
+        "areas": ["Estudios Sociales", "Ciencias Naturales", "Lengua y Literatura", "Educación Artística"],
+        "levels": ["Secundaria", "Bachillerato"],
+        "type": ["Presentaciones interactivas", "Capacitación", "Participación activa"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Estudios Sociales",
+          "examples": [
+            "Presentaciones interactivas sobre períodos históricos con encuestas de opinión",
+            "Debates guiados sobre temas de actualidad social",
+            "Reflexiones colectivas sobre ciudadanía con nubes de palabras"
+          ]
+        },
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Lecciones interactivas sobre el medio ambiente con preguntas de indagación",
+            "Presentaciones sobre el cuerpo humano con actividades de identificación"
+          ]
+        },
+        {
+          "subject": "Lengua y Literatura",
+          "examples": [
+            "Talleres de escritura creativa con prompts generados por IA",
+            "Análisis colectivo de poemas con preguntas de interpretación"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/WY3y3_BFGPg",
+      "forDirectors": {
+        "implementationTime": "1 hora de taller práctico",
+        "techRequirements": "Navegador web, proyector, estudiantes con dispositivo",
+        "cost": "Gratis (funciones básicas ilimitadas); Premium desde $7.50/mes",
+        "tips": "Muy visual y atractiva para docentes que quieren modernizar sus clases. Funciona bien como segunda herramienta después de Kahoot para docentes que ya dominan la gamificación básica."
+      }
+    }
+  },
+  {
+    "name": "Hugging Chat",
+    "description": "Interfaz de chat gratuita que utiliza modelos de IA de código abierto. Alternativa libre a ChatGPT sin necesidad de registro obligatorio.",
+    "url": "https://huggingface.co/chat",
+    "category": "Creación de contenido",
+    "icon": "🤗",
+    "free": true,
+    "openSource": true,
+    "detail": {
+      "fullDescription": "Hugging Chat es una interfaz de conversación desarrollada por Hugging Face que permite acceder gratuitamente a modelos de lenguaje de código abierto como Llama, Mistral y otros. A diferencia de ChatGPT, los modelos que utiliza son completamente abiertos y transparentes. La interfaz es similar a ChatGPT, lo que facilita la transición. Permite buscar en la web, generar texto, responder preguntas y asistir en tareas educativas sin costos ocultos ni limitaciones de uso estrictas.",
+      "approach": {
+        "areas": ["Lengua y Literatura", "Ciencias Naturales", "Matemáticas", "Estudios Sociales", "Informática"],
+        "levels": ["Secundaria", "Bachillerato"],
+        "type": ["Creación de contenido", "Investigación", "Tutoría"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Informática",
+          "examples": [
+            "Enseñar conceptos de IA abierta y ética tecnológica",
+            "Comparar respuestas de diferentes modelos de IA",
+            "Introducir el concepto de código abierto y software libre"
+          ]
+        },
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Generar explicaciones de conceptos científicos con diferentes enfoques",
+            "Crear actividades de laboratorio paso a paso"
+          ]
+        },
+        {
+          "subject": "Lengua y Literatura",
+          "examples": [
+            "Ejercicios de escritura creativa con un asistente de IA abierto",
+            "Análisis de textos con preguntas guiadas generadas por IA"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/ANNzFBlZ4FA",
+      "forDirectors": {
+        "implementationTime": "1 hora de capacitación",
+        "techRequirements": "Navegador web, conexión a internet",
+        "cost": "Completamente gratis, sin versión de pago",
+        "tips": "Alternativa ideal cuando hay preocupaciones sobre privacidad de datos o dependencia de empresas comerciales. Los datos no se usan para entrenar modelos comerciales. Dificultad: Básica — la interfaz es idéntica a ChatGPT."
+      }
+    }
+  },
+  {
+    "name": "Jan",
+    "description": "Aplicación de escritorio de código abierto para ejecutar modelos de IA localmente en la computadora, sin necesidad de internet ni enviar datos a servidores externos.",
+    "url": "https://jan.ai",
+    "category": "Creación de contenido",
+    "icon": "🖥️",
+    "free": true,
+    "openSource": true,
+    "detail": {
+      "fullDescription": "Jan es una aplicación de escritorio de código abierto (licencia AGPL-3.0) que permite ejecutar modelos de inteligencia artificial directamente en la computadora del usuario, sin conexión a internet y sin enviar datos a servidores externos. Esto garantiza la privacidad total de la información. La aplicación descarga modelos de lenguaje optimizados y los ejecuta localmente. La interfaz es similar a ChatGPT pero todo funciona offline. Es ideal para instituciones con preocupaciones sobre privacidad de datos estudiantiles.",
+      "approach": {
+        "areas": ["Informática", "Lengua y Literatura", "Ciencias Naturales"],
+        "levels": ["Bachillerato"],
+        "type": ["Creación de contenido", "Privacidad de datos", "Educación tecnológica"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Informática",
+          "examples": [
+            "Demostrar cómo funcionan los modelos de IA internamente",
+            "Enseñar conceptos de procesamiento de lenguaje natural",
+            "Proyectos sobre privacidad digital y soberanía de datos"
+          ]
+        },
+        {
+          "subject": "Lengua y Literatura",
+          "examples": [
+            "Asistente de escritura que funciona sin internet",
+            "Generación de ejercicios en computadoras sin conexión estable"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/6T56Dbkvxsk",
+      "forDirectors": {
+        "implementationTime": "2-3 horas (incluye instalación y descarga de modelo)",
+        "techRequirements": "Computadora con mínimo 8GB RAM, 10GB de disco duro libre. Windows, Mac o Linux",
+        "cost": "Completamente gratis y de código abierto",
+        "tips": "Requiere computadoras con capacidad moderada. Ideal para laboratorios de informática. El departamento de TI puede instalar y configurar en las máquinas. Dificultad: Intermedia — la instalación necesita apoyo técnico, pero el uso es simple."
+      }
+    }
+  },
+  {
+    "name": "LibreChat",
+    "description": "Plataforma de chat de código abierto que unifica múltiples modelos de IA en una sola interfaz. Puede instalarse en el servidor de la institución.",
+    "url": "https://www.librechat.ai",
+    "category": "Creación de contenido",
+    "icon": "💡",
+    "free": true,
+    "openSource": true,
+    "detail": {
+      "fullDescription": "LibreChat es una plataforma de código abierto (licencia MIT) que replica la experiencia de ChatGPT pero permite conectar múltiples modelos de IA, tanto comerciales como de código abierto. Puede instalarse en el servidor de la institución educativa, lo que da control total sobre los datos y el acceso. Soporta múltiples usuarios con cuentas separadas, lo que permite dar acceso controlado a docentes y estudiantes. Incluye historial de conversaciones, carpetas organizativas y configuración por usuario.",
+      "approach": {
+        "areas": ["Informática", "Lengua y Literatura", "Matemáticas", "Ciencias Naturales"],
+        "levels": ["Secundaria", "Bachillerato"],
+        "type": ["Creación de contenido", "Infraestructura institucional", "Privacidad"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Informática",
+          "examples": [
+            "Enseñar sobre arquitectura cliente-servidor usando la propia plataforma",
+            "Proyectos de despliegue de aplicaciones web",
+            "Comparar diferentes modelos de IA en una misma interfaz"
+          ]
+        },
+        {
+          "subject": "Lengua y Literatura",
+          "examples": [
+            "Acceso institucional a IA para todos los docentes del área",
+            "Talleres de escritura con asistente de IA controlado por la institución"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/naUHHqpyOo4",
+      "forDirectors": {
+        "implementationTime": "4-8 horas de instalación técnica + 1 hora de capacitación para usuarios",
+        "techRequirements": "Servidor institucional o computadora dedicada, Docker, conocimiento técnico para instalación",
+        "cost": "Gratis (software). Costo de servidor: $5-20/mes si se usa un servicio en la nube, o gratis si se usa hardware institucional",
+        "tips": "Requiere personal de TI para la instalación y mantenimiento. Es la opción más completa para instituciones que quieren control total sobre su infraestructura de IA. Dificultad: Avanzada — necesita soporte técnico dedicado para la instalación."
+      }
+    }
+  },
+  {
+    "name": "Open WebUI",
+    "description": "Interfaz web de código abierto para modelos de IA locales. Permite a la institución tener su propio ChatGPT privado accesible desde el navegador.",
+    "url": "https://openwebui.com",
+    "category": "Creación de contenido",
+    "icon": "🌐",
+    "free": true,
+    "openSource": true,
+    "detail": {
+      "fullDescription": "Open WebUI es una interfaz web de código abierto (licencia MIT) diseñada para interactuar con modelos de lenguaje ejecutados localmente mediante Ollama u otros backends. Proporciona una experiencia idéntica a ChatGPT pero completamente privada y controlada por la institución. Incluye gestión de usuarios, historial de conversaciones, carga de documentos para análisis (RAG), generación de imágenes y soporte para múltiples modelos. Todo funciona en la red local de la institución.",
+      "approach": {
+        "areas": ["Informática", "Lengua y Literatura", "Ciencias Naturales", "Matemáticas"],
+        "levels": ["Bachillerato"],
+        "type": ["Infraestructura institucional", "Creación de contenido", "Privacidad"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Informática",
+          "examples": [
+            "Enseñar sobre infraestructura tecnológica y servidores",
+            "Proyectos de administración de sistemas con herramientas reales",
+            "Explorar el funcionamiento interno de los modelos de IA"
+          ]
+        },
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Cargar documentos de investigación y hacer preguntas sobre ellos",
+            "Analizar datos de experimentos con asistencia de IA local"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/xQLzkx6PWHo",
+      "forDirectors": {
+        "implementationTime": "4-8 horas de instalación + 1 hora de capacitación",
+        "techRequirements": "Servidor con GPU recomendada (mínimo 16GB RAM), Docker, administrador de TI",
+        "cost": "Gratis (software). Hardware institucional existente o servidor cloud $20-50/mes",
+        "tips": "La opción más robusta para una implementación institucional de IA privada. Requiere inversión inicial en configuración pero elimina costos recurrentes de licencias. Dificultad: Avanzada — necesita equipo de TI dedicado."
+      }
+    }
   }
 ]

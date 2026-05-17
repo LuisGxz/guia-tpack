@@ -4,21 +4,21 @@ import SectionHeader from '../components/SectionHeader.astro';
 const base = import.meta.env.BASE_URL;
 ---
 
-<MainLayout title="Guía Interactiva — Tecnologías Emergentes Educativas">
+<MainLayout title="Guía TEE — Tecnología para tu Institución Educativa">
   <main class="flex-1">
     <!-- Hero -->
     <section class="bg-primary text-white py-20 md:py-28 px-4">
       <div class="max-w-4xl mx-auto text-center">
         <p class="text-accent-light text-sm md:text-base font-semibold uppercase tracking-wider mb-4">
-          Proyecto de tesis de maestría
+          Informe de investigación
         </p>
         <h1 class="text-3xl md:text-5xl font-bold text-white mb-5 leading-tight">
-          La Gestión Directiva en la Integración de Tecnologías Emergentes Educativas
+          Transforma tu institución educativa con tecnología
         </h1>
         <p class="text-base md:text-lg text-white/80 max-w-2xl mx-auto mb-10">
-          Una guía práctica para directivos y coordinadores escolares que buscan integrar
-          Inteligencia Artificial, Realidad Virtual y Realidad Aumentada en sus instituciones
-          educativas, fundamentada en el marco pedagógico TPACK.
+          Descubre cómo integrar Inteligencia Artificial, Realidad Virtual, Realidad Aumentada
+          y Simulaciones Interactivas en tu escuela. Una guía paso a paso diseñada para
+          directivos y coordinadores, con herramientas gratuitas y estrategias probadas.
         </p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
@@ -150,6 +150,13 @@ const base = import.meta.env.BASE_URL;
           </div>
           <h3 class="text-lg font-bold mb-2 group-hover:text-accent transition-colors">Realidad Aumentada</h3>
           <p class="text-text-light text-sm">Superpone contenido digital al mundo real para enriquecer el aprendizaje presencial.</p>
+        </a>
+        <a href={`${base}simulaciones/`} class="group block p-6 rounded-xl border border-border bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+          <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-4">
+            <span class="text-2xl" aria-hidden="true">🧪</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2 group-hover:text-accent transition-colors">Simulaciones Interactivas</h3>
+          <p class="text-text-light text-sm">Laboratorios virtuales y simuladores que permiten experimentar sin riesgo ni costo de materiales.</p>
         </a>
         <a href={`${base}plan-implementacion/`} class="group block p-6 rounded-xl border border-border bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
           <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">

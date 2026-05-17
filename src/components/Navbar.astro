@@ -2,15 +2,28 @@
 const base = import.meta.env.BASE_URL;
 const currentPath = Astro.url.pathname;
 
+interface Props {
+  activeSection?: string;
+}
+
+const { activeSection } = Astro.props;
+
 const links = [
-  { href: base, label: 'Inicio' },
-  { href: `${base}tpack/`, label: 'TPACK' },
-  { href: `${base}inteligencia-artificial/`, label: 'IA' },
-  { href: `${base}realidad-virtual/`, label: 'RV' },
-  { href: `${base}realidad-aumentada/`, label: 'RA' },
-  { href: `${base}plan-implementacion/`, label: 'Plan' },
-  { href: `${base}referencias/`, label: 'Referencias' },
+  { href: base, label: 'Inicio', slug: '' },
+  { href: `${base}tpack/`, label: 'TPACK', slug: 'tpack' },
+  { href: `${base}inteligencia-artificial/`, label: 'IA', slug: 'inteligencia-artificial' },
+  { href: `${base}realidad-virtual/`, label: 'RV', slug: 'realidad-virtual' },
+  { href: `${base}realidad-aumentada/`, label: 'RA', slug: 'realidad-aumentada' },
+  { href: `${base}simulaciones/`, label: 'Simulaciones', slug: 'simulaciones' },
+  { href: `${base}plan-implementacion/`, label: 'Plan', slug: 'plan-implementacion' },
+  { href: `${base}referencias/`, label: 'Referencias', slug: 'referencias' },
 ];
+
+function isActive(link: { href: string; slug: string }) {
+  if (currentPath === link.href) return true;
+  if (activeSection && link.slug === activeSection) return true;
+  return false;
+}
 ---
 
 <header class="sticky top-0 z-50 bg-primary shadow-md">
@@ -22,19 +35,19 @@ const links = [
 
     <!-- Desktop links -->
     <ul class="hidden md:flex items-center gap-1">
-      {links.map(({ href, label }) => (
+      {links.map((link) => (
         <li>
           <a
-            href={href}
+            href={link.href}
             class:list={[
               'px-3 py-2 rounded-md text-sm font-semibold transition-colors',
-              currentPath === href
+              isActive(link)
                 ? 'bg-white/15 text-accent-light'
                 : 'text-white/85 hover:bg-white/10 hover:text-white',
             ]}
-            aria-current={currentPath === href ? 'page' : undefined}
+            aria-current={isActive(link) ? 'page' : undefined}
           >
-            {label}
+            {link.label}
           </a>
         </li>
       ))}

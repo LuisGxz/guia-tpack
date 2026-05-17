@@ -2,11 +2,15 @@
 import MainLayout from '../layouts/MainLayout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import ToolCard from '../components/ToolCard.astro';
+import GuideProgress from '../components/GuideProgress.astro';
+import OtherTechnologies from '../components/OtherTechnologies.astro';
+import SectionNav from '../components/SectionNav.astro';
 import tools from '../data/tools-vr.json';
 ---
 
 <MainLayout title="Realidad Virtual — Guía Interactiva">
   <main class="flex-1">
+    <GuideProgress currentSlug="realidad-virtual" />
     <!-- Hero -->
     <section class="bg-primary text-white py-16 md:py-20 px-4">
       <div class="max-w-4xl mx-auto text-center">
@@ -111,10 +115,19 @@ import tools from '../data/tools-vr.json';
     <div role="tabpanel" id="panel-herramientas" aria-labelledby="tab-herramientas" class="tab-panel hidden">
       <section class="max-w-6xl mx-auto px-4 py-16">
         <SectionHeader
-          title="Herramientas de RV gratuitas"
-          subtitle="Plataformas accesibles para incorporar experiencias de realidad virtual en tu institución educativa."
+          title="Herramientas de RV para educación"
+          subtitle="Plataformas accesibles para incorporar experiencias de realidad virtual en tu institución educativa. Haz clic en cada herramienta para ver el detalle completo."
         />
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
+        <!-- Filter Pills -->
+        <div class="flex gap-2 mt-6 mb-8" role="radiogroup" aria-label="Filtrar herramientas">
+          <button class="filter-btn active px-4 py-2 rounded-full text-sm font-semibold border-2 border-accent bg-accent text-white transition-colors" data-filter="all">
+            Todas
+          </button>
+          <button class="filter-btn px-4 py-2 rounded-full text-sm font-semibold border-2 border-border text-text-light hover:border-violet-400 hover:text-violet-700 transition-colors" data-filter="open-source">
+            Código Abierto
+          </button>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 tool-grid">
           {tools.map((tool) => (
             <ToolCard {...tool} />
           ))}
@@ -124,64 +137,195 @@ import tools from '../data/tools-vr.json';
 
     <!-- Panel: Estrategia -->
     <div role="tabpanel" id="panel-estrategia" aria-labelledby="tab-estrategia" class="tab-panel hidden">
-      <section class="max-w-4xl mx-auto px-4 py-16">
+      <section class="max-w-5xl mx-auto px-4 py-16">
         <SectionHeader
-          title="Estrategia de integración"
-          subtitle="Cómo conectar la RV con el marco TPACK para una implementación efectiva."
+          title="Estrategia de integración de RV"
+          subtitle="Hoja de ruta práctica para que el directivo lidere la adopción de realidad virtual en su institución."
         />
-        <!-- TODO: update with thesis content -->
-        <div class="space-y-6 mt-8">
-          <div class="p-5 rounded-xl border border-border bg-white">
-            <h3 class="font-bold text-base mb-2 flex items-center gap-2">
-              <span class="w-8 h-8 rounded-full bg-[#0ea5e9]/15 flex items-center justify-center text-sm font-bold text-[#0ea5e9]">T</span>
-              Conocimiento Tecnológico (TK)
-            </h3>
-            <p class="text-text-light text-sm">
-              Los docentes necesitan familiarizarse con las plataformas de RV: cómo navegar entornos virtuales,
-              cómo crear recorridos y cómo guiar a los estudiantes en experiencias inmersivas. El directivo
-              organiza sesiones de exploración donde los docentes experimentan las herramientas como usuarios.
-            </p>
-          </div>
-          <div class="p-5 rounded-xl border border-border bg-white">
-            <h3 class="font-bold text-base mb-2 flex items-center gap-2">
-              <span class="w-8 h-8 rounded-full bg-[#0ea5e9]/15 flex items-center justify-center text-sm font-bold text-[#0ea5e9]">T</span>
-              <span class="w-8 h-8 rounded-full bg-[#10b981]/15 flex items-center justify-center text-sm font-bold text-[#10b981]">C</span>
-              Intersección TCK
-            </h3>
-            <p class="text-text-light text-sm">
-              La RV brilla cuando se conecta directamente con el contenido curricular. Un recorrido virtual por
-              el Antiguo Egipto no es solo entretenimiento: debe vincularse con los objetivos de aprendizaje
-              de la unidad de historia. El directivo asegura que las experiencias de RV estén alineadas con el currículo.
-            </p>
-          </div>
-          <div class="p-5 rounded-xl border border-border bg-white">
-            <h3 class="font-bold text-base mb-2 flex items-center gap-2">
-              <span class="w-8 h-8 rounded-full bg-[#0ea5e9]/15 flex items-center justify-center text-sm font-bold text-[#0ea5e9]">T</span>
-              <span class="w-8 h-8 rounded-full bg-[#8b5cf6]/15 flex items-center justify-center text-sm font-bold text-[#8b5cf6]">P</span>
-              <span class="w-8 h-8 rounded-full bg-[#10b981]/15 flex items-center justify-center text-sm font-bold text-[#10b981]">C</span>
-              TPACK completo
-            </h3>
-            <p class="text-text-light text-sm">
-              La integración plena sucede cuando el docente diseña una secuencia didáctica donde la RV es el vehículo
-              para alcanzar un objetivo de aprendizaje específico: el estudiante no solo «visita» un lugar, sino que
-              observa, analiza, reflexiona y produce conocimiento a partir de la experiencia. El directivo evalúa si
-              las actividades de RV generan aprendizajes medibles.
-            </p>
-          </div>
 
-          <div class="mt-8 p-5 rounded-xl bg-primary/5 border border-primary/10">
-            <h3 class="font-bold text-base mb-3">Pasos recomendados para el directivo</h3>
-            <ol class="space-y-2 list-decimal list-inside text-sm text-text-light">
-              <li>Auditar la infraestructura tecnológica: conectividad, dispositivos disponibles, espacios.</li>
-              <li>Seleccionar 1-2 herramientas del catálogo que funcionen con los recursos existentes.</li>
-              <li>Identificar 2-3 materias donde la RV tenga mayor impacto potencial.</li>
-              <li>Realizar un piloto con docentes de esas materias durante una unidad didáctica.</li>
-              <li>Recoger retroalimentación de docentes y estudiantes para iterar la estrategia.</li>
-            </ol>
+        <!-- Roadmap -->
+        <div class="mt-10">
+          <h3 class="text-lg font-bold text-primary mb-6">Hoja de ruta por fases</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="relative p-5 rounded-xl border-2 border-accent/30 bg-accent/5">
+              <div class="w-10 h-10 rounded-full bg-accent text-white font-bold flex items-center justify-center text-lg mb-3">1</div>
+              <h4 class="font-bold text-sm text-primary mb-2">Auditar infraestructura</h4>
+              <p class="text-xs text-text-light mb-3">Evaluar conectividad, dispositivos disponibles, ancho de banda y espacios físicos para experiencias inmersivas.</p>
+              <div class="text-xs font-semibold text-accent">Semanas 1-2</div>
+              <ul class="mt-2 space-y-1 text-xs text-text-light">
+                <li class="flex items-start gap-1"><span class="text-accent shrink-0">✓</span> Test de velocidad de internet en aulas</li>
+                <li class="flex items-start gap-1"><span class="text-accent shrink-0">✓</span> Inventario de computadoras y tablets</li>
+                <li class="flex items-start gap-1"><span class="text-accent shrink-0">✓</span> Identificar espacios seguros para uso de VR</li>
+              </ul>
+            </div>
+            <div class="relative p-5 rounded-xl border-2 border-primary/20 bg-primary/5">
+              <div class="w-10 h-10 rounded-full bg-primary text-white font-bold flex items-center justify-center text-lg mb-3">2</div>
+              <h4 class="font-bold text-sm text-primary mb-2">Seleccionar y planificar</h4>
+              <p class="text-xs text-text-light mb-3">Elegir herramientas que funcionen con la infraestructura existente. Priorizar las que no requieren hardware especializado.</p>
+              <div class="text-xs font-semibold text-primary">Semanas 3-4</div>
+              <ul class="mt-2 space-y-1 text-xs text-text-light">
+                <li class="flex items-start gap-1"><span class="text-primary shrink-0">✓</span> Seleccionar 2 herramientas basadas en navegador</li>
+                <li class="flex items-start gap-1"><span class="text-primary shrink-0">✓</span> Identificar materias de alto impacto</li>
+                <li class="flex items-start gap-1"><span class="text-primary shrink-0">✓</span> Opcional: adquirir visores Google Cardboard ($3-5 c/u)</li>
+              </ul>
+            </div>
+            <div class="relative p-5 rounded-xl border-2 border-green-500/20 bg-green-50">
+              <div class="w-10 h-10 rounded-full bg-green-500 text-white font-bold flex items-center justify-center text-lg mb-3">3</div>
+              <h4 class="font-bold text-sm text-primary mb-2">Piloto inmersivo</h4>
+              <p class="text-xs text-text-light mb-3">Ejecutar experiencias de RV en 2-3 materias con docentes seleccionados. Documentar reacciones y resultados.</p>
+              <div class="text-xs font-semibold text-green-600">Semanas 5-10</div>
+              <ul class="mt-2 space-y-1 text-xs text-text-light">
+                <li class="flex items-start gap-1"><span class="text-green-500 shrink-0">✓</span> 1 experiencia VR por semana en cada materia piloto</li>
+                <li class="flex items-start gap-1"><span class="text-green-500 shrink-0">✓</span> Protocolo de uso (duración, descansos)</li>
+                <li class="flex items-start gap-1"><span class="text-green-500 shrink-0">✓</span> Registro fotográfico y testimonios</li>
+              </ul>
+            </div>
+            <div class="relative p-5 rounded-xl border-2 border-violet-500/20 bg-violet-50">
+              <div class="w-10 h-10 rounded-full bg-violet-500 text-white font-bold flex items-center justify-center text-lg mb-3">4</div>
+              <h4 class="font-bold text-sm text-primary mb-2">Evaluar y expandir</h4>
+              <p class="text-xs text-text-light mb-3">Medir el impacto en engagement y aprendizaje. Decidir si se invierte en hardware adicional o se mantienen herramientas web.</p>
+              <div class="text-xs font-semibold text-violet-600">Semanas 11-16</div>
+              <ul class="mt-2 space-y-1 text-xs text-text-light">
+                <li class="flex items-start gap-1"><span class="text-violet-500 shrink-0">✓</span> Encuesta de impacto a docentes y estudiantes</li>
+                <li class="flex items-start gap-1"><span class="text-violet-500 shrink-0">✓</span> Análisis costo-beneficio de hardware VR</li>
+                <li class="flex items-start gap-1"><span class="text-violet-500 shrink-0">✓</span> Plan de expansión para el siguiente año</li>
+              </ul>
+            </div>
           </div>
         </div>
+
+        <!-- Decision Matrix -->
+        <div class="mt-12">
+          <h3 class="text-lg font-bold text-primary mb-2">Matriz de decisión: ¿Qué herramienta usar?</h3>
+          <p class="text-sm text-text-light mb-4">Selecciona la herramienta según el área curricular y el nivel de infraestructura disponible.</p>
+          <div class="overflow-x-auto rounded-xl border border-border">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="bg-primary text-white">
+                  <th class="p-3 text-left font-semibold text-xs uppercase tracking-wide">Materia</th>
+                  <th class="p-3 text-left font-semibold text-xs uppercase tracking-wide">Solo navegador</th>
+                  <th class="p-3 text-left font-semibold text-xs uppercase tracking-wide">Con Google Cardboard</th>
+                  <th class="p-3 text-left font-semibold text-xs uppercase tracking-wide">Con PC potente</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-border">
+                <tr class="bg-white">
+                  <td class="p-3 font-semibold text-primary">Estudios Sociales</td>
+                  <td class="p-3 text-text-light">Google Arts & Culture, Google Earth</td>
+                  <td class="p-3 text-text-light">Tour Creator</td>
+                  <td class="p-3 text-text-light">OpenSpace, Mozilla Hubs</td>
+                </tr>
+                <tr class="bg-stone-50">
+                  <td class="p-3 font-semibold text-primary">Ciencias Naturales</td>
+                  <td class="p-3 text-text-light">Sketchfab, Google Earth</td>
+                  <td class="p-3 text-text-light">Tour Creator</td>
+                  <td class="p-3 text-text-light">OpenSpace, CoSpaces Edu</td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="p-3 font-semibold text-primary">Ed. Artística</td>
+                  <td class="p-3 text-text-light">Google Arts & Culture</td>
+                  <td class="p-3 text-text-light">ThingLink 360°</td>
+                  <td class="p-3 text-text-light">Mozilla Hubs, CoSpaces Edu</td>
+                </tr>
+                <tr class="bg-stone-50">
+                  <td class="p-3 font-semibold text-primary">Informática</td>
+                  <td class="p-3 text-text-light">A-Frame (HTML)</td>
+                  <td class="p-3 text-text-light">A-Frame + Cardboard</td>
+                  <td class="p-3 text-text-light">Godot Engine, Mozilla Hubs</td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="p-3 font-semibold text-primary">Matemáticas</td>
+                  <td class="p-3 text-text-light">Sketchfab (geometría 3D)</td>
+                  <td class="p-3 text-text-light">CoSpaces Edu</td>
+                  <td class="p-3 text-text-light">Godot Engine</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-xs text-text-light mt-2 italic">La mayoría de herramientas funcionan con solo un navegador web. Los visores Google Cardboard ($3-5) mejoran la inmersión sin gran inversión.</p>
+        </div>
+
+        <!-- KPIs -->
+        <div class="mt-12">
+          <h3 class="text-lg font-bold text-primary mb-4">Indicadores de éxito</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="p-4 rounded-xl bg-accent/5 border border-accent/20 text-center">
+              <div class="text-2xl font-bold text-accent mb-1">4+</div>
+              <p class="text-xs text-text-light">Experiencias de RV integradas en el currículo por semestre</p>
+            </div>
+            <div class="p-4 rounded-xl bg-green-50 border border-green-200 text-center">
+              <div class="text-2xl font-bold text-green-600 mb-1">60%</div>
+              <p class="text-xs text-text-light">Docentes de áreas prioritarias usando al menos una herramienta VR</p>
+            </div>
+            <div class="p-4 rounded-xl bg-violet-50 border border-violet-200 text-center">
+              <div class="text-2xl font-bold text-violet-600 mb-1">+25%</div>
+              <p class="text-xs text-text-light">Incremento en engagement estudiantil en clases con RV (observación)</p>
+            </div>
+            <div class="p-4 rounded-xl bg-amber-50 border border-amber-200 text-center">
+              <div class="text-2xl font-bold text-amber-600 mb-1">$0</div>
+              <p class="text-xs text-text-light">Inversión inicial requerida si se usan herramientas basadas en navegador</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hypothetical Scenario -->
+        <div class="mt-12">
+          <h3 class="text-lg font-bold text-primary mb-4">Escenario hipotético de implementación</h3>
+          <div class="p-6 rounded-xl bg-white border border-border shadow-sm">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0">
+                <span class="text-xl" aria-hidden="true">💡</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-base text-primary mb-1">Colegio urbano con bajo interés estudiantil en Estudios Sociales y presupuesto limitado</h4>
+                <p class="text-sm text-text-light mb-3">
+                  Consideremos una unidad educativa urbana donde las clases de Estudios Sociales e Historia presentan bajo interés estudiantil.
+                  La institución cuenta con WiFi estable y un laboratorio de informática con computadoras actualizadas, pero no tiene presupuesto para adquirir visores de realidad virtual.
+                </p>
+                <div class="space-y-2 text-sm">
+                  <p><strong class="text-text">Paso 1 — Auditoría:</strong> El rector podría verificar la infraestructura disponible: conectividad, navegadores actualizados y cantidad de equipos por estudiante.</p>
+                  <p><strong class="text-text">Paso 2 — Selección:</strong> Herramientas como <span class="font-semibold text-accent">Google Arts & Culture</span> (recorridos por museos) y <span class="font-semibold text-accent">Google Earth</span> (expediciones geográficas) son gratuitas y basadas en navegador, lo que elimina la necesidad de visores.</p>
+                  <p><strong class="text-text">Paso 3 — Piloto:</strong> Los docentes de Estudios Sociales podrían incorporar recorridos virtuales semanales a lugares como museos internacionales, sitios arqueológicos o patrimonios naturales del Ecuador, vinculándolos con los contenidos del currículo.</p>
+                  <p><strong class="text-text">Resultado esperado:</strong> La investigación indica que las experiencias inmersivas pueden aumentar la participación y el interés estudiantil en materias de ciencias sociales, al ofrecer un contexto visual y experiencial que complementa la instrucción tradicional.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TPACK Connection -->
+        <div class="mt-12 p-6 rounded-xl bg-primary/5 border border-primary/10">
+          <h3 class="font-bold text-base text-primary mb-3">Conexión con el marco TPACK</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="flex items-start gap-3">
+              <span class="w-8 h-8 rounded-full bg-[#0ea5e9]/15 flex items-center justify-center text-sm font-bold text-[#0ea5e9] shrink-0">T</span>
+              <div>
+                <h4 class="font-semibold text-sm">Tecnológico</h4>
+                <p class="text-xs text-text-light">El docente navega entornos virtuales con fluidez, crea recorridos personalizados y guía a los estudiantes en experiencias inmersivas.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="w-8 h-8 rounded-full bg-[#8b5cf6]/15 flex items-center justify-center text-sm font-bold text-[#8b5cf6] shrink-0">P</span>
+              <div>
+                <h4 class="font-semibold text-sm">Pedagógico</h4>
+                <p class="text-xs text-text-light">La RV se integra como vehículo de aprendizaje experiencial: no es solo «ver», sino observar, analizar, comparar y producir conocimiento a partir de la experiencia.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="w-8 h-8 rounded-full bg-[#10b981]/15 flex items-center justify-center text-sm font-bold text-[#10b981] shrink-0">C</span>
+              <div>
+                <h4 class="font-semibold text-sm">Contenido</h4>
+                <p class="text-xs text-text-light">Cada experiencia VR está vinculada a objetivos de aprendizaje del currículo: un recorrido por el Antiguo Egipto se conecta con la unidad de civilizaciones antiguas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </section>
     </div>
+
+    <OtherTechnologies currentSlug="realidad-virtual" />
+    <SectionNav currentSlug="realidad-virtual" />
   </main>
 </MainLayout>
 
@@ -190,40 +334,44 @@ import tools from '../data/tools-vr.json';
     const tabs = document.querySelectorAll('.tab-btn');
     const panels = document.querySelectorAll('.tab-panel');
     if (!tabs.length || !panels.length) return;
-
     tabs.forEach((tab) => {
       tab.addEventListener('click', () => {
         const targetId = tab.getAttribute('aria-controls');
-
         tabs.forEach((t) => {
           t.setAttribute('aria-selected', 'false');
           t.classList.remove('border-accent', 'text-accent');
           t.classList.add('border-transparent', 'text-text-light');
         });
-
         tab.setAttribute('aria-selected', 'true');
         tab.classList.add('border-accent', 'text-accent');
         tab.classList.remove('border-transparent', 'text-text-light');
-
-        panels.forEach((p) => {
-          p.classList.toggle('hidden', p.id !== targetId);
-        });
+        panels.forEach((p) => { p.classList.toggle('hidden', p.id !== targetId); });
       });
-
       tab.addEventListener('keydown', (e) => {
         const tabsArr = Array.from(tabs);
         const idx = tabsArr.indexOf(tab);
         let newIdx = idx;
         if ((e as KeyboardEvent).key === 'ArrowRight') newIdx = (idx + 1) % tabsArr.length;
         if ((e as KeyboardEvent).key === 'ArrowLeft') newIdx = (idx - 1 + tabsArr.length) % tabsArr.length;
-        if (newIdx !== idx) {
-          (tabsArr[newIdx] as HTMLElement).focus();
-          (tabsArr[newIdx] as HTMLElement).click();
-        }
+        if (newIdx !== idx) { (tabsArr[newIdx] as HTMLElement).focus(); (tabsArr[newIdx] as HTMLElement).click(); }
       });
     });
   }
-
-  initTabs();
-  document.addEventListener('astro:after-swap', initTabs);
+  function initFilter() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.tool-card');
+    filterBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const filter = (btn as HTMLElement).dataset.filter;
+        filterBtns.forEach((b) => { b.classList.remove('active', 'bg-accent', 'text-white', 'border-accent'); b.classList.add('border-border', 'text-text-light'); });
+        btn.classList.add('active', 'bg-accent', 'text-white', 'border-accent'); btn.classList.remove('border-border', 'text-text-light');
+        cards.forEach((card) => {
+          const isOS = (card as HTMLElement).dataset.openSource === 'true';
+          (card as HTMLElement).style.display = (filter === 'all' || isOS) ? '' : 'none';
+        });
+      });
+    });
+  }
+  initTabs(); initFilter();
+  document.addEventListener('astro:after-swap', () => { initTabs(); initFilter(); });
 </script>

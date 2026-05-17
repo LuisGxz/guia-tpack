@@ -5,7 +5,48 @@
     "url": "https://artsandculture.google.com",
     "category": "Experiencias inmersivas",
     "icon": "🏛️",
-    "free": true
+    "free": true,
+    "openSource": false,
+    "detail": {
+      "fullDescription": "Google Arts & Culture ofrece acceso virtual a más de 2,000 museos, galerías y sitios históricos del mundo. Permite realizar recorridos virtuales en 360° por lugares como el Museo del Louvre, el MoMA, Machu Picchu o las Pirámides de Egipto. Incluye herramientas interactivas como zoom de alta resolución en obras de arte, líneas de tiempo históricas, y experimentos culturales con IA que permiten explorar conexiones entre obras y épocas. Todo accesible desde el navegador sin necesidad de equipo VR.",
+      "approach": {
+        "areas": ["Estudios Sociales", "Educación Artística", "Ciencias Naturales", "Lengua y Literatura"],
+        "levels": ["Primaria", "Secundaria", "Bachillerato"],
+        "type": ["Experiencias inmersivas", "Exploración cultural", "Investigación"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Estudios Sociales",
+          "examples": [
+            "Recorridos virtuales por civilizaciones antiguas (Egipto, Roma, Grecia)",
+            "Explorar museos de historia del Ecuador y América Latina",
+            "Visitas virtuales a monumentos patrimonio de la humanidad"
+          ]
+        },
+        {
+          "subject": "Educación Artística",
+          "examples": [
+            "Analizar obras maestras en alta resolución con zoom extremo",
+            "Comparar movimientos artísticos recorriendo galerías de diferentes épocas",
+            "Estudiar técnicas pictóricas observando detalles de pinceladas"
+          ]
+        },
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Explorar hábitats naturales y reservas ecológicas en 360°",
+            "Visitar museos de historia natural y observar especímenes"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/lECy5DtEY3k",
+      "forDirectors": {
+        "implementationTime": "30 minutos de demostración",
+        "techRequirements": "Navegador web, conexión a internet. Opcional: lentes VR de cartón ($3-5) para experiencia inmersiva",
+        "cost": "Completamente gratis",
+        "tips": "La herramienta más fácil de adoptar en RV — no requiere hardware especial ni registro. Ideal para comenzar a integrar experiencias inmersivas. Se puede usar con lentes Google Cardboard de bajo costo para mayor inmersión."
+      }
+    }
   },
   {
     "name": "Google Earth VR",
@@ -13,7 +54,48 @@
     "url": "https://earth.google.com",
     "category": "Experiencias inmersivas",
     "icon": "🌍",
-    "free": true
+    "free": true,
+    "openSource": false,
+    "detail": {
+      "fullDescription": "Google Earth permite explorar el planeta completo con imágenes satelitales de alta resolución, modelos 3D de ciudades, Street View y capas de información geográfica. La función Voyager incluye recorridos guiados creados por National Geographic, NASA y otras organizaciones educativas. Los proyectos personalizados permiten al docente crear recorridos temáticos con marcadores, descripciones y contenido multimedia. Funciona en navegador y con visores VR para experiencia inmersiva.",
+      "approach": {
+        "areas": ["Estudios Sociales", "Ciencias Naturales", "Matemáticas"],
+        "levels": ["Primaria", "Secundaria", "Bachillerato"],
+        "type": ["Experiencias inmersivas", "Exploración geográfica", "Investigación"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Estudios Sociales",
+          "examples": [
+            "Explorar las regiones naturales del Ecuador (Costa, Sierra, Oriente, Galápagos)",
+            "Trazar rutas históricas de exploradores y libertadores",
+            "Comparar el desarrollo urbano de ciudades ecuatorianas en el tiempo"
+          ]
+        },
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Observar formaciones geológicas y tectónica de placas en 3D",
+            "Estudiar ecosistemas visitando virtualmente las Islas Galápagos",
+            "Analizar efectos del cambio climático comparando imágenes temporales"
+          ]
+        },
+        {
+          "subject": "Matemáticas",
+          "examples": [
+            "Calcular distancias y escalas usando las herramientas de medición",
+            "Estudiar coordenadas geográficas y sistemas de referencia"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/29D3HAEQM8c",
+      "forDirectors": {
+        "implementationTime": "30 minutos de exploración guiada",
+        "techRequirements": "Navegador web (Chrome recomendado), conexión a internet estable",
+        "cost": "Completamente gratis",
+        "tips": "Crear un proyecto institucional en Google Earth con recorridos alineados al currículo ecuatoriano. Los docentes de Estudios Sociales y Ciencias son los primeros adoptantes naturales."
+      }
+    }
   },
   {
     "name": "Mozilla Hubs",
@@ -21,7 +103,47 @@
     "url": "https://hubs.mozilla.com",
     "category": "Colaboración",
     "icon": "🌐",
-    "free": true
+    "free": true,
+    "openSource": true,
+    "detail": {
+      "fullDescription": "Mozilla Hubs es una plataforma de código abierto para crear espacios virtuales 3D colaborativos accesibles directamente desde el navegador web. No requiere instalación de software ni hardware especial. Los usuarios entran a salas virtuales donde pueden interactuar con avatares, compartir pantalla, presentar modelos 3D, videos y documentos. El código fuente está disponible en GitHub, permitiendo a instituciones modificar y hospedar su propia instancia.",
+      "approach": {
+        "areas": ["Informática", "Educación Artística", "Estudios Sociales", "Ciencias Naturales"],
+        "levels": ["Secundaria", "Bachillerato"],
+        "type": ["Colaboración", "Aulas virtuales", "Presentaciones inmersivas"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Educación Artística",
+          "examples": [
+            "Crear galerías virtuales 3D para exhibir trabajos de estudiantes",
+            "Diseñar espacios creativos como proyecto de arte digital",
+            "Organizar exposiciones virtuales abiertas a la comunidad educativa"
+          ]
+        },
+        {
+          "subject": "Estudios Sociales",
+          "examples": [
+            "Recrear entornos históricos para aprendizaje inmersivo",
+            "Organizar debates virtuales en un espacio 3D interactivo"
+          ]
+        },
+        {
+          "subject": "Informática",
+          "examples": [
+            "Enseñar conceptos de espacios web 3D y WebXR",
+            "Proyectos de diseño de espacios virtuales con Spoke (editor)"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/FrZouulTQSE",
+      "forDirectors": {
+        "implementationTime": "1-2 horas de exploración y configuración",
+        "techRequirements": "Navegador web moderno (Chrome, Firefox), micrófono. Opcional: visor VR",
+        "cost": "Gratis para salas de hasta 25 personas. Código abierto permite hospedar instancia propia",
+        "tips": "Excelente para eventos institucionales virtuales, ferias de ciencias o exposiciones de arte. La versión en la nube de Mozilla es suficiente para empezar. Dificultad: Básica para usuarios, Intermedia para personalización."
+      }
+    }
   },
   {
     "name": "CoSpaces Edu",
@@ -29,7 +151,55 @@
     "url": "https://cospaces.io",
     "category": "Creación de contenido",
     "icon": "🏗️",
-    "free": true
+    "free": true,
+    "openSource": false,
+    "detail": {
+      "fullDescription": "CoSpaces Edu permite a docentes y estudiantes crear mundos virtuales 3D interactivos usando un editor visual intuitivo y programación por bloques (similar a Scratch). Los estudiantes pueden diseñar escenas, agregar objetos 3D, programar interacciones y compartir sus creaciones como experiencias de RV visualizables en el navegador o con visores VR. Incluye una biblioteca de objetos 3D, escenarios prediseñados y la posibilidad de importar modelos propios.",
+      "approach": {
+        "areas": ["Informática", "Ciencias Naturales", "Estudios Sociales", "Educación Artística", "Lengua y Literatura"],
+        "levels": ["Primaria alta", "Secundaria", "Bachillerato"],
+        "type": ["Creación de contenido", "Programación visual", "Proyectos creativos"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Informática",
+          "examples": [
+            "Enseñar lógica de programación con bloques en entornos 3D",
+            "Proyectos de desarrollo de experiencias interactivas",
+            "Introducción al pensamiento computacional mediante creación VR"
+          ]
+        },
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Crear modelos 3D del sistema solar que los estudiantes puedan explorar",
+            "Simular ecosistemas con programación de comportamientos animales",
+            "Reconstruir el ciclo del agua como experiencia interactiva"
+          ]
+        },
+        {
+          "subject": "Estudios Sociales",
+          "examples": [
+            "Recrear ciudades históricas o monumentos arqueológicos",
+            "Diseñar museos virtuales sobre la cultura ecuatoriana"
+          ]
+        },
+        {
+          "subject": "Lengua y Literatura",
+          "examples": [
+            "Crear escenarios 3D basados en obras literarias",
+            "Narrativas interactivas donde el lector toma decisiones"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/970tJxn7YVw",
+      "forDirectors": {
+        "implementationTime": "3-4 horas de capacitación (creación + programación básica)",
+        "techRequirements": "Navegador web, cuenta educativa gratuita. Opcional: tablets para estudiantes",
+        "cost": "Gratis (plan básico con 2 espacios); Pro desde $5.95/mes por docente",
+        "tips": "Ideal para proyectos integradores que combinen tecnología con contenido curricular. Los docentes de Informática pueden liderar y colaborar con docentes de otras áreas."
+      }
+    }
   },
   {
     "name": "Sketchfab",
@@ -37,7 +207,47 @@
     "url": "https://sketchfab.com",
     "category": "Modelado 3D",
     "icon": "🎭",
-    "free": true
+    "free": true,
+    "openSource": false,
+    "detail": {
+      "fullDescription": "Sketchfab es la plataforma líder para publicar, compartir y descubrir modelos 3D interactivos. Su biblioteca educativa contiene miles de modelos gratuitos: esqueletos y órganos anatómicos, artefactos históricos digitalizados, animales, plantas, moléculas, maquinaria y obras de arte escaneadas en 3D. Todos los modelos pueden rotarse, acercarse y visualizarse en realidad virtual directamente desde el navegador. Los docentes pueden crear colecciones temáticas y embeber modelos en presentaciones o sitios web.",
+      "approach": {
+        "areas": ["Ciencias Naturales", "Estudios Sociales", "Educación Artística", "Matemáticas"],
+        "levels": ["Primaria", "Secundaria", "Bachillerato"],
+        "type": ["Visualización 3D", "Material didáctico", "Exploración"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Explorar modelos anatómicos 3D del cuerpo humano (corazón, cerebro, esqueleto)",
+            "Visualizar moléculas y estructuras celulares en 3D",
+            "Estudiar fósiles y especímenes paleontológicos digitalizados"
+          ]
+        },
+        {
+          "subject": "Estudios Sociales",
+          "examples": [
+            "Examinar artefactos arqueológicos de museos del mundo en 3D",
+            "Explorar monumentos históricos escaneados (templos, castillos)"
+          ]
+        },
+        {
+          "subject": "Educación Artística",
+          "examples": [
+            "Estudiar esculturas clásicas desde todos los ángulos",
+            "Analizar técnicas de modelado 3D observando creaciones profesionales"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/syulGKfS23I",
+      "forDirectors": {
+        "implementationTime": "30 minutos de exploración guiada",
+        "techRequirements": "Navegador web. Opcional: visor VR para experiencia inmersiva",
+        "cost": "Gratis (acceso a biblioteca). Cuenta Pro desde $15/mes (solo necesaria para publicar modelos)",
+        "tips": "No requiere registro para explorar modelos. Los docentes pueden crear colecciones curadas por materia y nivel. Es un excelente complemento para cualquier clase que se beneficie de visualización 3D."
+      }
+    }
   },
   {
     "name": "ThingLink",
@@ -45,7 +255,47 @@
     "url": "https://www.thinglink.com",
     "category": "Creación de contenido",
     "icon": "📸",
-    "free": true
+    "free": true,
+    "openSource": false,
+    "detail": {
+      "fullDescription": "ThingLink permite crear imágenes, videos y escenas 360° interactivas con puntos calientes (hotspots) que contienen texto, audio, video, enlaces y cuestionarios. Los docentes pueden tomar fotos 360° de laboratorios, museos o espacios reales y enriquecerlos con información educativa. Los estudiantes exploran estas escenas a su ritmo, haciendo clic en los puntos de interés. También permite crear recorridos virtuales conectando múltiples escenas 360°.",
+      "approach": {
+        "areas": ["Ciencias Naturales", "Estudios Sociales", "Educación Artística", "Lengua y Literatura"],
+        "levels": ["Secundaria", "Bachillerato"],
+        "type": ["Creación de contenido", "Experiencias interactivas", "Recorridos virtuales"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Crear un recorrido virtual por el laboratorio con instrucciones de seguridad interactivas",
+            "Enriquecer imágenes de ecosistemas con información sobre cada especie",
+            "Diseñar mapas interactivos del cuerpo humano con explicaciones"
+          ]
+        },
+        {
+          "subject": "Estudios Sociales",
+          "examples": [
+            "Recorridos virtuales por sitios históricos del Ecuador con información contextual",
+            "Mapas interactivos de regiones con datos económicos y culturales"
+          ]
+        },
+        {
+          "subject": "Educación Artística",
+          "examples": [
+            "Galerías virtuales interactivas con análisis de cada obra",
+            "Portafolios digitales inmersivos de proyectos estudiantiles"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/wvXVQJf80UQ",
+      "forDirectors": {
+        "implementationTime": "2 horas de taller práctico",
+        "techRequirements": "Navegador web, cuenta educativa. Opcional: cámara 360° ($100-300) o smartphone con app 360°",
+        "cost": "Gratis (plan educativo básico); Premium educativo desde $6/mes",
+        "tips": "Muy versátil para proyectos interdisciplinarios. Un docente puede crear el contenido 360° y otros pueden agregar información de sus materias sobre la misma escena."
+      }
+    }
   },
   {
     "name": "Tour Creator (Expediciones)",
@@ -53,6 +303,184 @@
     "url": "https://arvr.google.com/tourcreator/",
     "category": "Experiencias inmersivas",
     "icon": "🗺️",
-    "free": true
+    "free": true,
+    "openSource": false,
+    "detail": {
+      "fullDescription": "Google Tour Creator permite a los docentes crear recorridos virtuales personalizados utilizando imágenes 360° de Google Street View o fotos propias. Cada parada del recorrido puede incluir descripciones, puntos de interés señalados y narración. Los recorridos creados se comparten mediante un enlace y pueden visualizarse en el navegador o con lentes de realidad virtual. Es la herramienta más sencilla para que un docente diseñe una expedición virtual alineada a su planificación curricular.",
+      "approach": {
+        "areas": ["Estudios Sociales", "Ciencias Naturales", "Lengua y Literatura", "Inglés"],
+        "levels": ["Primaria", "Secundaria", "Bachillerato"],
+        "type": ["Experiencias inmersivas", "Recorridos guiados", "Exploración"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Estudios Sociales",
+          "examples": [
+            "Expediciones virtuales por las regiones del Ecuador",
+            "Recorridos por centros históricos de Quito, Cuenca o Guayaquil",
+            "Viajes virtuales a sitios patrimonio de la humanidad"
+          ]
+        },
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Recorridos por reservas naturales y parques nacionales del Ecuador",
+            "Expediciones virtuales al fondo marino o a volcanes activos"
+          ]
+        },
+        {
+          "subject": "Inglés",
+          "examples": [
+            "Recorridos por ciudades anglófonas para inmersión cultural",
+            "Actividades de descripción de lugares en inglés usando los recorridos"
+          ]
+        }
+      ],
+      "videoUrl": null,
+      "forDirectors": {
+        "implementationTime": "1 hora para crear un recorrido básico",
+        "techRequirements": "Cuenta de Google, navegador web",
+        "cost": "Completamente gratis",
+        "tips": "Crear un banco institucional de recorridos virtuales organizados por materia y nivel. Cada docente puede contribuir con recorridos de su especialidad."
+      }
+    }
+  },
+  {
+    "name": "A-Frame",
+    "description": "Framework web de código abierto para crear experiencias de realidad virtual directamente en el navegador usando HTML. Ideal para clases de informática y proyectos STEAM.",
+    "url": "https://aframe.io",
+    "category": "Creación de contenido",
+    "icon": "🔷",
+    "free": true,
+    "openSource": true,
+    "detail": {
+      "fullDescription": "A-Frame es un framework web de código abierto (licencia MIT) desarrollado originalmente por Mozilla para crear experiencias de realidad virtual usando HTML. Permite crear escenas 3D y VR escribiendo etiquetas HTML simples, sin necesidad de conocimientos avanzados de programación. Las experiencias creadas funcionan en cualquier navegador y son compatibles con visores VR. Su comunidad activa ofrece cientos de componentes adicionales gratuitos. Es ideal para enseñar desarrollo web 3D y pensamiento computacional.",
+      "approach": {
+        "areas": ["Informática", "Matemáticas", "Educación Artística"],
+        "levels": ["Bachillerato"],
+        "type": ["Programación", "Creación de contenido VR", "Proyectos STEAM"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Informática",
+          "examples": [
+            "Enseñar desarrollo web creando escenas VR con HTML",
+            "Proyectos de programación 3D accesibles para principiantes",
+            "Introducción a WebXR y tecnologías web inmersivas"
+          ]
+        },
+        {
+          "subject": "Matemáticas",
+          "examples": [
+            "Visualizar figuras geométricas 3D de forma interactiva",
+            "Crear representaciones de funciones matemáticas en el espacio"
+          ]
+        },
+        {
+          "subject": "Educación Artística",
+          "examples": [
+            "Crear instalaciones artísticas virtuales como proyecto creativo",
+            "Diseñar entornos 3D como ejercicio de composición espacial"
+          ]
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/LrcF31StZBM",
+      "forDirectors": {
+        "implementationTime": "4-6 horas de capacitación (requiere conocimientos básicos de HTML)",
+        "techRequirements": "Editor de texto, navegador web. No requiere instalación de software",
+        "cost": "Completamente gratis y de código abierto (licencia MIT)",
+        "tips": "Dirigido principalmente a docentes de Informática y proyectos STEAM. Los estudiantes con conocimientos básicos de HTML pueden crear sus primeras escenas VR en menos de 1 hora. Dificultad: Intermedia — requiere familiaridad con HTML básico."
+      }
+    }
+  },
+  {
+    "name": "OpenSpace",
+    "description": "Software de código abierto de la NASA para visualización inmersiva del universo. Permite explorar el espacio desde la Tierra hasta las galaxias más lejanas.",
+    "url": "https://www.openspaceproject.com",
+    "category": "Experiencias inmersivas",
+    "icon": "🚀",
+    "free": true,
+    "openSource": true,
+    "detail": {
+      "fullDescription": "OpenSpace es un software de código abierto (licencia MIT) desarrollado por la Universidad de Linköping en colaboración con la NASA y el Museo Americano de Historia Natural. Permite visualizar el universo conocido a escala real, desde la superficie de la Tierra hasta las galaxias más distantes. Incluye datos reales de misiones espaciales, posiciones de satélites, modelos planetarios de alta resolución y la capacidad de viajar en el tiempo para ver eventos astronómicos pasados o futuros. Es utilizado en planetarios profesionales de todo el mundo.",
+      "approach": {
+        "areas": ["Ciencias Naturales", "Matemáticas", "Estudios Sociales"],
+        "levels": ["Secundaria", "Bachillerato"],
+        "type": ["Experiencias inmersivas", "Visualización científica", "Exploración"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Explorar el sistema solar con datos reales de la NASA",
+            "Visualizar la posición de satélites y la Estación Espacial Internacional",
+            "Estudiar fases lunares y eclipses viajando en el tiempo",
+            "Observar la estructura de la Vía Láctea y galaxias cercanas"
+          ]
+        },
+        {
+          "subject": "Matemáticas",
+          "examples": [
+            "Comprender escalas y órdenes de magnitud (del átomo al universo)",
+            "Estudiar órbitas elípticas y leyes de Kepler en acción"
+          ]
+        }
+      ],
+      "videoUrl": null,
+      "forDirectors": {
+        "implementationTime": "3-4 horas de instalación y exploración",
+        "techRequirements": "Computadora con tarjeta gráfica dedicada (mínimo 4GB VRAM), 8GB RAM, Windows/Mac/Linux",
+        "cost": "Completamente gratis y de código abierto",
+        "tips": "Impacto visual excepcional que motiva a los estudiantes. Ideal para laboratorios de informática con computadoras potentes. Un solo equipo con proyector puede servir para demostraciones a toda la clase. Dificultad: Intermedia — la instalación requiere computadora potente."
+      }
+    }
+  },
+  {
+    "name": "Godot Engine",
+    "description": "Motor de videojuegos de código abierto con soporte para VR. Permite crear experiencias interactivas 3D y juegos educativos sin costo de licencia.",
+    "url": "https://godotengine.org",
+    "category": "Creación de contenido",
+    "icon": "🎮",
+    "free": true,
+    "openSource": true,
+    "detail": {
+      "fullDescription": "Godot Engine es un motor de videojuegos de código abierto (licencia MIT) que permite crear juegos 2D y 3D, simulaciones interactivas y experiencias de realidad virtual. Su lenguaje de programación visual (GDScript) es similar a Python y accesible para principiantes. Incluye un editor visual completo, sistema de físicas, animaciones y soporte para exportar a web, móvil y escritorio. Es la alternativa libre a Unity y Unreal Engine, sin costos de licencia ni regalías.",
+      "approach": {
+        "areas": ["Informática", "Matemáticas", "Ciencias Naturales", "Educación Artística"],
+        "levels": ["Bachillerato"],
+        "type": ["Programación", "Desarrollo de juegos", "Simulaciones", "Proyectos STEAM"]
+      },
+      "subjectExamples": [
+        {
+          "subject": "Informática",
+          "examples": [
+            "Enseñar programación orientada a objetos con desarrollo de juegos",
+            "Proyectos de desarrollo de videojuegos educativos",
+            "Introducción al diseño 3D y animación por computadora"
+          ]
+        },
+        {
+          "subject": "Matemáticas",
+          "examples": [
+            "Crear simulaciones interactivas de conceptos geométricos",
+            "Programar visualizaciones de funciones matemáticas"
+          ]
+        },
+        {
+          "subject": "Ciencias Naturales",
+          "examples": [
+            "Desarrollar simulaciones de fenómenos físicos (gravedad, colisiones)",
+            "Crear modelos interactivos de ecosistemas"
+          ]
+        }
+      ],
+      "videoUrl": null,
+      "forDirectors": {
+        "implementationTime": "8-12 horas de capacitación (curso básico completo)",
+        "techRequirements": "Computadora con tarjeta gráfica, mínimo 4GB RAM. Descarga gratuita (~100MB)",
+        "cost": "Completamente gratis y de código abierto (licencia MIT, sin regalías)",
+        "tips": "Herramienta avanzada para programas de informática y clubes de tecnología. Curva de aprendizaje moderada pero con resultados muy motivadores para estudiantes. Dificultad: Avanzada — requiere dedicación y un docente con base en programación."
+      }
+    }
   }
 ]

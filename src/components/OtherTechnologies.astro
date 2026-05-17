@@ -1,0 +1,46 @@
+---
+const base = import.meta.env.BASE_URL;
+
+interface Props {
+  currentSlug: string;
+}
+
+const technologies = [
+  { slug: 'inteligencia-artificial', label: 'Inteligencia Artificial', icon: '🤖', color: 'bg-blue-100', desc: 'Herramientas de IA para la gestión escolar y la enseñanza.' },
+  { slug: 'realidad-virtual', label: 'Realidad Virtual', icon: '🥽', color: 'bg-cyan-100', desc: 'Experiencias inmersivas para explorar lugares y conceptos.' },
+  { slug: 'realidad-aumentada', label: 'Realidad Aumentada', icon: '📱', color: 'bg-orange-100', desc: 'Contenido digital superpuesto al mundo real del aula.' },
+  { slug: 'simulaciones', label: 'Simulaciones Interactivas', icon: '🧪', color: 'bg-amber-100', desc: 'Laboratorios virtuales para experimentar sin riesgo.' },
+];
+
+const { currentSlug } = Astro.props;
+const others = technologies.filter((t) => t.slug !== currentSlug);
+---
+
+<section class="max-w-4xl mx-auto px-4 py-10">
+  <h2 class="text-lg font-bold text-primary mb-5 text-center">Explora otras tecnologías</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+    {others.map((tech) => (
+      <a
+        href={`${base}${tech.slug}/`}
+        class="group flex items-start gap-3 p-4 rounded-xl border border-border bg-white hover:shadow-md hover:-translate-y-0.5 transition-all"
+      >
+        <div class:list={['w-10 h-10 rounded-lg flex items-center justify-center shrink-0', tech.color]}>
+          <span class="text-lg" aria-hidden="true">{tech.icon}</span>
+        </div>
+        <div class="min-w-0">
+          <h3 class="font-bold text-sm text-primary group-hover:text-accent transition-colors">{tech.label}</h3>
+          <p class="text-xs text-text-light mt-0.5 line-clamp-2">{tech.desc}</p>
+        </div>
+      </a>
+    ))}
+  </div>
+</section>
+
+<style>
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>

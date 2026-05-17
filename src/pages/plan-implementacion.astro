@@ -2,12 +2,15 @@
 import MainLayout from '../layouts/MainLayout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import StepCard from '../components/StepCard.astro';
+import GuideProgress from '../components/GuideProgress.astro';
+import SectionNav from '../components/SectionNav.astro';
 import steps from '../data/steps.json';
 const base = import.meta.env.BASE_URL;
 ---
 
 <MainLayout title="Plan de Implementación — Guía Interactiva">
   <main class="flex-1">
+    <GuideProgress currentSlug="plan-implementacion" />
     <!-- Hero -->
     <section class="bg-primary text-white py-16 md:py-20 px-4">
       <div class="max-w-4xl mx-auto text-center">
@@ -118,7 +121,7 @@ const base = import.meta.env.BASE_URL;
       <p class="text-text-light text-sm mb-6 max-w-lg mx-auto">
         Explora las herramientas disponibles para cada tecnología y selecciona las más adecuadas para tu institución.
       </p>
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+      <div class="flex flex-wrap items-center justify-center gap-3">
         <a href={`${base}inteligencia-artificial/`} class="inline-block bg-accent hover:bg-accent-light text-white font-semibold px-6 py-2.5 rounded-lg transition-colors text-sm">
           Herramientas de IA
         </a>
@@ -128,7 +131,12 @@ const base = import.meta.env.BASE_URL;
         <a href={`${base}realidad-aumentada/`} class="inline-block border border-primary/20 hover:bg-primary/5 text-primary font-semibold px-6 py-2.5 rounded-lg transition-colors text-sm">
           Herramientas de RA
         </a>
+        <a href={`${base}simulaciones/`} class="inline-block border border-primary/20 hover:bg-primary/5 text-primary font-semibold px-6 py-2.5 rounded-lg transition-colors text-sm">
+          Simulaciones Interactivas
+        </a>
       </div>
     </section>
+
+    <SectionNav currentSlug="plan-implementacion" />
   </main>
 </MainLayout>

@@ -4,27 +4,55 @@ const currentYear = new Date().getFullYear();
 ---
 
 <footer class="mt-auto bg-primary text-white/80">
-  <div class="max-w-6xl mx-auto px-4 py-8">
-    <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
-      <div class="text-center md:text-left">
-        <p class="font-semibold text-white" style="font-family: var(--font-heading);">
-          Guía Interactiva — Tecnologías Emergentes Educativas
-        </p>
-        <p class="mt-1">
-          Proyecto de tesis de maestría &middot; {currentYear}
+  <div class="max-w-6xl mx-auto px-4 py-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+      <!-- Brand -->
+      <div class="sm:col-span-2 lg:col-span-1">
+        <div class="flex items-center gap-3 mb-2">
+          <img src={`${base}logo.png`} alt="Logo Unidad Educativa Particular Francisco Huerta Rendón" class="w-10 h-10 rounded-full bg-white p-0.5" />
+          <p class="font-bold text-white text-lg" style="font-family: var(--font-heading);">
+            Guía TEE
+          </p>
+        </div>
+        <p class="text-sm leading-relaxed">
+          Guía interactiva para integrar tecnologías emergentes en instituciones educativas.
         </p>
       </div>
-      <nav aria-label="Enlaces del pie de página">
-        <a
-          href={`${base}referencias/`}
-          class="inline-flex items-center gap-1 text-accent-light hover:text-white transition-colors font-medium"
-        >
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-          </svg>
-          Ver referencias
-        </a>
-      </nav>
+
+      <!-- Technologies -->
+      <div>
+        <h3 class="text-white font-semibold text-sm uppercase tracking-wide mb-3">Tecnologías</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href={`${base}inteligencia-artificial/`} class="hover:text-white transition-colors">Inteligencia Artificial</a></li>
+          <li><a href={`${base}realidad-virtual/`} class="hover:text-white transition-colors">Realidad Virtual</a></li>
+          <li><a href={`${base}realidad-aumentada/`} class="hover:text-white transition-colors">Realidad Aumentada</a></li>
+          <li><a href={`${base}simulaciones/`} class="hover:text-white transition-colors">Simulaciones Interactivas</a></li>
+        </ul>
+      </div>
+
+      <!-- Guide -->
+      <div>
+        <h3 class="text-white font-semibold text-sm uppercase tracking-wide mb-3">Guía</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href={`${base}tpack/`} class="hover:text-white transition-colors">Marco TPACK</a></li>
+          <li><a href={`${base}plan-implementacion/`} class="hover:text-white transition-colors">Plan de Implementación</a></li>
+          <li><a href={`${base}referencias/`} class="hover:text-white transition-colors">Referencias</a></li>
+        </ul>
+      </div>
+
+      <!-- Project -->
+      <div>
+        <h3 class="text-white font-semibold text-sm uppercase tracking-wide mb-3">Proyecto</h3>
+        <ul class="space-y-2 text-sm">
+          <li>Informe de investigación</li>
+          <li>Gestión directiva e innovación educativa</li>
+          <li>Contexto: Ecuador, K-12</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-white/15 pt-6 text-sm text-center">
+      <p>Guía TEE — Tecnologías Emergentes Educativas &middot; Informe de Investigación &middot; {currentYear}</p>
     </div>
   </div>
 </footer>

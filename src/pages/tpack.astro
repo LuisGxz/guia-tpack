@@ -2,11 +2,14 @@
 import MainLayout from '../layouts/MainLayout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import TPACKDiagram from '../components/TPACKDiagram.astro';
+import GuideProgress from '../components/GuideProgress.astro';
+import SectionNav from '../components/SectionNav.astro';
 const base = import.meta.env.BASE_URL;
 ---
 
 <MainLayout title="Marco TPACK — Guía Interactiva">
   <main class="flex-1">
+    <GuideProgress currentSlug="tpack" />
     <!-- Hero -->
     <section class="bg-primary text-white py-16 md:py-20 px-4">
       <div class="max-w-4xl mx-auto text-center">
@@ -131,7 +134,6 @@ const base = import.meta.env.BASE_URL;
           title="Las tecnologías emergentes en el TPACK"
           subtitle="Cómo se relacionan la IA, la Realidad Virtual y la Realidad Aumentada con el marco TPACK."
         />
-        <!-- TODO: update with thesis content -->
         <div class="mt-8 space-y-6">
           <div class="flex items-start gap-4 p-5 rounded-xl border border-border">
             <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center shrink-0">
@@ -191,7 +193,7 @@ const base = import.meta.env.BASE_URL;
       <p class="text-text-light mb-8 max-w-lg mx-auto">
         Conoce las herramientas gratuitas disponibles y las estrategias de integración para cada tecnología emergente.
       </p>
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <div class="flex flex-wrap items-center justify-center gap-4">
         <a href={`${base}inteligencia-artificial/`} class="inline-block bg-accent hover:bg-accent-light text-white font-semibold px-8 py-3 rounded-lg transition-colors">
           Explorar IA
         </a>
@@ -201,7 +203,12 @@ const base = import.meta.env.BASE_URL;
         <a href={`${base}realidad-aumentada/`} class="inline-block border border-primary/20 hover:bg-primary/5 text-primary font-semibold px-8 py-3 rounded-lg transition-colors">
           Explorar RA
         </a>
+        <a href={`${base}simulaciones/`} class="inline-block border border-primary/20 hover:bg-primary/5 text-primary font-semibold px-8 py-3 rounded-lg transition-colors">
+          Explorar Simulaciones
+        </a>
       </div>
     </section>
+
+    <SectionNav currentSlug="tpack" />
   </main>
 </MainLayout>

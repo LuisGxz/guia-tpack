@@ -1,0 +1,65 @@
+---
+const base = import.meta.env.BASE_URL;
+
+interface Section {
+  slug: string;
+  label: string;
+  icon: string;
+}
+
+interface Props {
+  currentSlug: string;
+}
+
+const guideOrder: Section[] = [
+  { slug: 'tpack', label: 'Marco TPACK', icon: '🔬' },
+  { slug: 'inteligencia-artificial', label: 'Inteligencia Artificial', icon: '🤖' },
+  { slug: 'realidad-virtual', label: 'Realidad Virtual', icon: '🥽' },
+  { slug: 'realidad-aumentada', label: 'Realidad Aumentada', icon: '📱' },
+  { slug: 'simulaciones', label: 'Simulaciones Interactivas', icon: '🧪' },
+  { slug: 'plan-implementacion', label: 'Plan de Implementación', icon: '📝' },
+];
+
+const { currentSlug } = Astro.props;
+const currentIdx = guideOrder.findIndex((s) => s.slug === currentSlug);
+const prev = currentIdx > 0 ? guideOrder[currentIdx - 1] : null;
+const next = currentIdx < guideOrder.length - 1 ? guideOrder[currentIdx + 1] : null;
+---
+
+<nav class="max-w-4xl mx-auto px-4 py-8" aria-label="Navegación entre secciones">
+  <div class="flex items-stretch justify-between gap-4">
+    {prev ? (
+      <a
+        href={`${base}${prev.slug}/`}
+        class="group flex items-center gap-3 p-4 rounded-xl border border-border bg-white hover:border-accent/30 hover:shadow-md transition-all flex-1 max-w-[48%]"
+      >
+        <svg class="w-5 h-5 text-text-light group-hover:text-accent transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+        <div class="min-w-0">
+          <span class="text-xs text-text-light font-medium uppercase tracking-wide">Anterior</span>
+          <p class="font-semibold text-sm text-primary group-hover:text-accent transition-colors truncate">
+            <span aria-hidden="true">{prev.icon}</span> {prev.label}
+          </p>
+        </div>
+      </a>
+    ) : <div class="flex-1" />}
+
+    {next ? (
+      <a
+        href={`${base}${next.slug}/`}
+        class="group flex items-center justify-end gap-3 p-4 rounded-xl border border-border bg-white hover:border-accent/30 hover:shadow-md transition-all flex-1 max-w-[48%] text-right"
+      >
+        <div class="min-w-0">
+          <span class="text-xs text-text-light font-medium uppercase tracking-wide">Siguiente</span>
+          <p class="font-semibold text-sm text-primary group-hover:text-accent transition-colors truncate">
+            {next.label} <span aria-hidden="true">{next.icon}</span>
+          </p>
+        </div>
+        <svg class="w-5 h-5 text-text-light group-hover:text-accent transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+    ) : <div class="flex-1" />}
+  </div>
+</nav>
