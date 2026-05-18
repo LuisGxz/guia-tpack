@@ -10,9 +10,26 @@
     "detail": {
       "fullDescription": "ChatGPT es un modelo de lenguaje desarrollado por OpenAI que mantiene conversaciones naturales y genera texto de alta calidad. En educación, funciona como un asistente versátil que puede crear planificaciones de clase, rúbricas de evaluación, explicaciones adaptadas al nivel del estudiante, ejercicios diferenciados y retroalimentación personalizada. Su fortaleza radica en la capacidad de adaptar el tono, complejidad y formato del contenido según las instrucciones del docente.",
       "approach": {
-        "areas": ["Lengua y Literatura", "Matemáticas", "Ciencias Naturales", "Estudios Sociales", "Inglés", "Educación Artística", "Informática"],
-        "levels": ["Primaria alta", "Secundaria", "Bachillerato"],
-        "type": ["Creación de contenido", "Evaluación", "Tutoría personalizada", "Investigación"]
+        "areas": [
+          "Lengua y Literatura",
+          "Matemáticas",
+          "Ciencias Naturales",
+          "Estudios Sociales",
+          "Inglés",
+          "Educación Artística",
+          "Informática"
+        ],
+        "levels": [
+          "Primaria alta",
+          "Secundaria",
+          "Bachillerato"
+        ],
+        "type": [
+          "Creación de contenido",
+          "Evaluación",
+          "Tutoría personalizada",
+          "Investigación"
+        ]
       },
       "subjectExamples": [
         {
@@ -55,6 +72,36 @@
         "techRequirements": "Navegador web, cuenta gratuita con correo electrónico",
         "cost": "Gratis (GPT-3.5); Plus $20/mes (GPT-4) — la versión gratuita es suficiente para empezar",
         "tips": "Iniciar con 2-3 docentes piloto. Establecer una política institucional de uso ético antes de la implementación. Crear un documento compartido con prompts efectivos que los docentes puedan reutilizar."
+      },
+      "activity": {
+        "title": "Crea una planificación de clase diferenciada",
+        "description": "Aprende a usar ChatGPT para generar una planificación adaptada a diferentes niveles de aprendizaje en tu aula.",
+        "steps": [
+          {
+            "title": "Elige tu contexto",
+            "description": "Antes de escribir un prompt, define el marco de tu clase: la materia, el nivel educativo, el tema específico del currículo y cuántos niveles de diferenciación necesitas.",
+            "prompt": null,
+            "tip": "Empieza con una clase que ya tengas planificada. Así podrás comparar el resultado de la IA con tu propia versión."
+          },
+          {
+            "title": "Copia y adapta este prompt",
+            "description": "Copia el siguiente prompt, reemplaza los valores entre corchetes con tu contexto real, y pégalo en ChatGPT.",
+            "prompt": "Eres un docente experto en [MATERIA]. Crea una planificación de clase de 45 minutos para estudiantes de [NIVEL, ej: 8vo EGB] sobre el tema [TEMA]. Incluye:\n1. Objetivo de aprendizaje alineado al currículo ecuatoriano\n2. Actividad de apertura (5 min)\n3. Desarrollo con actividades diferenciadas para 3 niveles (básico, intermedio, avanzado) (30 min)\n4. Cierre con evaluación formativa (10 min)\nUsa un tono práctico y claro.",
+            "tip": "Si el resultado es muy genérico, agrega detalles: 'Los estudiantes de nivel básico tienen dificultad con lectura comprensiva'."
+          },
+          {
+            "title": "Abre ChatGPT y pega el prompt",
+            "description": "Abre chat.openai.com en tu navegador, inicia sesión con tu cuenta gratuita y pega el prompt en el campo de texto. Presiona Enter y espera la respuesta completa.",
+            "prompt": null,
+            "tip": "Si no tienes cuenta, créala con tu correo de Gmail en menos de 2 minutos. La versión gratuita es suficiente para esta actividad."
+          },
+          {
+            "title": "Evalúa y adapta el resultado",
+            "description": "Revisa la planificación generada con ojo crítico. Pregúntate: ¿Se alinea con los objetivos del currículo? ¿El nivel de complejidad es apropiado? ¿Necesitas ajustar algo para tu contexto? Si algo no te convence, pídele a ChatGPT que lo modifique.",
+            "prompt": null,
+            "tip": "La IA es un punto de partida, nunca un producto final. Siempre adapta el resultado a tu conocimiento del grupo de estudiantes."
+          }
+        ]
       }
     }
   },
@@ -69,9 +116,22 @@
     "detail": {
       "fullDescription": "Google Gemini es el asistente de inteligencia artificial de Google que combina generación de texto, análisis de imágenes y acceso a información actualizada de la web. Su integración con el ecosistema Google (Docs, Sheets, Slides) lo hace especialmente útil para docentes que ya usan Google Workspace. Puede analizar imágenes, crear resúmenes de documentos extensos y generar contenido educativo contextualizado con información actualizada.",
       "approach": {
-        "areas": ["Ciencias Naturales", "Estudios Sociales", "Lengua y Literatura", "Inglés", "Informática"],
-        "levels": ["Secundaria", "Bachillerato"],
-        "type": ["Creación de contenido", "Investigación", "Análisis de datos"]
+        "areas": [
+          "Ciencias Naturales",
+          "Estudios Sociales",
+          "Lengua y Literatura",
+          "Inglés",
+          "Informática"
+        ],
+        "levels": [
+          "Secundaria",
+          "Bachillerato"
+        ],
+        "type": [
+          "Creación de contenido",
+          "Investigación",
+          "Análisis de datos"
+        ]
       },
       "subjectExamples": [
         {
@@ -105,6 +165,36 @@
         "techRequirements": "Cuenta de Google, navegador web",
         "cost": "Gratis — versiones avanzadas incluidas en Google Workspace for Education",
         "tips": "Ideal si la institución ya usa Google Workspace. Capacitar primero a los docentes que ya dominan herramientas Google para que sirvan como multiplicadores."
+      },
+      "activity": {
+        "title": "Genera material de estudio con fuentes verificadas",
+        "description": "Usa Gemini para crear un resumen de un tema curricular con información actualizada y verificable.",
+        "steps": [
+          {
+            "title": "Selecciona un tema del currículo",
+            "description": "Elige un tema de tu planificación que requiera información actualizada o que beneficiaría de múltiples perspectivas. Por ejemplo: cambio climático en Ecuador, avances en biotecnología, o un evento histórico reciente.",
+            "prompt": null,
+            "tip": "Gemini tiene acceso a información actualizada de la web, lo que lo hace ideal para temas que cambian frecuentemente."
+          },
+          {
+            "title": "Copia y adapta este prompt",
+            "description": "Usa este prompt como base para generar material de estudio estructurado con fuentes.",
+            "prompt": "Crea un resumen educativo sobre [TEMA] para estudiantes de [NIVEL]. El resumen debe incluir:\n1. Explicación del concepto en lenguaje accesible (máximo 200 palabras)\n2. 3 datos clave con sus fuentes\n3. Una pregunta de reflexión para discusión en clase\n4. Un ejemplo contextualizado para Ecuador\nIncluye las fuentes de información al final.",
+            "tip": "Gemini puede buscar en la web. Pídele que cite las fuentes para que puedas verificarlas antes de compartir con tus estudiantes."
+          },
+          {
+            "title": "Abre Gemini y genera el contenido",
+            "description": "Ve a gemini.google.com, inicia sesión con tu cuenta de Google y pega el prompt. Si tu institución usa Google Workspace, Gemini ya está integrado en Docs y Slides.",
+            "prompt": null,
+            "tip": "Si ya usas Google Docs, prueba escribir '@Gemini' dentro del documento para generar contenido directamente ahí."
+          },
+          {
+            "title": "Verifica las fuentes y adapta",
+            "description": "Revisa cada fuente citada: abre los enlaces, verifica que la información sea correcta y que el nivel de complejidad sea apropiado. Adapta el lenguaje si es necesario.",
+            "prompt": null,
+            "tip": "Nunca compartas con tus estudiantes un texto generado por IA sin antes verificar su contenido. Esto también es un buen ejercicio de pensamiento crítico."
+          }
+        ]
       }
     }
   },
@@ -119,9 +209,23 @@
     "detail": {
       "fullDescription": "Canva es una plataforma de diseño gráfico intuitiva que integra herramientas de IA para generar imágenes, presentaciones, infografías, pósters y materiales didácticos visualmente atractivos. Su versión educativa (Canva for Education) es completamente gratuita para docentes e instituciones. La IA de Canva puede generar imágenes desde texto, sugerir diseños automáticos, redimensionar contenido para diferentes formatos y crear presentaciones completas a partir de un tema.",
       "approach": {
-        "areas": ["Educación Artística", "Lengua y Literatura", "Ciencias Naturales", "Estudios Sociales", "Inglés"],
-        "levels": ["Primaria", "Secundaria", "Bachillerato"],
-        "type": ["Creación de contenido", "Presentaciones", "Material didáctico visual"]
+        "areas": [
+          "Educación Artística",
+          "Lengua y Literatura",
+          "Ciencias Naturales",
+          "Estudios Sociales",
+          "Inglés"
+        ],
+        "levels": [
+          "Primaria",
+          "Secundaria",
+          "Bachillerato"
+        ],
+        "type": [
+          "Creación de contenido",
+          "Presentaciones",
+          "Material didáctico visual"
+        ]
       },
       "subjectExamples": [
         {
@@ -155,6 +259,36 @@
         "techRequirements": "Navegador web, cuenta institucional (Canva for Education es gratuita para escuelas)",
         "cost": "Gratis con Canva for Education — incluye funciones premium para docentes y estudiantes",
         "tips": "Registrar la institución en Canva for Education para obtener cuentas premium gratuitas para todo el personal. Es una de las herramientas con menor curva de aprendizaje."
+      },
+      "activity": {
+        "title": "Diseña una infografía educativa en minutos",
+        "description": "Crea material visual atractivo para tu clase usando las herramientas de IA de Canva, sin necesidad de experiencia en diseño.",
+        "steps": [
+          {
+            "title": "Accede a Canva for Education",
+            "description": "Ve a canva.com y registra tu cuenta educativa gratuita (Canva for Education incluye funciones premium sin costo). Si tu institución ya está registrada, pide acceso al administrador.",
+            "prompt": null,
+            "tip": "Canva for Education da acceso premium gratuito a todos los docentes y estudiantes de la institución. Vale la pena registrar la institución completa."
+          },
+          {
+            "title": "Usa Magic Design para generar una base",
+            "description": "Haz clic en 'Crear un diseño', selecciona 'Infografía' y usa Magic Design: escribe tu tema (ej: 'Ciclo del agua para 7mo año') y Canva generará varias opciones de diseño automáticamente.",
+            "prompt": null,
+            "tip": "Si Magic Design no está visible, búscalo en la barra lateral izquierda o escribe tu tema en el buscador principal."
+          },
+          {
+            "title": "Personaliza el contenido",
+            "description": "Elige el diseño que más te guste y personalízalo: cambia los textos por tu contenido curricular, ajusta los colores a los de tu institución, y reemplaza las imágenes genéricas por elementos relevantes del tema.",
+            "prompt": null,
+            "tip": "Usa la función 'Texto mágico' para que la IA te ayude a reescribir o resumir los textos de cada sección de la infografía."
+          },
+          {
+            "title": "Exporta y comparte",
+            "description": "Descarga tu infografía como PDF (para imprimir) o PNG (para proyectar). También puedes compartir un enlace editable para que los estudiantes la usen como plantilla para sus propios proyectos.",
+            "prompt": null,
+            "tip": "Crea una carpeta en Canva por materia y nivel. Con el tiempo tendrás un banco de recursos visuales reutilizables."
+          }
+        ]
       }
     }
   },
@@ -169,9 +303,20 @@
     "detail": {
       "fullDescription": "QuillBot es una herramienta de escritura asistida por IA que ofrece parafraseo inteligente, corrección gramatical, detección de plagio, resumen automático y traducción. Permite reformular textos manteniendo el significado original pero mejorando la claridad y el estilo. Es especialmente útil para docentes que necesitan adaptar textos académicos a un lenguaje más accesible para sus estudiantes, y para estudiantes que están desarrollando sus habilidades de escritura.",
       "approach": {
-        "areas": ["Lengua y Literatura", "Inglés", "Estudios Sociales"],
-        "levels": ["Secundaria", "Bachillerato"],
-        "type": ["Creación de contenido", "Escritura académica", "Corrección"]
+        "areas": [
+          "Lengua y Literatura",
+          "Inglés",
+          "Estudios Sociales"
+        ],
+        "levels": [
+          "Secundaria",
+          "Bachillerato"
+        ],
+        "type": [
+          "Creación de contenido",
+          "Escritura académica",
+          "Corrección"
+        ]
       },
       "subjectExamples": [
         {
@@ -204,6 +349,36 @@
         "techRequirements": "Navegador web, cuenta gratuita",
         "cost": "Gratis (funciones básicas); Premium desde $4.17/mes — la versión gratuita es funcional",
         "tips": "Herramienta ideal para introducir gradualmente. Los docentes de Lengua e Inglés son los primeros beneficiarios naturales."
+      },
+      "activity": {
+        "title": "Adapta un texto académico para tus estudiantes",
+        "description": "Simplifica un artículo o texto científico para hacerlo accesible al nivel de lectura de tu grupo de estudiantes.",
+        "steps": [
+          {
+            "title": "Selecciona un texto para adaptar",
+            "description": "Busca un párrafo de un artículo científico, un texto del libro de texto de nivel superior, o una noticia compleja que quieras usar en clase pero que resulte difícil para el nivel actual de tus estudiantes.",
+            "prompt": null,
+            "tip": "Los textos de Wikipedia en español suelen ser un buen punto de partida: informativos pero a veces demasiado complejos para secundaria."
+          },
+          {
+            "title": "Pega el texto en QuillBot",
+            "description": "Ve a quillbot.com, selecciona la herramienta 'Paraphraser' y pega tu texto. Elige el modo 'Simple' para reducir la complejidad, o 'Fluency' para mejorar la claridad manteniendo el nivel.",
+            "prompt": null,
+            "tip": "El modo 'Simple' es ideal para adaptar textos a niveles más bajos. El modo 'Creative' puede hacer el texto más interesante pero a veces cambia el sentido."
+          },
+          {
+            "title": "Compara las versiones",
+            "description": "Lee el texto original y la versión adaptada lado a lado. Verifica que la información clave se mantenga y que el nivel de vocabulario sea apropiado para tu grupo.",
+            "prompt": null,
+            "tip": "Usa la función de resumen (Summarizer) si el texto es muy largo. Puedes generar un resumen de 1 párrafo que capture lo esencial."
+          },
+          {
+            "title": "Crea tu material final",
+            "description": "Toma el texto adaptado como base y haz los ajustes finales: agrega definiciones de vocabulario clave, preguntas de comprensión y conexiones con lo que los estudiantes ya saben.",
+            "prompt": null,
+            "tip": "Comparte ambas versiones (original y adaptada) con estudiantes avanzados como ejercicio de análisis de complejidad textual."
+          }
+        ]
       }
     }
   },
@@ -218,9 +393,24 @@
     "detail": {
       "fullDescription": "Kahoot! es una plataforma de aprendizaje basada en juegos que permite crear cuestionarios interactivos, encuestas y presentaciones gamificadas. Su función de IA genera automáticamente preguntas a partir de un tema, documento o URL, ahorrando tiempo al docente. Los estudiantes participan en tiempo real desde sus dispositivos, compitiendo en un ambiente motivador. Proporciona reportes detallados del desempeño individual y grupal para identificar áreas de mejora.",
       "approach": {
-        "areas": ["Matemáticas", "Ciencias Naturales", "Estudios Sociales", "Lengua y Literatura", "Inglés", "Educación Física"],
-        "levels": ["Primaria", "Secundaria", "Bachillerato"],
-        "type": ["Evaluación", "Gamificación", "Repaso"]
+        "areas": [
+          "Matemáticas",
+          "Ciencias Naturales",
+          "Estudios Sociales",
+          "Lengua y Literatura",
+          "Inglés",
+          "Educación Física"
+        ],
+        "levels": [
+          "Primaria",
+          "Secundaria",
+          "Bachillerato"
+        ],
+        "type": [
+          "Evaluación",
+          "Gamificación",
+          "Repaso"
+        ]
       },
       "subjectExamples": [
         {
@@ -254,6 +444,36 @@
         "techRequirements": "Navegador web, proyector en aula, estudiantes con celular o tablet",
         "cost": "Gratis (hasta 50 participantes); versiones educativas desde $3/mes por docente",
         "tips": "Excelente herramienta de inicio por su alta aceptación entre docentes y estudiantes. Organizar una demostración en reunión de profesores genera adopción inmediata."
+      },
+      "activity": {
+        "title": "Crea un quiz gamificado con IA",
+        "description": "Diseña una evaluación formativa divertida usando el generador automático de preguntas de Kahoot.",
+        "steps": [
+          {
+            "title": "Define tu objetivo de evaluación",
+            "description": "Decide qué tema quieres evaluar, qué tipo de preguntas necesitas (conceptos, aplicación, análisis) y cuántas preguntas tendrá tu quiz (entre 5 y 10 es ideal para mantener la atención).",
+            "prompt": null,
+            "tip": "Un buen quiz de Kahoot tiene variedad: mezcla preguntas fáciles con otras más desafiantes para mantener a todos motivados."
+          },
+          {
+            "title": "Usa el generador de IA",
+            "description": "En kahoot.com, crea un nuevo Kahoot y selecciona 'Crear con IA'. Escribe tu tema (ej: 'Tabla periódica para 10mo año') y deja que la IA genere las preguntas. También puedes pegar un texto o URL para generar preguntas a partir de ese contenido.",
+            "prompt": null,
+            "tip": "Si pegas el contenido de tu libro de texto, las preguntas generadas estarán más alineadas con lo que realmente enseñaste."
+          },
+          {
+            "title": "Revisa y personaliza",
+            "description": "Revisa cada pregunta generada: verifica que la respuesta correcta sea realmente correcta, que las opciones incorrectas sean plausibles pero claramente equivocadas, y ajusta el tiempo por pregunta según la dificultad.",
+            "prompt": null,
+            "tip": "Agrega imágenes a las preguntas cuando sea posible — los quizzes con imágenes tienen mayor engagement."
+          },
+          {
+            "title": "Planifica la sesión de juego",
+            "description": "Decide si lo jugarán en modo clásico (individual) o por equipos. Prepara el proyector y verifica que los estudiantes tengan acceso al WiFi. Comparte el PIN del juego cuando estés listo.",
+            "prompt": null,
+            "tip": "Proyecta las preguntas en la pantalla principal y pide que los estudiantes respondan desde su celular. El modo 'Equipos' funciona bien si no todos tienen dispositivo."
+          }
+        ]
       }
     }
   },
@@ -268,9 +488,21 @@
     "detail": {
       "fullDescription": "Formative es una plataforma de evaluación en tiempo real que permite a los docentes ver las respuestas de los estudiantes mientras las escriben, proporcionar retroalimentación instantánea y usar IA para identificar patrones de error y brechas de aprendizaje. Soporta múltiples tipos de preguntas incluyendo respuesta abierta, opción múltiple, dibujo y carga de archivos. Su panel de análisis permite al docente intervenir inmediatamente cuando detecta que un estudiante está teniendo dificultades.",
       "approach": {
-        "areas": ["Matemáticas", "Ciencias Naturales", "Lengua y Literatura", "Inglés"],
-        "levels": ["Secundaria", "Bachillerato"],
-        "type": ["Evaluación", "Diagnóstico", "Seguimiento en tiempo real"]
+        "areas": [
+          "Matemáticas",
+          "Ciencias Naturales",
+          "Lengua y Literatura",
+          "Inglés"
+        ],
+        "levels": [
+          "Secundaria",
+          "Bachillerato"
+        ],
+        "type": [
+          "Evaluación",
+          "Diagnóstico",
+          "Seguimiento en tiempo real"
+        ]
       },
       "subjectExamples": [
         {
@@ -303,6 +535,36 @@
         "techRequirements": "Navegador web, estudiantes con dispositivo (computadora, tablet o celular)",
         "cost": "Gratis (funciones básicas); Premium desde $12/mes por docente",
         "tips": "Ideal para instituciones que buscan datos concretos sobre el rendimiento estudiantil. Los reportes de Formative pueden alimentar las reuniones de área curricular."
+      },
+      "activity": {
+        "title": "Diseña una evaluación diagnóstica en tiempo real",
+        "description": "Crea una evaluación donde puedas ver las respuestas de tus estudiantes en tiempo real e intervenir al instante.",
+        "steps": [
+          {
+            "title": "Define lo que quieres evaluar",
+            "description": "Identifica los conceptos clave de la unidad actual y decide si necesitas una evaluación diagnóstica (inicio), formativa (durante) o sumativa (final). Formative es ideal para las dos primeras.",
+            "prompt": null,
+            "tip": "Comienza con 3-5 preguntas cortas de diferentes tipos. Menos preguntas pero bien diseñadas dan mejor información que muchas preguntas superficiales."
+          },
+          {
+            "title": "Crea la evaluación en Formative",
+            "description": "En formative.com, crea una nueva evaluación. Mezcla tipos de preguntas: opción múltiple para conceptos, respuesta abierta corta para comprensión, y preguntas de dibujo para diagramas o representaciones.",
+            "prompt": null,
+            "tip": "La pregunta de tipo 'Show Your Work' (muestra tu trabajo) te permite ver el proceso del estudiante, no solo la respuesta final."
+          },
+          {
+            "title": "Configura la retroalimentación automática",
+            "description": "Para preguntas de opción múltiple, configura retroalimentación inmediata que explique por qué la respuesta correcta es correcta. Para respuestas abiertas, la IA de Formative puede sugerir calificaciones.",
+            "prompt": null,
+            "tip": "La retroalimentación inmediata es más efectiva que la retroalimentación diferida. El estudiante aprende mejor cuando recibe la corrección mientras aún recuerda su razonamiento."
+          },
+          {
+            "title": "Analiza el dashboard en vivo",
+            "description": "Durante la clase, observa el panel en tiempo real: identifica estudiantes que responden rápido vs. los que se detienen, patrones de errores comunes, y preguntas que la mayoría falla (posible brecha de enseñanza).",
+            "prompt": null,
+            "tip": "Si ves que más del 60% falla una pregunta, pausa la evaluación y explica el concepto de nuevo antes de continuar."
+          }
+        ]
       }
     }
   },
@@ -317,9 +579,22 @@
     "detail": {
       "fullDescription": "Diffit utiliza inteligencia artificial para generar materiales de lectura diferenciados por nivel de comprensión. A partir de un tema, URL o texto, Diffit crea versiones adaptadas con vocabulario simplificado, preguntas de comprensión, actividades y vocabulario clave. Esto permite al docente atender la diversidad de niveles dentro de una misma aula sin tener que crear múltiples versiones manualmente. Soporta contenido en español e inglés.",
       "approach": {
-        "areas": ["Lengua y Literatura", "Ciencias Naturales", "Estudios Sociales", "Inglés"],
-        "levels": ["Primaria alta", "Secundaria", "Bachillerato"],
-        "type": ["Creación de contenido", "Diferenciación", "Inclusión educativa"]
+        "areas": [
+          "Lengua y Literatura",
+          "Ciencias Naturales",
+          "Estudios Sociales",
+          "Inglés"
+        ],
+        "levels": [
+          "Primaria alta",
+          "Secundaria",
+          "Bachillerato"
+        ],
+        "type": [
+          "Creación de contenido",
+          "Diferenciación",
+          "Inclusión educativa"
+        ]
       },
       "subjectExamples": [
         {
@@ -352,6 +627,36 @@
         "techRequirements": "Navegador web, cuenta gratuita",
         "cost": "Gratis para docentes — sin límites en la versión educativa",
         "tips": "Herramienta con impacto inmediato en aulas con diversidad de niveles. Priorizar su adopción en escuelas con programas de inclusión educativa."
+      },
+      "activity": {
+        "title": "Genera lecturas diferenciadas por nivel",
+        "description": "Crea versiones de un mismo texto adaptadas a diferentes niveles de comprensión lectora para atender la diversidad de tu aula.",
+        "steps": [
+          {
+            "title": "Ingresa tu tema o texto",
+            "description": "En diffit.me, ingresa un tema del currículo (ej: 'Fotosíntesis'), pega una URL de un artículo, o sube un texto directamente. Diffit generará material de lectura sobre ese contenido.",
+            "prompt": null,
+            "tip": "Si pegas una URL de Wikipedia o de un sitio educativo, Diffit la procesará y generará versiones adaptadas automáticamente."
+          },
+          {
+            "title": "Selecciona los niveles de lectura",
+            "description": "Elige los niveles de lectura que necesitas para tu aula. Diffit te ofrece opciones desde primaria hasta bachillerato. Genera al menos 2 niveles diferentes para comparar.",
+            "prompt": null,
+            "tip": "Genera 3 niveles: uno para estudiantes que necesitan apoyo, uno para el nivel esperado, y uno para estudiantes avanzados."
+          },
+          {
+            "title": "Revisa los materiales generados",
+            "description": "Para cada nivel, Diffit genera: el texto adaptado, vocabulario clave con definiciones, preguntas de comprensión y una actividad. Revisa que la información clave se mantenga en todos los niveles.",
+            "prompt": null,
+            "tip": "Compara las preguntas de comprensión entre niveles: las del nivel básico deben ser más literales, las del avanzado más inferenciales."
+          },
+          {
+            "title": "Asigna a tus grupos de estudiantes",
+            "description": "Imprime o comparte digitalmente cada versión con el grupo correspondiente. Los estudiantes trabajan el mismo tema pero a su nivel. En la discusión grupal, todos pueden contribuir desde su comprensión.",
+            "prompt": null,
+            "tip": "No etiquetes los niveles como 'básico' o 'avanzado'. Usa colores o letras neutras para que los estudiantes no se sientan estigmatizados."
+          }
+        ]
       }
     }
   },
@@ -366,9 +671,21 @@
     "detail": {
       "fullDescription": "Curipod es una plataforma que genera presentaciones interactivas completas usando IA. A partir de un tema, crea automáticamente una lección con slides, preguntas abiertas, encuestas, actividades de reflexión, nubes de palabras y evaluaciones. Los estudiantes participan en tiempo real desde sus dispositivos. La IA también puede generar imágenes y adaptar el contenido al nivel educativo especificado. Es ideal para docentes que quieren sesiones más participativas sin invertir horas en preparación.",
       "approach": {
-        "areas": ["Estudios Sociales", "Ciencias Naturales", "Lengua y Literatura", "Educación Artística"],
-        "levels": ["Secundaria", "Bachillerato"],
-        "type": ["Presentaciones interactivas", "Capacitación", "Participación activa"]
+        "areas": [
+          "Estudios Sociales",
+          "Ciencias Naturales",
+          "Lengua y Literatura",
+          "Educación Artística"
+        ],
+        "levels": [
+          "Secundaria",
+          "Bachillerato"
+        ],
+        "type": [
+          "Presentaciones interactivas",
+          "Capacitación",
+          "Participación activa"
+        ]
       },
       "subjectExamples": [
         {
@@ -400,6 +717,36 @@
         "techRequirements": "Navegador web, proyector, estudiantes con dispositivo",
         "cost": "Gratis (funciones básicas ilimitadas); Premium desde $7.50/mes",
         "tips": "Muy visual y atractiva para docentes que quieren modernizar sus clases. Funciona bien como segunda herramienta después de Kahoot para docentes que ya dominan la gamificación básica."
+      },
+      "activity": {
+        "title": "Genera una lección interactiva completa con IA",
+        "description": "Deja que la IA cree una presentación con preguntas, encuestas y actividades de reflexión en minutos.",
+        "steps": [
+          {
+            "title": "Ingresa tu tema y nivel",
+            "description": "En curipod.com, haz clic en 'Create with AI'. Escribe tu tema (ej: 'Revolución Liberal Ecuatoriana') y selecciona el nivel educativo. La IA generará una presentación interactiva completa.",
+            "prompt": null,
+            "tip": "Sé específico con el tema: 'Causas de la Revolución Liberal de 1895' funciona mejor que solo 'Revolución Liberal'."
+          },
+          {
+            "title": "Revisa los slides generados",
+            "description": "Curipod genera automáticamente slides con contenido, preguntas abiertas, encuestas, nubes de palabras y actividades de reflexión. Revisa cada slide y elimina, edita o reordena según tu plan de clase.",
+            "prompt": null,
+            "tip": "Las nubes de palabras funcionan excelente como actividad de apertura para explorar conocimientos previos."
+          },
+          {
+            "title": "Personaliza las interacciones",
+            "description": "Agrega o modifica las preguntas interactivas. Curipod soporta: preguntas abiertas, opción múltiple, encuestas, nubes de palabras, dibujos y preguntas de reflexión. Elige las que mejor se adapten a tu objetivo.",
+            "prompt": null,
+            "tip": "Incluye al menos una pregunta abierta de reflexión — ver las respuestas de todos en pantalla genera discusiones ricas."
+          },
+          {
+            "title": "Presenta en clase y recoge respuestas",
+            "description": "Comparte el código de sesión con tus estudiantes. Mientras presentas, ellos responden en tiempo real desde sus dispositivos. Las respuestas aparecen en pantalla para generar discusión.",
+            "prompt": null,
+            "tip": "Puedes descargar un reporte con todas las respuestas al final para evaluar la comprensión y planificar la siguiente clase."
+          }
+        ]
       }
     }
   },
@@ -414,9 +761,22 @@
     "detail": {
       "fullDescription": "Hugging Chat es una interfaz de conversación desarrollada por Hugging Face que permite acceder gratuitamente a modelos de lenguaje de código abierto como Llama, Mistral y otros. A diferencia de ChatGPT, los modelos que utiliza son completamente abiertos y transparentes. La interfaz es similar a ChatGPT, lo que facilita la transición. Permite buscar en la web, generar texto, responder preguntas y asistir en tareas educativas sin costos ocultos ni limitaciones de uso estrictas.",
       "approach": {
-        "areas": ["Lengua y Literatura", "Ciencias Naturales", "Matemáticas", "Estudios Sociales", "Informática"],
-        "levels": ["Secundaria", "Bachillerato"],
-        "type": ["Creación de contenido", "Investigación", "Tutoría"]
+        "areas": [
+          "Lengua y Literatura",
+          "Ciencias Naturales",
+          "Matemáticas",
+          "Estudios Sociales",
+          "Informática"
+        ],
+        "levels": [
+          "Secundaria",
+          "Bachillerato"
+        ],
+        "type": [
+          "Creación de contenido",
+          "Investigación",
+          "Tutoría"
+        ]
       },
       "subjectExamples": [
         {
@@ -448,6 +808,36 @@
         "techRequirements": "Navegador web, conexión a internet",
         "cost": "Completamente gratis, sin versión de pago",
         "tips": "Alternativa ideal cuando hay preocupaciones sobre privacidad de datos o dependencia de empresas comerciales. Los datos no se usan para entrenar modelos comerciales. Dificultad: Básica — la interfaz es idéntica a ChatGPT."
+      },
+      "activity": {
+        "title": "Compara modelos de IA de código abierto",
+        "description": "Explora cómo diferentes modelos de IA responden a una misma pregunta educativa y evalúa cuál es más útil para tu contexto.",
+        "steps": [
+          {
+            "title": "Accede a Hugging Chat",
+            "description": "Ve a huggingface.co/chat. Puedes usarlo sin cuenta, pero crear una (gratis) te permite guardar el historial. La interfaz es similar a ChatGPT.",
+            "prompt": null,
+            "tip": "Hugging Chat es completamente gratuito, sin límites de uso, y los datos no se usan para entrenar modelos comerciales."
+          },
+          {
+            "title": "Haz una pregunta educativa",
+            "description": "Escribe una pregunta o solicitud relacionada con tu materia. Por ejemplo: 'Explica la fotosíntesis para estudiantes de 8vo año usando una analogía con una fábrica'.",
+            "prompt": "Explica el concepto de [TEMA] para estudiantes de [NIVEL] de una forma sencilla y con un ejemplo de la vida cotidiana en Ecuador. Incluye 3 preguntas de verificación al final.",
+            "tip": "Anota la calidad de la respuesta: ¿es precisa? ¿el nivel es apropiado? ¿la analogía funciona?"
+          },
+          {
+            "title": "Cambia de modelo y repite",
+            "description": "Haz clic en el selector de modelo (arriba a la izquierda) y elige uno diferente (ej: de Llama a Mistral). Haz la misma pregunta exacta y compara la respuesta.",
+            "prompt": null,
+            "tip": "Cada modelo tiene fortalezas diferentes. Algunos son mejores en español, otros en razonamiento lógico. Prueba al menos 2."
+          },
+          {
+            "title": "Evalúa y decide",
+            "description": "Compara las respuestas: ¿cuál fue más clara? ¿cuál se adaptó mejor al nivel? ¿cuál dio mejor información? Esta comparación te ayuda a entender que no todas las IAs son iguales.",
+            "prompt": null,
+            "tip": "Este ejercicio de comparación es también una excelente actividad para estudiantes de bachillerato sobre pensamiento crítico y alfabetización digital."
+          }
+        ]
       }
     }
   },
@@ -462,9 +852,19 @@
     "detail": {
       "fullDescription": "Jan es una aplicación de escritorio de código abierto (licencia AGPL-3.0) que permite ejecutar modelos de inteligencia artificial directamente en la computadora del usuario, sin conexión a internet y sin enviar datos a servidores externos. Esto garantiza la privacidad total de la información. La aplicación descarga modelos de lenguaje optimizados y los ejecuta localmente. La interfaz es similar a ChatGPT pero todo funciona offline. Es ideal para instituciones con preocupaciones sobre privacidad de datos estudiantiles.",
       "approach": {
-        "areas": ["Informática", "Lengua y Literatura", "Ciencias Naturales"],
-        "levels": ["Bachillerato"],
-        "type": ["Creación de contenido", "Privacidad de datos", "Educación tecnológica"]
+        "areas": [
+          "Informática",
+          "Lengua y Literatura",
+          "Ciencias Naturales"
+        ],
+        "levels": [
+          "Bachillerato"
+        ],
+        "type": [
+          "Creación de contenido",
+          "Privacidad de datos",
+          "Educación tecnológica"
+        ]
       },
       "subjectExamples": [
         {
@@ -489,6 +889,36 @@
         "techRequirements": "Computadora con mínimo 8GB RAM, 10GB de disco duro libre. Windows, Mac o Linux",
         "cost": "Completamente gratis y de código abierto",
         "tips": "Requiere computadoras con capacidad moderada. Ideal para laboratorios de informática. El departamento de TI puede instalar y configurar en las máquinas. Dificultad: Intermedia — la instalación necesita apoyo técnico, pero el uso es simple."
+      },
+      "activity": {
+        "title": "Instala un asistente de IA que funciona sin internet",
+        "description": "Configura Jan en tu computadora para tener un asistente de IA privado que funciona completamente offline.",
+        "steps": [
+          {
+            "title": "Descarga Jan",
+            "description": "Ve a jan.ai y descarga la versión para tu sistema operativo (Windows, Mac o Linux). La instalación es un proceso estándar de siguiente-siguiente-finalizar.",
+            "prompt": null,
+            "tip": "Jan necesita una computadora con al menos 8GB de RAM. Si tu equipo tiene menos, la experiencia será lenta."
+          },
+          {
+            "title": "Descarga un modelo de lenguaje",
+            "description": "Al abrir Jan, ve a la sección 'Hub' y descarga un modelo. Recomendación: empieza con 'Llama 3.2 3B' (archivo de ~2GB) que funciona bien en computadoras con recursos limitados.",
+            "prompt": null,
+            "tip": "Los modelos más pequeños (3B, 7B) son más rápidos pero menos precisos. Los más grandes (13B, 70B) son mejores pero requieren más RAM y GPU."
+          },
+          {
+            "title": "Prueba con un prompt educativo",
+            "description": "Una vez descargado el modelo, ve a 'Chat' y pruébalo con una solicitud educativa: pídele que genere un ejercicio de clase, explique un concepto o cree preguntas de evaluación.",
+            "prompt": "Crea 5 preguntas de opción múltiple sobre [TEMA] para estudiantes de [NIVEL]. Cada pregunta debe tener 4 opciones y una explicación de por qué la respuesta correcta es correcta.",
+            "tip": "La primera respuesta puede tardar unos segundos mientras el modelo se carga en memoria. Las siguientes serán más rápidas."
+          },
+          {
+            "title": "Evalúa para tu institución",
+            "description": "Considera: ¿la calidad de respuestas es suficiente para tu uso? ¿la velocidad es aceptable? ¿El beneficio de privacidad total justifica la menor calidad vs. ChatGPT? Jan es ideal para instituciones con datos sensibles o sin internet confiable.",
+            "prompt": null,
+            "tip": "Jan puede instalarse en las computadoras del laboratorio de informática para que los estudiantes tengan acceso a IA sin necesidad de cuentas ni internet."
+          }
+        ]
       }
     }
   },
@@ -503,9 +933,21 @@
     "detail": {
       "fullDescription": "LibreChat es una plataforma de código abierto (licencia MIT) que replica la experiencia de ChatGPT pero permite conectar múltiples modelos de IA, tanto comerciales como de código abierto. Puede instalarse en el servidor de la institución educativa, lo que da control total sobre los datos y el acceso. Soporta múltiples usuarios con cuentas separadas, lo que permite dar acceso controlado a docentes y estudiantes. Incluye historial de conversaciones, carpetas organizativas y configuración por usuario.",
       "approach": {
-        "areas": ["Informática", "Lengua y Literatura", "Matemáticas", "Ciencias Naturales"],
-        "levels": ["Secundaria", "Bachillerato"],
-        "type": ["Creación de contenido", "Infraestructura institucional", "Privacidad"]
+        "areas": [
+          "Informática",
+          "Lengua y Literatura",
+          "Matemáticas",
+          "Ciencias Naturales"
+        ],
+        "levels": [
+          "Secundaria",
+          "Bachillerato"
+        ],
+        "type": [
+          "Creación de contenido",
+          "Infraestructura institucional",
+          "Privacidad"
+        ]
       },
       "subjectExamples": [
         {
@@ -530,6 +972,36 @@
         "techRequirements": "Servidor institucional o computadora dedicada, Docker, conocimiento técnico para instalación",
         "cost": "Gratis (software). Costo de servidor: $5-20/mes si se usa un servicio en la nube, o gratis si se usa hardware institucional",
         "tips": "Requiere personal de TI para la instalación y mantenimiento. Es la opción más completa para instituciones que quieren control total sobre su infraestructura de IA. Dificultad: Avanzada — necesita soporte técnico dedicado para la instalación."
+      },
+      "activity": {
+        "title": "Explora una plataforma de IA institucional",
+        "description": "Conoce LibreChat como opción para dar acceso controlado a IA a todos los docentes de tu institución.",
+        "steps": [
+          {
+            "title": "Visita la demo de LibreChat",
+            "description": "Accede a una instancia de demostración de LibreChat para explorar su interfaz. Es similar a ChatGPT pero permite conectar múltiples modelos de IA y gestionar usuarios.",
+            "prompt": null,
+            "tip": "LibreChat es ideal para instituciones que quieren ofrecer IA a todo su equipo docente sin depender de cuentas individuales en servicios comerciales."
+          },
+          {
+            "title": "Explora la gestión multi-modelo",
+            "description": "LibreChat permite acceder a diferentes modelos (GPT, Claude, Llama, Mistral) desde una sola interfaz. Explora cómo cambiar entre modelos y cómo cada uno tiene características diferentes.",
+            "prompt": null,
+            "tip": "La ventaja de múltiples modelos es que puedes elegir el más adecuado para cada tarea: uno para escritura creativa, otro para matemáticas, etc."
+          },
+          {
+            "title": "Prueba un caso de uso educativo",
+            "description": "Simula un caso real: genera una planificación de clase, crea material diferenciado, o diseña una rúbrica de evaluación. Evalúa la experiencia como si fueras un docente de tu institución.",
+            "prompt": null,
+            "tip": "Piensa en los docentes menos tecnológicos de tu equipo: ¿la interfaz es lo suficientemente intuitiva para ellos?"
+          },
+          {
+            "title": "Evalúa la viabilidad de implementación",
+            "description": "Para implementar LibreChat necesitas: un servidor (puede ser una computadora dedicada), alguien con conocimientos de Docker para la instalación, y un plan de gestión de usuarios. Evalúa si tu institución tiene estos recursos.",
+            "prompt": null,
+            "tip": "Si no tienes equipo de TI, considera empezar con herramientas más simples (ChatGPT, Gemini) y migrar a LibreChat cuando la adopción de IA crezca."
+          }
+        ]
       }
     }
   },
@@ -544,9 +1016,20 @@
     "detail": {
       "fullDescription": "Open WebUI es una interfaz web de código abierto (licencia MIT) diseñada para interactuar con modelos de lenguaje ejecutados localmente mediante Ollama u otros backends. Proporciona una experiencia idéntica a ChatGPT pero completamente privada y controlada por la institución. Incluye gestión de usuarios, historial de conversaciones, carga de documentos para análisis (RAG), generación de imágenes y soporte para múltiples modelos. Todo funciona en la red local de la institución.",
       "approach": {
-        "areas": ["Informática", "Lengua y Literatura", "Ciencias Naturales", "Matemáticas"],
-        "levels": ["Bachillerato"],
-        "type": ["Infraestructura institucional", "Creación de contenido", "Privacidad"]
+        "areas": [
+          "Informática",
+          "Lengua y Literatura",
+          "Ciencias Naturales",
+          "Matemáticas"
+        ],
+        "levels": [
+          "Bachillerato"
+        ],
+        "type": [
+          "Infraestructura institucional",
+          "Creación de contenido",
+          "Privacidad"
+        ]
       },
       "subjectExamples": [
         {
@@ -571,6 +1054,36 @@
         "techRequirements": "Servidor con GPU recomendada (mínimo 16GB RAM), Docker, administrador de TI",
         "cost": "Gratis (software). Hardware institucional existente o servidor cloud $20-50/mes",
         "tips": "La opción más robusta para una implementación institucional de IA privada. Requiere inversión inicial en configuración pero elimina costos recurrentes de licencias. Dificultad: Avanzada — necesita equipo de TI dedicado."
+      },
+      "activity": {
+        "title": "Descubre la interfaz privada de IA institucional",
+        "description": "Conoce Open WebUI como alternativa para tener un 'ChatGPT institucional' completamente privado.",
+        "steps": [
+          {
+            "title": "Conoce qué es Open WebUI",
+            "description": "Open WebUI es una interfaz web que se conecta a modelos de IA ejecutados localmente. Todo funciona dentro de la red de tu institución — ningún dato sale a servidores externos. La experiencia de uso es idéntica a ChatGPT.",
+            "prompt": null,
+            "tip": "Es la opción más completa para instituciones que manejan datos sensibles de estudiantes o que están en zonas con internet limitado."
+          },
+          {
+            "title": "Explora las funciones avanzadas",
+            "description": "Open WebUI incluye funciones que ChatGPT no tiene en su versión gratuita: subir documentos para que la IA los analice (RAG), crear prompts personalizados por departamento, y gestionar cuentas para cada docente.",
+            "prompt": null,
+            "tip": "La función de subir documentos es poderosa: puedes subir el currículo nacional y pedirle a la IA que genere actividades alineadas directamente."
+          },
+          {
+            "title": "Prueba con un documento",
+            "description": "Si tienes acceso a una instancia, sube un documento (PDF del currículo, un artículo, un capítulo del libro de texto) y hazle preguntas sobre el contenido. La IA responderá basándose específicamente en ese documento.",
+            "prompt": null,
+            "tip": "Esta funcionalidad es ideal para crear asistentes especializados: uno para cada materia que 'conoce' el currículo y los materiales del curso."
+          },
+          {
+            "title": "Evalúa los requisitos técnicos",
+            "description": "Open WebUI necesita: un servidor con GPU (recomendado) o al menos 16GB RAM, Docker instalado, y un administrador de TI para configuración y mantenimiento. El costo de software es $0.",
+            "prompt": null,
+            "tip": "Si la infraestructura técnica es una barrera, considera empezar con Jan (funciona en una sola computadora) como paso intermedio antes de escalar a Open WebUI."
+          }
+        ]
       }
     }
   }

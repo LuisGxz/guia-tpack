@@ -10,9 +10,20 @@
     "detail": {
       "fullDescription": "PhET (Physics Education Technology) es un proyecto de la Universidad de Colorado Boulder que ofrece más de 160 simulaciones interactivas gratuitas y de código abierto para ciencias y matemáticas. Cada simulación permite a los estudiantes experimentar con variables, observar resultados en tiempo real y desarrollar intuición sobre conceptos abstractos. Todas las simulaciones están traducidas al español y funcionan en el navegador sin necesidad de instalación. Son ampliamente usadas y validadas por investigación educativa como herramientas efectivas para mejorar la comprensión conceptual.",
       "approach": {
-        "areas": ["Ciencias Naturales", "Matemáticas"],
-        "levels": ["Primaria alta", "Secundaria", "Bachillerato"],
-        "type": ["Laboratorio virtual", "Experimentación", "Visualización de conceptos"]
+        "areas": [
+          "Ciencias Naturales",
+          "Matemáticas"
+        ],
+        "levels": [
+          "Primaria alta",
+          "Secundaria",
+          "Bachillerato"
+        ],
+        "type": [
+          "Laboratorio virtual",
+          "Experimentación",
+          "Visualización de conceptos"
+        ]
       },
       "subjectExamples": [
         {
@@ -39,6 +50,36 @@
         "techRequirements": "Navegador web (Chrome, Firefox). Funciona en computadoras, tablets y smartphones",
         "cost": "Completamente gratis y de código abierto (licencia GPL)",
         "tips": "LA herramienta de simulación más recomendada para empezar. No requiere instalación, está en español y tiene guías pedagógicas para cada simulación. Priorizar su adopción en áreas de Ciencias y Matemáticas. Dificultad: Básica."
+      },
+      "activity": {
+        "title": "Experimenta con una simulación de circuitos eléctricos",
+        "description": "Usa la simulación de PhET para enseñar conceptos de electricidad de forma interactiva y visual.",
+        "steps": [
+          {
+            "title": "Abre la simulación",
+            "description": "Ve a phet.colorado.edu/es/ y busca 'Kit de Construcción de Circuitos'. Haz clic para abrir la simulación directamente en el navegador — no necesitas instalar nada ni crear cuenta.",
+            "prompt": null,
+            "tip": "Todas las simulaciones de PhET están en español. Usa los filtros por materia y nivel para encontrar la más adecuada para tu clase."
+          },
+          {
+            "title": "Explora los controles",
+            "description": "Arrastra componentes al área de trabajo: baterías, cables, focos, resistencias e interruptores. Conecta los cables para crear un circuito simple. Observa cómo el foco se enciende cuando el circuito se cierra.",
+            "prompt": null,
+            "tip": "Empieza con un circuito simple (batería + cable + foco) antes de agregar componentes más complejos."
+          },
+          {
+            "title": "Diseña una guía de laboratorio virtual",
+            "description": "Crea una hoja de trabajo con 3-4 experimentos: 1) Circuito simple, 2) Circuito en serie con 2 focos, 3) Circuito en paralelo con 2 focos, 4) ¿Qué pasa al agregar más baterías? Para cada uno, pide predicción, observación y conclusión.",
+            "prompt": null,
+            "tip": "La secuencia predicción → experimentación → explicación es clave. Pide a los estudiantes que dibujen el circuito y escriban su predicción ANTES de construirlo."
+          },
+          {
+            "title": "Asigna a tus estudiantes",
+            "description": "Comparte el enlace de la simulación y la guía de laboratorio. Los estudiantes trabajan en parejas: uno manipula la simulación, otro registra las observaciones. Al final, discutan las conclusiones como clase.",
+            "prompt": null,
+            "tip": "PhET tiene guías pedagógicas para cada simulación en su sitio web. Consulta la guía del docente para ideas adicionales."
+          }
+        ]
       }
     }
   },
@@ -53,9 +94,21 @@
     "detail": {
       "fullDescription": "GeoGebra es una plataforma de código abierto (GPL) para matemáticas dinámicas que permite crear y manipular representaciones geométricas, algebraicas, de cálculo y estadísticas de forma interactiva. Los estudiantes pueden construir figuras geométricas, graficar funciones, explorar transformaciones y resolver problemas manipulando objetos directamente. Incluye una biblioteca con millones de recursos creados por docentes de todo el mundo, aplicaciones para cada área matemática y un editor de actividades interactivas. Es el estándar mundial en software de matemáticas educativas.",
       "approach": {
-        "areas": ["Matemáticas", "Ciencias Naturales", "Informática"],
-        "levels": ["Primaria alta", "Secundaria", "Bachillerato"],
-        "type": ["Matemáticas interactivas", "Visualización", "Construcción dinámica"]
+        "areas": [
+          "Matemáticas",
+          "Ciencias Naturales",
+          "Informática"
+        ],
+        "levels": [
+          "Primaria alta",
+          "Secundaria",
+          "Bachillerato"
+        ],
+        "type": [
+          "Matemáticas interactivas",
+          "Visualización",
+          "Construcción dinámica"
+        ]
       },
       "subjectExamples": [
         {
@@ -82,6 +135,36 @@
         "techRequirements": "Navegador web o app descargable (Windows, Mac, Linux, tablets, smartphones)",
         "cost": "Completamente gratis y de código abierto (licencia GPL)",
         "tips": "Indispensable para el área de Matemáticas. La biblioteca de recursos compartidos permite que los docentes empiecen usando materiales existentes antes de crear los propios. Organizar un taller específico para docentes de matemáticas. Dificultad: Básica a Intermedia."
+      },
+      "activity": {
+        "title": "Construye una exploración interactiva de funciones",
+        "description": "Crea una actividad donde los estudiantes manipulen parámetros y observen cómo cambia una función en tiempo real.",
+        "steps": [
+          {
+            "title": "Abre GeoGebra en el navegador",
+            "description": "Ve a geogebra.org/graphing para abrir la calculadora gráfica. No necesitas cuenta ni instalación. Escribe una función en la barra de entrada, por ejemplo: f(x) = a*x² + b*x + c",
+            "prompt": null,
+            "tip": "Usa letras (a, b, c) como parámetros en vez de números fijos. GeoGebra creará automáticamente deslizadores para cada parámetro."
+          },
+          {
+            "title": "Agrega deslizadores para los parámetros",
+            "description": "Si no aparecieron automáticamente, crea deslizadores: escribe 'a = 1' en la barra de entrada. Aparecerá un deslizador. Repite para b y c. Ahora puedes mover los deslizadores y ver cómo cambia la gráfica en tiempo real.",
+            "prompt": null,
+            "tip": "Configura los rangos de los deslizadores según el nivel: para secundaria, de -5 a 5 es suficiente. Para bachillerato, amplía el rango."
+          },
+          {
+            "title": "Diseña preguntas de exploración",
+            "description": "Crea preguntas que guíen la exploración: '¿Qué pasa con la parábola cuando a es positivo vs. negativo?', '¿Qué efecto tiene cambiar c?', '¿Puedes hacer que la parábola pase por el punto (2, 3)?'",
+            "prompt": null,
+            "tip": "Las mejores preguntas son las que generan sorpresa: '¿Qué crees que pasará si a = 0?' — la parábola se convierte en recta, conectando funciones cuadráticas con lineales."
+          },
+          {
+            "title": "Comparte la actividad",
+            "description": "Haz clic en el menú (≡) > 'Compartir' para generar un enlace. También puedes buscar actividades creadas por otros docentes en geogebra.org/materials — hay miles de recursos listos para usar.",
+            "prompt": null,
+            "tip": "Antes de crear material desde cero, busca en la biblioteca. Probablemente ya existe una actividad de GeoGebra para tu tema — solo necesitas adaptarla."
+          }
+        ]
       }
     }
   },
@@ -96,9 +179,22 @@
     "detail": {
       "fullDescription": "Scratch es una plataforma de programación visual desarrollada por el MIT Media Lab que permite crear proyectos interactivos — simulaciones, juegos, animaciones, historias y arte — arrastrando bloques de código. Con más de 100 millones de proyectos compartidos, es la plataforma de programación educativa más utilizada del mundo. Los estudiantes aprenden pensamiento computacional mientras crean proyectos sobre cualquier tema. La comunidad hispanohablante es muy activa, con miles de tutoriales y proyectos en español.",
       "approach": {
-        "areas": ["Informática", "Matemáticas", "Ciencias Naturales", "Educación Artística", "Lengua y Literatura"],
-        "levels": ["Primaria", "Secundaria"],
-        "type": ["Programación visual", "Creación de simulaciones", "Pensamiento computacional"]
+        "areas": [
+          "Informática",
+          "Matemáticas",
+          "Ciencias Naturales",
+          "Educación Artística",
+          "Lengua y Literatura"
+        ],
+        "levels": [
+          "Primaria",
+          "Secundaria"
+        ],
+        "type": [
+          "Programación visual",
+          "Creación de simulaciones",
+          "Pensamiento computacional"
+        ]
       },
       "subjectExamples": [
         {
@@ -139,6 +235,36 @@
         "techRequirements": "Navegador web. Funciona también offline con la app de escritorio",
         "cost": "Completamente gratis y de código abierto (licencia BSD)",
         "tips": "Herramienta esencial para cualquier programa de informática. Los docentes de otras áreas pueden colaborar con el docente de informática para crear proyectos interdisciplinarios. La comunidad en español ofrece abundantes tutoriales y ejemplos. Dificultad: Básica."
+      },
+      "activity": {
+        "title": "Programa una simulación del sistema solar",
+        "description": "Crea una simulación visual del sistema solar usando programación por bloques en Scratch.",
+        "steps": [
+          {
+            "title": "Crea un nuevo proyecto",
+            "description": "Ve a scratch.mit.edu y haz clic en 'Crear'. Cambia el fondo a uno negro o espacial (Biblioteca de fondos > 'Stars'). Elimina el gato y agrega un sprite circular para el Sol.",
+            "prompt": null,
+            "tip": "Si los estudiantes no tienen cuenta, pueden crear proyectos sin registrarse (pero no podrán guardarlos en la nube). Para guardar, crear una cuenta es gratis."
+          },
+          {
+            "title": "Agrega planetas como sprites",
+            "description": "Dibuja o importa un sprite circular para cada planeta. Haz cada uno de diferente tamaño y color. Coloca el Sol en el centro y los planetas a diferentes distancias.",
+            "prompt": null,
+            "tip": "No intentes hacer todos los planetas a escala real — las diferencias de tamaño son demasiado grandes. Usa una escala simplificada que sea visible."
+          },
+          {
+            "title": "Programa las órbitas",
+            "description": "Para cada planeta, usa los bloques: 'Al presionar bandera verde' > 'Por siempre' > 'Apuntar hacia Sol' > 'Girar X grados' > 'Mover Y pasos'. Ajusta X e Y para cada planeta: los cercanos giran más rápido.",
+            "prompt": null,
+            "tip": "El truco es combinar 'girar' con 'mover' para crear un movimiento circular. Los planetas más lejanos deben tener valores de giro más pequeños (orbitan más lento)."
+          },
+          {
+            "title": "Personaliza y comparte",
+            "description": "Agrega información: al hacer clic en cada planeta, muestra su nombre y datos (tamaño, distancia al Sol, temperatura). Usa el bloque 'decir' para mostrar texto. Comparte el proyecto para que otros lo exploren.",
+            "prompt": null,
+            "tip": "Este proyecto es ideal como tarea interdisciplinaria: Informática (programación) + Ciencias (astronomía) + Matemáticas (proporciones y escalas)."
+          }
+        ]
       }
     }
   },
@@ -153,9 +279,22 @@
     "detail": {
       "fullDescription": "Tinkercad es una aplicación web gratuita de Autodesk que combina diseño 3D, simulación de circuitos electrónicos y programación de Arduino en una interfaz intuitiva de arrastrar y soltar. Para diseño 3D, permite crear modelos combinando formas básicas, ideal para impresión 3D. El simulador de circuitos incluye componentes electrónicos reales (LEDs, resistencias, sensores, Arduino) que se pueden conectar y probar virtualmente antes de construirlos físicamente. Incluye cuentas de aula para gestión de estudiantes.",
       "approach": {
-        "areas": ["Informática", "Ciencias Naturales", "Matemáticas", "Educación Artística"],
-        "levels": ["Secundaria", "Bachillerato"],
-        "type": ["Diseño 3D", "Simulación de circuitos", "Prototipado", "STEAM"]
+        "areas": [
+          "Informática",
+          "Ciencias Naturales",
+          "Matemáticas",
+          "Educación Artística"
+        ],
+        "levels": [
+          "Secundaria",
+          "Bachillerato"
+        ],
+        "type": [
+          "Diseño 3D",
+          "Simulación de circuitos",
+          "Prototipado",
+          "STEAM"
+        ]
       },
       "subjectExamples": [
         {
@@ -195,6 +334,36 @@
         "techRequirements": "Navegador web (Chrome recomendado), cuenta de Autodesk gratuita",
         "cost": "Completamente gratis (propiedad de Autodesk, subsidiado para educación)",
         "tips": "Herramienta versátil que cubre diseño 3D Y electrónica. Crear cuentas de aula permite al docente gestionar y ver los proyectos de sus estudiantes. Si la institución tiene impresora 3D, los modelos de Tinkercad se pueden imprimir directamente. Dificultad: Básica a Intermedia."
+      },
+      "activity": {
+        "title": "Simula un circuito con Arduino virtual",
+        "description": "Construye y programa un circuito electrónico con Arduino sin necesidad de componentes físicos.",
+        "steps": [
+          {
+            "title": "Accede a Tinkercad Circuits",
+            "description": "Ve a tinkercad.com, crea una cuenta gratuita y selecciona 'Circuits' > 'Create new Circuit'. Aparecerá un área de trabajo con una biblioteca de componentes electrónicos a la derecha.",
+            "prompt": null,
+            "tip": "Tinkercad es propiedad de Autodesk y es completamente gratuito. Las cuentas de aula permiten al docente gestionar los proyectos de estudiantes."
+          },
+          {
+            "title": "Construye un circuito con LED",
+            "description": "Arrastra un Arduino Uno al área de trabajo. Agrega un LED y una resistencia (220Ω). Conecta: pin 13 del Arduino → resistencia → LED → GND. Este es el circuito 'Hola Mundo' de la electrónica.",
+            "prompt": null,
+            "tip": "Los colores de los cables importan por convención: rojo para voltaje positivo, negro para tierra (GND). Enseña esta convención desde el inicio."
+          },
+          {
+            "title": "Programa el Arduino",
+            "description": "Haz clic en 'Code' y selecciona el modo 'Blocks' (bloques). Programa: 'Set pin 13 to HIGH' > 'Wait 1 second' > 'Set pin 13 to LOW' > 'Wait 1 second'. Esto hará parpadear el LED.",
+            "prompt": null,
+            "tip": "Empieza con bloques y luego muestra el código C++ equivalente. Esto facilita la transición de programación visual a textual."
+          },
+          {
+            "title": "Simula y experimenta",
+            "description": "Haz clic en 'Start Simulation' y observa el LED parpadear. Ahora experimenta: cambia el tiempo de espera, agrega más LEDs, o agrega un botón para encender/apagar. Todo funciona sin hardware real.",
+            "prompt": null,
+            "tip": "Si tu institución tiene kits de Arduino físicos, los estudiantes pueden pasar del simulador al hardware real. El mismo código funciona en ambos."
+          }
+        ]
       }
     }
   },
@@ -209,9 +378,21 @@
     "detail": {
       "fullDescription": "Algodoo es un simulador de física 2D único que permite a los estudiantes dibujar objetos con herramientas de dibujo intuitivas y luego observar cómo se comportan bajo las leyes de la física. Los objetos dibujados interactúan con gravedad, fricción, elasticidad, flotabilidad, viento, presión óptica y más. Los estudiantes pueden crear máquinas de Rube Goldberg, puentes, vehículos, sistemas de poleas y cualquier construcción imaginable. La interfaz es tan intuitiva que parece un juego, pero enseña principios físicos fundamentales.",
       "approach": {
-        "areas": ["Ciencias Naturales", "Matemáticas", "Educación Artística"],
-        "levels": ["Primaria", "Secundaria", "Bachillerato"],
-        "type": ["Simulación de física", "Experimentación libre", "Creatividad"]
+        "areas": [
+          "Ciencias Naturales",
+          "Matemáticas",
+          "Educación Artística"
+        ],
+        "levels": [
+          "Primaria",
+          "Secundaria",
+          "Bachillerato"
+        ],
+        "type": [
+          "Simulación de física",
+          "Experimentación libre",
+          "Creatividad"
+        ]
       },
       "subjectExamples": [
         {
@@ -237,6 +418,36 @@
         "techRequirements": "Computadora (Windows o Mac), descarga gratuita (~50MB)",
         "cost": "Gratis para uso educativo",
         "tips": "Extremadamente intuitivo — los estudiantes aprenden a usarlo en minutos. Ideal para primaria y secundaria. Se puede usar como 'laboratorio de física virtual' cuando no hay laboratorio físico disponible. Dificultad: Básica."
+      },
+      "activity": {
+        "title": "Dibuja y simula un experimento de física",
+        "description": "Crea un escenario de física personalizado donde los objetos que dibujes interactúan con gravedad, fricción y colisiones.",
+        "steps": [
+          {
+            "title": "Descarga y abre Algodoo",
+            "description": "Descarga Algodoo gratis desde algodoo.com (Windows y Mac, ~50MB). Al abrir, verás un lienzo en blanco con un menú de herramientas de dibujo a la izquierda.",
+            "prompt": null,
+            "tip": "Algodoo parece un juego de dibujo pero es un motor de física 2D completo. Los estudiantes lo aprenden en minutos."
+          },
+          {
+            "title": "Dibuja un escenario de física",
+            "description": "Usa la herramienta de dibujo para crear: una rampa inclinada (triángulo), una pelota (círculo) y una pared (rectángulo al final). Haz clic en 'Play' (triángulo verde) y observa cómo la pelota rueda por la rampa.",
+            "prompt": null,
+            "tip": "Dibuja con trazos simples. No necesitas ser artista — las formas geométricas básicas son todo lo que necesitas."
+          },
+          {
+            "title": "Modifica las propiedades físicas",
+            "description": "Haz clic derecho en un objeto para cambiar sus propiedades: masa, fricción, elasticidad, material. Experimenta: ¿qué pasa si la rampa no tiene fricción? ¿y si la pelota es de goma vs. metal?",
+            "prompt": null,
+            "tip": "Esta experimentación libre es donde ocurre el aprendizaje real. Los estudiantes descubren las leyes de la física manipulando variables."
+          },
+          {
+            "title": "Diseña un desafío para la clase",
+            "description": "Crea un reto: '¿Puedes diseñar un mecanismo que lleve una pelota del punto A al punto B usando solo rampas, resortes y poleas?' Los estudiantes compiten para crear la solución más creativa o eficiente.",
+            "prompt": null,
+            "tip": "Los desafíos tipo 'máquina de Rube Goldberg' son extremadamente motivantes y enseñan múltiples conceptos de física en una sola actividad."
+          }
+        ]
       }
     }
   },
@@ -251,9 +462,20 @@
     "detail": {
       "fullDescription": "NetLogo es un entorno de programación y modelado de código abierto (GPL) diseñado para simular sistemas complejos con múltiples agentes. Desarrollado en la Universidad de Northwestern, permite crear y explorar modelos donde cientos o miles de agentes independientes siguen reglas simples que producen comportamientos emergentes complejos. Incluye una biblioteca con más de 200 modelos prediseñados sobre ecología, epidemiología, economía, física, química, matemáticas y ciencias sociales. Tiene versión web que funciona en el navegador.",
       "approach": {
-        "areas": ["Ciencias Naturales", "Matemáticas", "Estudios Sociales", "Informática"],
-        "levels": ["Bachillerato"],
-        "type": ["Modelado de sistemas", "Simulación de agentes", "Investigación"]
+        "areas": [
+          "Ciencias Naturales",
+          "Matemáticas",
+          "Estudios Sociales",
+          "Informática"
+        ],
+        "levels": [
+          "Bachillerato"
+        ],
+        "type": [
+          "Modelado de sistemas",
+          "Simulación de agentes",
+          "Investigación"
+        ]
       },
       "subjectExamples": [
         {
@@ -285,6 +507,36 @@
         "techRequirements": "Navegador web (versión NetLogo Web) o descarga para escritorio (Java requerido)",
         "cost": "Completamente gratis y de código abierto (licencia GPL)",
         "tips": "Avanzada pero con modelos prediseñados que pueden usarse sin programar. Empezar con la biblioteca de modelos existentes antes de crear los propios. Ideal para bachillerato y proyectos de investigación estudiantil. Dificultad: Intermedia a Avanzada."
+      },
+      "activity": {
+        "title": "Modela la propagación de una epidemia",
+        "description": "Usa un modelo de NetLogo para explorar cómo se propaga una enfermedad y qué factores la controlan.",
+        "steps": [
+          {
+            "title": "Abre NetLogo Web",
+            "description": "Ve a netlogoweb.org. Haz clic en el menú y selecciona 'NetLogo Models Library' > 'Sample Models' > 'Biology' > 'Disease Solo'. Se cargará una simulación de propagación de enfermedades.",
+            "prompt": null,
+            "tip": "NetLogo Web funciona directamente en el navegador — no necesitas instalar nada. Los modelos de la biblioteca son ideales para empezar."
+          },
+          {
+            "title": "Ejecuta la simulación",
+            "description": "Haz clic en 'Setup' para inicializar y luego en 'Go' para ejecutar. Observa cómo los agentes (personas) se mueven, se contagian y se recuperan. Los colores indican: verde = sano, rojo = infectado, gris = recuperado.",
+            "prompt": null,
+            "tip": "Deja correr la simulación hasta que se estabilice. Observa la gráfica de infectados vs. tiempo — es similar a las curvas epidemiológicas reales."
+          },
+          {
+            "title": "Experimenta con variables",
+            "description": "Ajusta los parámetros: aumenta la 'infectiousness' (tasa de contagio), cambia el número de personas, o modifica la velocidad de recuperación. Observa cómo cada cambio afecta la curva epidémica.",
+            "prompt": null,
+            "tip": "Pregunta a los estudiantes: '¿Qué parámetro reduce más la propagación: menor tasa de contagio o mayor velocidad de recuperación?' Esto conecta con vacunación y distanciamiento."
+          },
+          {
+            "title": "Conecta con el currículo",
+            "description": "Discute: ¿Por qué importa 'aplanar la curva'? ¿Cómo se relaciona con pandemias reales? ¿Qué limitaciones tiene el modelo? Pide a los estudiantes que escriban un reporte con capturas de pantalla de sus experimentos.",
+            "prompt": null,
+            "tip": "NetLogo es una herramienta poderosa para enseñar pensamiento sistémico: cómo reglas simples a nivel individual producen patrones complejos a nivel poblacional."
+          }
+        ]
       }
     }
   },
@@ -299,9 +551,18 @@
     "detail": {
       "fullDescription": "ChemCollective es un proyecto de la Universidad Carnegie Mellon que ofrece laboratorios virtuales de química donde los estudiantes pueden mezclar reactivos, medir pH, realizar titulaciones, preparar soluciones y ejecutar experimentos completos de forma virtual. El laboratorio virtual simula con precisión las reacciones químicas y proporciona datos realistas. Incluye actividades guiadas con problemas contextualizados y tutoriales de estequiometría. Es ideal para complementar o sustituir prácticas de laboratorio cuando no se dispone de equipos o reactivos.",
       "approach": {
-        "areas": ["Ciencias Naturales"],
-        "levels": ["Secundaria", "Bachillerato"],
-        "type": ["Laboratorio virtual", "Experimentación química", "Práctica segura"]
+        "areas": [
+          "Ciencias Naturales"
+        ],
+        "levels": [
+          "Secundaria",
+          "Bachillerato"
+        ],
+        "type": [
+          "Laboratorio virtual",
+          "Experimentación química",
+          "Práctica segura"
+        ]
       },
       "subjectExamples": [
         {
@@ -321,6 +582,36 @@
         "techRequirements": "Navegador web con Java habilitado (algunos módulos) o versión HTML5",
         "cost": "Completamente gratis y de código abierto",
         "tips": "Solución perfecta para instituciones sin laboratorio de química equipado o con reactivos limitados. Los estudiantes pueden practicar cuantas veces quieran sin costo de materiales. Complementa pero no reemplaza la experiencia del laboratorio real. Dificultad: Básica."
+      },
+      "activity": {
+        "title": "Realiza una titulación ácido-base virtual",
+        "description": "Practica una titulación en el laboratorio virtual midiendo pH y determinando concentraciones sin riesgo.",
+        "steps": [
+          {
+            "title": "Accede al laboratorio virtual",
+            "description": "Ve a chemcollective.org y selecciona 'Virtual Labs'. Elige 'Acid-Base Chemistry' o el laboratorio general. Se abrirá un laboratorio virtual con estantes de reactivos, instrumentos y un área de trabajo.",
+            "prompt": null,
+            "tip": "El laboratorio virtual simula reacciones químicas con precisión. Los valores de pH y concentración son realistas."
+          },
+          {
+            "title": "Prepara los reactivos",
+            "description": "Arrastra un vaso de precipitados al área de trabajo. Agrega 50 mL de una solución de HCl 0.1M desde el estante de reactivos. Agrega el indicador de fenolftaleína. Nota: la solución debe ser incolora (ácida).",
+            "prompt": null,
+            "tip": "En un laboratorio real, los estudiantes podrían tener miedo de manipular ácidos. Aquí pueden experimentar libremente sin riesgo."
+          },
+          {
+            "title": "Realiza la titulación",
+            "description": "Agrega NaOH 0.1M gota a gota al vaso con HCl. Observa el medidor de pH: sube lentamente. Cuando la solución cambie a rosa (fenolftaleína indica pH > 8.2), has alcanzado el punto de equivalencia.",
+            "prompt": null,
+            "tip": "Pide a los estudiantes que registren el pH después de cada adición de 5 mL. Con estos datos pueden graficar la curva de titulación."
+          },
+          {
+            "title": "Analiza y reporta",
+            "description": "Calcula la concentración del ácido usando los datos de la titulación. Compara los resultados entre estudiantes: ¿todos llegaron al mismo punto de equivalencia? Discute fuentes de error (virtual vs. real).",
+            "prompt": null,
+            "tip": "La ventaja del laboratorio virtual es que los estudiantes pueden repetir la titulación múltiples veces hasta entender el concepto — sin costo de reactivos."
+          }
+        ]
       }
     }
   },
@@ -335,9 +626,21 @@
     "detail": {
       "fullDescription": "Stellarium es un planetario virtual de código abierto (GPL) que muestra un cielo 3D realista exactamente como se ve a simple vista, con binoculares o telescopio. Incluye un catálogo de más de 600,000 estrellas, planetas del sistema solar con sus lunas, constelaciones de múltiples culturas, nebulosas, galaxias y la Vía Láctea. Permite viajar en el tiempo para ver el cielo en cualquier fecha pasada o futura, simular eclipses, seguir la trayectoria de satélites y observar desde cualquier punto de la Tierra. También tiene versión web accesible desde el navegador.",
       "approach": {
-        "areas": ["Ciencias Naturales", "Estudios Sociales", "Matemáticas"],
-        "levels": ["Primaria alta", "Secundaria", "Bachillerato"],
-        "type": ["Exploración científica", "Observación astronómica", "Planetario virtual"]
+        "areas": [
+          "Ciencias Naturales",
+          "Estudios Sociales",
+          "Matemáticas"
+        ],
+        "levels": [
+          "Primaria alta",
+          "Secundaria",
+          "Bachillerato"
+        ],
+        "type": [
+          "Exploración científica",
+          "Observación astronómica",
+          "Planetario virtual"
+        ]
       },
       "subjectExamples": [
         {
@@ -370,6 +673,36 @@
         "techRequirements": "Computadora (Windows, Mac, Linux) o navegador web (versión web). Proyector para uso en aula",
         "cost": "Completamente gratis y de código abierto (licencia GPL)",
         "tips": "Impacto visual extraordinario que capta la atención de los estudiantes. Usar con proyector en un aula oscurecida para simular un planetario real. La versión web es más limitada pero no requiere instalación. Ideal para noches de observación astronómica institucionales. Dificultad: Básica."
+      },
+      "activity": {
+        "title": "Planifica una observación astronómica escolar",
+        "description": "Usa Stellarium para identificar qué será visible en el cielo nocturno y diseña una actividad de observación real.",
+        "steps": [
+          {
+            "title": "Configura tu ubicación",
+            "description": "Abre Stellarium (descargado o en stellarium-web.org). Haz clic en el ícono de ubicación y escribe el nombre de tu ciudad (ej: Quito, Guayaquil, Cuenca). El cielo se ajustará a tu posición geográfica exacta.",
+            "prompt": null,
+            "tip": "Ecuador tiene una posición privilegiada para la astronomía: al estar en la línea ecuatorial, se pueden observar constelaciones de ambos hemisferios."
+          },
+          {
+            "title": "Navega al cielo de esta noche",
+            "description": "Configura la fecha y hora a esta noche (20:00 o 21:00). Identifica: ¿qué planetas son visibles? ¿qué constelaciones destacan? ¿la Luna es visible y en qué fase está? Anota al menos 5 objetos identificables.",
+            "prompt": null,
+            "tip": "Activa las líneas de constelaciones (botón en la barra inferior) y los nombres de las estrellas para facilitar la identificación."
+          },
+          {
+            "title": "Viaja en el tiempo",
+            "description": "Adelanta el tiempo para ver cómo se mueve el cielo durante la noche. Retrocede a una fecha pasada para ver un eclipse. Avanza al próximo evento astronómico visible desde tu ciudad.",
+            "prompt": null,
+            "tip": "Busca el próximo eclipse, conjunción planetaria o lluvia de estrellas visible desde Ecuador. Esto genera anticipación real entre los estudiantes."
+          },
+          {
+            "title": "Diseña la actividad de observación",
+            "description": "Crea una guía de observación para los estudiantes: mapa del cielo con las constelaciones principales, lista de objetos a identificar, preguntas de reflexión ('¿Por qué las estrellas parecen moverse?'). Planifica la logística: lugar, hora, y plan B si está nublado.",
+            "prompt": null,
+            "tip": "Proyecta Stellarium en un aula oscurecida como 'planetario escolar' si la observación real no es posible por clima o ubicación."
+          }
+        ]
       }
     }
   },
@@ -384,9 +717,19 @@
     "detail": {
       "fullDescription": "Falstad Circuit Simulator es un simulador de circuitos eléctricos y electrónicos de código abierto que funciona completamente en el navegador web. Su característica única es la animación en tiempo real del flujo de corriente, lo que permite visualizar cómo se mueve la electricidad a través del circuito. Incluye componentes pasivos (resistencias, capacitores, inductores), semiconductores (diodos, transistores, LEDs), amplificadores operacionales, compuertas lógicas y más. La biblioteca incluye cientos de circuitos de ejemplo desde básicos hasta avanzados.",
       "approach": {
-        "areas": ["Ciencias Naturales", "Informática"],
-        "levels": ["Secundaria", "Bachillerato"],
-        "type": ["Simulación de circuitos", "Laboratorio virtual", "Electrónica"]
+        "areas": [
+          "Ciencias Naturales",
+          "Informática"
+        ],
+        "levels": [
+          "Secundaria",
+          "Bachillerato"
+        ],
+        "type": [
+          "Simulación de circuitos",
+          "Laboratorio virtual",
+          "Electrónica"
+        ]
       },
       "subjectExamples": [
         {
@@ -412,6 +755,36 @@
         "techRequirements": "Navegador web, sin instalación necesaria",
         "cost": "Completamente gratis y de código abierto",
         "tips": "La visualización animada del flujo de corriente es excepcionalmente didáctica — hace visible lo invisible. Ideal para complementar clases de física sobre electricidad. Los circuitos de ejemplo permiten empezar sin construir nada desde cero. Dificultad: Básica para circuitos simples, Intermedia para circuitos avanzados."
+      },
+      "activity": {
+        "title": "Visualiza el flujo de corriente en un circuito",
+        "description": "Construye circuitos eléctricos y observa con animaciones cómo fluye la corriente a través de cada componente.",
+        "steps": [
+          {
+            "title": "Abre el simulador",
+            "description": "Ve a falstad.com/circuit/ — el simulador se abre directamente en el navegador. En el menú 'Circuits', explora los ejemplos prediseñados: 'Basics' > 'Series/Parallel' para empezar.",
+            "prompt": null,
+            "tip": "Los puntos verdes en movimiento representan el flujo de electrones. Esta visualización es la característica más educativa del simulador."
+          },
+          {
+            "title": "Construye un circuito básico",
+            "description": "Haz clic derecho > 'Add Component' para agregar elementos. Crea un circuito serie con una fuente de voltaje y dos resistencias. Observa cómo los puntos de corriente fluyen a través del circuito.",
+            "prompt": null,
+            "tip": "Pasa el cursor sobre cualquier componente para ver su voltaje y corriente en la barra inferior. Esto es como tener un multímetro virtual."
+          },
+          {
+            "title": "Experimenta y compara",
+            "description": "Crea el mismo circuito en paralelo y compara: ¿cómo se distribuye la corriente? ¿qué pasa con el voltaje? Haz clic en una resistencia para cambiar su valor y observa los efectos en tiempo real.",
+            "prompt": null,
+            "tip": "La animación hace visible lo invisible: los estudiantes pueden VER cómo la corriente se divide en un circuito paralelo. Esto es difícil de entender solo con ecuaciones."
+          },
+          {
+            "title": "Diseña una actividad comparativa",
+            "description": "Prepara una hoja de trabajo: los estudiantes construyen 3 circuitos (serie, paralelo, mixto), miden voltaje y corriente en cada punto, y verifican la Ley de Ohm. Al final, responden: '¿Por qué las casas usan circuitos en paralelo?'",
+            "prompt": null,
+            "tip": "Falstad tiene un botón 'Export' que genera un enlace único para cada circuito. Comparte el enlace para que los estudiantes abran tu circuito exacto."
+          }
+        ]
       }
     }
   },
@@ -426,9 +799,19 @@
     "detail": {
       "fullDescription": "GlowScript es una plataforma web que permite crear simulaciones 3D interactivas usando Python (VPython) directamente en el navegador, sin instalación. Los estudiantes escriben código Python que genera visualizaciones 3D de fenómenos físicos en tiempo real: trayectorias de proyectiles, colisiones, campos gravitacionales, ondas, oscilaciones y más. Es la forma más accesible de combinar programación y física, ya que los resultados visuales son inmediatos y motivadores. Usado en universidades y bachilleratos de todo el mundo.",
       "approach": {
-        "areas": ["Ciencias Naturales", "Informática", "Matemáticas"],
-        "levels": ["Bachillerato"],
-        "type": ["Programación científica", "Simulación 3D", "Modelado físico"]
+        "areas": [
+          "Ciencias Naturales",
+          "Informática",
+          "Matemáticas"
+        ],
+        "levels": [
+          "Bachillerato"
+        ],
+        "type": [
+          "Programación científica",
+          "Simulación 3D",
+          "Modelado físico"
+        ]
       },
       "subjectExamples": [
         {
@@ -460,6 +843,36 @@
         "techRequirements": "Navegador web, cuenta gratuita en glowscript.org",
         "cost": "Completamente gratis y de código abierto",
         "tips": "Ideal para bachillerato con programas avanzados de Informática y Física. Requiere un docente con conocimientos de Python. Los resultados visuales 3D son extraordinariamente motivadores. Dificultad: Avanzada — requiere conocimientos de programación en Python."
+      },
+      "activity": {
+        "title": "Programa una simulación de proyectil en 3D",
+        "description": "Escribe un programa en Python que visualice la trayectoria de un proyectil con gravedad en un entorno 3D.",
+        "steps": [
+          {
+            "title": "Accede a GlowScript",
+            "description": "Ve a glowscript.org, crea una cuenta gratuita y haz clic en 'My Programs' > 'Create a program'. Selecciona 'GlowScript VPython' como lenguaje. Se abrirá un editor de código.",
+            "prompt": null,
+            "tip": "GlowScript ejecuta Python en el navegador — no necesitas instalar Python ni ningún software adicional."
+          },
+          {
+            "title": "Copia el código base",
+            "description": "Copia este código que simula un proyectil lanzado con velocidad inicial y gravedad. La esfera roja deja un rastro de su trayectoria.",
+            "prompt": "GlowScript 3.2 VPython\n\n# Simulación de proyectil\nscene.title = \"Trayectoria de un proyectil\"\nscene.background = color.white\n\nsuelo = box(pos=vector(10, -0.5, 0), size=vector(25, 1, 5), color=color.green)\nproyectil = sphere(pos=vector(0, 0, 0), radius=0.3, color=color.red, make_trail=True)\n\n# Condiciones iniciales\nv = vector(8, 10, 0)  # velocidad inicial (m/s)\ng = vector(0, -9.8, 0)  # gravedad\ndt = 0.01  # paso de tiempo\n\nwhile proyectil.pos.y >= 0:\n    rate(100)\n    v = v + g * dt\n    proyectil.pos = proyectil.pos + v * dt",
+            "tip": "Los estudiantes pueden cambiar la velocidad inicial (v) para ver cómo afecta el alcance y la altura máxima."
+          },
+          {
+            "title": "Ejecuta y observa",
+            "description": "Haz clic en 'Run this program'. Verás la esfera roja volar en una parábola dejando un rastro. Puedes rotar la vista 3D arrastrando con el mouse. La trayectoria demuestra visualmente el movimiento parabólico.",
+            "prompt": null,
+            "tip": "Pide a los estudiantes que predigan la trayectoria ANTES de ejecutar el código. Luego comparan su predicción con el resultado."
+          },
+          {
+            "title": "Experimenta con variables",
+            "description": "Modifica el código: cambia la velocidad inicial, agrega resistencia del aire (v = v + (g - 0.1*v) * dt), o cambia la gravedad para simular otros planetas. Cada cambio produce una trayectoria diferente.",
+            "prompt": null,
+            "tip": "El cálculo del alcance máximo para ángulo de 45° es un resultado clásico de física. Los estudiantes pueden verificarlo cambiando los componentes de v."
+          }
+        ]
       }
     }
   }

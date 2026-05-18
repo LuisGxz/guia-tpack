@@ -213,6 +213,79 @@ const colorClass = categoryColors[tool.category] || 'bg-gray-100 text-gray-800';
           </section>
         )}
 
+        <!-- Interactive Activity -->
+        {detail.activity && (
+          <section>
+            <h2 class="text-xl font-bold text-primary mb-4 flex items-center gap-2">
+              <span class="text-xl" aria-hidden="true">🎓</span>
+              Actividad práctica
+            </h2>
+            <div class="rounded-xl border border-accent/20 overflow-hidden bg-gradient-to-br from-accent/5 to-primary/5" id="activity-wizard">
+              <div class="px-5 py-4 bg-accent/10 border-b border-accent/20">
+                <h3 class="font-bold text-primary">{detail.activity.title}</h3>
+                <p class="text-sm text-text-light mt-1">{detail.activity.description}</p>
+              </div>
+
+              <div class="flex items-center justify-center gap-2 px-4 py-3 border-b border-border/30 bg-white/50">
+                {detail.activity.steps.map((_: any, i: number) => (
+                  <div class="flex items-center gap-2">
+                    <button
+                      class:list={[
+                        'activity-dot w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold transition-all cursor-pointer',
+                        i === 0 ? 'bg-accent text-white shadow-sm' : 'bg-stone-200 text-text-light hover:bg-stone-300'
+                      ]}
+                      data-dot={i}
+                      aria-label={`Paso ${i + 1}`}
+                    >
+                      {i + 1}
+                    </button>
+                    {i < detail.activity.steps.length - 1 && (
+                      <div class="w-6 h-0.5 bg-stone-200 rounded"></div>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              {detail.activity.steps.map((step: any, i: number) => (
+                <div
+                  class:list={['activity-panel p-5 min-h-[180px]', i !== 0 && 'hidden']}
+                  data-panel={i}
+                >
+                  <h4 class="font-bold text-primary mb-2 text-base">{step.title}</h4>
+                  <p class="text-sm text-text-light mb-4 leading-relaxed">{step.description}</p>
+
+                  {step.prompt && (
+                    <div class="relative bg-stone-800 text-green-400 p-4 rounded-lg text-sm font-mono mb-4 leading-relaxed">
+                      <button
+                        class="activity-copy absolute top-2 right-2 text-xs bg-white/10 hover:bg-white/20 text-white/80 px-2.5 py-1 rounded transition-colors"
+                        data-copy-text={step.prompt}
+                      >
+                        Copiar
+                      </button>
+                      <p class="pr-16 whitespace-pre-wrap">{step.prompt}</p>
+                    </div>
+                  )}
+
+                  <div class="flex items-start gap-2.5 p-3 bg-amber-50 border border-amber-200/60 rounded-lg">
+                    <span class="shrink-0 mt-0.5 text-sm" aria-hidden="true">💡</span>
+                    <p class="text-sm text-amber-800 leading-relaxed"><strong>Tip:</strong> {step.tip}</p>
+                  </div>
+                </div>
+              ))}
+
+              <div class="flex items-center justify-between px-5 py-3 border-t border-border/30 bg-white/50">
+                <button class="activity-prev px-4 py-2 rounded-lg text-sm font-semibold text-text-light hover:bg-stone-100 transition-colors invisible" id="act-prev">
+                  ← Anterior
+                </button>
+                <span class="text-xs text-text-light" id="act-counter">Paso 1 de {detail.activity.steps.length}</span>
+                <button class="activity-next px-4 py-2 rounded-lg text-sm font-semibold bg-accent text-white hover:bg-accent-light transition-colors" id="act-next">
+                  Siguiente →
+                </button>
+              </div>
+            </div>
+          </section>
+        )}
+
         <!-- Video Tutorial -->
         {detail.videoUrl && (
           <section>
@@ -310,3 +383,51 @@ const colorClass = categoryColors[tool.category] || 'bg-gray-100 text-gray-800';
     )}
   </main>
 </MainLayout>
+
+<script is:inline>
+  const w = document.getElementById('activity-wizard');
+  if (w) {
+    let s = 0;
+    const panels = w.querySelectorAll('[data-panel]');
+    const dots = w.querySelectorAll('[data-dot]');
+    const prev = document.getElementById('act-prev');
+    const next = document.getElementById('act-next');
+    const counter = document.getElementById('act-counter');
+    const total = panels.length;
+
+    function go(n) {
+      s = Math.max(0, Math.min(total - 1, n));
+      panels.forEach((p, i) => p.classList.toggle('hidden', i !== s));
+      dots.forEach((d, i) => {
+        d.classList.toggle('bg-accent', i <= s);
+        d.classList.toggle('text-white', i <= s);
+        d.classList.toggle('shadow-sm', i <= s);
+        d.classList.toggle('bg-stone-200', i > s);
+        d.classList.toggle('text-text-light', i > s);
+      });
+      prev.classList.toggle('invisible', s === 0);
+      counter.textContent = 'Paso ' + (s + 1) + ' de ' + total;
+      if (s === total - 1) {
+        next.textContent = '\u2713 Completado';
+        next.className = 'activity-next px-4 py-2 rounded-lg text-sm font-semibold bg-green-600 text-white hover:bg-green-700 transition-colors';
+      } else {
+        next.textContent = 'Siguiente \u2192';
+        next.className = 'activity-next px-4 py-2 rounded-lg text-sm font-semibold bg-accent text-white hover:bg-accent-light transition-colors';
+      }
+    }
+
+    prev.addEventListener('click', function() { go(s - 1); });
+    next.addEventListener('click', function() { if (s < total - 1) go(s + 1); });
+    dots.forEach(function(d, i) { d.addEventListener('click', function() { go(i); }); });
+
+    w.querySelectorAll('.activity-copy').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        navigator.clipboard.writeText(btn.dataset.copyText).then(function() {
+          var orig = btn.textContent;
+          btn.textContent = '\u2713 Copiado';
+          setTimeout(function() { btn.textContent = orig; }, 2000);
+        });
+      });
+    });
+  }
+</script>

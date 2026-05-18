@@ -10,9 +10,21 @@
     "detail": {
       "fullDescription": "Merge EDU es una plataforma de realidad aumentada diseñada específicamente para educación. Utiliza un cubo físico especial (Merge Cube) que, al ser visto a través de la cámara del celular o tablet, muestra modelos 3D interactivos que los estudiantes pueden sostener, rotar y explorar con sus manos. Incluye simulaciones de ciencias, modelos anatómicos, el sistema solar, moléculas y más de 100 experiencias educativas alineadas a estándares curriculares. Los estudiantes pueden crear sus propios objetos 3D.",
       "approach": {
-        "areas": ["Ciencias Naturales", "Matemáticas", "Estudios Sociales"],
-        "levels": ["Primaria", "Secundaria", "Bachillerato"],
-        "type": ["Experiencias inmersivas", "Manipulación 3D", "Laboratorio virtual"]
+        "areas": [
+          "Ciencias Naturales",
+          "Matemáticas",
+          "Estudios Sociales"
+        ],
+        "levels": [
+          "Primaria",
+          "Secundaria",
+          "Bachillerato"
+        ],
+        "type": [
+          "Experiencias inmersivas",
+          "Manipulación 3D",
+          "Laboratorio virtual"
+        ]
       },
       "subjectExamples": [
         {
@@ -44,6 +56,36 @@
         "techRequirements": "Tablets o smartphones con cámara, app Merge EDU. Merge Cube imprimible gratis o físico ($5-15)",
         "cost": "App gratuita con contenido limitado; licencia escolar desde $500/año (acceso completo para toda la institución)",
         "tips": "El Merge Cube puede imprimirse en papel como alternativa gratuita. Iniciar con el contenido gratuito de ciencias que es suficiente para un piloto. El impacto visual en los estudiantes justifica la inversión."
+      },
+      "activity": {
+        "title": "Explora un modelo 3D con el Merge Cube",
+        "description": "Experimenta cómo los estudiantes pueden sostener y manipular modelos 3D de ciencias con realidad aumentada.",
+        "steps": [
+          {
+            "title": "Consigue un Merge Cube",
+            "description": "Puedes imprimir el patrón del Merge Cube en papel (busca 'Merge Cube printable template' y recórtalo como cubo) o comprarlo físico (~$5-15). La versión impresa funciona bien.",
+            "prompt": null,
+            "tip": "Imprime el patrón en cartulina en vez de papel normal — el cubo será más resistente y durable para uso en clase."
+          },
+          {
+            "title": "Descarga la app e inicia",
+            "description": "Descarga la app 'Merge EDU' en tu tablet o celular (iOS o Android). Abre la app, apunta la cámara al cubo y selecciona una experiencia: sistema solar, anatomía del corazón, o estructura celular.",
+            "prompt": null,
+            "tip": "Empieza con la experiencia del sistema solar — es la más visual e impactante para una primera demostración."
+          },
+          {
+            "title": "Manipula y explora el modelo",
+            "description": "Sostén el cubo frente a la cámara y gíralo: el modelo 3D se mueve con el cubo. Haz zoom acercando la cámara. Toca la pantalla para acceder a información de cada parte. Explora al menos 2-3 modelos diferentes.",
+            "prompt": null,
+            "tip": "Pasa el cubo a un colega para que lo experimente. La reacción de 'sostener' un corazón virtual en la mano es reveladora."
+          },
+          {
+            "title": "Planifica una clase con el cubo",
+            "description": "Diseña una estación de aprendizaje donde los estudiantes roten por el Merge Cube. Grupo 1: explora el corazón (sistema circulatorio). Grupo 2: explora la célula (biología celular). Prepara preguntas para cada estación.",
+            "prompt": null,
+            "tip": "Con un solo cubo y un tablet, puedes crear una estación rotativa. No necesitas uno por estudiante."
+          }
+        ]
       }
     }
   },
@@ -58,9 +100,20 @@
     "detail": {
       "fullDescription": "QuiverVision combina actividades de colorear tradicionales con realidad aumentada. Los estudiantes colorean páginas especiales impresas y, al apuntar la cámara del celular o tablet, ven sus dibujos cobrar vida como modelos 3D animados con los colores que eligieron. Incluye páginas educativas de ciencias (volcanes, sistema solar, células), matemáticas (geometría) y arte. Es una de las herramientas de RA más accesibles para niños pequeños, ya que combina una actividad familiar (colorear) con tecnología innovadora.",
       "approach": {
-        "areas": ["Educación Artística", "Ciencias Naturales", "Matemáticas"],
-        "levels": ["Primaria", "Secundaria"],
-        "type": ["Gamificación", "Creatividad", "Motivación"]
+        "areas": [
+          "Educación Artística",
+          "Ciencias Naturales",
+          "Matemáticas"
+        ],
+        "levels": [
+          "Primaria",
+          "Secundaria"
+        ],
+        "type": [
+          "Gamificación",
+          "Creatividad",
+          "Motivación"
+        ]
       },
       "subjectExamples": [
         {
@@ -93,6 +146,36 @@
         "techRequirements": "Smartphones o tablets con cámara, impresora para las páginas de colorear, app QuiverVision",
         "cost": "Gratis (muchas páginas gratuitas); paquetes educativos desde $3-10",
         "tips": "Perfecta como primera experiencia de RA para la institución — no requiere conocimientos técnicos y genera entusiasmo inmediato. Ideal para primaria y secundaria baja."
+      },
+      "activity": {
+        "title": "Da vida a un dibujo con realidad aumentada",
+        "description": "Experimenta cómo colorear una página impresa y luego verla cobrar vida en 3D con la cámara.",
+        "steps": [
+          {
+            "title": "Imprime una página de colorear",
+            "description": "Ve a quivervision.com, navega a la sección educativa y descarga una página gratuita de ciencias (volcán, sistema solar, o célula). Imprímela en papel blanco estándar.",
+            "prompt": null,
+            "tip": "Las páginas de ciencias son las más útiles para educación. El volcán es perfecto para una primera experiencia — al colorearlo cobra vida y erupciona."
+          },
+          {
+            "title": "Colorea la página",
+            "description": "Colorea la página con colores, marcadores o crayones. Los colores que uses serán los que aparezcan en el modelo 3D. Esta es una actividad familiar que conecta lo analógico con lo digital.",
+            "prompt": null,
+            "tip": "Haz que cada estudiante use colores diferentes — cuando vean los modelos 3D, cada uno será único. Esto personaliza la experiencia."
+          },
+          {
+            "title": "Escanea con la app",
+            "description": "Descarga la app 'QuiverVision' en un celular o tablet. Abre la app, apunta la cámara a la página coloreada y observa cómo el dibujo cobra vida en 3D con los colores que eligieron.",
+            "prompt": null,
+            "tip": "La iluminación es importante: asegúrate de que la página esté bien iluminada para que la cámara la detecte correctamente."
+          },
+          {
+            "title": "Conecta con el aprendizaje",
+            "description": "Después de la experiencia 'wow', guía la discusión: ¿Qué partes del volcán pudieron identificar? ¿Qué causa una erupción? Usa el modelo 3D como recurso visual para explicar el contenido.",
+            "prompt": null,
+            "tip": "QuiverVision funciona bien como actividad de enganche (hook) al inicio de una unidad nueva. La motivación que genera facilita el aprendizaje posterior."
+          }
+        ]
       }
     }
   },
@@ -107,9 +190,22 @@
     "detail": {
       "fullDescription": "Google Lens utiliza inteligencia artificial para reconocer y proporcionar información sobre lo que ve la cámara del celular. Puede identificar plantas, animales, monumentos, obras de arte, textos en cualquier idioma, ecuaciones matemáticas, productos y más. En educación, se convierte en una herramienta de investigación instantánea: los estudiantes apuntan su cámara a un objeto y obtienen información contextual inmediata. También traduce texto en tiempo real, resuelve ecuaciones y busca información visual.",
       "approach": {
-        "areas": ["Ciencias Naturales", "Inglés", "Matemáticas", "Estudios Sociales"],
-        "levels": ["Primaria", "Secundaria", "Bachillerato"],
-        "type": ["Investigación", "Traducción", "Identificación"]
+        "areas": [
+          "Ciencias Naturales",
+          "Inglés",
+          "Matemáticas",
+          "Estudios Sociales"
+        ],
+        "levels": [
+          "Primaria",
+          "Secundaria",
+          "Bachillerato"
+        ],
+        "type": [
+          "Investigación",
+          "Traducción",
+          "Identificación"
+        ]
       },
       "subjectExamples": [
         {
@@ -141,6 +237,36 @@
         "techRequirements": "Smartphone con cámara y app de Google (incluida en la mayoría de dispositivos Android)",
         "cost": "Completamente gratis",
         "tips": "Ya está instalada en la mayoría de teléfonos Android. Es la forma más rápida de introducir RA en el aula sin ningún costo ni preparación. Útil para actividades al aire libre y salidas pedagógicas."
+      },
+      "activity": {
+        "title": "Identifica y aprende del entorno natural",
+        "description": "Usa Google Lens para convertir una salida al jardín escolar en una experiencia de aprendizaje de ciencias naturales.",
+        "steps": [
+          {
+            "title": "Abre Google Lens en tu celular",
+            "description": "En Android, Lens está integrado en la app de Google (barra de búsqueda > ícono de cámara). En iPhone, descarga la app 'Google'. No necesitas cuenta ni configuración adicional.",
+            "prompt": null,
+            "tip": "Ya está instalado en la mayoría de teléfonos Android. Simplemente abre la app de Google y toca el ícono de la cámara."
+          },
+          {
+            "title": "Escanea una planta o un insecto",
+            "description": "Sal al jardín escolar o a un área verde cercana. Apunta la cámara a una planta, flor, hoja o insecto. Google Lens la identificará automáticamente y mostrará su nombre científico, características y más información.",
+            "prompt": null,
+            "tip": "Funciona mejor con plantas y animales comunes. Para especies raras, puede dar resultados menos precisos — esto es una buena lección sobre las limitaciones de la IA."
+          },
+          {
+            "title": "Investiga lo identificado",
+            "description": "Toca los resultados para ver más información. Anota: nombre científico, nombre común, familia, hábitat y si es nativa de Ecuador. Repite con al menos 5 especies diferentes.",
+            "prompt": null,
+            "tip": "Crea una competencia: ¿qué equipo identifica más especies diferentes en 15 minutos? Motiva la observación y la exploración."
+          },
+          {
+            "title": "Crea un catálogo de biodiversidad escolar",
+            "description": "Con las fotos e identificaciones, los estudiantes pueden crear un catálogo de la biodiversidad del entorno escolar: nombre, foto, clasificación y una breve descripción. Esto puede ser un proyecto continuo del año.",
+            "prompt": null,
+            "tip": "Un catálogo de biodiversidad escolar es un proyecto de ciencias ciudadanas real. Puede crecer cada año con nuevos aportes de nuevos estudiantes."
+          }
+        ]
       }
     }
   },
@@ -155,9 +281,21 @@
     "detail": {
       "fullDescription": "Assemblr EDU es una plataforma que permite a docentes y estudiantes crear experiencias de realidad aumentada sin conocimientos de programación. Ofrece un editor visual de arrastrar y soltar con una biblioteca de miles de objetos 3D, animaciones, textos y elementos interactivos. Las creaciones se comparten mediante un enlace o código QR y se visualizan con la cámara del dispositivo. Los docentes pueden crear lecciones de RA y los estudiantes pueden presentar proyectos en formato de realidad aumentada.",
       "approach": {
-        "areas": ["Ciencias Naturales", "Estudios Sociales", "Educación Artística", "Informática"],
-        "levels": ["Secundaria", "Bachillerato"],
-        "type": ["Creación de contenido", "Presentaciones RA", "Proyectos creativos"]
+        "areas": [
+          "Ciencias Naturales",
+          "Estudios Sociales",
+          "Educación Artística",
+          "Informática"
+        ],
+        "levels": [
+          "Secundaria",
+          "Bachillerato"
+        ],
+        "type": [
+          "Creación de contenido",
+          "Presentaciones RA",
+          "Proyectos creativos"
+        ]
       },
       "subjectExamples": [
         {
@@ -189,6 +327,36 @@
         "techRequirements": "Navegador web para crear, smartphone/tablet con cámara para visualizar",
         "cost": "Gratis (plan educativo básico); Premium desde $4.99/mes",
         "tips": "Excelente para que los estudiantes presenten proyectos en formato innovador. La creación se hace en PC y la visualización en celular, lo que distribuye la carga tecnológica."
+      },
+      "activity": {
+        "title": "Crea una lección de RA sin programar",
+        "description": "Diseña un proyecto de realidad aumentada educativo usando el editor visual de arrastrar y soltar de Assemblr.",
+        "steps": [
+          {
+            "title": "Accede a Assemblr EDU",
+            "description": "Ve a edu.assemblrworld.com y crea una cuenta educativa gratuita. El editor funciona en el navegador — no necesitas instalar nada. Haz clic en 'Create New Project'.",
+            "prompt": null,
+            "tip": "El editor web funciona mejor en computadora. La visualización de los proyectos se hace desde el celular con la app Assemblr."
+          },
+          {
+            "title": "Construye tu escena 3D",
+            "description": "Usa la biblioteca de objetos 3D para construir tu lección. Para una clase de sistema solar: agrega planetas, estrellas y texto explicativo. Arrastra, rota y escala cada objeto.",
+            "prompt": null,
+            "tip": "Menos es más: 5-7 objetos bien colocados con texto claro son más efectivos que una escena saturada de elementos."
+          },
+          {
+            "title": "Agrega texto y explicaciones",
+            "description": "Añade etiquetas de texto 3D junto a cada objeto explicando qué es y datos clave. Puedes agregar flechas que señalen partes importantes y botones que enlacen a más información.",
+            "prompt": null,
+            "tip": "Usa textos cortos (máximo 2 líneas) para las etiquetas. La información detallada puede ir en un enlace o en material complementario."
+          },
+          {
+            "title": "Comparte y visualiza en RA",
+            "description": "Genera un código QR de tu proyecto. Los estudiantes escanean el código con la app Assemblr y ven tu creación 3D aparecer sobre su escritorio en realidad aumentada.",
+            "prompt": null,
+            "tip": "Imprime los códigos QR y pégalos en el cuaderno o en una ficha de trabajo. Así los estudiantes pueden revisar la lección de RA en cualquier momento."
+          }
+        ]
       }
     }
   },
@@ -203,9 +371,20 @@
     "detail": {
       "fullDescription": "JigSpace es una plataforma de presentaciones 3D que permite crear y compartir explicaciones paso a paso de conceptos complejos usando modelos 3D interactivos en realidad aumentada. Cada presentación (llamada 'Jig') descompone un concepto en pasos secuenciales con modelos 3D que se pueden rotar, desarmar y explorar. Incluye una biblioteca con cientos de presentaciones prediseñadas sobre anatomía, mecánica, electrónica, astronomía y más. Los modelos aparecen en RA sobre cualquier superficie plana.",
       "approach": {
-        "areas": ["Ciencias Naturales", "Matemáticas", "Informática"],
-        "levels": ["Secundaria", "Bachillerato"],
-        "type": ["Visualización 3D", "Explicaciones paso a paso", "Exploración"]
+        "areas": [
+          "Ciencias Naturales",
+          "Matemáticas",
+          "Informática"
+        ],
+        "levels": [
+          "Secundaria",
+          "Bachillerato"
+        ],
+        "type": [
+          "Visualización 3D",
+          "Explicaciones paso a paso",
+          "Exploración"
+        ]
       },
       "subjectExamples": [
         {
@@ -231,6 +410,36 @@
         "techRequirements": "iPad o iPhone (iOS). App de JigSpace gratuita",
         "cost": "Gratis (acceso a biblioteca); Creator desde $9.99/mes para crear contenido propio",
         "tips": "La biblioteca gratuita ya contiene suficiente material para empezar. Ideal si la institución cuenta con iPads. Las presentaciones paso a paso facilitan la explicación de conceptos difíciles."
+      },
+      "activity": {
+        "title": "Presenta un concepto complejo paso a paso en 3D",
+        "description": "Usa las presentaciones 3D interactivas de JigSpace para explicar conceptos difíciles de forma visual y secuencial.",
+        "steps": [
+          {
+            "title": "Descarga JigSpace",
+            "description": "Descarga la app JigSpace en tu iPad o iPhone (disponible en App Store). Abre la app y explora la biblioteca de 'Jigs' (presentaciones 3D) organizadas por categoría.",
+            "prompt": null,
+            "tip": "JigSpace funciona mejor en iPad por el tamaño de pantalla. En iPhone funciona pero los modelos son más pequeños."
+          },
+          {
+            "title": "Busca un Jig de tu materia",
+            "description": "Navega por categorías: Anatomía, Espacio, Ingeniería, Electricidad. Elige un Jig que se alinee con tu tema curricular. Por ejemplo: 'How the Heart Works' para sistema circulatorio o 'Solar System' para astronomía.",
+            "prompt": null,
+            "tip": "Los Jigs paso a paso son como un libro pop-up digital: cada paso revela una nueva capa de información. Son ideales para conceptos que tienen secuencia."
+          },
+          {
+            "title": "Explora la presentación paso a paso",
+            "description": "Abre el Jig y avanza por los pasos. En cada paso, el modelo 3D se transforma: se desarma, se hace transparente, o señala una parte específica. Rota el modelo para verlo desde todos los ángulos.",
+            "prompt": null,
+            "tip": "Activa el modo RA para ver el modelo sobre tu escritorio. Los estudiantes pueden caminar alrededor del modelo para verlo desde diferentes perspectivas."
+          },
+          {
+            "title": "Integra en tu clase",
+            "description": "Planifica en qué momento de la clase usar el Jig: como introducción al tema (hook), como apoyo durante la explicación, o como repaso al final. Prepara preguntas para cada paso de la presentación.",
+            "prompt": null,
+            "tip": "Pasa el iPad entre grupos de estudiantes para que cada uno explore el modelo. Asigna un paso diferente a cada grupo y pide que lo expliquen al resto."
+          }
+        ]
       }
     }
   },
@@ -245,9 +454,21 @@
     "detail": {
       "fullDescription": "Metaverse Studio permite crear experiencias interactivas de realidad aumentada basadas en narrativas y gamificación. Los docentes diseñan actividades tipo 'búsqueda del tesoro' donde los estudiantes deben encontrar códigos QR, responder preguntas, resolver acertijos y completar desafíos usando la cámara de su dispositivo. Cada experiencia puede incluir personajes, efectos de RA, puntuación y ramificaciones narrativas. Es ideal para actividades al aire libre, recorridos por la escuela y aprendizaje basado en juegos.",
       "approach": {
-        "areas": ["Estudios Sociales", "Ciencias Naturales", "Lengua y Literatura", "Educación Física"],
-        "levels": ["Primaria alta", "Secundaria"],
-        "type": ["Gamificación", "Aprendizaje basado en juegos", "Actividades al aire libre"]
+        "areas": [
+          "Estudios Sociales",
+          "Ciencias Naturales",
+          "Lengua y Literatura",
+          "Educación Física"
+        ],
+        "levels": [
+          "Primaria alta",
+          "Secundaria"
+        ],
+        "type": [
+          "Gamificación",
+          "Aprendizaje basado en juegos",
+          "Actividades al aire libre"
+        ]
       },
       "subjectExamples": [
         {
@@ -278,6 +499,36 @@
         "techRequirements": "Navegador web para crear, smartphones para los estudiantes, impresora para códigos QR",
         "cost": "Gratis (experiencias ilimitadas); Premium con funciones avanzadas",
         "tips": "Muy motivante para estudiantes. Funciona especialmente bien para eventos institucionales como semanas culturales, ferias de ciencias y actividades de integración."
+      },
+      "activity": {
+        "title": "Diseña una búsqueda del tesoro educativa con RA",
+        "description": "Crea una experiencia gamificada donde los estudiantes resuelven desafíos de conocimiento escaneando códigos QR por la escuela.",
+        "steps": [
+          {
+            "title": "Planifica las estaciones",
+            "description": "Define 5-8 estaciones alrededor de tu escuela. Para cada estación, escribe: la ubicación (ej: biblioteca, laboratorio, patio), una pregunta o desafío, y una pista hacia la siguiente estación.",
+            "prompt": null,
+            "tip": "Conecta las preguntas con un tema común: 'Búsqueda del tesoro del ecosistema escolar' o 'Rally de Historia Ecuatoriana'."
+          },
+          {
+            "title": "Crea la experiencia en Metaverse",
+            "description": "En studio.gometa.io, crea una nueva experiencia. Para cada estación, agrega: una escena con texto o imagen, una pregunta (opción múltiple o abierta), y una pista visual hacia la siguiente estación.",
+            "prompt": null,
+            "tip": "Agrega efectos de RA (personajes, objetos 3D) a cada estación para hacer la experiencia más inmersiva y divertida."
+          },
+          {
+            "title": "Imprime los códigos QR",
+            "description": "Metaverse genera un código QR para cada estación. Imprímelos y colócalos en las ubicaciones planificadas por tu escuela. Cada código activa la experiencia de esa estación.",
+            "prompt": null,
+            "tip": "Lamina los códigos QR para que sean resistentes al clima si están en exteriores. Pégalos a la altura de los ojos de los estudiantes."
+          },
+          {
+            "title": "Lanza la actividad",
+            "description": "Divide a los estudiantes en equipos, explica las reglas y el objetivo. Cada equipo recorre las estaciones escaneando los códigos QR y respondiendo los desafíos. El equipo que complete todas las estaciones correctamente primero, gana.",
+            "prompt": null,
+            "tip": "Envía a cada equipo por una ruta diferente para evitar aglomeraciones. Asigna un orden diferente de estaciones a cada equipo."
+          }
+        ]
       }
     }
   },
@@ -292,9 +543,21 @@
     "detail": {
       "fullDescription": "Qlone es una aplicación de escaneo 3D que permite digitalizar objetos reales usando solo la cámara del celular y una alfombrilla impresa. El estudiante coloca un objeto sobre la alfombrilla, lo escanea desde diferentes ángulos con la cámara, y la app genera automáticamente un modelo 3D digital del objeto. Los modelos generados pueden visualizarse en RA, compartirse o exportarse para impresión 3D. Es una herramienta poderosa para conectar el mundo físico con el digital.",
       "approach": {
-        "areas": ["Ciencias Naturales", "Educación Artística", "Estudios Sociales", "Informática"],
-        "levels": ["Secundaria", "Bachillerato"],
-        "type": ["Modelado 3D", "Digitalización", "Proyectos creativos"]
+        "areas": [
+          "Ciencias Naturales",
+          "Educación Artística",
+          "Estudios Sociales",
+          "Informática"
+        ],
+        "levels": [
+          "Secundaria",
+          "Bachillerato"
+        ],
+        "type": [
+          "Modelado 3D",
+          "Digitalización",
+          "Proyectos creativos"
+        ]
       },
       "subjectExamples": [
         {
@@ -325,6 +588,36 @@
         "techRequirements": "Smartphone o tablet con cámara, alfombrilla impresa (gratuita desde la app)",
         "cost": "Gratis para escanear; exportación de modelos desde $0.99 por modelo",
         "tips": "Actividad muy motivante que combina manipulación de objetos reales con tecnología digital. La alfombrilla se imprime gratis. Ideal para crear un museo 3D institucional."
+      },
+      "activity": {
+        "title": "Escanea un objeto real y conviértelo en modelo 3D",
+        "description": "Digitaliza un objeto físico del laboratorio o del entorno usando solo tu celular y una alfombrilla impresa.",
+        "steps": [
+          {
+            "title": "Imprime la alfombrilla de escaneo",
+            "description": "Descarga la app Qlone (iOS o Android). Desde la app, imprime la alfombrilla de escaneo (un patrón en blanco y negro). Imprímela en tamaño carta o A4.",
+            "prompt": null,
+            "tip": "Imprime en papel grueso o cartulina y colócala sobre una superficie plana y estable. La alfombrilla debe estar completamente visible."
+          },
+          {
+            "title": "Coloca el objeto y escanea",
+            "description": "Coloca un objeto pequeño sobre la alfombrilla: una roca, una pieza de cerámica, un modelo del laboratorio, o una creación artística. Abre la app y sigue las instrucciones para escanear desde todos los ángulos.",
+            "prompt": null,
+            "tip": "Los objetos opacos y con textura funcionan mejor. Los transparentes o muy brillantes son difíciles de escanear."
+          },
+          {
+            "title": "Procesa y revisa el modelo",
+            "description": "Qlone procesará las fotos y generará un modelo 3D. Gíralo, haz zoom y verifica la calidad. Si alguna parte no se capturó bien, puedes reescanear.",
+            "prompt": null,
+            "tip": "La calidad mejora con buena iluminación (luz natural es ideal) y con más fotos desde diferentes ángulos."
+          },
+          {
+            "title": "Comparte y usa en clase",
+            "description": "El modelo 3D se puede visualizar en RA, compartir con estudiantes, o incluso exportar para impresión 3D. Idea: crea un museo virtual escolar con objetos digitalizados por los estudiantes.",
+            "prompt": null,
+            "tip": "Un proyecto motivador: cada estudiante escanea un objeto cultural o natural de su comunidad y construyen juntos un museo 3D digital del Ecuador."
+          }
+        ]
       }
     }
   },
@@ -339,9 +632,19 @@
     "detail": {
       "fullDescription": "AR.js es una biblioteca de código abierto (licencia MIT) que permite crear experiencias de realidad aumentada que funcionan directamente en el navegador web, sin necesidad de instalar ninguna aplicación. Soporta marcadores impresos, reconocimiento de imágenes y geolocalización. Al combinarse con A-Frame, permite crear experiencias de RA escribiendo HTML simple. Los estudiantes apuntan la cámara del celular a un marcador impreso y ven aparecer modelos 3D, textos, videos o animaciones superpuestos al mundo real.",
       "approach": {
-        "areas": ["Informática", "Ciencias Naturales", "Matemáticas"],
-        "levels": ["Bachillerato"],
-        "type": ["Programación", "Creación de contenido RA", "Proyectos STEAM"]
+        "areas": [
+          "Informática",
+          "Ciencias Naturales",
+          "Matemáticas"
+        ],
+        "levels": [
+          "Bachillerato"
+        ],
+        "type": [
+          "Programación",
+          "Creación de contenido RA",
+          "Proyectos STEAM"
+        ]
       },
       "subjectExamples": [
         {
@@ -373,6 +676,36 @@
         "techRequirements": "Editor de texto, navegador web, impresora para marcadores. Servidor web simple o GitHub Pages (gratis)",
         "cost": "Completamente gratis y de código abierto (licencia MIT)",
         "tips": "Dirigido a docentes de Informática y proyectos STEAM avanzados. Los resultados son impresionantes y funcionan en cualquier celular con navegador, sin instalar nada. Dificultad: Avanzada — requiere conocimientos de HTML y JavaScript."
+      },
+      "activity": {
+        "title": "Crea un marcador de RA con código abierto",
+        "description": "Construye una experiencia de realidad aumentada basada en marcadores usando HTML y la biblioteca AR.js.",
+        "steps": [
+          {
+            "title": "Abre el editor de código",
+            "description": "Ve a glitch.com y crea un nuevo proyecto ('New Project' > 'glitch-hello-webpage'). Esto te da un editor web con preview en tiempo real. Borra el contenido del archivo index.html.",
+            "prompt": null,
+            "tip": "Glitch es gratuito y no requiere instalación. Todo funciona en el navegador — perfecto para un taller de clase."
+          },
+          {
+            "title": "Copia el código base de AR.js",
+            "description": "Copia este código HTML en tu archivo index.html para crear una experiencia de RA con un marcador Hiro (el marcador estándar de AR.js).",
+            "prompt": "<!DOCTYPE html>\n<html>\n<head>\n  <script src=\"https://aframe.io/releases/1.4.0/aframe.min.js\"></script>\n  <script src=\"https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js\"></script>\n</head>\n<body style=\"margin: 0; overflow: hidden;\">\n  <a-scene embedded arjs>\n    <a-marker preset=\"hiro\">\n      <a-box position=\"0 0.5 0\" material=\"color: #0ea5e9;\" scale=\"0.5 0.5 0.5\"></a-box>\n    </a-marker>\n    <a-entity camera></a-entity>\n  </a-scene>\n</body>\n</html>",
+            "tip": "Este código crea un cubo azul que aparece cuando la cámara detecta un marcador Hiro. Puedes cambiar el color, tamaño y tipo de objeto."
+          },
+          {
+            "title": "Imprime el marcador y prueba",
+            "description": "Busca 'Hiro marker AR.js' en imágenes y imprime el marcador. Abre tu proyecto de Glitch en el celular, permite el acceso a la cámara y apunta al marcador impreso. El cubo 3D aparecerá sobre el marcador.",
+            "prompt": null,
+            "tip": "El marcador debe estar bien iluminado y ser de al menos 8cm x 8cm para que la cámara lo detecte correctamente."
+          },
+          {
+            "title": "Personaliza y expande",
+            "description": "Cambia <a-box> por <a-sphere> (esfera) o <a-cylinder> (cilindro). Cambia el color. Agrega texto con <a-text value='Hola RA' position='0 1 0'></a-text>. Cada cambio en el código se refleja al recargar en el celular.",
+            "prompt": null,
+            "tip": "Este es un excelente proyecto para una clase de Informática: los estudiantes aprenden HTML creando algo que funciona en realidad aumentada."
+          }
+        ]
       }
     }
   },
@@ -387,9 +720,20 @@
     "detail": {
       "fullDescription": "model-viewer es un componente web de código abierto (licencia Apache 2.0) desarrollado por Google que permite embeber modelos 3D interactivos en cualquier página web con una sola línea de HTML. Los modelos se pueden rotar, hacer zoom y, en dispositivos compatibles, visualizar en realidad aumentada con un solo clic. Es la forma más sencilla de agregar contenido 3D y RA a materiales educativos web. Compatible con modelos en formato glTF/GLB que se encuentran gratis en bibliotecas como Sketchfab.",
       "approach": {
-        "areas": ["Informática", "Ciencias Naturales", "Educación Artística"],
-        "levels": ["Secundaria", "Bachillerato"],
-        "type": ["Visualización 3D", "Desarrollo web", "Material educativo"]
+        "areas": [
+          "Informática",
+          "Ciencias Naturales",
+          "Educación Artística"
+        ],
+        "levels": [
+          "Secundaria",
+          "Bachillerato"
+        ],
+        "type": [
+          "Visualización 3D",
+          "Desarrollo web",
+          "Material educativo"
+        ]
       },
       "subjectExamples": [
         {
@@ -421,6 +765,36 @@
         "techRequirements": "Editor de texto, navegador web. Smartphone para visualización RA",
         "cost": "Completamente gratis y de código abierto (licencia Apache 2.0)",
         "tips": "El componente más simple para agregar RA a materiales web. Una sola etiqueta HTML muestra un modelo 3D con RA. Ideal como primer proyecto de RA para docentes de Informática. Dificultad: Intermedia — requiere HTML básico."
+      },
+      "activity": {
+        "title": "Inserta un modelo 3D interactivo en una página web",
+        "description": "Usa el componente web de Google para embeber modelos 3D con visualización en RA en cualquier página HTML.",
+        "steps": [
+          {
+            "title": "Encuentra un modelo 3D gratuito",
+            "description": "Ve a sketchfab.com y busca un modelo educativo (ej: 'human skull', 'molecule'). Filtra por 'Downloadable' y 'Free'. Descarga en formato .glb (el más compatible con model-viewer).",
+            "prompt": null,
+            "tip": "También puedes encontrar modelos gratuitos en poly.pizza o usar los modelos de ejemplo de modelviewer.dev."
+          },
+          {
+            "title": "Crea el código HTML",
+            "description": "Crea un archivo HTML con el componente model-viewer. Solo necesitas una etiqueta para mostrar el modelo 3D interactivo con soporte de RA.",
+            "prompt": "<!DOCTYPE html>\n<html>\n<head>\n  <script type=\"module\" src=\"https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js\"></script>\n</head>\n<body>\n  <model-viewer\n    src=\"tu-modelo.glb\"\n    alt=\"Modelo 3D educativo\"\n    ar\n    camera-controls\n    style=\"width: 100%; height: 500px;\"\n  ></model-viewer>\n</body>\n</html>",
+            "tip": "Reemplaza 'tu-modelo.glb' con la ruta a tu archivo .glb descargado. Si usas Glitch, sube el archivo al proyecto."
+          },
+          {
+            "title": "Personaliza la visualización",
+            "description": "Agrega atributos para personalizar: 'auto-rotate' para que gire automáticamente, 'poster' para una imagen de carga, y 'ar-modes' para configurar el modo de RA.",
+            "prompt": null,
+            "tip": "El atributo 'ar' activa automáticamente un botón de RA en dispositivos compatibles. En Android funciona con Chrome, en iOS con Safari."
+          },
+          {
+            "title": "Publica y comparte",
+            "description": "Sube tu página a Glitch, GitHub Pages (gratis), o el hosting de tu institución. Comparte el enlace con tus estudiantes. Ellos verán el modelo 3D en su navegador y podrán activar el modo RA desde su celular.",
+            "prompt": null,
+            "tip": "Crea una página por unidad didáctica con modelos 3D relevantes. Con el tiempo tendrás un repositorio de material educativo en RA."
+          }
+        ]
       }
     }
   }
