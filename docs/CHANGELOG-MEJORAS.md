@@ -116,7 +116,33 @@ Cada una de las 41 herramientas tiene ahora una **página dedicada** en `/herram
 - Cada sección ahora se titula **"Escenario hipotético de implementación"**
 - El tono cambió de narrativa en pasado ("eligió", "subió") a **condicional** ("podría", "permitirían")
 - Los resultados ahora referencian **la literatura** en lugar de presentar datos inventados
-- **Razón del cambio:** al ser un proyecto de investigación, presentar casos ficticios como reales comprometía la rigurosidad académica
+- **Razón del cambio:** al ser un informe de investigación, presentar casos ficticios como reales comprometía la rigurosidad académica
+
+## 10. Actividades prácticas interactivas por herramienta
+
+Cada una de las **41 herramientas** ahora incluye una **actividad práctica guiada** tipo wizard en su página de detalle:
+
+- **Componente interactivo** con navegación paso a paso (4 pasos por actividad)
+- **Indicadores de progreso** clickeables (círculos numerados 1-2-3-4)
+- **Botones Anterior / Siguiente** con estado visual de completado
+- **Prompts copiables** (herramientas de IA) con botón "Copiar" al portapapeles
+- **Tips pedagógicos** en cada paso con consejos prácticos para el docente
+- **Vanilla JS** sin dependencias externas (script inline)
+
+### Tipos de actividades por categoría:
+- **IA (12 herramientas):** tutoriales con prompts listos para copiar y pegar (ej: crear planificación diferenciada con ChatGPT, investigar con Gemini, diseñar infografías con Canva)
+- **RV (10 herramientas):** exploraciones guiadas paso a paso (ej: visita virtual a museo, expedición geográfica, creación de escenas VR con A-Frame)
+- **RA (9 herramientas):** experiencias hands-on con dispositivos (ej: escaneo 3D con Qlone, búsqueda del tesoro con Metaverse, marcadores de RA con AR.js)
+- **Simulaciones (10 herramientas):** laboratorios virtuales guiados (ej: circuitos con PhET, funciones con GeoGebra, titulación química con ChemCollective)
+
+### Ubicación en la página:
+- Aparece entre las secciones "Ejemplos por materia" y "Tutorial en video"
+- Título: **"Actividad práctica"**
+
+## 11. Cambio de identidad del proyecto
+
+- **"Proyecto de investigación"** cambiado a **"Informe de investigación"** en todo el sitio (hero, footer)
+- **Logo institucional** (Unidad Educativa Particular Francisco Huerta Rendón) agregado al footer junto a la marca
 
 ---
 
