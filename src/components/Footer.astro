@@ -5,15 +5,30 @@ const currentYear = new Date().getFullYear();
 
 <footer class="mt-auto bg-primary text-white/80">
   <div class="max-w-6xl mx-auto px-4 py-10">
+    <!-- Institutional Logos -->
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-12 mb-10 pb-8 border-b border-white/15">
+      <!-- UE Francisco Huerta Rendón -->
+      <div class="flex flex-col items-center text-center">
+        <img src={`${base}logo.png`} alt="Logo Unidad Educativa Particular Francisco Huerta Rendón" class="w-20 h-20 rounded-full bg-white p-1 mb-2" />
+        <p class="text-white text-xs font-semibold leading-tight max-w-[160px]">
+          Unidad Educativa Particular<br />"Francisco Huerta Rendón"
+        </p>
+      </div>
+      <!-- Universidad de Guayaquil -->
+      <div class="flex flex-col items-center text-center">
+        <img src={`${base}logo-ug.png`} alt="Logo Universidad de Guayaquil" class="w-20 h-20 object-contain bg-white rounded-lg p-1 mb-2" />
+        <p class="text-white text-xs font-semibold leading-tight max-w-[160px]">
+          Universidad de Guayaquil
+        </p>
+      </div>
+    </div>
+
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
       <!-- Brand -->
       <div class="sm:col-span-2 lg:col-span-1">
-        <div class="flex items-center gap-3 mb-2">
-          <img src={`${base}logo.png`} alt="Logo Unidad Educativa Particular Francisco Huerta Rendón" class="w-10 h-10 rounded-full bg-white p-0.5" />
-          <p class="font-bold text-white text-lg" style="font-family: var(--font-heading);">
-            Guía TEE
-          </p>
-        </div>
+        <p class="font-bold text-white text-lg mb-2" style="font-family: var(--font-heading);">
+          Tech in Class
+        </p>
         <p class="text-sm leading-relaxed">
           Guía interactiva para integrar tecnologías emergentes en instituciones educativas.
         </p>
@@ -45,14 +60,16 @@ const currentYear = new Date().getFullYear();
         <h3 class="text-white font-semibold text-sm uppercase tracking-wide mb-3">Proyecto</h3>
         <ul class="space-y-2 text-sm">
           <li>Informe de investigación</li>
-          <li>Gestión directiva e innovación educativa</li>
+          <li>Maestría en Educación</li>
+          <li>Innovación y Liderazgo Educativo</li>
           <li>Contexto: Ecuador, K-12</li>
         </ul>
       </div>
     </div>
 
-    <div class="border-t border-white/15 pt-6 text-sm text-center">
-      <p>Guía TEE — Tecnologías Emergentes Educativas &middot; Informe de Investigación &middot; {currentYear}</p>
+    <div class="border-t border-white/15 pt-6 text-sm text-center space-y-1">
+      <p>Tech in Class — Tecnologías Emergentes Educativas &middot; Informe de Investigación &middot; {currentYear}</p>
+      <p class="text-white/50 text-xs">Mendoza Rodríguez, Y. E. &middot; Soledispa Macías, M. M. &middot; Dir. Ph.D. Figueroa Martínez, E. J.</p>
     </div>
   </div>
 </footer>

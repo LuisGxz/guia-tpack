@@ -144,6 +144,68 @@ Cada una de las **41 herramientas** ahora incluye una **actividad práctica guia
 - **"Proyecto de investigación"** cambiado a **"Informe de investigación"** en todo el sitio (hero, footer)
 - **Logo institucional** (Unidad Educativa Particular Francisco Huerta Rendón) agregado al footer junto a la marca
 
+## 12. Rebranding: "Guía TEE" → "Tech in Class"
+
+**Nivel de cambio: Mayor — Identidad del producto**
+
+Se renombró completamente la marca del proyecto de "Guía TEE" a **"Tech in Class"**, reflejando un nombre más profesional, memorable y alineado con estándares internacionales de productos educativos digitales.
+
+### Cambios realizados:
+- **Navbar (desktop):** marca "Guía TEE" → **"Tech in Class"** en el encabezado principal
+- **Menú móvil (sidebar):** título del panel lateral actualizado a **"Tech in Class"**
+- **Footer:** marca y texto legal actualizados a **"Tech in Class"**
+- **Título de la página principal (index):** `<title>` cambiado a "Tech in Class — Tecnología para tu Institución Educativa"
+- **package.json:** nombre del paquete cambiado a `tech-in-class`
+
+### Justificación:
+- Nombre bilingüe que conecta con la audiencia educativa latinoamericana
+- Más conciso y profesional para URLs, dominios y referencias externas
+- Facilita el posicionamiento como producto digital educativo independiente
+
+## 13. Incorporación de logos institucionales con identificación
+
+**Nivel de cambio: Mayor — Identidad institucional y respaldo académico**
+
+Se agregaron los logos oficiales de las dos instituciones vinculadas al proyecto, con sus respectivos nombres visibles, fortaleciendo la credibilidad y respaldo académico de la guía.
+
+### Logos agregados:
+- **Logo de la Unidad Educativa Particular "Francisco Huerta Rendón"** (`logo.png`): institución donde se realizó la investigación de campo y el taller práctico. Se muestra con el nombre completo debajo.
+- **Logo de la Universidad de Guayaquil** (`logo-ug.png`): institución académica que respalda el informe de investigación a través del Programa de Maestría en Educación. Se muestra con el nombre completo debajo.
+
+### Ubicación:
+- **Footer:** nueva sección superior con los dos logos centrados, antes de las columnas de navegación
+- Cada logo tiene fondo blanco, bordes redondeados y el nombre de la institución debajo en texto claro
+
+### Créditos académicos:
+- Se agregó una línea de créditos al pie del footer con los nombres de los autores y la directora del trabajo de titulación:
+  - Mendoza Rodríguez, Y. E.
+  - Soledispa Macías, M. M.
+  - Dir. Ph.D. Figueroa Martínez, E. J.
+
+### Justificación:
+- Da visibilidad al respaldo institucional del proyecto
+- Alinea la guía con la información oficial de la tesis de maestría
+- Cumple con los requisitos de identificación institucional para productos académicos
+- Agrega valor demostrando que la guía surge de un proceso de investigación riguroso
+
+## 14. Alineación de contenido con la tesis de maestría
+
+**Nivel de cambio: Menor — Consistencia de información**
+
+Se verificó y alineó la información de la guía con el documento oficial de tesis "La Gestión Directiva en la Integración de Tecnologías Emergentes Educativas" (Mendoza & Soledispa, 2026).
+
+### Verificaciones realizadas:
+- **Tipo de documento:** "Informe de investigación" — coincide con el tipo de titulación (FICHA DE REGISTRO)
+- **Tecnologías cubiertas:** IA, RV, RA, Simulaciones — la guía expande las 3 tecnologías del taller (IA, RA, Simulaciones) agregando RV como valor adicional
+- **Marco pedagógico:** TPACK — presente en ambos documentos como fundamento teórico
+- **Contexto:** Ecuador, K-12 — coincide
+- **Institución de campo:** UE Particular "Francisco Huerta Rendón" — coincide
+- **Institución académica:** Universidad de Guayaquil, Facultad de Filosofía, Letras y Ciencias de la Educación — coincide
+- **Programa:** Maestría en Educación con mención en Innovación y Liderazgo Educativo — se actualizó la columna "Proyecto" del footer para reflejar esto
+
+### Resultado:
+La guía interactiva es consistente con la tesis y sirve como producto digital complementario al informe de investigación.
+
 ---
 
 *Documento generado para referencia del equipo de investigación.*
