@@ -18,7 +18,7 @@ const { currentSlug } = Astro.props;
 const currentIdx = steps.findIndex((s) => s.slug === currentSlug);
 ---
 
-<div class="bg-stone-50 border-b border-border">
+<div class="bg-stone-50 border-b border-border md:hidden">
   <div class="max-w-4xl mx-auto px-3 sm:px-4 py-2.5">
     <nav class="flex items-center justify-between" aria-label="Progreso de la guía">
       {steps.map((step, i) => {
