@@ -206,6 +206,16 @@ Se verificó y alineó la información de la guía con el documento oficial de t
 ### Resultado:
 La guía interactiva es consistente con la tesis y sirve como producto digital complementario al informe de investigación.
 
+## 15. Favicon con logo de la Universidad de Guayaquil
+
+**Nivel de cambio: Menor — Identidad visual en el navegador**
+
+Se configuró el logo de la Universidad de Guayaquil (`logo-ug.png`) como **favicon** (icono de pestaña del navegador) en todas las páginas del sitio.
+
+- Agregado en `MainLayout.astro` mediante `<link rel="icon">`
+- Compatible con la ruta base dinámica (GitHub Pages y Vercel)
+- Refuerza la identidad institucional universitaria al navegar la guía
+
 ---
 
 *Documento generado para referencia del equipo de investigación.*
