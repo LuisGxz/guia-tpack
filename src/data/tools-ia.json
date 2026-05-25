@@ -74,32 +74,32 @@
         "tips": "Iniciar con 2-3 docentes piloto. Establecer una política institucional de uso ético antes de la implementación. Crear un documento compartido con prompts efectivos que los docentes puedan reutilizar."
       },
       "activity": {
-        "title": "Crea una planificación de clase diferenciada",
-        "description": "Aprende a usar ChatGPT para generar una planificación adaptada a diferentes niveles de aprendizaje en tu aula.",
+        "title": "Crea una planificación escolar con DUA",
+        "description": "Aprende a escribir un prompt elaborado en ChatGPT para generar una planificación de clase que integre los principios del Diseño Universal para el Aprendizaje (DUA).",
         "steps": [
           {
-            "title": "Elige tu contexto",
-            "description": "Antes de escribir un prompt, define el marco de tu clase: la materia, el nivel educativo, el tema específico del currículo y cuántos niveles de diferenciación necesitas.",
+            "title": "Define el contexto de tu planificación",
+            "description": "Antes de escribir el prompt, ten claro: la materia, el nivel educativo, el tema del currículo, la duración de la clase y las características de diversidad de tu grupo (estilos de aprendizaje, necesidades educativas especiales, niveles de dominio).",
             "prompt": null,
-            "tip": "Empieza con una clase que ya tengas planificada. Así podrás comparar el resultado de la IA con tu propia versión."
+            "tip": "Empieza con una clase que ya tengas planificada. Así podrás comparar el resultado de la IA con tu propia versión y evaluar su calidad."
           },
           {
-            "title": "Copia y adapta este prompt",
-            "description": "Copia el siguiente prompt, reemplaza los valores entre corchetes con tu contexto real, y pégalo en ChatGPT.",
-            "prompt": "Eres un docente experto en [MATERIA]. Crea una planificación de clase de 45 minutos para estudiantes de [NIVEL, ej: 8vo EGB] sobre el tema [TEMA]. Incluye:\n1. Objetivo de aprendizaje alineado al currículo ecuatoriano\n2. Actividad de apertura (5 min)\n3. Desarrollo con actividades diferenciadas para 3 niveles (básico, intermedio, avanzado) (30 min)\n4. Cierre con evaluación formativa (10 min)\nUsa un tono práctico y claro.",
-            "tip": "Si el resultado es muy genérico, agrega detalles: 'Los estudiantes de nivel básico tienen dificultad con lectura comprensiva'."
+            "title": "Copia y adapta este prompt con DUA",
+            "description": "Este prompt está diseñado para que ChatGPT genere una planificación completa que integra los 3 principios del DUA: múltiples formas de representación, de acción/expresión y de implicación.",
+            "prompt": "Eres un docente experto en [MATERIA] con formación en inclusión educativa. Crea una planificación de clase de [DURACIÓN, ej: 45 minutos] para estudiantes de [NIVEL, ej: 8vo EGB] sobre el tema [TEMA]. La planificación debe seguir estos pasos e integrar el Diseño Universal para el Aprendizaje (DUA):\n\n1. DATOS INFORMATIVOS: materia, nivel, tema, objetivo de aprendizaje alineado al currículo ecuatoriano, destreza con criterio de desempeño.\n\n2. ANTICIPACIÓN (10 min): Actividad de activación de conocimientos previos que ofrezca múltiples formas de representación (visual, auditiva, kinestésica).\n\n3. CONSTRUCCIÓN DEL CONOCIMIENTO (25 min): Desarrollo del tema con:\n   - Múltiples formas de representación: el contenido presentado en al menos 2 formatos (texto, imagen, audio, video, manipulativo)\n   - Múltiples formas de acción y expresión: los estudiantes demuestran su aprendizaje eligiendo entre al menos 2 opciones (escrito, oral, gráfico, digital)\n   - Múltiples formas de implicación: estrategias para motivar tanto a estudiantes que necesitan apoyo como a los avanzados\n\n4. CONSOLIDACIÓN (10 min): Evaluación formativa inclusiva con criterios claros y retroalimentación inmediata.\n\n5. RECURSOS Y MATERIALES necesarios.\n\n6. ADAPTACIONES CURRICULARES para estudiantes con necesidades educativas especiales (grado 1, 2 y 3).\n\nUsa un tono práctico, claro y alineado al formato de planificación del Ministerio de Educación del Ecuador.",
+            "tip": "Si el resultado es muy genérico, agrega detalles específicos: 'Tengo 2 estudiantes con discapacidad visual y 3 con dificultad de lectura comprensiva'."
           },
           {
-            "title": "Abre ChatGPT y pega el prompt",
-            "description": "Abre chat.openai.com en tu navegador, inicia sesión con tu cuenta gratuita y pega el prompt en el campo de texto. Presiona Enter y espera la respuesta completa.",
+            "title": "Abre ChatGPT y genera la planificación",
+            "description": "Abre chat.openai.com en tu navegador, inicia sesión con tu cuenta de Gmail y pega el prompt adaptado. Presiona Enter y espera la respuesta completa. Si la planificación se corta, escribe 'Continúa' para que complete el resto.",
             "prompt": null,
             "tip": "Si no tienes cuenta, créala con tu correo de Gmail en menos de 2 minutos. La versión gratuita es suficiente para esta actividad."
           },
           {
-            "title": "Evalúa y adapta el resultado",
-            "description": "Revisa la planificación generada con ojo crítico. Pregúntate: ¿Se alinea con los objetivos del currículo? ¿El nivel de complejidad es apropiado? ¿Necesitas ajustar algo para tu contexto? Si algo no te convence, pídele a ChatGPT que lo modifique.",
+            "title": "Evalúa y refina con seguimiento",
+            "description": "Revisa la planificación generada verificando: ¿los 3 principios del DUA están presentes? ¿Las adaptaciones curriculares son realistas? ¿Se alinea con el currículo ecuatoriano? Si algo falta, pide a ChatGPT que lo ajuste: 'Agrega más opciones de expresión en la consolidación' o 'Incluye adaptación para estudiante con TDAH'.",
             "prompt": null,
-            "tip": "La IA es un punto de partida, nunca un producto final. Siempre adapta el resultado a tu conocimiento del grupo de estudiantes."
+            "tip": "La IA genera una base sólida, pero el docente es quien conoce a sus estudiantes. Siempre adapta las sugerencias del DUA a la realidad de tu aula."
           }
         ]
       }
@@ -167,32 +167,32 @@
         "tips": "Ideal si la institución ya usa Google Workspace. Capacitar primero a los docentes que ya dominan herramientas Google para que sirvan como multiplicadores."
       },
       "activity": {
-        "title": "Genera material de estudio con fuentes verificadas",
-        "description": "Usa Gemini para crear un resumen de un tema curricular con información actualizada y verificable.",
+        "title": "Crea una encuesta de perfil y profesionalización docente",
+        "description": "Usa Gemini para diseñar una encuesta profesional que diagnostique el perfil de los docentes de tu institución: experiencia, formación, capacitaciones y competencias digitales.",
         "steps": [
           {
-            "title": "Selecciona un tema del currículo",
-            "description": "Elige un tema de tu planificación que requiera información actualizada o que beneficiaría de múltiples perspectivas. Por ejemplo: cambio climático en Ecuador, avances en biotecnología, o un evento histórico reciente.",
+            "title": "Define los datos que necesitas recopilar",
+            "description": "Antes de crear la encuesta, identifica las categorías de información que necesitas del cuerpo docente: datos personales (edad, años de servicio), formación académica (títulos obtenidos), capacitaciones recientes, y nivel de competencia en herramientas digitales.",
             "prompt": null,
-            "tip": "Gemini tiene acceso a información actualizada de la web, lo que lo hace ideal para temas que cambian frecuentemente."
+            "tip": "Una buena encuesta de diagnóstico institucional no solo recoge datos, sino que permite tomar decisiones: ¿qué capacitaciones priorizar? ¿qué docentes pueden ser mentores?"
           },
           {
-            "title": "Copia y adapta este prompt",
-            "description": "Usa este prompt como base para generar material de estudio estructurado con fuentes.",
-            "prompt": "Crea un resumen educativo sobre [TEMA] para estudiantes de [NIVEL]. El resumen debe incluir:\n1. Explicación del concepto en lenguaje accesible (máximo 200 palabras)\n2. 3 datos clave con sus fuentes\n3. Una pregunta de reflexión para discusión en clase\n4. Un ejemplo contextualizado para Ecuador\nIncluye las fuentes de información al final.",
-            "tip": "Gemini puede buscar en la web. Pídele que cite las fuentes para que puedas verificarlas antes de compartir con tus estudiantes."
+            "title": "Genera la encuesta con este prompt",
+            "description": "Copia este prompt y pégalo en Gemini para generar una encuesta completa y profesional.",
+            "prompt": "Crea una encuesta de diagnóstico de perfil y profesionalización docente para una institución educativa del Ecuador. La encuesta debe incluir las siguientes secciones con preguntas de opción múltiple, escala Likert y respuesta corta:\n\n1. DATOS PERSONALES: edad (rangos), género, años de servicio en educación (rangos: 0-5, 6-10, 11-20, más de 20).\n\n2. FORMACIÓN ACADÉMICA: título de tercer nivel (licenciatura, ingeniería), título de cuarto nivel (maestría, doctorado), área de especialización, institución donde obtuvo su título.\n\n3. CAPACITACIÓN CONTINUA: número de capacitaciones realizadas en los últimos 2 años, áreas de capacitación (pedagógica, tecnológica, disciplinar, inclusión), horas totales de formación continua, certificaciones vigentes.\n\n4. COMPETENCIAS DIGITALES: nivel de uso de herramientas digitales (básico, intermedio, avanzado), herramientas que utiliza actualmente, disposición para aprender nuevas tecnologías.\n\n5. NECESIDADES DE FORMACIÓN: áreas en las que necesita mayor capacitación, modalidad preferida (presencial, virtual, híbrida), horarios disponibles.\n\nFormato: lista cada pregunta con sus opciones de respuesta. Incluye instrucciones de llenado al inicio.",
+            "tip": "Gemini integra con Google Workspace. Puedes pedirle que exporte el resultado directamente a un Google Doc para luego convertirlo en Google Forms."
           },
           {
-            "title": "Abre Gemini y genera el contenido",
-            "description": "Ve a gemini.google.com, inicia sesión con tu cuenta de Google y pega el prompt. Si tu institución usa Google Workspace, Gemini ya está integrado en Docs y Slides.",
+            "title": "Abre Gemini y genera la encuesta",
+            "description": "Ve a gemini.google.com e inicia sesión con tu cuenta de Gmail. Pega el prompt y espera la respuesta. Revisa las preguntas generadas y ajusta según las necesidades específicas de tu institución.",
             "prompt": null,
-            "tip": "Si ya usas Google Docs, prueba escribir '@Gemini' dentro del documento para generar contenido directamente ahí."
+            "tip": "Si ya usas Google Workspace, puedes pedirle a Gemini: 'Exporta esta encuesta a Google Docs' para tenerla lista para convertir en Google Forms."
           },
           {
-            "title": "Verifica las fuentes y adapta",
-            "description": "Revisa cada fuente citada: abre los enlaces, verifica que la información sea correcta y que el nivel de complejidad sea apropiado. Adapta el lenguaje si es necesario.",
+            "title": "Adapta y decide el formato de aplicación",
+            "description": "Revisa la encuesta generada: ¿las opciones de respuesta cubren todos los casos? ¿las preguntas son claras y no ambiguas? Decide cómo la aplicarás: puedes copiar las preguntas a Google Forms para distribución digital, o imprimirla para docentes que prefieran el formato físico.",
             "prompt": null,
-            "tip": "Nunca compartas con tus estudiantes un texto generado por IA sin antes verificar su contenido. Esto también es un buen ejercicio de pensamiento crítico."
+            "tip": "Los resultados de esta encuesta son valiosos para justificar proyectos de capacitación ante las autoridades. Guarda los datos para comparar el antes y después de implementar la guía tecnológica."
           }
         ]
       }
@@ -261,32 +261,32 @@
         "tips": "Registrar la institución en Canva for Education para obtener cuentas premium gratuitas para todo el personal. Es una de las herramientas con menor curva de aprendizaje."
       },
       "activity": {
-        "title": "Diseña una infografía educativa en minutos",
-        "description": "Crea material visual atractivo para tu clase usando las herramientas de IA de Canva, sin necesidad de experiencia en diseño.",
+        "title": "Crea un libro digital educativo",
+        "description": "Diseña un libro digital interactivo para tu clase usando las plantillas y herramientas de IA de Canva, sin necesidad de experiencia en diseño.",
         "steps": [
           {
             "title": "Accede a Canva for Education",
-            "description": "Ve a canva.com y registra tu cuenta educativa gratuita (Canva for Education incluye funciones premium sin costo). Si tu institución ya está registrada, pide acceso al administrador.",
+            "description": "Ve a canva.com e inicia sesión con tu cuenta de Gmail. Registra tu cuenta educativa gratuita (Canva for Education incluye funciones premium sin costo). Si tu institución ya está registrada, pide acceso al administrador.",
             "prompt": null,
             "tip": "Canva for Education da acceso premium gratuito a todos los docentes y estudiantes de la institución. Vale la pena registrar la institución completa."
           },
           {
-            "title": "Usa Magic Design para generar una base",
-            "description": "Haz clic en 'Crear un diseño', selecciona 'Infografía' y usa Magic Design: escribe tu tema (ej: 'Ciclo del agua para 7mo año') y Canva generará varias opciones de diseño automáticamente.",
+            "title": "Selecciona una plantilla de libro digital",
+            "description": "Haz clic en 'Crear un diseño' y busca 'Libro' o 'E-book'. Canva ofrece plantillas de libros digitales con portada, índice y páginas interiores prediseñadas. Elige una que se adapte a tu tema curricular.",
             "prompt": null,
-            "tip": "Si Magic Design no está visible, búscalo en la barra lateral izquierda o escribe tu tema en el buscador principal."
+            "tip": "Usa la función Magic Design: escribe tu tema (ej: 'Libro sobre ecosistemas del Ecuador para 8vo año') y Canva generará opciones de diseño automáticamente."
           },
           {
-            "title": "Personaliza el contenido",
-            "description": "Elige el diseño que más te guste y personalízalo: cambia los textos por tu contenido curricular, ajusta los colores a los de tu institución, y reemplaza las imágenes genéricas por elementos relevantes del tema.",
+            "title": "Desarrolla el contenido del libro",
+            "description": "Personaliza cada página: agrega la portada con el título y autor, un índice interactivo, y desarrolla el contenido por capítulos. Usa 'Texto mágico' para que la IA te ayude a redactar o resumir textos. Inserta imágenes, íconos y gráficos de la biblioteca gratuita.",
             "prompt": null,
-            "tip": "Usa la función 'Texto mágico' para que la IA te ayude a reescribir o resumir los textos de cada sección de la infografía."
+            "tip": "Estructura tu libro con secciones claras: introducción, desarrollo (3-5 capítulos), actividades de reflexión y bibliografía. Los libros de 10-15 páginas funcionan bien para el aula."
           },
           {
-            "title": "Exporta y comparte",
-            "description": "Descarga tu infografía como PDF (para imprimir) o PNG (para proyectar). También puedes compartir un enlace editable para que los estudiantes la usen como plantilla para sus propios proyectos.",
+            "title": "Publica y comparte tu libro",
+            "description": "Exporta tu libro como PDF interactivo (con enlaces clicables) o compártelo como enlace de Canva para que los estudiantes lo lean en línea. También puedes asignarlo como proyecto: que cada estudiante o grupo cree su propio libro digital sobre un tema del currículo.",
             "prompt": null,
-            "tip": "Crea una carpeta en Canva por materia y nivel. Con el tiempo tendrás un banco de recursos visuales reutilizables."
+            "tip": "Crea una biblioteca digital de aula con los libros de todos los estudiantes. Esto genera un portafolio de producción colectiva reutilizable cada año."
           }
         ]
       }
@@ -810,32 +810,32 @@
         "tips": "Alternativa ideal cuando hay preocupaciones sobre privacidad de datos o dependencia de empresas comerciales. Los datos no se usan para entrenar modelos comerciales. Dificultad: Básica — la interfaz es idéntica a ChatGPT."
       },
       "activity": {
-        "title": "Compara modelos de IA de código abierto",
-        "description": "Explora cómo diferentes modelos de IA responden a una misma pregunta educativa y evalúa cuál es más útil para tu contexto.",
+        "title": "Genera explicaciones con analogías para temas difíciles",
+        "description": "Usa Hugging Chat para crear explicaciones de conceptos complejos con analogías de la vida cotidiana, adaptadas al nivel de tus estudiantes — sin costo ni registro.",
         "steps": [
           {
             "title": "Accede a Hugging Chat",
-            "description": "Ve a huggingface.co/chat. Puedes usarlo sin cuenta, pero crear una (gratis) te permite guardar el historial. La interfaz es similar a ChatGPT.",
+            "description": "Ve a huggingface.co/chat. Puedes usarlo sin cuenta ni registro, lo que lo hace ideal para talleres rápidos con docentes. La interfaz es similar a ChatGPT pero completamente gratuita y sin límites.",
             "prompt": null,
-            "tip": "Hugging Chat es completamente gratuito, sin límites de uso, y los datos no se usan para entrenar modelos comerciales."
+            "tip": "Hugging Chat no requiere Gmail ni ninguna cuenta. Es la opción más rápida para que un docente pruebe IA por primera vez sin barreras."
           },
           {
-            "title": "Haz una pregunta educativa",
-            "description": "Escribe una pregunta o solicitud relacionada con tu materia. Por ejemplo: 'Explica la fotosíntesis para estudiantes de 8vo año usando una analogía con una fábrica'.",
-            "prompt": "Explica el concepto de [TEMA] para estudiantes de [NIVEL] de una forma sencilla y con un ejemplo de la vida cotidiana en Ecuador. Incluye 3 preguntas de verificación al final.",
-            "tip": "Anota la calidad de la respuesta: ¿es precisa? ¿el nivel es apropiado? ¿la analogía funciona?"
+            "title": "Pide una explicación con analogía",
+            "description": "Escribe un prompt que solicite una explicación de un tema difícil usando analogías de la vida cotidiana ecuatoriana.",
+            "prompt": "Explica el concepto de [TEMA DIFÍCIL, ej: fotosíntesis, ecuaciones, democracia] para estudiantes de [NIVEL] usando una analogía con algo de la vida cotidiana en Ecuador. La analogía debe ser:\n1. Fácil de entender sin conocimiento previo\n2. Precisa (que no genere conceptos erróneos)\n3. Culturalmente relevante para Ecuador\n\nDespués de la analogía, incluye 3 preguntas para verificar que la analogía se entendió correctamente.",
+            "tip": "Las analogías son una de las herramientas más poderosas para enseñar conceptos abstractos. La IA puede generar múltiples analogías para que elijas la mejor."
           },
           {
-            "title": "Cambia de modelo y repite",
-            "description": "Haz clic en el selector de modelo (arriba a la izquierda) y elige uno diferente (ej: de Llama a Mistral). Haz la misma pregunta exacta y compara la respuesta.",
+            "title": "Refina y prueba con otro modelo",
+            "description": "Si la analogía no te convence, pide otra: 'Dame una analogía diferente, esta vez usando deportes' o 'Hazla más simple para primaria'. También puedes cambiar de modelo (selector arriba a la izquierda) para comparar calidad.",
             "prompt": null,
-            "tip": "Cada modelo tiene fortalezas diferentes. Algunos son mejores en español, otros en razonamiento lógico. Prueba al menos 2."
+            "tip": "Genera 3-4 analogías diferentes y elige la mejor. Una buena analogía hace que un tema de 45 minutos se entienda en 5."
           },
           {
-            "title": "Evalúa y decide",
-            "description": "Compara las respuestas: ¿cuál fue más clara? ¿cuál se adaptó mejor al nivel? ¿cuál dio mejor información? Esta comparación te ayuda a entender que no todas las IAs son iguales.",
+            "title": "Crea tu banco de analogías por materia",
+            "description": "Repite el proceso con los 5-10 temas más difíciles de tu materia. Guarda las mejores analogías en un documento compartido con tu departamento. Los docentes nuevos encontrarán este banco invaluable.",
             "prompt": null,
-            "tip": "Este ejercicio de comparación es también una excelente actividad para estudiantes de bachillerato sobre pensamiento crítico y alfabetización digital."
+            "tip": "Un banco de analogías es un recurso pedagógico poderoso que se construye con el tiempo. Cada docente puede aportar las analogías que mejor le funcionan en clase."
           }
         ]
       }
@@ -974,32 +974,32 @@
         "tips": "Requiere personal de TI para la instalación y mantenimiento. Es la opción más completa para instituciones que quieren control total sobre su infraestructura de IA. Dificultad: Avanzada — necesita soporte técnico dedicado para la instalación."
       },
       "activity": {
-        "title": "Explora una plataforma de IA institucional",
-        "description": "Conoce LibreChat como opción para dar acceso controlado a IA a todos los docentes de tu institución.",
+        "title": "Configura un banco de prompts compartido para tu equipo docente",
+        "description": "Usa LibreChat para crear una biblioteca de prompts reutilizables organizados por área y nivel, accesibles para todos los docentes de tu institución.",
         "steps": [
           {
-            "title": "Visita la demo de LibreChat",
-            "description": "Accede a una instancia de demostración de LibreChat para explorar su interfaz. Es similar a ChatGPT pero permite conectar múltiples modelos de IA y gestionar usuarios.",
+            "title": "Accede a LibreChat",
+            "description": "Accede a una instancia de LibreChat (demo o institucional). La interfaz es similar a ChatGPT pero permite crear 'Presets' — prompts prediseñados que cualquier docente puede reutilizar sin tener que escribirlos desde cero.",
             "prompt": null,
-            "tip": "LibreChat es ideal para instituciones que quieren ofrecer IA a todo su equipo docente sin depender de cuentas individuales en servicios comerciales."
+            "tip": "LibreChat es ideal para instituciones que quieren estandarizar el uso de IA entre su equipo docente, evitando que cada uno empiece de cero."
           },
           {
-            "title": "Explora la gestión multi-modelo",
-            "description": "LibreChat permite acceder a diferentes modelos (GPT, Claude, Llama, Mistral) desde una sola interfaz. Explora cómo cambiar entre modelos y cómo cada uno tiene características diferentes.",
-            "prompt": null,
-            "tip": "La ventaja de múltiples modelos es que puedes elegir el más adecuado para cada tarea: uno para escritura creativa, otro para matemáticas, etc."
+            "title": "Crea presets por departamento",
+            "description": "Diseña un preset para cada área curricular. Cada preset incluye un prompt base con instrucciones específicas. Ejemplo para Matemáticas: sistema que genera problemas contextualizados al currículo ecuatoriano. Ejemplo para Lengua: sistema que crea rúbricas de escritura.",
+            "prompt": "Eres un docente experto en [ÁREA]. Tu rol es ayudar a otros docentes de [ÁREA] a crear materiales educativos alineados al currículo ecuatoriano para [NIVEL]. Siempre incluye: objetivo de aprendizaje, destreza con criterio de desempeño, y contextualización a la realidad ecuatoriana. Responde en español con un tono profesional y práctico.",
+            "tip": "Crea un preset base por área (Matemáticas, Ciencias, Lengua, Sociales) y otro específico por tarea (planificación, evaluación, material didáctico)."
           },
           {
-            "title": "Prueba un caso de uso educativo",
-            "description": "Simula un caso real: genera una planificación de clase, crea material diferenciado, o diseña una rúbrica de evaluación. Evalúa la experiencia como si fueras un docente de tu institución.",
+            "title": "Organiza los prompts por caso de uso",
+            "description": "Estructura tu banco de prompts en categorías prácticas: 'Planificación de clase', 'Generación de evaluaciones', 'Adaptaciones curriculares', 'Retroalimentación a estudiantes', 'Comunicación con padres'. Cada categoría con su prompt optimizado.",
             "prompt": null,
-            "tip": "Piensa en los docentes menos tecnológicos de tu equipo: ¿la interfaz es lo suficientemente intuitiva para ellos?"
+            "tip": "Pide a los docentes que compartan sus mejores prompts. Los que funcionan bien se agregan al banco institucional como presets para que todos los aprovechen."
           },
           {
-            "title": "Evalúa la viabilidad de implementación",
-            "description": "Para implementar LibreChat necesitas: un servidor (puede ser una computadora dedicada), alguien con conocimientos de Docker para la instalación, y un plan de gestión de usuarios. Evalúa si tu institución tiene estos recursos.",
+            "title": "Capacita al equipo y evalúa adopción",
+            "description": "Presenta el banco de prompts en una reunión de área. Cada docente elige un preset, lo prueba con un tema real de su planificación, y evalúa la utilidad del resultado. Recoge feedback para mejorar los presets.",
             "prompt": null,
-            "tip": "Si no tienes equipo de TI, considera empezar con herramientas más simples (ChatGPT, Gemini) y migrar a LibreChat cuando la adopción de IA crezca."
+            "tip": "Un banco de prompts institucional reduce la barrera de entrada para docentes que no saben cómo escribir un buen prompt. En lugar de aprender desde cero, usan plantillas probadas."
           }
         ]
       }
@@ -1056,32 +1056,32 @@
         "tips": "La opción más robusta para una implementación institucional de IA privada. Requiere inversión inicial en configuración pero elimina costos recurrentes de licencias. Dificultad: Avanzada — necesita equipo de TI dedicado."
       },
       "activity": {
-        "title": "Descubre la interfaz privada de IA institucional",
-        "description": "Conoce Open WebUI como alternativa para tener un 'ChatGPT institucional' completamente privado.",
+        "title": "Crea un asistente de IA que conoce tu currículo",
+        "description": "Usa la función RAG de Open WebUI para subir documentos institucionales y crear un asistente de IA que responda basándose en tu currículo, PEI y normativa.",
         "steps": [
           {
-            "title": "Conoce qué es Open WebUI",
-            "description": "Open WebUI es una interfaz web que se conecta a modelos de IA ejecutados localmente. Todo funciona dentro de la red de tu institución — ningún dato sale a servidores externos. La experiencia de uso es idéntica a ChatGPT.",
+            "title": "Prepara tus documentos institucionales",
+            "description": "Reúne los documentos clave de tu institución en formato PDF: el Currículo Nacional del Ecuador de tu nivel, el PEI (Proyecto Educativo Institucional), el PCI (Planificación Curricular Institucional), y las destrezas con criterio de desempeño de las áreas prioritarias.",
             "prompt": null,
-            "tip": "Es la opción más completa para instituciones que manejan datos sensibles de estudiantes o que están en zonas con internet limitado."
+            "tip": "Open WebUI procesa PDFs directamente. Mientras más documentos relevantes subas, más preciso y contextualizado será el asistente."
           },
           {
-            "title": "Explora las funciones avanzadas",
-            "description": "Open WebUI incluye funciones que ChatGPT no tiene en su versión gratuita: subir documentos para que la IA los analice (RAG), crear prompts personalizados por departamento, y gestionar cuentas para cada docente.",
+            "title": "Sube los documentos al sistema RAG",
+            "description": "En Open WebUI, accede a la sección de documentos y sube tus PDFs. El sistema los indexa automáticamente para que la IA pueda buscar información relevante dentro de ellos al responder preguntas.",
             "prompt": null,
-            "tip": "La función de subir documentos es poderosa: puedes subir el currículo nacional y pedirle a la IA que genere actividades alineadas directamente."
+            "tip": "La función RAG (Retrieval Augmented Generation) hace que la IA busque en TUS documentos antes de responder, en lugar de inventar o usar información genérica."
           },
           {
-            "title": "Prueba con un documento",
-            "description": "Si tienes acceso a una instancia, sube un documento (PDF del currículo, un artículo, un capítulo del libro de texto) y hazle preguntas sobre el contenido. La IA responderá basándose específicamente en ese documento.",
+            "title": "Prueba el asistente con consultas reales",
+            "description": "Hazle preguntas prácticas al asistente: '¿Qué destrezas de Matemáticas de 8vo EGB se relacionan con fracciones?', 'Genera una actividad alineada al objetivo 3 del PCI', '¿Qué dice el PEI sobre inclusión educativa?'. Verifica que las respuestas citen tus documentos.",
             "prompt": null,
-            "tip": "Esta funcionalidad es ideal para crear asistentes especializados: uno para cada materia que 'conoce' el currículo y los materiales del curso."
+            "tip": "Si el asistente da respuestas genéricas que no mencionan tus documentos, verifica que los PDFs se subieron correctamente y que estás usando el modo RAG."
           },
           {
-            "title": "Evalúa los requisitos técnicos",
-            "description": "Open WebUI necesita: un servidor con GPU (recomendado) o al menos 16GB RAM, Docker instalado, y un administrador de TI para configuración y mantenimiento. El costo de software es $0.",
+            "title": "Configura asistentes por área curricular",
+            "description": "Crea un asistente especializado para cada departamento: uno con documentos de Matemáticas, otro con documentos de Ciencias, otro con normativa institucional. Cada docente accede al asistente de su área y obtiene respuestas contextualizadas.",
             "prompt": null,
-            "tip": "Si la infraestructura técnica es una barrera, considera empezar con Jan (funciona en una sola computadora) como paso intermedio antes de escalar a Open WebUI."
+            "tip": "Un asistente que conoce tu PCI elimina la excusa de 'no sé qué destreza trabajar'. Los docentes pueden consultar al asistente antes de planificar sus clases."
           }
         ]
       }

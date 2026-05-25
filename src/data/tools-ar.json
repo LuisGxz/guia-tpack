@@ -329,32 +329,32 @@
         "tips": "Excelente para que los estudiantes presenten proyectos en formato innovador. La creación se hace en PC y la visualización en celular, lo que distribuye la carga tecnológica."
       },
       "activity": {
-        "title": "Crea una lección de RA sin programar",
-        "description": "Diseña un proyecto de realidad aumentada educativo usando el editor visual de arrastrar y soltar de Assemblr.",
+        "title": "Crea una galería de RA de pinturas del Ecuador",
+        "description": "Diseña una galería de realidad aumentada con obras de pintores ecuatorianos usando el editor visual de Assemblr, sin necesidad de programar.",
         "steps": [
           {
             "title": "Accede a Assemblr EDU",
-            "description": "Ve a edu.assemblrworld.com y crea una cuenta educativa gratuita. El editor funciona en el navegador — no necesitas instalar nada. Haz clic en 'Create New Project'.",
+            "description": "Ve a edu.assemblrworld.com y crea una cuenta educativa gratuita con tu Gmail. El editor funciona en el navegador — no necesitas instalar nada. Haz clic en 'Create New Project'.",
             "prompt": null,
-            "tip": "El editor web funciona mejor en computadora. La visualización de los proyectos se hace desde el celular con la app Assemblr."
+            "tip": "El editor web funciona mejor en computadora. La visualización de la galería se hace desde el celular con la app Assemblr."
           },
           {
-            "title": "Construye tu escena 3D",
-            "description": "Usa la biblioteca de objetos 3D para construir tu lección. Para una clase de sistema solar: agrega planetas, estrellas y texto explicativo. Arrastra, rota y escala cada objeto.",
+            "title": "Selecciona las pinturas ecuatorianas",
+            "description": "Elige 5-6 obras representativas de pintores ecuatorianos: Oswaldo Guayasamín (La Ternura, Las manos de la protesta), Eduardo Kingman (Los Guandos), Gonzalo Endara Crow (pueblos andinos). Descarga imágenes de referencia de fuentes educativas para usarlas en tu escena.",
             "prompt": null,
-            "tip": "Menos es más: 5-7 objetos bien colocados con texto claro son más efectivos que una escena saturada de elementos."
+            "tip": "Organiza las obras por movimiento artístico o por época histórica para que la galería tenga un hilo conductor educativo."
           },
           {
-            "title": "Agrega texto y explicaciones",
-            "description": "Añade etiquetas de texto 3D junto a cada objeto explicando qué es y datos clave. Puedes agregar flechas que señalen partes importantes y botones que enlacen a más información.",
+            "title": "Construye la galería en 3D",
+            "description": "Sube las imágenes de las pinturas como planos 2D en la escena 3D. Distribúyelas como en un museo: con espacio entre cada obra. Agrega etiquetas de texto 3D con el nombre de la obra, el autor, el año y una breve descripción del significado o contexto histórico.",
             "prompt": null,
-            "tip": "Usa textos cortos (máximo 2 líneas) para las etiquetas. La información detallada puede ir en un enlace o en material complementario."
+            "tip": "Agrega un marco decorativo a cada pintura usando formas de la biblioteca. Incluye una placa informativa debajo de cada obra, como en un museo real."
           },
           {
-            "title": "Comparte y visualiza en RA",
-            "description": "Genera un código QR de tu proyecto. Los estudiantes escanean el código con la app Assemblr y ven tu creación 3D aparecer sobre su escritorio en realidad aumentada.",
+            "title": "Comparte la galería con código QR",
+            "description": "Genera un código QR de tu galería. Los estudiantes escanean el código con la app Assemblr y ven las pinturas ecuatorianas aparecer en realidad aumentada sobre su escritorio. Pueden caminar alrededor y explorar cada obra.",
             "prompt": null,
-            "tip": "Imprime los códigos QR y pégalos en el cuaderno o en una ficha de trabajo. Así los estudiantes pueden revisar la lección de RA en cualquier momento."
+            "tip": "Asigna como proyecto: cada grupo de estudiantes crea su propia galería de RA sobre un pintor o movimiento artístico ecuatoriano diferente. Así construyen un museo virtual colectivo."
           }
         ]
       }

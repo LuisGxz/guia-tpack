@@ -52,32 +52,32 @@
         "tips": "LA herramienta de simulación más recomendada para empezar. No requiere instalación, está en español y tiene guías pedagógicas para cada simulación. Priorizar su adopción en áreas de Ciencias y Matemáticas. Dificultad: Básica."
       },
       "activity": {
-        "title": "Experimenta con una simulación de circuitos eléctricos",
-        "description": "Usa la simulación de PhET para enseñar conceptos de electricidad de forma interactiva y visual.",
+        "title": "Enseña fracciones con manipulativos virtuales",
+        "description": "Usa las simulaciones de matemáticas de PhET para que los estudiantes exploren fracciones de forma visual e interactiva.",
         "steps": [
           {
-            "title": "Abre la simulación",
-            "description": "Ve a phet.colorado.edu/es/ y busca 'Kit de Construcción de Circuitos'. Haz clic para abrir la simulación directamente en el navegador — no necesitas instalar nada ni crear cuenta.",
+            "title": "Abre la simulación de fracciones",
+            "description": "Ve a phet.colorado.edu/es/ y busca 'Fracciones: Intro' o 'Construye una Fracción'. Haz clic para abrir la simulación directamente en el navegador — no necesitas instalar nada ni crear cuenta.",
             "prompt": null,
-            "tip": "Todas las simulaciones de PhET están en español. Usa los filtros por materia y nivel para encontrar la más adecuada para tu clase."
+            "tip": "PhET tiene varias simulaciones de matemáticas: Fracciones, Igualdad de Fracciones, Aritmética, y Explorador de Funciones. Elige la que se alinee con tu tema."
           },
           {
-            "title": "Explora los controles",
-            "description": "Arrastra componentes al área de trabajo: baterías, cables, focos, resistencias e interruptores. Conecta los cables para crear un circuito simple. Observa cómo el foco se enciende cuando el circuito se cierra.",
+            "title": "Explora los manipulativos visuales",
+            "description": "En la simulación, arrastra piezas para construir fracciones. Los estudiantes ven la fracción representada como partes de un pastel, una barra o un conjunto de objetos. Experimenta: ¿1/2 y 2/4 son lo mismo? ¿Cómo se ve 3/4 vs 2/3?",
             "prompt": null,
-            "tip": "Empieza con un circuito simple (batería + cable + foco) antes de agregar componentes más complejos."
+            "tip": "La pantalla 'Laboratorio' permite exploración libre. La pantalla 'Juego' evalúa la comprensión con desafíos interactivos y retroalimentación inmediata."
           },
           {
-            "title": "Diseña una guía de laboratorio virtual",
-            "description": "Crea una hoja de trabajo con 3-4 experimentos: 1) Circuito simple, 2) Circuito en serie con 2 focos, 3) Circuito en paralelo con 2 focos, 4) ¿Qué pasa al agregar más baterías? Para cada uno, pide predicción, observación y conclusión.",
+            "title": "Diseña una guía de exploración matemática",
+            "description": "Crea una hoja de trabajo con actividades progresivas: 1) Representar fracciones unitarias (1/2, 1/3, 1/4), 2) Comparar fracciones con distinto denominador, 3) Encontrar fracciones equivalentes, 4) Sumar fracciones con apoyo visual. Para cada actividad, pide predicción, exploración y conclusión.",
             "prompt": null,
-            "tip": "La secuencia predicción → experimentación → explicación es clave. Pide a los estudiantes que dibujen el circuito y escriban su predicción ANTES de construirlo."
+            "tip": "La secuencia predicción → manipulación → explicación es clave. Pide a los estudiantes que dibujen la fracción ANTES de verificar con la simulación."
           },
           {
-            "title": "Asigna a tus estudiantes",
-            "description": "Comparte el enlace de la simulación y la guía de laboratorio. Los estudiantes trabajan en parejas: uno manipula la simulación, otro registra las observaciones. Al final, discutan las conclusiones como clase.",
+            "title": "Asigna la clase de matemáticas",
+            "description": "Comparte el enlace de la simulación y la guía. Los estudiantes trabajan en parejas: uno manipula la simulación, otro registra las observaciones y dibuja las representaciones. Usen el modo 'Juego' para evaluar al final de la actividad.",
             "prompt": null,
-            "tip": "PhET tiene guías pedagógicas para cada simulación en su sitio web. Consulta la guía del docente para ideas adicionales."
+            "tip": "PhET tiene guías pedagógicas para cada simulación de matemáticas. Consulta la sección 'For Teachers' para actividades alineadas con objetivos de aprendizaje."
           }
         ]
       }
@@ -237,32 +237,32 @@
         "tips": "Herramienta esencial para cualquier programa de informática. Los docentes de otras áreas pueden colaborar con el docente de informática para crear proyectos interdisciplinarios. La comunidad en español ofrece abundantes tutoriales y ejemplos. Dificultad: Básica."
       },
       "activity": {
-        "title": "Programa una simulación del sistema solar",
-        "description": "Crea una simulación visual del sistema solar usando programación por bloques en Scratch.",
+        "title": "Programa un juego educativo de preguntas y respuestas",
+        "description": "Crea un juego tipo quiz interactivo con programación por bloques en Scratch, donde los estudiantes aprenden jugando y compitiendo.",
         "steps": [
           {
             "title": "Crea un nuevo proyecto",
-            "description": "Ve a scratch.mit.edu y haz clic en 'Crear'. Cambia el fondo a uno negro o espacial (Biblioteca de fondos > 'Stars'). Elimina el gato y agrega un sprite circular para el Sol.",
+            "description": "Ve a scratch.mit.edu y haz clic en 'Crear'. Elige un fondo temático (aula, naturaleza, espacio) según la materia de tu quiz. Agrega un sprite de personaje que será el presentador del juego.",
             "prompt": null,
-            "tip": "Si los estudiantes no tienen cuenta, pueden crear proyectos sin registrarse (pero no podrán guardarlos en la nube). Para guardar, crear una cuenta es gratis."
+            "tip": "Si los estudiantes no tienen cuenta, pueden crear proyectos sin registrarse (pero no podrán guardarlos en la nube). Crear una cuenta es gratis."
           },
           {
-            "title": "Agrega planetas como sprites",
-            "description": "Dibuja o importa un sprite circular para cada planeta. Haz cada uno de diferente tamaño y color. Coloca el Sol en el centro y los planetas a diferentes distancias.",
+            "title": "Programa las preguntas",
+            "description": "Usa el bloque 'Preguntar y esperar' para hacer preguntas al jugador. Combínalo con 'Si... entonces' para verificar la respuesta. Agrega una variable 'Puntaje' que sume puntos por respuesta correcta y muestre retroalimentación.",
             "prompt": null,
-            "tip": "No intentes hacer todos los planetas a escala real — las diferencias de tamaño son demasiado grandes. Usa una escala simplificada que sea visible."
+            "tip": "Empieza con 5 preguntas de opción (el jugador escribe A, B o C). Para preguntas numéricas (Matemáticas), el jugador puede escribir el resultado directamente."
           },
           {
-            "title": "Programa las órbitas",
-            "description": "Para cada planeta, usa los bloques: 'Al presionar bandera verde' > 'Por siempre' > 'Apuntar hacia Sol' > 'Girar X grados' > 'Mover Y pasos'. Ajusta X e Y para cada planeta: los cercanos giran más rápido.",
+            "title": "Agrega niveles de dificultad",
+            "description": "Crea 3 niveles: fácil (preguntas de memoria), medio (preguntas de comprensión) y difícil (preguntas de aplicación). Usa una variable 'Nivel' que avance cuando el jugador acumule cierto puntaje. Cambia el fondo y la música en cada nivel.",
             "prompt": null,
-            "tip": "El truco es combinar 'girar' con 'mover' para crear un movimiento circular. Los planetas más lejanos deben tener valores de giro más pequeños (orbitan más lento)."
+            "tip": "Los niveles progresivos mantienen la motivación: los estudiantes quieren llegar al siguiente nivel. Agrega efectos de sonido para respuestas correctas e incorrectas."
           },
           {
-            "title": "Personaliza y comparte",
-            "description": "Agrega información: al hacer clic en cada planeta, muestra su nombre y datos (tamaño, distancia al Sol, temperatura). Usa el bloque 'decir' para mostrar texto. Comparte el proyecto para que otros lo exploren.",
+            "title": "Asigna como proyecto de clase",
+            "description": "Cada estudiante o equipo crea su propio juego de quiz sobre un tema del currículo. El docente evalúa tanto la calidad de las preguntas (contenido) como la programación (lógica). Los estudiantes intercambian juegos y aprenden jugando los de sus compañeros.",
             "prompt": null,
-            "tip": "Este proyecto es ideal como tarea interdisciplinaria: Informática (programación) + Ciencias (astronomía) + Matemáticas (proporciones y escalas)."
+            "tip": "Este proyecto integra Informática (programación), la materia del quiz (contenido) y habilidades de diseño. Es uno de los proyectos más motivadores y completos en Scratch."
           }
         ]
       }
@@ -757,32 +757,32 @@
         "tips": "La visualización animada del flujo de corriente es excepcionalmente didáctica — hace visible lo invisible. Ideal para complementar clases de física sobre electricidad. Los circuitos de ejemplo permiten empezar sin construir nada desde cero. Dificultad: Básica para circuitos simples, Intermedia para circuitos avanzados."
       },
       "activity": {
-        "title": "Visualiza el flujo de corriente en un circuito",
-        "description": "Construye circuitos eléctricos y observa con animaciones cómo fluye la corriente a través de cada componente.",
+        "title": "Enseña compuertas lógicas y pensamiento computacional",
+        "description": "Usa Falstad para construir compuertas lógicas (AND, OR, NOT) y que los estudiantes descubran cómo funcionan las computadoras a nivel fundamental.",
         "steps": [
           {
-            "title": "Abre el simulador",
-            "description": "Ve a falstad.com/circuit/ — el simulador se abre directamente en el navegador. En el menú 'Circuits', explora los ejemplos prediseñados: 'Basics' > 'Series/Parallel' para empezar.",
+            "title": "Abre el simulador de lógica digital",
+            "description": "Ve a falstad.com/circuit/ — el simulador se abre directamente en el navegador. En el menú 'Circuits' > 'Digital Logic', selecciona 'Basic Gates' para ver compuertas lógicas en acción.",
             "prompt": null,
-            "tip": "Los puntos verdes en movimiento representan el flujo de electrones. Esta visualización es la característica más educativa del simulador."
+            "tip": "Los puntos verdes en movimiento representan el flujo de señales. El color indica si la señal es alta (1/verdadero) o baja (0/falso)."
           },
           {
-            "title": "Construye un circuito básico",
-            "description": "Haz clic derecho > 'Add Component' para agregar elementos. Crea un circuito serie con una fuente de voltaje y dos resistencias. Observa cómo los puntos de corriente fluyen a través del circuito.",
+            "title": "Experimenta con compuertas básicas",
+            "description": "Observa las compuertas AND, OR y NOT. Haz clic en los interruptores de entrada para cambiar entre 0 y 1. Anota qué combinaciones producen salida 1 y cuáles producen salida 0. Esto es la tabla de verdad.",
             "prompt": null,
-            "tip": "Pasa el cursor sobre cualquier componente para ver su voltaje y corriente en la barra inferior. Esto es como tener un multímetro virtual."
+            "tip": "Conecta esto con la vida real: un circuito AND es como una puerta que necesita DOS llaves para abrirse. Un circuito OR se abre con cualquiera de las dos."
           },
           {
-            "title": "Experimenta y compara",
-            "description": "Crea el mismo circuito en paralelo y compara: ¿cómo se distribuye la corriente? ¿qué pasa con el voltaje? Haz clic en una resistencia para cambiar su valor y observa los efectos en tiempo real.",
+            "title": "Construye un circuito combinado",
+            "description": "Crea un circuito que combine compuertas: por ejemplo, un sistema de alarma escolar que se active (salida = 1) cuando sea horario nocturno (entrada A = 1) Y la puerta esté abierta (entrada B = 1) O cuando se presione el botón de pánico (entrada C = 1).",
             "prompt": null,
-            "tip": "La animación hace visible lo invisible: los estudiantes pueden VER cómo la corriente se divide en un circuito paralelo. Esto es difícil de entender solo con ecuaciones."
+            "tip": "Este tipo de problemas contextualizados hace que la lógica digital sea relevante y comprensible para los estudiantes."
           },
           {
-            "title": "Diseña una actividad comparativa",
-            "description": "Prepara una hoja de trabajo: los estudiantes construyen 3 circuitos (serie, paralelo, mixto), miden voltaje y corriente en cada punto, y verifican la Ley de Ohm. Al final, responden: '¿Por qué las casas usan circuitos en paralelo?'",
+            "title": "Diseña el desafío para la clase",
+            "description": "Prepara 3 problemas de lógica digital con contexto real. Los estudiantes deben diseñar el circuito, construirlo en Falstad y verificar que funcione. Ejemplo: 'Un semáforo inteligente que dé verde solo cuando no haya peatones Y el sensor detecte un auto'.",
             "prompt": null,
-            "tip": "Falstad tiene un botón 'Export' que genera un enlace único para cada circuito. Comparte el enlace para que los estudiantes abran tu circuito exacto."
+            "tip": "Falstad genera un enlace único para cada circuito con el botón 'Export'. Comparte el enlace del circuito base para que todos empiecen desde el mismo punto."
           }
         ]
       }

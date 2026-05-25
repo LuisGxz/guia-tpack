@@ -613,32 +613,32 @@
         "tips": "Crear un banco institucional de recorridos virtuales organizados por materia y nivel. Cada docente puede contribuir con recorridos de su especialidad."
       },
       "activity": {
-        "title": "Diseña un recorrido virtual personalizado",
-        "description": "Crea una expedición virtual con imágenes de Street View alineada a los contenidos de tu planificación.",
+        "title": "Crea un recorrido por el patrimonio cultural de tu ciudad",
+        "description": "Diseña una expedición virtual por los sitios patrimoniales de tu ciudad usando imágenes 360° de Street View, conectando historia local con el currículo.",
         "steps": [
           {
-            "title": "Planifica las paradas del recorrido",
-            "description": "Define 3-5 ubicaciones conectadas a tu tema curricular. Para cada parada, escribe: el lugar, por qué es relevante y qué deberían observar los estudiantes. Ejemplo: 'Centro Histórico de Quito — arquitectura colonial — observar la mezcla de estilos'.",
+            "title": "Selecciona sitios patrimoniales locales",
+            "description": "Elige 4-5 sitios patrimoniales o históricos de tu ciudad: iglesias coloniales, plazas, museos, monumentos, mercados tradicionales. Para cada uno, investiga: año de construcción, importancia histórica y datos relevantes para tu materia.",
             "prompt": null,
-            "tip": "Elige ubicaciones que tengan buena cobertura en Street View. Las ciudades principales tienen mejor cobertura que las zonas rurales."
+            "tip": "Conecta los sitios con el currículo: una iglesia colonial para Estudios Sociales, un parque para Ciencias Naturales, un mercado para Matemáticas (economía local)."
           },
           {
             "title": "Crea el recorrido con Tour Creator",
-            "description": "Accede a Tour Creator, crea un nuevo tour y busca cada ubicación. Selecciona la imagen 360° de Street View que mejor represente lo que quieres mostrar. Agrega título y descripción para cada parada.",
+            "description": "Accede a Tour Creator, crea un nuevo tour y busca cada sitio patrimonial. Selecciona la imagen 360° de Street View que mejor lo represente. Agrega un título descriptivo y una narración educativa para cada parada.",
             "prompt": null,
-            "tip": "Puedes marcar puntos de interés dentro de cada escena 360° para dirigir la atención de los estudiantes a elementos específicos."
+            "tip": "Puedes marcar puntos de interés dentro de cada escena 360° para dirigir la atención: 'Observa la fachada barroca' o 'Nota la mezcla de estilos indígena y español'."
           },
           {
-            "title": "Agrega contenido educativo",
-            "description": "En cada parada, escribe una descripción educativa y agrega puntos de interés señalados. Incluye preguntas de reflexión y datos relevantes que los estudiantes deberán anotar.",
+            "title": "Diseña la guía de aprendizaje",
+            "description": "Crea una hoja de trabajo que los estudiantes completen durante el recorrido: identificar estilos arquitectónicos, comparar épocas históricas, responder preguntas de análisis ('¿Por qué este monumento se construyó en este lugar?').",
             "prompt": null,
-            "tip": "Usa la descripción para contar una historia: cada parada debe conectarse con la anterior y avanzar en el aprendizaje."
+            "tip": "Incluye una actividad final de producción: que los estudiantes escriban una guía turística del sitio que más les impactó, o graben un audio de narración como guía virtual."
           },
           {
-            "title": "Comparte y guía la expedición",
-            "description": "Genera el enlace del tour y compártelo. Puedes guiar la expedición como grupo (proyectando en pantalla) o dejar que cada estudiante la recorra a su ritmo con una hoja de trabajo.",
+            "title": "Comparte y conecta con la comunidad",
+            "description": "Publica el recorrido para que toda la institución lo use. Invita a docentes de otras áreas a agregar información desde su perspectiva. Un docente de Arte puede comentar la estética, uno de Ciencias el entorno natural del sitio.",
             "prompt": null,
-            "tip": "Crea un banco institucional de recorridos virtuales. Cada docente contribuye con recorridos de su especialidad."
+            "tip": "Este recorrido puede convertirse en un proyecto institucional permanente: cada año nuevos estudiantes lo enriquecen con nuevos sitios y más información."
           }
         ]
       }
@@ -874,32 +874,32 @@
         "tips": "Herramienta avanzada para programas de informática y clubes de tecnología. Curva de aprendizaje moderada pero con resultados muy motivadores para estudiantes. Dificultad: Avanzada — requiere dedicación y un docente con base en programación."
       },
       "activity": {
-        "title": "Explora el desarrollo de juegos educativos",
-        "description": "Conoce Godot Engine como herramienta para que los estudiantes creen juegos y simulaciones educativas.",
+        "title": "Crea un recorrido virtual 3D de tu institución educativa",
+        "description": "Diseña un recorrido interactivo en 3D por las instalaciones de tu escuela como proyecto integrador de Informática.",
         "steps": [
           {
             "title": "Descarga Godot Engine",
             "description": "Ve a godotengine.org y descarga la versión estándar (archivo de ~100MB, no requiere instalación). Godot es completamente gratuito y de código abierto, sin regalías ni costos ocultos.",
             "prompt": null,
-            "tip": "Descarga la versión '.NET' solo si planeas usar C#. La versión estándar con GDScript (similar a Python) es más accesible para principiantes."
+            "tip": "Descarga la versión estándar con GDScript (similar a Python). Es más accesible para estudiantes que la versión .NET."
           },
           {
-            "title": "Abre un proyecto de demostración",
-            "description": "Desde el menú principal, ve a 'Asset Library' y descarga un proyecto de demostración. Ábrelo y ejecútalo (botón Play) para ver lo que es posible crear con Godot.",
+            "title": "Diseña el mapa de tu escuela",
+            "description": "Crea un nuevo proyecto 3D. Usa bloques y planos para construir una versión simplificada de tu institución: la entrada, los pasillos principales, 2-3 aulas clave y el patio. No busques realismo — una representación esquemática funciona bien.",
             "prompt": null,
-            "tip": "Los proyectos de demostración muestran el potencial de la herramienta. No es necesario entender todo el código — el objetivo es inspirar."
+            "tip": "Divide el trabajo entre equipos: un grupo modela la entrada, otro las aulas, otro el patio. Luego se ensambla todo en una sola escena."
           },
           {
-            "title": "Modifica una escena simple",
-            "description": "En el proyecto de demostración, selecciona un objeto en la escena y cambia sus propiedades: color, tamaño, posición. Ejecuta de nuevo para ver tus cambios. Este ciclo de modificar-ejecutar-observar es la base del aprendizaje.",
+            "title": "Agrega interactividad y navegación",
+            "description": "Programa un personaje que pueda caminar por el recorrido (movimiento con teclas WASD). En cada área clave, agrega un cartel interactivo que muestre información al acercarse: nombre del espacio, horarios, o datos relevantes para nuevos estudiantes.",
             "prompt": null,
-            "tip": "GDScript es muy similar a Python. Si tus estudiantes ya conocen Python o Scratch, la transición a Godot será natural."
+            "tip": "GDScript es muy similar a Python. Si tus estudiantes ya conocen Python o Scratch, la transición será natural. Empieza con el tutorial oficial de 'primer proyecto 3D'."
           },
           {
-            "title": "Evalúa para tu programa de Informática",
-            "description": "Considera: ¿tus estudiantes tienen el nivel de programación necesario? ¿hay computadoras con capacidad suficiente? Godot es ideal para clubes de tecnología, optativas de informática o proyectos integradores de bachillerato.",
+            "title": "Presenta y evalúa el proyecto",
+            "description": "Los estudiantes presentan su recorrido virtual a la comunidad educativa. El proyecto se evalúa en tres dimensiones: programación (funcionalidad), contenido (información útil) y diseño (navegación intuitiva). Puede publicarse en la web de la institución.",
             "prompt": null,
-            "tip": "El desarrollo de juegos educativos es un proyecto interdisciplinario natural: el docente de Informática enseña la herramienta, el de Ciencias define el contenido, el de Arte diseña los elementos visuales."
+            "tip": "Este proyecto integra Informática, Educación Artística y conocimiento institucional. Es un portafolio tangible que demuestra competencias tecnológicas avanzadas."
           }
         ]
       }
