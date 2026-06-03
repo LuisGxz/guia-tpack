@@ -1,0 +1,374 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import GuideProgress from '../components/GuideProgress.astro';
+import SectionNav from '../components/SectionNav.astro';
+const base = import.meta.env.BASE_URL;
+
+const canvaExamples = [
+  {
+    title: 'Flyer comunicativo para una minga escolar',
+    description: 'Diseño de convocatoria institucional para organizar una minga de mantenimiento y limpieza en la institución educativa.',
+    url: 'https://canva.link/y208m1i2pdo067o',
+    type: 'Comunicación institucional',
+  },
+  {
+    title: 'Formato de Curriculum Vitae docente',
+    description: 'Plantilla profesional para registrar el perfil académico y profesional de los docentes que ingresan a la institución.',
+    url: 'https://canva.link/8tyx0s8i8majdr1',
+    type: 'Gestión documental',
+  },
+  {
+    title: 'Invitación para una feria escolar',
+    description: 'Diseño de invitación formal para convocar a la comunidad educativa a una feria escolar institucional.',
+    url: 'https://canva.link/wv1sotka3oxi1tx',
+    type: 'Eventos institucionales',
+  },
+];
+
+const chatgptExamples = [
+  {
+    title: 'Planificación didáctica con modelo ERCA',
+    description: 'Planificación de clase sobre los virus (CN.4.2.7) para 9no EGB usando el ciclo ERCA: Experiencia, Reflexión, Conceptualización y Aplicación.',
+    prompt: 'En base al siguiente destreza: CN.4.2.7. Describir las características de los virus, indagar las formas de transmisión y comunicar las medidas preventivas, por diferentes medios. Elabora una planificación didáctica con el modelo ERCA para estudiantes del noveno grado de EGB.',
+  },
+  {
+    title: 'Planificación ERCA con enfoque DUA',
+    description: 'Ampliación de la planificación anterior integrando los 3 principios del Diseño Universal para el Aprendizaje: representación, acción/expresión e implicación.',
+    prompt: 'A esa planificación agregarle el MODELO DUA con todas sus representaciones.',
+  },
+  {
+    title: 'Formato de planificación microcurricular',
+    description: 'Generación del formato oficial de planificación que incluye datos informativos, desarrollo ERCA, recursos, estrategias DUA, evaluación y actividad de refuerzo.',
+    prompt: 'Construya un formato para esa planificación.',
+  },
+];
+---
+
+<MainLayout title="Ejemplos Prácticos — Guía Interactiva">
+  <main class="flex-1">
+    <GuideProgress currentSlug="ejemplos-practicos" />
+
+    <!-- Hero -->
+    <section class="bg-primary text-white py-16 md:py-20 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+          <span class="text-3xl" aria-hidden="true">💡</span>
+        </div>
+        <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">
+          Ejemplos Prácticos de Directivos
+        </h1>
+        <p class="text-base md:text-lg text-white/80 max-w-2xl mx-auto">
+          Ejemplos reales creados por directivos escolares utilizando herramientas de IA
+          en la gestión educativa. Cada ejemplo incluye el enlace al recurso creado.
+        </p>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="max-w-4xl mx-auto px-4 py-12">
+      <SectionHeader
+        title="Aplicaciones reales en la gestión educativa"
+        subtitle="Estos ejemplos fueron creados por directivos institucionales como parte de su proceso de integración de herramientas tecnológicas."
+      />
+
+      <div class="bg-accent/5 border border-accent/20 rounded-xl p-6 mt-8">
+        <div class="flex items-start gap-3">
+          <span class="text-accent text-xl shrink-0 mt-0.5" aria-hidden="true">&#9432;</span>
+          <p class="text-text-light text-sm leading-relaxed">
+            Los siguientes ejemplos muestran cómo las herramientas de la guía se aplican en tareas reales
+            de gestión directiva: comunicación institucional, documentación docente, planificación curricular
+            y organización de eventos. Haga clic en <strong class="text-text">"Ver recurso"</strong> para
+            abrir cada ejemplo en su herramienta original.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CANVA SECTION -->
+    <section class="max-w-4xl mx-auto px-4 pb-16">
+      <div class="flex items-center gap-3 mb-8">
+        <div class="w-10 h-10 bg-gradient-to-br from-violet-500 to-fuchsia-500 rounded-xl flex items-center justify-center shrink-0">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-primary">Canva</h2>
+          <p class="text-sm text-text-light">Aplicación de plantillas para comunicación institucional</p>
+        </div>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        {canvaExamples.map((example) => (
+          <article class="bg-white border border-border rounded-xl overflow-hidden hover:shadow-lg hover:border-accent/30 transition-all group">
+            <div class="bg-gradient-to-br from-violet-50 to-fuchsia-50 p-6 border-b border-border">
+              <span class="inline-block px-2.5 py-1 bg-violet-100 text-violet-700 text-xs font-semibold rounded-full mb-3">
+                {example.type}
+              </span>
+              <h3 class="font-bold text-primary text-base leading-snug">{example.title}</h3>
+            </div>
+            <div class="p-5">
+              <p class="text-sm text-text-light leading-relaxed mb-4">{example.description}</p>
+              <a
+                href={example.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 px-4 py-2.5 bg-accent text-white text-sm font-semibold rounded-lg hover:bg-accent/90 transition-colors w-full justify-center"
+              >
+                Ver recurso
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <!-- PADLET SECTION -->
+    <section class="bg-stone-50 border-y border-border">
+      <div class="max-w-4xl mx-auto px-4 py-16">
+        <div class="flex items-center gap-3 mb-8">
+          <div class="w-10 h-10 bg-gradient-to-br from-rose-500 to-orange-500 rounded-xl flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
+            </svg>
+          </div>
+          <div>
+            <h2 class="text-xl md:text-2xl font-bold text-primary">Padlet</h2>
+            <p class="text-sm text-text-light">Tablero colaborativo institucional</p>
+          </div>
+        </div>
+
+        <article class="bg-white border border-border rounded-xl overflow-hidden hover:shadow-lg hover:border-accent/30 transition-all max-w-xl">
+          <div class="bg-gradient-to-br from-rose-50 to-orange-50 p-6 border-b border-border">
+            <span class="inline-block px-2.5 py-1 bg-rose-100 text-rose-700 text-xs font-semibold rounded-full mb-3">
+              Organización institucional
+            </span>
+            <h3 class="font-bold text-primary text-base leading-snug">
+              Tablero de la Institución Educativa Particular Dr. Francisco Huerta Rendón
+            </h3>
+          </div>
+          <div class="p-5">
+            <p class="text-sm text-text-light leading-relaxed mb-4">
+              Tablero colaborativo en Padlet para organizar información, recursos y comunicaciones
+              de la institución educativa de forma visual e interactiva.
+            </p>
+            <a
+              href="https://padlet.com/msanamju/institucion-educativa-particular-dr-francisco-huerta-rendon-mwxfbh9kqxv9wg90"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-4 py-2.5 bg-accent text-white text-sm font-semibold rounded-lg hover:bg-accent/90 transition-colors"
+            >
+              Ver tablero en Padlet
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- GEMINI SECTION -->
+    <section class="max-w-4xl mx-auto px-4 py-16">
+      <div class="flex items-center gap-3 mb-8">
+        <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center shrink-0">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+        </div>
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-primary">Google Gemini</h2>
+          <p class="text-sm text-text-light">Generación de documentos con IA</p>
+        </div>
+      </div>
+
+      <article class="bg-white border border-border rounded-xl overflow-hidden hover:shadow-lg hover:border-accent/30 transition-all max-w-xl">
+        <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 border-b border-border">
+          <span class="inline-block px-2.5 py-1 bg-blue-100 text-blue-700 text-xs font-semibold rounded-full mb-3">
+            Gestión administrativa
+          </span>
+          <h3 class="font-bold text-primary text-base leading-snug">
+            Invitación para elección del Consejo Ejecutivo
+          </h3>
+        </div>
+        <div class="p-5">
+          <p class="text-sm text-text-light leading-relaxed mb-3">
+            Uso de Gemini para redactar una invitación formal dirigida a la comunidad educativa
+            para la elección del Consejo Ejecutivo institucional.
+          </p>
+          <div class="bg-blue-50/50 border border-blue-100 rounded-lg p-4">
+            <p class="text-xs font-semibold text-blue-700 mb-1.5">Prompt utilizado:</p>
+            <p class="text-sm text-text-light italic">
+              "Elabora una invitación para elección del Consejo Ejecutivo"
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- CHATGPT SECTION -->
+    <section class="bg-stone-50 border-y border-border">
+      <div class="max-w-4xl mx-auto px-4 py-16">
+        <div class="flex items-center gap-3 mb-8">
+          <div class="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-xl flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+            </svg>
+          </div>
+          <div>
+            <h2 class="text-xl md:text-2xl font-bold text-primary">ChatGPT</h2>
+            <p class="text-sm text-text-light">Planificación didáctica con IA — Secuencia de 3 prompts</p>
+          </div>
+        </div>
+
+        <div class="bg-white border border-border rounded-xl p-6 mb-8">
+          <div class="flex items-start gap-3">
+            <span class="text-emerald-500 text-lg shrink-0 mt-0.5" aria-hidden="true">&#9432;</span>
+            <p class="text-sm text-text-light leading-relaxed">
+              Este ejemplo muestra una <strong class="text-text">secuencia de 3 prompts encadenados</strong>
+              en ChatGPT. El directivo partió de una destreza del currículo ecuatoriano (CN.4.2.7) y fue
+              construyendo progresivamente una planificación completa con modelo ERCA, adaptaciones DUA
+              y formato oficial.
+            </p>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          {chatgptExamples.map((example, idx) => (
+            <article class="bg-white border border-border rounded-xl overflow-hidden hover:shadow-lg hover:border-accent/30 transition-all">
+              <div class="p-6">
+                <div class="flex items-center gap-3 mb-3">
+                  <span class="w-8 h-8 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center text-sm font-bold shrink-0">
+                    {idx + 1}
+                  </span>
+                  <h3 class="font-bold text-primary text-base">{example.title}</h3>
+                </div>
+                <p class="text-sm text-text-light leading-relaxed mb-4 ml-11">{example.description}</p>
+
+                <details class="ml-11 group">
+                  <summary class="cursor-pointer text-sm font-semibold text-accent hover:text-accent/80 transition-colors list-none flex items-center gap-1.5">
+                    <svg class="w-4 h-4 transition-transform group-open:rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                    Ver prompt utilizado
+                  </summary>
+                  <div class="mt-3 bg-emerald-50/50 border border-emerald-100 rounded-lg p-4">
+                    <p class="text-sm text-text-light italic leading-relaxed">{example.prompt}</p>
+                  </div>
+                </details>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <!-- Result summary -->
+        <div class="mt-8 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-xl p-6">
+          <h4 class="font-bold text-primary mb-3">Resultado obtenido</h4>
+          <p class="text-sm text-text-light leading-relaxed mb-3">
+            Con estos 3 prompts secuenciales, el directivo obtuvo una planificación microcurricular completa que incluye:
+          </p>
+          <ul class="space-y-1.5 text-sm text-text-light">
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-500 mt-0.5 shrink-0">&#10003;</span>
+              <span>Planificación ERCA alineada al currículo ecuatoriano (destreza CN.4.2.7)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-500 mt-0.5 shrink-0">&#10003;</span>
+              <span>Adaptaciones DUA con los 3 principios de representación, acción e implicación</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-500 mt-0.5 shrink-0">&#10003;</span>
+              <span>Formato oficial con datos informativos, evaluación por lista de cotejo y actividad de refuerzo</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-500 mt-0.5 shrink-0">&#10003;</span>
+              <span>Espacios para firma del docente, coordinación académica y rectorado</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Summary Table -->
+    <section class="max-w-4xl mx-auto px-4 py-16">
+      <SectionHeader
+        title="Resumen de ejemplos"
+        subtitle="Todos los ejemplos prácticos creados por directivos, organizados por herramienta."
+      />
+
+      <div class="overflow-x-auto mt-8">
+        <table class="w-full border-collapse bg-white rounded-xl border border-border overflow-hidden text-sm">
+          <thead>
+            <tr class="bg-primary text-white">
+              <th class="px-4 py-3 text-left font-semibold">#</th>
+              <th class="px-4 py-3 text-left font-semibold">Herramienta</th>
+              <th class="px-4 py-3 text-left font-semibold">Ejemplo</th>
+              <th class="px-4 py-3 text-left font-semibold">Tipo</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-border">
+            <tr class="hover:bg-stone-50">
+              <td class="px-4 py-3 text-text-light">1</td>
+              <td class="px-4 py-3 font-medium text-primary">Canva</td>
+              <td class="px-4 py-3 text-text-light">Flyer para minga escolar</td>
+              <td class="px-4 py-3"><span class="px-2 py-0.5 bg-violet-100 text-violet-700 text-xs font-medium rounded-full">Comunicación</span></td>
+            </tr>
+            <tr class="hover:bg-stone-50">
+              <td class="px-4 py-3 text-text-light">2</td>
+              <td class="px-4 py-3 font-medium text-primary">Canva</td>
+              <td class="px-4 py-3 text-text-light">Formato de CV docente</td>
+              <td class="px-4 py-3"><span class="px-2 py-0.5 bg-violet-100 text-violet-700 text-xs font-medium rounded-full">Gestión documental</span></td>
+            </tr>
+            <tr class="hover:bg-stone-50">
+              <td class="px-4 py-3 text-text-light">3</td>
+              <td class="px-4 py-3 font-medium text-primary">Canva</td>
+              <td class="px-4 py-3 text-text-light">Invitación feria escolar</td>
+              <td class="px-4 py-3"><span class="px-2 py-0.5 bg-violet-100 text-violet-700 text-xs font-medium rounded-full">Eventos</span></td>
+            </tr>
+            <tr class="hover:bg-stone-50">
+              <td class="px-4 py-3 text-text-light">4</td>
+              <td class="px-4 py-3 font-medium text-primary">Padlet</td>
+              <td class="px-4 py-3 text-text-light">Tablero institucional</td>
+              <td class="px-4 py-3"><span class="px-2 py-0.5 bg-rose-100 text-rose-700 text-xs font-medium rounded-full">Organización</span></td>
+            </tr>
+            <tr class="hover:bg-stone-50">
+              <td class="px-4 py-3 text-text-light">5</td>
+              <td class="px-4 py-3 font-medium text-primary">Gemini</td>
+              <td class="px-4 py-3 text-text-light">Invitación Consejo Ejecutivo</td>
+              <td class="px-4 py-3"><span class="px-2 py-0.5 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">Gestión administrativa</span></td>
+            </tr>
+            <tr class="hover:bg-stone-50">
+              <td class="px-4 py-3 text-text-light">6</td>
+              <td class="px-4 py-3 font-medium text-primary">ChatGPT</td>
+              <td class="px-4 py-3 text-text-light">Planificación ERCA</td>
+              <td class="px-4 py-3"><span class="px-2 py-0.5 bg-emerald-100 text-emerald-700 text-xs font-medium rounded-full">Planificación</span></td>
+            </tr>
+            <tr class="hover:bg-stone-50">
+              <td class="px-4 py-3 text-text-light">7</td>
+              <td class="px-4 py-3 font-medium text-primary">ChatGPT</td>
+              <td class="px-4 py-3 text-text-light">Planificación ERCA + DUA</td>
+              <td class="px-4 py-3"><span class="px-2 py-0.5 bg-emerald-100 text-emerald-700 text-xs font-medium rounded-full">Planificación</span></td>
+            </tr>
+            <tr class="hover:bg-stone-50">
+              <td class="px-4 py-3 text-text-light">8</td>
+              <td class="px-4 py-3 font-medium text-primary">ChatGPT</td>
+              <td class="px-4 py-3 text-text-light">Formato planificación microcurricular</td>
+              <td class="px-4 py-3"><span class="px-2 py-0.5 bg-emerald-100 text-emerald-700 text-xs font-medium rounded-full">Planificación</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-center text-sm text-text-light mt-6">
+        <strong class="text-text">8 ejemplos prácticos</strong> creados con
+        <strong class="text-text">4 herramientas</strong> de inteligencia artificial
+      </p>
+    </section>
+
+    <SectionNav currentSlug="ejemplos-practicos" />
+  </main>
+</MainLayout>
