@@ -21,7 +21,53 @@
     "description": "Formar al equipo docente en el uso de las herramientas seleccionadas, no solo a nivel técnico (TK) sino también pedagógico (TPK/TPACK). La capacitación debe ser práctica, progresiva y acompañada de materiales de apoyo.",
     "tools": ["Talleres presenciales", "Google Classroom", "Tutoriales en video", "Comunidades de práctica"],
     "timeline": "Sesiones 5–8",
-    "outcomes": ["Docentes capacitados en las herramientas seleccionadas", "Banco de recursos y tutoriales accesibles", "Red de docentes referentes (early adopters)", "Planificaciones de clase con tecnología integrada"]
+    "outcomes": ["Docentes capacitados en las herramientas seleccionadas", "Banco de recursos y tutoriales accesibles", "Red de docentes referentes (early adopters)", "Planificaciones de clase con tecnología integrada"],
+    "sessions": [
+      {
+        "number": 5,
+        "title": "Introducción y sensibilización",
+        "description": "Presentar al equipo docente el plan de integración tecnológica, los resultados del diagnóstico institucional y las herramientas seleccionadas. Demostrar casos de éxito de otras instituciones y resolver dudas iniciales.",
+        "activities": [
+          "Presentación del diagnóstico y la selección de herramientas",
+          "Demostración en vivo de 2-3 herramientas clave",
+          "Discusión grupal sobre expectativas y preocupaciones",
+          "Formación de equipos de trabajo por área curricular"
+        ]
+      },
+      {
+        "number": 6,
+        "title": "Taller práctico de herramientas de IA",
+        "description": "Capacitación práctica en el uso de herramientas de Inteligencia Artificial aplicadas a la gestión educativa: creación de planificaciones, generación de materiales didácticos, diseño de evaluaciones y comunicación institucional.",
+        "activities": [
+          "Práctica guiada con ChatGPT y Gemini para planificaciones con DUA",
+          "Creación de materiales en Canva con asistencia de IA",
+          "Diseño de encuestas y rúbricas con IA generativa",
+          "Cada docente genera un recurso aplicable a su materia"
+        ]
+      },
+      {
+        "number": 7,
+        "title": "Taller práctico de RA, RV y Simulaciones",
+        "description": "Capacitación práctica en herramientas de Realidad Aumentada, Realidad Virtual y Simulaciones Interactivas. Los docentes exploran las herramientas seleccionadas y diseñan actividades para sus asignaturas.",
+        "activities": [
+          "Exploración de simulaciones en PhET y GeoGebra",
+          "Práctica con herramientas de RA (Merge EDU, Google Lens)",
+          "Navegación en entornos de RV (Google Arts & Culture, CoSpaces)",
+          "Diseño de una actividad de clase con la herramienta elegida"
+        ]
+      },
+      {
+        "number": 8,
+        "title": "Planificación integradora y cierre",
+        "description": "Los docentes elaboran una planificación de clase completa que integre al menos una herramienta tecnológica, alineada al currículo ecuatoriano y al marco TPACK. Se socializan las planificaciones y se prepara el piloto.",
+        "activities": [
+          "Elaboración de planificación microcurricular con tecnología integrada",
+          "Revisión entre pares y retroalimentación grupal",
+          "Selección de cursos y fechas para la implementación piloto",
+          "Creación del banco compartido de recursos y planificaciones"
+        ]
+      }
+    ]
   },
   {
     "phase": 4,

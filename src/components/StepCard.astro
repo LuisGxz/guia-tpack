@@ -1,4 +1,11 @@
 ---
+interface Session {
+  number: number;
+  title: string;
+  description: string;
+  activities: string[];
+}
+
 interface Props {
   phase: number;
   title: string;
@@ -6,9 +13,10 @@ interface Props {
   tools: string[];
   timeline: string;
   outcomes: string[];
+  sessions?: Session[];
 }
 
-const { phase, title, description, tools, timeline, outcomes } = Astro.props;
+const { phase, title, description, tools, timeline, outcomes, sessions } = Astro.props;
 ---
 
 <div class="relative pl-12 md:pl-16 pb-10 last:pb-0">
@@ -59,5 +67,33 @@ const { phase, title, description, tools, timeline, outcomes } = Astro.props;
         ))}
       </ul>
     </div>
+
+    {/* Session-level detail (expanded phases) */}
+    {sessions && sessions.length > 0 && (
+      <div class="mt-5 pt-5 border-t border-border">
+        <h4 class="text-xs font-semibold uppercase tracking-wider text-text-light mb-4">Desglose por sesión</h4>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {sessions.map((session) => (
+            <div class="bg-stone-50 rounded-lg p-4 border border-border/60">
+              <div class="flex items-center gap-2.5 mb-2">
+                <span class="w-7 h-7 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center shrink-0">
+                  {session.number}
+                </span>
+                <h5 class="text-sm font-bold text-primary">{session.title}</h5>
+              </div>
+              <p class="text-xs text-text-light leading-relaxed mb-3">{session.description}</p>
+              <ul class="space-y-1.5">
+                {session.activities.map((activity) => (
+                  <li class="flex items-start gap-1.5 text-xs text-text">
+                    <span class="text-accent shrink-0 mt-0.5">&#8250;</span>
+                    {activity}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
   </div>
 </div>
