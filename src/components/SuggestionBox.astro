@@ -1,0 +1,260 @@
+---
+// Suggestion box — UI only (no backend)
+---
+
+<!-- Floating trigger button -->
+<button
+  id="suggestion-trigger"
+  class="fixed bottom-6 right-6 z-40 flex items-center gap-2.5 px-5 py-3 bg-primary text-white rounded-full shadow-lg hover:bg-primary/90 hover:shadow-xl transition-all group"
+  aria-label="Abrir buzón de aportes"
+  aria-haspopup="dialog"
+  aria-expanded="false"
+>
+  <svg class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+  </svg>
+  <span class="text-sm font-semibold hidden sm:inline">Buzón de aportes</span>
+</button>
+
+<!-- Backdrop -->
+<div id="suggestion-backdrop" class="fixed inset-0 z-50 bg-black/50 hidden" aria-hidden="true"></div>
+
+<!-- Modal -->
+<div
+  id="suggestion-modal"
+  class="fixed inset-0 z-50 flex items-center justify-center p-4 hidden"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="suggestion-title"
+  aria-hidden="true"
+>
+  <div class="bg-white rounded-2xl shadow-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto">
+    <!-- Header -->
+    <div class="sticky top-0 bg-primary text-white px-6 py-5 rounded-t-2xl flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-white/15 rounded-xl flex items-center justify-center shrink-0">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <div>
+          <h2 id="suggestion-title" class="font-bold text-lg">Buzón de Aportes</h2>
+          <p class="text-white/70 text-xs">Sugiera herramientas o plataformas educativas</p>
+        </div>
+      </div>
+      <button
+        id="suggestion-close"
+        class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-white/15 transition-colors"
+        aria-label="Cerrar buzón"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Form -->
+    <form id="suggestion-form" class="p-6 space-y-5" novalidate>
+      <!-- Name -->
+      <div>
+        <label for="sug-name" class="block text-sm font-semibold text-text mb-1.5">
+          Nombre <span class="text-text-light font-normal">(opcional)</span>
+        </label>
+        <input
+          type="text"
+          id="sug-name"
+          placeholder="Ej: María García"
+          class="w-full px-4 py-2.5 border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent transition-colors"
+        />
+      </div>
+
+      <!-- Institution -->
+      <div>
+        <label for="sug-institution" class="block text-sm font-semibold text-text mb-1.5">
+          Institución <span class="text-text-light font-normal">(opcional)</span>
+        </label>
+        <input
+          type="text"
+          id="sug-institution"
+          placeholder="Ej: Unidad Educativa Fiscal..."
+          class="w-full px-4 py-2.5 border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent transition-colors"
+        />
+      </div>
+
+      <!-- Tool name -->
+      <div>
+        <label for="sug-tool" class="block text-sm font-semibold text-text mb-1.5">
+          Nombre de la herramienta o plataforma <span class="text-red-500">*</span>
+        </label>
+        <input
+          type="text"
+          id="sug-tool"
+          placeholder="Ej: Mentimeter, Edpuzzle, Pixton..."
+          required
+          class="w-full px-4 py-2.5 border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent transition-colors"
+        />
+      </div>
+
+      <!-- URL -->
+      <div>
+        <label for="sug-url" class="block text-sm font-semibold text-text mb-1.5">
+          URL de la herramienta <span class="text-text-light font-normal">(opcional)</span>
+        </label>
+        <input
+          type="url"
+          id="sug-url"
+          placeholder="https://..."
+          class="w-full px-4 py-2.5 border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent transition-colors"
+        />
+      </div>
+
+      <!-- Description -->
+      <div>
+        <label for="sug-desc" class="block text-sm font-semibold text-text mb-1.5">
+          Descripción breve <span class="text-red-500">*</span>
+        </label>
+        <textarea
+          id="sug-desc"
+          rows="3"
+          placeholder="Describa para qué sirve esta herramienta y cómo la usa o la usaría en su institución..."
+          required
+          class="w-full px-4 py-2.5 border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent transition-colors resize-none"
+        ></textarea>
+      </div>
+
+      <!-- Category -->
+      <div>
+        <label for="sug-category" class="block text-sm font-semibold text-text mb-1.5">
+          Categoría <span class="text-red-500">*</span>
+        </label>
+        <select
+          id="sug-category"
+          required
+          class="w-full px-4 py-2.5 border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent transition-colors bg-white"
+        >
+          <option value="" disabled selected>Seleccione una categoría</option>
+          <option value="ia">Inteligencia Artificial</option>
+          <option value="rv">Realidad Virtual</option>
+          <option value="ra">Realidad Aumentada</option>
+          <option value="sim">Simulaciones Interactivas</option>
+          <option value="otra">Otra</option>
+        </select>
+      </div>
+
+      <!-- Is free? -->
+      <div>
+        <span class="block text-sm font-semibold text-text mb-2">¿Es gratuita?</span>
+        <div class="flex gap-4">
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="radio" name="sug-free" value="si" class="w-4 h-4 text-accent focus:ring-accent/30" />
+            <span class="text-sm text-text-light">Sí, completamente</span>
+          </label>
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="radio" name="sug-free" value="freemium" class="w-4 h-4 text-accent focus:ring-accent/30" />
+            <span class="text-sm text-text-light">Freemium</span>
+          </label>
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="radio" name="sug-free" value="no" class="w-4 h-4 text-accent focus:ring-accent/30" />
+            <span class="text-sm text-text-light">De pago</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Submit -->
+      <button
+        type="submit"
+        class="w-full py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent/90 transition-colors flex items-center justify-center gap-2"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+        </svg>
+        Enviar sugerencia
+      </button>
+
+      <p class="text-xs text-text-light text-center">
+        Sus aportes nos ayudan a mejorar la guía y ampliar el catálogo de herramientas educativas.
+      </p>
+    </form>
+
+    <!-- Success state (hidden by default) -->
+    <div id="suggestion-success" class="p-8 text-center hidden">
+      <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+        <svg class="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <h3 class="text-lg font-bold text-primary mb-2">Sugerencia enviada</h3>
+      <p class="text-sm text-text-light mb-6">
+        Gracias por su aporte. Su sugerencia será revisada por el equipo de la guía
+        para considerar su inclusión en futuras versiones.
+      </p>
+      <button
+        id="suggestion-reset"
+        class="px-6 py-2.5 bg-primary text-white text-sm font-semibold rounded-lg hover:bg-primary/90 transition-colors"
+      >
+        Enviar otra sugerencia
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  function initSuggestionBox() {
+    const trigger = document.getElementById('suggestion-trigger');
+    const modal = document.getElementById('suggestion-modal');
+    const backdrop = document.getElementById('suggestion-backdrop');
+    const closeBtn = document.getElementById('suggestion-close');
+    const form = document.getElementById('suggestion-form') as HTMLFormElement | null;
+    const success = document.getElementById('suggestion-success');
+    const resetBtn = document.getElementById('suggestion-reset');
+
+    if (!trigger || !modal || !backdrop || !form || !success) return;
+
+    function open() {
+      modal!.classList.remove('hidden');
+      backdrop!.classList.remove('hidden');
+      modal!.setAttribute('aria-hidden', 'false');
+      trigger!.setAttribute('aria-expanded', 'true');
+      // Focus first input
+      const firstInput = form!.querySelector('input') as HTMLElement | null;
+      firstInput?.focus();
+    }
+
+    function close() {
+      modal!.classList.add('hidden');
+      backdrop!.classList.add('hidden');
+      modal!.setAttribute('aria-hidden', 'true');
+      trigger!.setAttribute('aria-expanded', 'false');
+      trigger!.focus();
+    }
+
+    trigger.addEventListener('click', open);
+    closeBtn?.addEventListener('click', close);
+    backdrop.addEventListener('click', close);
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        close();
+      }
+    });
+
+    // Form submit — UI only, show success state
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      form.classList.add('hidden');
+      success.classList.remove('hidden');
+    });
+
+    // Reset to form
+    resetBtn?.addEventListener('click', () => {
+      success.classList.add('hidden');
+      form.classList.remove('hidden');
+      form.reset();
+      const firstInput = form.querySelector('input') as HTMLElement | null;
+      firstInput?.focus();
+    });
+  }
+
+  initSuggestionBox();
+  document.addEventListener('astro:after-swap', initSuggestionBox);
+</script>
